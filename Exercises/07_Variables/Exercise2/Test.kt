@@ -1,9 +1,10 @@
-package exercise2
+package variables2
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise2 {
-    @Test fun test() {
+class TestHelloWorld1 {
+    @Test fun test1() {
+        main(arrayOf())
+        println("TODO. Check expected output: 2\n1")
     }
 }

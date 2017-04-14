@@ -1,3 +1,16 @@
-package exercise2
+package variables2
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun main(args: Array<String>) {
+    var x = 1
+    var y = 2
+    /*<taskWindow>*/
+    var tmp = x
+    x = y
+    y = tmp/*</taskWindow>*/
+    println(x)
+    println(y)
+}
+/* Expected output:
+2
+1
+*/

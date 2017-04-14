@@ -1,3 +1,8 @@
-package exercise1
+package variables1
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun main(args: Array<String>) {
+    /*<taskWindow>*/
+    val answer = 42
+    // error: val cannot be reassigned
+    //answer = 43/*</taskWindow>*/
+}

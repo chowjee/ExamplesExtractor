@@ -1,9 +1,10 @@
-package exercise1
+package ranges1
 
 import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
-    @Test fun test() {
+class TestAlphabet {
+    @Test fun test1() {
+        Assert.assertEquals("abcdefghijklmnopqrstuvwxyz", getAlphabet())
     }
 }

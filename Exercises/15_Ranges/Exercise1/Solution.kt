@@ -1,3 +1,9 @@
-package exercise1
+package ranges1
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun getAlphabet(): String {
+    /*<taskWindow>*/var s = ""
+    for (c in 'a'..'z') {
+        s += c
+    }
+    return s/*</taskWindow>*/
+}

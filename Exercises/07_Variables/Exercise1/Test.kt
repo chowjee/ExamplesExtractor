@@ -1,9 +1,10 @@
-package exercise1
+package variables1
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
-    @Test fun test() {
+class TestVariables1 {
+    @Test fun test1() {
+        main(arrayOf())
+        println("error: val cannot be reassigned")
     }
 }

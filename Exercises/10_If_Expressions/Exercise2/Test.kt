@@ -1,9 +1,8 @@
-package exercise2
+package ifExpressions2
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise2 {
-    @Test fun test() {
+class TestIfExpressions2 {
+    @Test fun test1() {
     }
 }

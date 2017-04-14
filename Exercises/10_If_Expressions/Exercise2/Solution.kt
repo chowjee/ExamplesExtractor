@@ -1,3 +1,4 @@
-package exercise2
+package ifExpressions2
 
-fun findMax() = /*<taskWindow>*/0/*</taskWindow>*/
+fun findMax(first: Int, second: Int) = /*<taskWindow>*/
+        if (first > second) first else second/*</taskWindow>*/

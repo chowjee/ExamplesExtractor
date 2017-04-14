@@ -1,9 +1,10 @@
-package exercise2
+package helloWorld2
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise2 {
-    @Test fun test() {
+class TestHelloWorld2 {
+    @Test fun test1() {
+        main(arrayOf())
+        println("TODO. Check expected output: Hello,\nKotlin!")
     }
 }

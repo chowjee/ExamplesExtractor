@@ -1,3 +1,3 @@
-package exercise4
+package forLoops4
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun isLowerCase(ch: Char): Boolean = /*<taskWindow>*/ch >= 'a' && ch <= 'z'/*</taskWindow>*/

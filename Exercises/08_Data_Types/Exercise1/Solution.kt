@@ -1,3 +1,8 @@
-package exercise1
+package dataTypes
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun main(args: Array<String>) {
+    /*<taskWindow>*/
+    var answer = 42
+    // Type mismatch error
+//  answer = "unknown"/*</taskWindow>*/
+}

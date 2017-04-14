@@ -1,3 +1,9 @@
-package exercise1
+package forLoops1
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun factorial(n: Long): Long {
+    /*<taskWindow>*/var result = 1L
+    for (i in 1..n) {
+        result *= i
+    }
+    return result/*</taskWindow>*/
+}

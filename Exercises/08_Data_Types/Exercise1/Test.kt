@@ -1,9 +1,10 @@
-package exercise1
+package dataTypes
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
-    @Test fun test() {
+class TestDataTypes {
+    @Test fun test1() {
+        main(arrayOf())
+        println("type mismatch error")
     }
 }

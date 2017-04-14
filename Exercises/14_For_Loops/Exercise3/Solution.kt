@@ -1,3 +1,11 @@
-package exercise3
+package forLoops3
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun sumOfEven(n: Int): Int {
+    /*<taskWindow>*/var result = 0
+    for (i in 1..n) {
+        if (i % 2 == 0) {
+            result += i
+        }
+    }
+    return result/*</taskWindow>*/
+}

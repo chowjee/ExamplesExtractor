@@ -1,3 +1,5 @@
-package exercise1
+package helloWorld1
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun main(args: Array<String>) {
+    /*<taskWindow>*/println("Hello, Kotlin!")/*</taskWindow>*/
+}

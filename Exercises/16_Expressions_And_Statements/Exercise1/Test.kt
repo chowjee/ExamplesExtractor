@@ -1,9 +1,10 @@
-package exercise1
+package expressionsAndStatements1
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
-    @Test fun test() {
+class TestExpressionsAndStatements1 {
+    @Test fun test1() {
+        main(arrayOf())
+        println("TODO. Check expected output: Unit")
     }
 }

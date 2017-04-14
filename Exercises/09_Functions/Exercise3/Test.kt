@@ -1,9 +1,11 @@
-package exercise3
+package functions3
 
 import org.junit.Assert
 import org.junit.Test
 
-class TestExercise3 {
-    @Test fun test() {
+class TestFunctions3 {
+    @Test fun test1() {
+        Assert.assertEquals("""duplicate("abc") should return "abcabc"""",
+                duplicate("abc"), "abcabc")
     }
 }

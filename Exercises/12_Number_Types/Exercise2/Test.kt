@@ -1,9 +1,9 @@
-package exercise2
+package numberTypes2
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise2 {
+class TestNumberTypes2 {
     @Test fun test() {
+        main(arrayOf())
     }
 }

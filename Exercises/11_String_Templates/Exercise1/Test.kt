@@ -1,9 +1,10 @@
-package exercise1
+package stringTemplates1
 
-import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
-    @Test fun test() {
+class TestStringTemplates1 {
+    @Test fun test1() {
+        main(arrayOf())
+        println("TODO. Check expected output: The number -17 is negative")
     }
 }

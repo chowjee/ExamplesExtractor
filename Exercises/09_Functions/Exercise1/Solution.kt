@@ -1,3 +1,3 @@
-package exercise1
+package functions1
 
-fun getSquare() = /*<taskWindow>*/0/*</taskWindow>*/
+fun getSquare(i: Int) = /*<taskWindow>*/i * i/*</taskWindow>*/

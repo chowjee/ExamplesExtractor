@@ -44,3 +44,33 @@ fun manifestForExamplesFolder(name: String) =
 }"""
 
 private fun List<String>.asStringsInJson() = joinToString(",\n    ") { "\"$it\"" }
+
+fun manifestForTopLevelExercisesFolder(chapters: List<String>) =
+        """{
+  "taskFolder": true,
+  "levels": [
+    {
+      "projectsNeeded": 30,
+      "color": "#409BCB"
+    },
+    {
+      "projectsNeeded": 40,
+      "color": "#6A855B"
+    },
+    {
+      "projectsNeeded": 60,
+      "color": "#FDC474"
+    },
+    {
+      "projectsNeeded": 80,
+      "color": "#C9783A"
+    },
+    {
+      "projectsNeeded": 100,
+      "color": "#9976A9"
+    }
+  ],
+  "folders": [
+    ${chapters.asStringsInJson()}
+  ]
+}"""

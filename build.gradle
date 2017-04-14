@@ -25,4 +25,6 @@ dependencies {
 
 sourceSets {
     main.kotlin.srcDirs += 'src'
+    main.kotlin.srcDirs += 'Examples'
+    test.kotlin.srcDirs += 'Exercises'
 }

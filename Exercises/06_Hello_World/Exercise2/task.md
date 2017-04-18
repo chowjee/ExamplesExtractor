@@ -9,5 +9,3 @@ Kotlin!
 ```
 
 Try to replace `println` with `print` and see what changes.
-
-<!--- Edu. To speed up the typing of the `main` function type just `main` and press `TAB`. --->

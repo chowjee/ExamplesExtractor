@@ -1,3 +1,3 @@
 ## Ranges (#2)
 
-Rewrite the function checking whether a string is a valid identifier using ranges.
+Using ranges rewrite the function from the previous atom that checks whether a string is a valid identifier.

@@ -1,7 +1,7 @@
 ## Variables (#2)
 
 Declare two mutable variables `x` and `y`.
-Swap their values (you can first try `x = y`, `y = x` and then fix the erroneous solution): 
+Swap their values (you can first try saying `x = y`, `y = x` and then fix the erroneous solution): 
 ```
 var x = 1
 var y = 2

@@ -1,4 +1,4 @@
-package forLoops5
+package ranges4
 
 import org.junit.Assert
 import org.junit.Test

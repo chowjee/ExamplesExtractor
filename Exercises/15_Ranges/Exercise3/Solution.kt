@@ -1,3 +1,3 @@
-package forLoops4
+package ranges3
 
-fun isLowerCase(ch: Char): Boolean = /*<taskWindow>*/ch >= 'a' && ch <= 'z'/*</taskWindow>*/
+fun isLowerCase(ch: Char): Boolean = /*<taskWindow>*/ch in 'a'..'z'/*</taskWindow>*/

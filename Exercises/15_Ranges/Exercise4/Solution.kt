@@ -1,4 +1,4 @@
-package forLoops5
+package ranges4
 
 /*<taskWindow>*/
 fun isLowerCase(ch: Char): Boolean = ch in 'a'..'z'

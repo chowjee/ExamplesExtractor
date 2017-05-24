@@ -1,4 +1,4 @@
-package ranges3
+package ranges2
 
 fun sumOfEven(n: Int): Int {
     /*<taskWindow>*/var result = 0

@@ -1,21 +1,9 @@
-package ranges2
+package ranges3
 
-/*<taskWindow>*/
-fun isLowerCase(ch: Char): Boolean = ch in 'a'..'z'
-
-fun isUpperCase(ch: Char): Boolean = ch in 'A'..'Z'
-
-fun isLetterOrUnderscore(ch: Char): Boolean = ch == '_' || isLowerCase(ch) || isUpperCase(ch)
-
-fun isDigit(ch: Char): Boolean = ch in '0'..'9'
-/*</taskWindow>*/
-
-fun isValidIdentifier(s: String): Boolean {
-    /*<taskWindow>*/
-    if (s.isEmpty() || !isLetterOrUnderscore(s[0])) return false
-    for (ch in s) {
-        if (!isLetterOrUnderscore(ch) && !isDigit(ch)) return false
+fun sumOfEven(n: Int): Int {
+    /*<taskWindow>*/var result = 0
+    for (i in 0..n step 2) {
+        result += i
     }
-    return true
-    /*</taskWindow>*/
+    return result/*</taskWindow>*/
 }

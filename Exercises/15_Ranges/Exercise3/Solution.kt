@@ -1,9 +1,3 @@
-package ranges3
+package forLoops4
 
-fun sumOfEven(n: Int): Int {
-    /*<taskWindow>*/var result = 0
-    for (i in 0..n step 2) {
-        result += i
-    }
-    return result/*</taskWindow>*/
-}
+fun isLowerCase(ch: Char): Boolean = /*<taskWindow>*/ch >= 'a' && ch <= 'z'/*</taskWindow>*/

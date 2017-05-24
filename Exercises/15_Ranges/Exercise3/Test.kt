@@ -1,31 +1,26 @@
-package ranges3
+package forLoops4
 
 import org.junit.Assert
 import org.junit.Test
 
-class TestSumOfEven {
-    @Test fun test1() {
-        Assert.assertEquals("sumOfEven(1) should be 0",
-                0, sumOfEven(1))
+class TestForLoops3 {
+    @Test fun testLowerCaseC() {
+        Assert.assertTrue("'c' is a lower case letter", isLowerCase('c'))
     }
 
-    @Test fun test3() {
-        Assert.assertEquals("sumOfEven(2) should be 2",
-                2, sumOfEven(2))
+    @Test fun testLowerCaseA() {
+        Assert.assertTrue("'a' is a lower case letter", isLowerCase('a'))
     }
 
-    @Test fun test10() {
-        Assert.assertEquals("sumOfEven(4) should be 6",
-                6, sumOfEven(4))
+    @Test fun testLowerCaseZ() {
+        Assert.assertTrue("'z' is a lower case letter", isLowerCase('z'))
     }
 
-    @Test fun test20() {
-        Assert.assertEquals("sumOfEven(20) should be 110",
-                110, sumOfEven(20))
+    @Test fun testUpperCase() {
+        Assert.assertFalse("'A' is an upper case letter", isLowerCase('A'))
     }
 
-    @Test fun test21() {
-        Assert.assertEquals("sumOfEven(21) should be 110",
-                110, sumOfEven(21))
+    @Test fun testDigit() {
+        Assert.assertFalse("'1' is not a lower case letter", isLowerCase('1'))
     }
 }

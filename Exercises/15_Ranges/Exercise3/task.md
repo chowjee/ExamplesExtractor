@@ -1,3 +1,4 @@
-## Ranges (#3)
+## For Loops (#4)
 
-Rewrite the function that sums up only even numbers up to a given number using `step`.
+Create a function that checks that a character is a lowercase letter
+(its code should be between the codes for `a` and `z`).

@@ -1,38 +1,31 @@
-package ranges2
+package ranges3
 
 import org.junit.Assert
 import org.junit.Test
 
-class TestValidIdentifier {
-    @Test fun testSimple() {
-        Assert.assertTrue("'name' is a valid identifier", isValidIdentifier("name"))
+class TestSumOfEven {
+    @Test fun test1() {
+        Assert.assertEquals("sumOfEven(1) should be 0",
+                0, sumOfEven(1))
     }
 
-    @Test fun testStartsWithUnderscore() {
-        Assert.assertTrue("'_name' is a valid identifier", isValidIdentifier("_name"))
+    @Test fun test3() {
+        Assert.assertEquals("sumOfEven(2) should be 2",
+                2, sumOfEven(2))
     }
 
-    @Test fun testUnderscore() {
-        Assert.assertTrue("'_' is a valid identifier", isValidIdentifier("_"))
+    @Test fun test10() {
+        Assert.assertEquals("sumOfEven(4) should be 6",
+                6, sumOfEven(4))
     }
 
-    @Test fun testContainsDigits() {
-        Assert.assertTrue("'n01' is a valid identifier", isValidIdentifier("n01"))
+    @Test fun test20() {
+        Assert.assertEquals("sumOfEven(20) should be 110",
+                110, sumOfEven(20))
     }
 
-    @Test fun testUpperCase() {
-        Assert.assertTrue("'NNN' is a valid identifier", isValidIdentifier("NNN"))
-    }
-
-    @Test fun testValid() {
-        Assert.assertTrue("'_N01' is a valid identifier", isValidIdentifier("_N01"))
-    }
-
-    @Test fun testStartsWithDigit() {
-        Assert.assertFalse("'1_' is not a valid identifier", isValidIdentifier("1_"))
-    }
-
-    @Test fun testContainsIllegalCharacters() {
-        Assert.assertFalse("'&%$' is not a valid identifier", isValidIdentifier("&%$"))
+    @Test fun test21() {
+        Assert.assertEquals("sumOfEven(21) should be 110",
+                110, sumOfEven(21))
     }
 }

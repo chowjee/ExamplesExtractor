@@ -1,3 +1,3 @@
-## Ranges (#2)
+## Ranges (#3)
 
-Using ranges rewrite the function from the previous atom that checks whether a string is a valid identifier.
+Rewrite the function that sums up only even numbers up to a given number using `step`.

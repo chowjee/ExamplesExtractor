@@ -1,0 +1,28 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "ALibrary.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "UseALibrary.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "UsingAtomicTest.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ListCollection.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ClassBodies.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "Temperature.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "TicTacToe.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

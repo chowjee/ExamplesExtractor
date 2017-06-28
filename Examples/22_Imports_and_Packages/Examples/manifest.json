@@ -1,0 +1,28 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "ImportClass.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ImportMultiple.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ImportNameChange.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ImportEverything.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "FullyQualify.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "PythagoreanTheorem.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ImportPythagorean.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

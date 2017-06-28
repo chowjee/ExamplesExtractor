@@ -1,0 +1,10 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "WhenExpressionAndSmartCasts.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

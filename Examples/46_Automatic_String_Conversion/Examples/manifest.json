@@ -1,0 +1,16 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "Bicycle.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "Surrey.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "SurreyWithToString.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

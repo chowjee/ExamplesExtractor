@@ -1,0 +1,19 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "PaintColors.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ColorBlend.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ColorBlendTest.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "ColorBlendMap.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

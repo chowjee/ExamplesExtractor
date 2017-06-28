@@ -1,0 +1,16 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "Dog.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "Cat.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "Hamster.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

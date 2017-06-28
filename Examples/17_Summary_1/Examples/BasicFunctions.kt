@@ -1,0 +1,12 @@
+package summary1
+
+fun cube(x: Int): Int {
+  return x * x * x
+}
+
+fun bang(s: String) = s + "!"
+
+fun main(args: Array<String>) {
+  println(cube(3))  // 27
+  println(bang("pop")) // pop!
+}

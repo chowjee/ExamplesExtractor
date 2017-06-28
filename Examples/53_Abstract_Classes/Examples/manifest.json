@@ -1,0 +1,16 @@
+{
+  "name" : "Examples",
+  "files" : [ {
+    "filename" : "AbstractKeyword.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "AbstractClasses.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "AbstractAdder.kt",
+    "modifiable" : "true"
+  } ],
+  "args" : "",
+  "searchForMain": false,
+  "confType" : "java"
+}

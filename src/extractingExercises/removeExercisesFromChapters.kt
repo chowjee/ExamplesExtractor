@@ -3,7 +3,7 @@ package removeExercises
 import chapters.getInterestingChapters
 
 fun main(args: Array<String>) {
-    for (chapter in getInterestingChapters()) {
+    for (chapter in getInterestingChapters(arrayOf())) {
         val text = chapter.readText()
         val exercisesText = "\nExercises\n---------"
         if (text.contains(exercisesText)) {

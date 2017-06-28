@@ -18,13 +18,6 @@ object Settings {
     private operator fun Properties.getValue(thisRef: Any?, property: KProperty<*>): String =
             getProperty(property.name) ?: throw IllegalStateException("No value for '${property.name}' property in $propertiesFile")
 
-    private val intProperties = object {
-        operator fun getValue(thisRef: Any?, property: KProperty<*>): Int =
-                properties.getValue(thisRef, property).toInt()
-    }
-
-    val firstAtom by intProperties
-    val lastAtom by intProperties
     val chaptersPath by properties
     val exercisesPath by properties
     val examplesDir by properties

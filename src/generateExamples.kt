@@ -10,8 +10,8 @@ import util.subDir
 import util.subFile
 import java.io.File
 
-fun generateExamples() {
-    val chapters = getInterestingChapters().map { extractCodeExamples(it.readLines(), it.nameWithoutExtension) }
+fun generateExamples(vararg atoms: IntRange) {
+    val chapters = getInterestingChapters(atoms).map { extractCodeExamples(it.readLines(), it.nameWithoutExtension) }
 
     val examplesDir = File(Settings.examplesDir)
     if (examplesDir.exists()) {

@@ -1,3 +1,5 @@
+package stringtemplates
+
 fun main(args: Array<String>) {
   val s = "hi"
   val n = 11

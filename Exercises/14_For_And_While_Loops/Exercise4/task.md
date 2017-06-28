@@ -1,3 +1,3 @@
-## For And While Loops (#4)
+## For and While Loops (#4)
 
-Rewrite the function from the previous exercise using `while` loop.
+Rewrite the function from the previous exercise using the `while` loop.

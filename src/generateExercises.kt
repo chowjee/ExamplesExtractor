@@ -1,5 +1,6 @@
 package examplesExtractor
 
+import chapters.getExerciseFiles
 import chapters.getInterestingChapters
 import manifestUtil.manifestForExercise
 import manifestUtil.manifestForExercisesFolder
@@ -16,17 +17,17 @@ fun generateExercises() {
 
     generateDirStructure(parentDir)
 
-    for (chapter in getInterestingChapters()) {
+    for (chapter in getExerciseFiles()) {
         generateTasksForChapter(chapter, parentDir)
     }
 }
 
 fun generateDirStructure(exercisesDir: File) {
-    val chapters = getInterestingChapters()
+    val chapters = getExerciseFiles()
     for (chapter in chapters) {
         val chapterDir = exercisesDir.subDir(chapter.nameWithoutExtension)
 
-        val tasks = extractTasksFromChapter(chapter)
+        val tasks = extractTasks(chapter)
         for (index in tasks.indices) {
             chapterDir.subDir("Exercise" + (index + 1))
         }
@@ -43,7 +44,7 @@ fun generateTasksForChapter(chapterFile: File, parentDir: File) {
         return
     }
 
-    val tasks = extractTasksFromChapter(chapterFile)
+    val tasks = extractTasks(chapterFile)
 
     val targetDir = parentDir.subDir(chapterFile.nameWithoutExtension)
 

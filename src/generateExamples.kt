@@ -2,8 +2,8 @@ package examplesExtractor
 
 import chapters.getInterestingChapters
 import examplesExtractor.ExampleBuilder.Status.*
-import manifestUtil.manifestForExamplesFolder
 import manifestUtil.manifestForExamples
+import manifestUtil.manifestForExamplesFolder
 import settings.Settings
 import util.manifest
 import util.subDir

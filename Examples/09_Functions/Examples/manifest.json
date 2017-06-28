@@ -4,7 +4,13 @@
     "filename" : "MultiplyByTwo.kt",
     "modifiable" : "true"
   }, {
+    "filename" : "SayHello.kt",
+    "modifiable" : "true"
+  }, {
     "filename" : "MultiplyByThree.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "MultiplyByFour.kt",
     "modifiable" : "true"
   } ],
   "args" : "",

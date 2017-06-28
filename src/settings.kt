@@ -25,7 +25,8 @@ object Settings {
 
     val firstAtom by intProperties
     val lastAtom by intProperties
-    val chaptersDir by properties
+    val chaptersPath by properties
+    val exercisesPath by properties
     val examplesDir by properties
     val exercisesDir by properties
 }

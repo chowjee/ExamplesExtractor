@@ -6,23 +6,15 @@ val LINE_SEPARATOR = System.getProperty("line.separator")
 
 data class Task(val chapter: String, val index: Int, val text: String) {
     val name get() = "Exercise" + index
-    val heading get() = "## ${chapter.toHeading()} (#$index)"
+    val heading get() = "## $chapter (#$index)"
 }
 
-fun extractTasksFromChapter(chapter: File): List<Task> {
-    val lines = chapter.readLines()
-    if (lines.none { "Exercises" !in it }) return emptyList()
-
-    val exercisesIndex = lines.indexOfFirst { "Exercises" !in it }
-    lines.subList(exercisesIndex, lines.lastIndex + 1)
-
-    val text = chapter.readText()
-    if ("Exercises" !in text) return emptyList()
-    val exercisesText = text.substringAfter("Exercises").substringAfter("AtomicKotlin.com).").trimStart()
-    val tasks = divideIntoTasks(exercisesText)
-
-    val chapterName = chapter.name.substringAfter("_").substringBefore(".md").replace("_", "")
-    return tasks.mapIndexed { index, s -> Task(chapterName, index + 1, s) }
+fun extractTasks(chapter: File): List<Task> {
+    val tasks = divideIntoTasks(chapter.readText())
+    val chapterName = chapter.readLines().first()
+    return tasks.mapIndexed { index, exercise ->
+        Task(chapterName, index + 1, exercise)
+    }
 }
 
 fun divideIntoTasks(exercisesText: String): List<String> {
@@ -31,18 +23,18 @@ fun divideIntoTasks(exercisesText: String): List<String> {
     var currentTask = 0
     var task = StringBuilder()
     for (line in exercisesText.split(LINE_SEPARATOR)) {
-        if (line.startsWith("${currentTask + 1}.")) {
+        val prefix = "# ${currentTask + 1}"
+        if (line.startsWith(prefix)) {
             if (currentTask > 0) {
                 tasks += task.toString().trim()
+                task = StringBuilder()
             }
-            task = StringBuilder()
             currentTask++
         }
         if (currentTask > 0) {
-            val prefix = "$currentTask."
-            val withoutIndent =
-                    if (line.startsWith(prefix)) line.removePrefix(prefix).trim() else line.removePrefix("    ")
-            task.appendln(withoutIndent)
+            if (!line.startsWith(prefix)) {
+                task.appendln(line)
+            }
         }
     }
     if (task.trim().isNotEmpty()) {
@@ -50,8 +42,3 @@ fun divideIntoTasks(exercisesText: String): List<String> {
     }
     return tasks
 }
-
-fun String.toHeading(): String =
-    this.mapIndexed { index, c ->
-        if (index > 0 && c.isUpperCase()) " $c" else "$c"
-    }.joinToString("")

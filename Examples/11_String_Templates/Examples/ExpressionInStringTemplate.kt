@@ -1,3 +1,5 @@
+package stringtemplates
+
 fun main(args: Array<String>) {
   val x = 11
   println("$x + 4 = ${x + 4}")

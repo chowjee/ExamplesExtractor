@@ -1,3 +1,5 @@
+package datatypes
+
 fun main(args: Array<String>) {
   val whole: Int = 11              // [1]
   val fractional: Double = 1.4     // [2]

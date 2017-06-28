@@ -18,6 +18,12 @@
   }, {
     "filename" : "If6.kt",
     "modifiable" : "true"
+  }, {
+    "filename" : "TrueOrFalse.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "oneOrTheOther.kt",
+    "modifiable" : "true"
   } ],
   "args" : "",
   "searchForMain": false,

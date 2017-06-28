@@ -1,6 +1,9 @@
 {
   "name" : "Examples",
   "files" : [ {
+    "filename" : "EmptyProgram.kt",
+    "modifiable" : "true"
+  }, {
     "filename" : "HelloWorld.kt",
     "modifiable" : "true"
   } ],

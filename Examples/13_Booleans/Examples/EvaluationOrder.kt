@@ -1,3 +1,5 @@
+package booleans
+
 fun main(args: Array<String>) {
   val sunny = true
   val hoursSleep = 6

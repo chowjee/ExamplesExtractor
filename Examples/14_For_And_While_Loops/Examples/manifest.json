@@ -15,6 +15,9 @@
   }, {
     "filename" : "IterateOverString3.kt",
     "modifiable" : "true"
+  }, {
+    "filename" : "EvalBoolean.kt",
+    "modifiable" : "true"
   } ],
   "args" : "",
   "searchForMain": false,

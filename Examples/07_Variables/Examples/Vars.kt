@@ -1,3 +1,5 @@
+package variables
+
 fun main(args: Array<String>) {
   var whole = 11          // [1]
   var fractional = 1.4    // [2]

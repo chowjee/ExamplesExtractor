@@ -11,7 +11,7 @@ import util.subDir
 import util.subFile
 import java.io.File
 
-fun generateExercises(vararg atoms: IntRange) {
+fun generateExercises(atoms: List<IntRange>) {
     val parentDir = File(Settings.exercisesDir)
     parentDir.mkdir()
 
@@ -22,7 +22,7 @@ fun generateExercises(vararg atoms: IntRange) {
     }
 }
 
-fun generateDirStructure(exercisesDir: File, atoms: Array<out IntRange>) {
+fun generateDirStructure(exercisesDir: File, atoms: List<IntRange>) {
     val chapters = getExerciseFiles(atoms)
     for (chapter in chapters) {
         val chapterDir = exercisesDir.subDir(chapter.nameWithoutExtension)

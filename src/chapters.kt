@@ -1,6 +1,7 @@
 package chapters
 
 import settings.Settings
+import util.subFile
 import java.io.File
 
 fun getInterestingChapters(atoms: List<IntRange>): List<File> {
@@ -17,3 +18,8 @@ private fun File.isInteresting(atoms: List<IntRange>): Boolean =
             range ->
             (name.substringBefore("_").toIntOrNull() ?: 0) in range
         }
+
+fun getExamplesForAtom(atomName: String): List<File> {
+    val examplesForAtom = File(Settings.examplesDir).subFile(atomName).subFile("Examples").listFiles()
+    return examplesForAtom.filter { it.name.endsWith(".kt") }
+}

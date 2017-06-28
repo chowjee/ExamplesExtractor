@@ -17,7 +17,7 @@ fun generateExampleTests(atoms: List<IntRange>) {
 
 fun getAllExamples(atoms: List<IntRange>): List<File> {
     val atomFiles = getAtomFiles(atoms)
-    return atomFiles.flatMap { getExamplesForAtom(it.nameWithoutExtension) }
+    return atomFiles.flatMap { getExamplesForAtom(it) }
 }
 
 fun generateTests(files: List<File>, className: String) = buildString {

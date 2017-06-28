@@ -1,15 +1,16 @@
 package updatingBookSamples
 
-import atoms.getExamplesForAtom
 import atoms.getAtomFiles
+import atoms.getExamplesForAtom
 import examplesExtractor.exampleRanges
 import java.io.File
 
 fun main(args: Array<String>) {
+//    val atoms = getAtomFiles(listOf(6..6))
     val atoms = getAtomFiles(exampleRanges)
     for (atom in atoms) {
         var atomText = atom.readText()
-        val examples = getExamplesForAtom(atom.nameWithoutExtension)
+        val examples = getExamplesForAtom(atom)
         for (example in examples) {
             atomText = replaceSample(atomText, example)
         }

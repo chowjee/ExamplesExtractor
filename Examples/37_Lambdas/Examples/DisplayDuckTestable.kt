@@ -1,4 +1,4 @@
-package lambdas
+package lambdas4
 
 import com.atomickotlin.test.eq
 

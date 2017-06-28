@@ -1,4 +1,4 @@
-package dataclasses
+package dataclasses1
 
 import com.atomickotlin.test.eq
 

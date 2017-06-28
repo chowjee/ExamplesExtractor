@@ -1,4 +1,4 @@
-package stringtemplates
+package stringtemplates2
 
 fun main(args: Array<String>) {
   val s = "value"

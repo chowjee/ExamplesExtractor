@@ -1,4 +1,4 @@
-package mapandreduce
+package mapandreduce1
 
 import com.atomickotlin.test.eq
 

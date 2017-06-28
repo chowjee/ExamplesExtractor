@@ -1,4 +1,4 @@
-package summary2
+package secondsummary3
 
 import com.atomickotlin.test.eq
 

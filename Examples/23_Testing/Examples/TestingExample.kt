@@ -1,4 +1,5 @@
-package testing
+package testing1
+
 import com.atomickotlin.test.eq
 
 fun main(args: Array<String>) {
@@ -10,5 +11,5 @@ fun main(args: Array<String>) {
   v2 eq "a String"
 
   // AssertionError: Expected <Produces Error>, actual <a String>
-  v2 eq "Produces Error"
+//  v2 eq "Produces Error"
 }

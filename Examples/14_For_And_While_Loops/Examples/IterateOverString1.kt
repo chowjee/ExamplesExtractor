@@ -1,4 +1,4 @@
-package forandwhile
+package forandwhile3
 
 fun main(args: Array<String>) {
   val s = "abc"

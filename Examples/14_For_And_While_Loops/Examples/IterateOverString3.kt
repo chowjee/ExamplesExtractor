@@ -1,4 +1,4 @@
-package forandwhile
+package forandwhile5
 
 fun containsChar(s: String, ch: Char): Boolean {
   for (c in s) {

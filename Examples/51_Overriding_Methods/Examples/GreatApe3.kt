@@ -1,4 +1,4 @@
-package overridingmethods
+package overridingmethods1
 
 import com.atomickotlin.test.eq
 

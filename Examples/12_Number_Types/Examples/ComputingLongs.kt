@@ -1,4 +1,4 @@
-package numbertypes
+package numbertypes4
 
 fun main(args: Array<String>) {
   println(1_000_000 * 1_000_000)

@@ -1,4 +1,4 @@
-package variables
+package variables3
 
 fun main(args: Array<String>) {
   val whole = 11

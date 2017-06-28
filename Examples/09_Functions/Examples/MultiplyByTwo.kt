@@ -1,4 +1,4 @@
-package functions
+package functions1
 
 fun multiplyByTwo(x: Int): Int {  // [1]
   println("Inside multiplyByTwo") // [2]

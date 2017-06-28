@@ -1,4 +1,4 @@
-package ifexpressions
+package ifexpressions1
 
 fun main(args: Array<String>) {
   if (1 > 0) {

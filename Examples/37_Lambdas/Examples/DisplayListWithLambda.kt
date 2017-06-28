@@ -1,4 +1,4 @@
-package lambdas
+package lambdas2
 
 fun main(args: Array<String>) {
   val l = listOf(1, 2, 3, 4)

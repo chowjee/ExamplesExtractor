@@ -1,4 +1,4 @@
-package functions
+package functions4
 
 fun multiplyByFour(x: Int) = x * 4       // [1]
 

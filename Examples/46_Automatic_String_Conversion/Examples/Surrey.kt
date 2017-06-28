@@ -1,4 +1,4 @@
-package automaticstring
+package automaticstring2
 
 class Surrey(val adornment: String)
 

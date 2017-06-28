@@ -1,4 +1,4 @@
-package lists
+package lists1
 import com.atomickotlin.test.eq
 
 fun main(args: Array<String>) {

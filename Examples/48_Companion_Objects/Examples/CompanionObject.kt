@@ -1,4 +1,4 @@
-package companionobjects3
+package companionobjects4
 
 class X {
   companion object

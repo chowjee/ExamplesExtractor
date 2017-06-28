@@ -1,4 +1,4 @@
-package companionobjects4
+package companionobjects5
 
 import com.atomickotlin.test.eq
 

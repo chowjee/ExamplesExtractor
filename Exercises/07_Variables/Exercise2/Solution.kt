@@ -1,4 +1,4 @@
-package variables2
+package exercises.variables2
 
 fun main(args: Array<String>) {
     var x = 1

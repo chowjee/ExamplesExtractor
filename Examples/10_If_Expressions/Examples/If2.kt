@@ -1,4 +1,4 @@
-package ifexpressions
+package ifexpressions2
 
 fun main(args: Array<String>) {
   val x: Boolean = 1 >= 1

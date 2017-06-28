@@ -1,4 +1,4 @@
-package booleans2
+package exercises.booleans2
 
 fun and(b1: Boolean, b2: Boolean): Boolean =
         /*<taskWindow>*/if (b1) b2 else false/*</taskWindow>*/

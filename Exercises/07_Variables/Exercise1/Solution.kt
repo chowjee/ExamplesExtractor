@@ -1,4 +1,4 @@
-package variables1
+package exercises.variables1
 
 fun main(args: Array<String>) {
     /*<taskWindow>*/

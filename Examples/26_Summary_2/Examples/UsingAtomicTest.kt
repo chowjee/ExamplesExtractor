@@ -1,4 +1,4 @@
-package summary2
+package secondsummary2
 
 import com.atomickotlin.test.eq
 
@@ -8,5 +8,5 @@ fun main(args: Array<String>) {
 
   pi eq 3.14
   pie eq "A round dessert"
-  pie eq "Square" // Produces error
+//  pie eq "Square" // Produces error
 }

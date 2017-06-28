@@ -1,4 +1,4 @@
-package whenexpressionscasts
+package whenexpressionscasts1
 
 import com.atomickotlin.test.eq
 
@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
       "An Int Less than 20: 5"
   acceptAnything(25) eq "Some Other Int: 25"
   acceptAnything("Some text") eq
-      "A String: Some text"
+      "A String: Some text of length 9"
 
   val bob = Person("Bob")
   acceptAnything(bob) eq "A person Bob"

@@ -1,4 +1,4 @@
-package functions
+package functions3
 
 fun multiplyByThree(x: Int): Int = x * 3
 

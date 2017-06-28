@@ -1,4 +1,4 @@
-package functions
+package functions2
 
 fun sayHello() {
   println("Hallo!")

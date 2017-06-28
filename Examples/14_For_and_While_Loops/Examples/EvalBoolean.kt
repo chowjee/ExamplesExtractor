@@ -1,4 +1,4 @@
-package forandwhile
+package forandwhile6
 
 fun condition() = Math.random() < 0.99
 

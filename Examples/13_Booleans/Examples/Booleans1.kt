@@ -1,4 +1,4 @@
-package booleans
+package booleans1
 
 fun main(args: Array<String>) {
   val hour = 6

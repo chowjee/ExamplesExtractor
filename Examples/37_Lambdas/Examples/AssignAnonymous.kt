@@ -1,4 +1,4 @@
-package lambdas
+package lambdas7
 
 fun main(args: Array<String>) {
   val later1 = { -> println("now") }

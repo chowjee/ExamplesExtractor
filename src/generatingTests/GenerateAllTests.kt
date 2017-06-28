@@ -1,7 +1,7 @@
 package generatingTests
 
-import chapters.getExamplesForAtom
-import chapters.getInterestingChapters
+import atoms.getExamplesForAtom
+import atoms.getAtomFiles
 import examplesExtractor.exampleRanges
 import java.io.File
 
@@ -16,8 +16,8 @@ fun generateExampleTests(atoms: List<IntRange>) {
 }
 
 fun getAllExamples(atoms: List<IntRange>): List<File> {
-    val chapters = getInterestingChapters(atoms)
-    return chapters.flatMap { getExamplesForAtom(it.nameWithoutExtension) }
+    val atomFiles = getAtomFiles(atoms)
+    return atomFiles.flatMap { getExamplesForAtom(it.nameWithoutExtension) }
 }
 
 fun generateTests(files: List<File>, className: String) = buildString {

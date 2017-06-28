@@ -1,6 +1,6 @@
 package separateFileForExercises
 
-import chapters.getInterestingChapters
+import atoms.getAtomFiles
 import examplesExtractor.Task
 import examplesExtractor.divideIntoTasks
 import settings.Settings
@@ -10,7 +10,7 @@ import java.io.File
 fun main(args: Array<String>) {
     val exercisesDir = File(Settings.exercisesPath)
     buildString {
-        for (chapter in getInterestingChapters(listOf())) {
+        for (chapter in getAtomFiles(listOf())) {
             val exercisesText = generateTasksForChapter(chapter)
             val exercisesForChapterFile = exercisesDir.subFile(chapter.name)
             exercisesForChapterFile.writeText(exercisesText)

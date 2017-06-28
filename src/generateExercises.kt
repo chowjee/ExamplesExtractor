@@ -1,7 +1,6 @@
 package examplesExtractor
 
-import chapters.getExerciseFiles
-import chapters.getInterestingChapters
+import atoms.getExerciseFiles
 import manifestUtil.manifestForExercise
 import manifestUtil.manifestForExercisesFolder
 import manifestUtil.manifestForTopLevelExercisesFolder

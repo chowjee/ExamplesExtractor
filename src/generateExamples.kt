@@ -1,6 +1,6 @@
 package examplesExtractor
 
-import chapters.getInterestingChapters
+import atoms.getAtomFiles
 import examplesExtractor.ExampleBuilder.Status.*
 import manifestUtil.manifestForExamples
 import manifestUtil.manifestForExamplesFolder
@@ -11,7 +11,7 @@ import util.subFile
 import java.io.File
 
 fun generateExamples(atoms: List<IntRange>) {
-    val chapters = getInterestingChapters(atoms).map { extractCodeExamples(it.readLines(), it.nameWithoutExtension) }
+    val allExamples: List<AtomExamples> = getAtomFiles(atoms).map { extractCodeExamples(it) }
 
     val examplesDir = File(Settings.examplesDir)
     if (examplesDir.exists()) {
@@ -19,25 +19,25 @@ fun generateExamples(atoms: List<IntRange>) {
     }
     examplesDir.mkdir()
 
-    for (chapterExamples in chapters) {
-        val outerDir = examplesDir.subFile(chapterExamples.name)
+    for (atomExamples in allExamples) {
+        val outerDir = examplesDir.subFile(atomExamples.name)
         outerDir.mkdir()
         val outerManifest = outerDir.manifest()
-        outerManifest.writeText(manifestForExamplesFolder(chapterExamples.name))
+        outerManifest.writeText(manifestForExamplesFolder(atomExamples.name))
 
         val chapterDir = outerDir.subDir("Examples")
-        for (chapter in chapterExamples.examples) {
+        for (chapter in atomExamples.examples) {
             val exampleFile = chapterDir.subFile(chapter.name)
             exampleFile.writeText(chapter.text)
         }
         val manifestFile = chapterDir.manifest()
-        manifestFile.writeText(manifestForExamples("Examples", chapterExamples.examples.map { it.name }))
+        manifestFile.writeText(manifestForExamples("Examples", atomExamples.examples.map { it.name }))
     }
     val topLevelManifest = examplesDir.manifest()
-    topLevelManifest.writeText(manifestUtil.topLevelManifest(chapters.map { it.name }))
+    topLevelManifest.writeText(manifestUtil.topLevelManifest(allExamples.map { it.name }))
 }
 
-data class ChapterExamples(val name: String, val examples: List<Example>)
+data class AtomExamples(val name: String, val examples: List<Example>)
 
 data class Example(val name: String, val text: String)
 
@@ -83,10 +83,10 @@ class ExampleBuilder {
     }
 }
 
-fun extractCodeExamples(chapterLines: List<String>, chapterName: String): ChapterExamples {
+fun extractCodeExamples(atom: File): AtomExamples {
     val result = mutableListOf<Example>()
     val exampleBuilder = ExampleBuilder()
-    for (line in chapterLines) {
+    for (line in atom.readLines()) {
         when (line.trim()) {
             "```kotlin" -> exampleBuilder.startExample()
             "```" -> {
@@ -95,5 +95,5 @@ fun extractCodeExamples(chapterLines: List<String>, chapterName: String): Chapte
             else -> exampleBuilder.addLine(line)
         }
     }
-    return ChapterExamples(chapterName, result)
+    return AtomExamples(atom.nameWithoutExtension, result)
 }

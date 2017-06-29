@@ -1,4 +1,4 @@
-package colorBlend
+package colorblendmap
 
 import com.atomickotlin.test.eq
 import paintcolors.Color

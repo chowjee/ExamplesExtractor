@@ -3,9 +3,9 @@ package forandwhile
 fun condition() = Math.random() < 0.99
 
 fun main(args: Array<String>) {
-    while (condition()) {
-        print(".")
-    }
+  while (condition()) {
+    print(".")
+  }
 }
 /* Sample output:
 ..................................

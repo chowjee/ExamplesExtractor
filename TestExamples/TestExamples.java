@@ -118,7 +118,7 @@ import referencesmutability.ReferencesKt;
 import referencesmutability.ImmutableMapsKt;
 import referencesmutability.MutableMapsKt;
 import colorblend.ColorBlendTestKt;
-import colorBlend.ColorBlendMapKt;
+import colorblendmap.ColorBlendMapKt;
 
 public class TestExamples {
     private final String[] args = new String[] {};

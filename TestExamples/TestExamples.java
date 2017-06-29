@@ -62,10 +62,7 @@ import summary2.ClassBodiesKt;
 import summary2.TemperatureKt;
 import summary2.TicTacToeKt;
 import whenexpressions.WhenExpressionsKt;
-import classarguments.ClassArgKt;
-import classarguments.VisibleClassArgsKt;
-import classarguments.MultipleClassArgsKt;
-import classarguments.VariableClassArgsKt;
+import whenexpressionscasts.WhenExpressionAndSmartCastsKt;
 import namedanddefault.NamedArgumentsKt;
 import namedanddefault.NamedArgumentsOrderKt;
 import namedanddefault.NamedAndDefaultArgsKt;
@@ -73,9 +70,16 @@ import namedanddefault.FamilyKt;
 import namedanddefault.Family2Kt;
 import overloading.OverloadingKt;
 import overloading.OverloadingAddKt;
+import classarguments.ClassArgKt;
+import classarguments.VisibleClassArgsKt;
+import classarguments.MultipleClassArgsKt;
+import classarguments.VariableClassArgsKt;
 import constructors.CoffeeKt;
 import secondaryconstructors.GardenGnomeKt;
 import dataclasses.DataClassesKt;
+import automaticstring.BicycleKt;
+import automaticstring.SurreyKt;
+import automaticstring.SurreyWithToStringKt;
 import parameterizedtypes.ParameterizedTypesKt;
 import parameterizedtypes.ParameterizedReturnTypesKt;
 import lambdas.DisplayListKt;
@@ -89,24 +93,6 @@ import mapandreduce.SimpleMapKt;
 import mapandreduce.SumKt;
 import mapandreduce.ReduceKt;
 import mapandreduce.MoreReduceKt;
-import whenexpressionscasts.WhenExpressionAndSmartCastsKt;
-import whenexpressionsdata.WhenExpressionAndDataClassesKt;
-import automaticstring.BicycleKt;
-import automaticstring.SurreyKt;
-import automaticstring.SurreyWithToStringKt;
-import companionobjects.ObjectsAndMethodsKt;
-import companionobjects1.ThisKeywordKt;
-import companionobjects2.ObjectKeywordKt;
-import companionobjects4.ObjectPropertyKt;
-import companionobjects5.ObjectMethodsKt;
-import companionobjects.ObjCounterKt;
-import inheritance.GreatApeKt;
-import baseclassinit.GreatApe2Kt;
-import baseclassinit.AuxiliaryInitializationKt;
-import overridingmethods.GreatApe3Kt;
-import enumerations.LevelKt;
-import abstractclasses.AbstractClassesKt;
-import lists2.ListOperationsKt;
 import combininglists.ZipperKt;
 import combininglists.IndexWithZipKt;
 import combininglists.ZipMapKt;
@@ -117,8 +103,21 @@ import referencesmutability.AnUnchangingVarKt;
 import referencesmutability.ReferencesKt;
 import referencesmutability.ImmutableMapsKt;
 import referencesmutability.MutableMapsKt;
+import inheritance.GreatApeKt;
+import baseclassinit.GreatApe2Kt;
+import baseclassinit.AuxiliaryInitializationKt;
+import overridingmethods.GreatApe3Kt;
+import abstractclasses.AbstractClassesKt;
+import enumerations.LevelKt;
 import colorblend.ColorBlendTestKt;
 import colorblendmap.ColorBlendMapKt;
+import whenexpressionsdata.WhenExpressionAndDataClassesKt;
+import companionobjects.ObjectsAndMethodsKt;
+import companionobjects1.ThisKeywordKt;
+import companionobjects2.ObjectKeywordKt;
+import companionobjects4.ObjectPropertyKt;
+import companionobjects5.ObjectMethodsKt;
+import companionobjects.ObjCounterKt;
 
 public class TestExamples {
     private final String[] args = new String[] {};
@@ -439,23 +438,8 @@ public class TestExamples {
     }
 
     @Test
-    public void testClassArg() {
-        ClassArgKt.main(args);
-    }
-
-    @Test
-    public void testVisibleClassArgs() {
-        VisibleClassArgsKt.main(args);
-    }
-
-    @Test
-    public void testMultipleClassArgs() {
-        MultipleClassArgsKt.main(args);
-    }
-
-    @Test
-    public void testVariableClassArgs() {
-        VariableClassArgsKt.main(args);
+    public void testWhenExpressionAndSmartCasts() {
+        WhenExpressionAndSmartCastsKt.main(args);
     }
 
     @Test
@@ -494,6 +478,26 @@ public class TestExamples {
     }
 
     @Test
+    public void testClassArg() {
+        ClassArgKt.main(args);
+    }
+
+    @Test
+    public void testVisibleClassArgs() {
+        VisibleClassArgsKt.main(args);
+    }
+
+    @Test
+    public void testMultipleClassArgs() {
+        MultipleClassArgsKt.main(args);
+    }
+
+    @Test
+    public void testVariableClassArgs() {
+        VariableClassArgsKt.main(args);
+    }
+
+    @Test
     public void testCoffee() {
         CoffeeKt.main(args);
     }
@@ -506,6 +510,21 @@ public class TestExamples {
     @Test
     public void testDataClasses() {
         DataClassesKt.main(args);
+    }
+
+    @Test
+    public void testBicycle() {
+        BicycleKt.main(args);
+    }
+
+    @Test
+    public void testSurrey() {
+        SurreyKt.main(args);
+    }
+
+    @Test
+    public void testSurreyWithToString() {
+        SurreyWithToStringKt.main(args);
     }
 
     @Test
@@ -574,96 +593,6 @@ public class TestExamples {
     }
 
     @Test
-    public void testWhenExpressionAndSmartCasts() {
-        WhenExpressionAndSmartCastsKt.main(args);
-    }
-
-    @Test
-    public void testWhenExpressionAndDataClasses() {
-        WhenExpressionAndDataClassesKt.main(args);
-    }
-
-    @Test
-    public void testBicycle() {
-        BicycleKt.main(args);
-    }
-
-    @Test
-    public void testSurrey() {
-        SurreyKt.main(args);
-    }
-
-    @Test
-    public void testSurreyWithToString() {
-        SurreyWithToStringKt.main(args);
-    }
-
-    @Test
-    public void testObjectsAndMethods() {
-        ObjectsAndMethodsKt.main(args);
-    }
-
-    @Test
-    public void testThisKeyword() {
-        ThisKeywordKt.main(args);
-    }
-
-    @Test
-    public void testObjectKeyword() {
-        ObjectKeywordKt.main(args);
-    }
-
-    @Test
-    public void testObjectProperty() {
-        ObjectPropertyKt.main(args);
-    }
-
-    @Test
-    public void testObjectMethods() {
-        ObjectMethodsKt.main(args);
-    }
-
-    @Test
-    public void testObjCounter() {
-        ObjCounterKt.main(args);
-    }
-
-    @Test
-    public void testGreatApe() {
-        GreatApeKt.main(args);
-    }
-
-    @Test
-    public void testGreatApe2() {
-        GreatApe2Kt.main(args);
-    }
-
-    @Test
-    public void testAuxiliaryInitialization() {
-        AuxiliaryInitializationKt.main(args);
-    }
-
-    @Test
-    public void testGreatApe3() {
-        GreatApe3Kt.main(args);
-    }
-
-    @Test
-    public void testLevel() {
-        LevelKt.main(args);
-    }
-
-    @Test
-    public void testAbstractClasses() {
-        AbstractClassesKt.main(args);
-    }
-
-    @Test
-    public void testListOperations() {
-        ListOperationsKt.main(args);
-    }
-
-    @Test
     public void testZipper() {
         ZipperKt.main(args);
     }
@@ -714,6 +643,36 @@ public class TestExamples {
     }
 
     @Test
+    public void testGreatApe() {
+        GreatApeKt.main(args);
+    }
+
+    @Test
+    public void testGreatApe2() {
+        GreatApe2Kt.main(args);
+    }
+
+    @Test
+    public void testAuxiliaryInitialization() {
+        AuxiliaryInitializationKt.main(args);
+    }
+
+    @Test
+    public void testGreatApe3() {
+        GreatApe3Kt.main(args);
+    }
+
+    @Test
+    public void testAbstractClasses() {
+        AbstractClassesKt.main(args);
+    }
+
+    @Test
+    public void testLevel() {
+        LevelKt.main(args);
+    }
+
+    @Test
     public void testColorBlendTest() {
         ColorBlendTestKt.main(args);
     }
@@ -721,5 +680,40 @@ public class TestExamples {
     @Test
     public void testColorBlendMap() {
         ColorBlendMapKt.main(args);
+    }
+
+    @Test
+    public void testWhenExpressionAndDataClasses() {
+        WhenExpressionAndDataClassesKt.main(args);
+    }
+
+    @Test
+    public void testObjectsAndMethods() {
+        ObjectsAndMethodsKt.main(args);
+    }
+
+    @Test
+    public void testThisKeyword() {
+        ThisKeywordKt.main(args);
+    }
+
+    @Test
+    public void testObjectKeyword() {
+        ObjectKeywordKt.main(args);
+    }
+
+    @Test
+    public void testObjectProperty() {
+        ObjectPropertyKt.main(args);
+    }
+
+    @Test
+    public void testObjectMethods() {
+        ObjectMethodsKt.main(args);
+    }
+
+    @Test
+    public void testObjCounter() {
+        ObjCounterKt.main(args);
     }
 }

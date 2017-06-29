@@ -1,4 +1,4 @@
-package datatypes1
+package datatypes
 
 fun main(args: Array<String>) {
   val whole: Int = 11              // [1]
@@ -20,9 +20,8 @@ target your string"""              // [5]
 11
 1.4
 true
-c
 A value
-Triple quotes allow
-you to have many lines
+Triple quotes let
+you have many lines
 target your string
 */

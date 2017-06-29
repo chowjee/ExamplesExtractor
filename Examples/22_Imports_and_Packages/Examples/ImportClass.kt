@@ -1,5 +1,4 @@
-package importsandpackages1
-
+package importsandpackages
 import java.util.Random
 
 fun main(args: Array<String>) {

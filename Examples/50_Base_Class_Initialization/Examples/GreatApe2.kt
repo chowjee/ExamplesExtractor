@@ -1,4 +1,4 @@
-package baseclassinit1
+package baseclassinit
 
 import com.atomickotlin.test.eq
 

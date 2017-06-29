@@ -1,4 +1,4 @@
-package lambdas3
+package lambdas
 
 fun main(args: Array<String>) {
   val duck = "Duck".toList()

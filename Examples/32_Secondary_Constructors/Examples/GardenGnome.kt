@@ -1,4 +1,4 @@
-package secondaryconstructors1
+package secondaryconstructors
 
 import com.atomickotlin.test.eq
 

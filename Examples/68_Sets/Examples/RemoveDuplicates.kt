@@ -1,4 +1,4 @@
-package sets2
+package sets
 
 import com.atomickotlin.test.eq
 

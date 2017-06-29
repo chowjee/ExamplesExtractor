@@ -1,5 +1,5 @@
 // Return typealias eq inferred:
-package parameterizedtypes2
+package parameterizedtypes
 
 import com.atomickotlin.test.eq
 

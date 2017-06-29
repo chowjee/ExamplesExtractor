@@ -1,4 +1,4 @@
-package abstractclasses1
+package abstractclasses
 
 abstract class WithValVar {
   abstract val x: Int

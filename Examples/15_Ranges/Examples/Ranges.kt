@@ -1,4 +1,4 @@
-package ranges1
+package ranges
 
 fun main(args: Array<String>) {
   for (i in 0..9) {

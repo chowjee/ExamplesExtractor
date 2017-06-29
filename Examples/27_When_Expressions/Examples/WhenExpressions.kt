@@ -1,4 +1,4 @@
-package whenexpressions1
+package whenexpressions
 
 import com.atomickotlin.test.eq
 

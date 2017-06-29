@@ -1,4 +1,4 @@
-package lambdas5
+package lambdas
 
 fun main(args: Array<String>) {
   val l = "abc"

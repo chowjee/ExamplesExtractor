@@ -1,4 +1,4 @@
-package variables1
+package variables
 
 fun main(args: Array<String>) {
   var whole = 11          // [1]

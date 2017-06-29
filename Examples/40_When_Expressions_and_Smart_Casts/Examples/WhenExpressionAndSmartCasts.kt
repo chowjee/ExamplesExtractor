@@ -1,4 +1,4 @@
-package whenexpressionscasts1
+package whenexpressionscasts
 
 import com.atomickotlin.test.eq
 

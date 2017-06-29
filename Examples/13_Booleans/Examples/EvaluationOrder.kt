@@ -1,4 +1,4 @@
-package booleans4
+package booleans
 
 fun main(args: Array<String>) {
   val sunny = true

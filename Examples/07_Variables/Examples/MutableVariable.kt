@@ -1,4 +1,4 @@
-package variables2
+package variables
 
 fun main(args: Array<String>) {
   var sum = 1

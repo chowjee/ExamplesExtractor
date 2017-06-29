@@ -1,7 +1,13 @@
 {
   "name" : "Examples",
   "files" : [ {
+    "filename" : "StringPlusNumber.kt",
+    "modifiable" : "true"
+  }, {
     "filename" : "Types.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "Inference.kt",
     "modifiable" : "true"
   } ],
   "args" : "",

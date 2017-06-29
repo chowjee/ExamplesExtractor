@@ -1,4 +1,4 @@
-package properties1
+package properties
 
 import com.atomickotlin.test.eq
 

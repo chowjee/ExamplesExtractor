@@ -1,4 +1,4 @@
-package namedanddefault1
+package namedanddefault
 
 class Color(red: Int, blue: Int, green: Int)
 

@@ -1,4 +1,4 @@
-package automaticstring1
+package automaticstring
 
 import com.atomickotlin.test.eq
 

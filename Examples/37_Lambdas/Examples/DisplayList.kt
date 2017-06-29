@@ -1,4 +1,4 @@
-package lambdas1
+package lambdas
 
 fun show(n: Int) {
   println("> " + n)

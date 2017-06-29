@@ -1,4 +1,4 @@
-package forandwhile4
+package forandwhile
 
 fun main(args: Array<String>) {
   for (ch in "abc") {

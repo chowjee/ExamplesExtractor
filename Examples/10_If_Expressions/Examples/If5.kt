@@ -1,4 +1,4 @@
-package ifexpressions5
+package ifexpressions
 
 fun main(args: Array<String>) {
   val y: Boolean = true

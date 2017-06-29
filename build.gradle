@@ -12,6 +12,7 @@ buildscript {
     }
 }
 
+apply plugin: 'java'
 apply plugin: 'kotlin'
 
 repositories {
@@ -30,4 +31,5 @@ sourceSets {
     test.kotlin.srcDirs += 'Examples'
     test.kotlin.srcDirs += 'Exercises'
     test.kotlin.srcDirs += 'TestExamples'
+    test.java.srcDirs += 'TestExamples'
 }

@@ -1,4 +1,4 @@
-package summary3
+package summary1
 
 fun main(args: Array<String>) {
   val hour = 6

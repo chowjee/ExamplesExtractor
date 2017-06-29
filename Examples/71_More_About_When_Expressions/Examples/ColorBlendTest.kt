@@ -1,6 +1,5 @@
-package colorblendTest
+package colorblend
 
-import colorBlend.blend
 import com.atomickotlin.test.eq
 import paintcolors.Color.*
 

@@ -1,7 +1,11 @@
-package functions4
+package functions
 
-fun multiplyByFour(x: Int) = x * 4       // [1]
+fun multiplyByFour(x: Int) = x * 4
 
 fun main(args: Array<String>) {
   val result: Int = multiplyByFour(5)
+  println(result)
 }
+/* Output:
+20
+*/

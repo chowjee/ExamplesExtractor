@@ -1,4 +1,4 @@
-package ifexpressions4
+package ifexpressions
 
 fun main(args: Array<String>) {
   val n: Int = -11

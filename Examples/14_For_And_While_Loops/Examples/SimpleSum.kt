@@ -1,4 +1,4 @@
-package forandwhile2
+package forandwhile
 
 fun main(args: Array<String>) {
   var sum = 0

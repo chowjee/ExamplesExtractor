@@ -1,4 +1,4 @@
-package testing2
+package testing
 
 import com.atomickotlin.test.eq
 

@@ -1,4 +1,4 @@
-package methodsinclasses2
+package methodsinclasses
 
 class Cat {
   fun meow(): String = "mew!"

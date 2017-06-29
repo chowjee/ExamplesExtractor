@@ -1,4 +1,4 @@
-package summary2
+package summary1
 
 fun main(args: Array<String>) {
   val activity = "swimming"

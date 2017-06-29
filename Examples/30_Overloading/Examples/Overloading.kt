@@ -1,4 +1,4 @@
-package overloading1
+package overloading
 
 import com.atomickotlin.test.eq
 

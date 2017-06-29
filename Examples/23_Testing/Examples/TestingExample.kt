@@ -1,5 +1,4 @@
-package testing1
-
+package testing
 import com.atomickotlin.test.eq
 
 fun main(args: Array<String>) {

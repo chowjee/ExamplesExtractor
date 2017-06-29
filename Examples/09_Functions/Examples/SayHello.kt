@@ -1,4 +1,4 @@
-package functions2
+package functions
 
 fun sayHello() {
   println("Hallo!")
@@ -12,3 +12,7 @@ fun main(args: Array<String>) {
   sayHello()
   sayGoodbye()
 }
+/* Output:
+Hallo!
+Tschüss!
+*/

@@ -1,4 +1,4 @@
-package lambdas6
+package lambdas
 
 class Later(val f: () -> Unit) {
   fun call(): Unit = f()

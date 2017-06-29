@@ -1,4 +1,4 @@
-package numbertypes2
+package numbertypes
 
 fun getBmiStatusInt(lbs: Int, height: Int): String {
   val bmi = lbs / (height * height) * 703.07

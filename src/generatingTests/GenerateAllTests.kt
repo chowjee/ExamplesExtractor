@@ -1,7 +1,7 @@
 package generatingTests
 
-import atoms.getExamplesForAtom
 import atoms.getAtomFiles
+import atoms.getExamplesForAtom
 import examplesExtractor.exampleRanges
 import java.io.File
 
@@ -11,8 +11,8 @@ fun main(args: Array<String>) {
 
 fun generateExampleTests(atoms: List<IntRange>) {
     val sourceFiles = getAllExamples(atoms)
-    val tests = generateTests(sourceFiles, "TestAll")
-    File("TestExamples/TestExamples.kt").writeText(tests)
+    val tests = generateTests(sourceFiles, "TestExamples")
+    File("TestExamples/TestExamples.java").writeText(tests)
 }
 
 fun getAllExamples(atoms: List<IntRange>): List<File> {
@@ -20,30 +20,40 @@ fun getAllExamples(atoms: List<IntRange>): List<File> {
     return atomFiles.flatMap { getExamplesForAtom(it) }
 }
 
-fun generateTests(files: List<File>, className: String) = buildString {
-    appendln("""
-                package test
-
-                import org.junit.Test
-
-                class $className {
-                    private val args = arrayOf<String>()
-                """.trimIndent())
+fun generateTests(files: List<File>, className: String): String {
+    val imports = mutableListOf<String>()
+    val tests = mutableListOf<String>()
     for (example in files) {
         val name = example.nameWithoutExtension
-        val packageName =
-                example.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
-                        ?: name.lowerCaseFirstLetter()
+        val classForFileName = name + "Kt"
+        val packageName = example.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+                ?: name.lowerCaseFirstLetter()
         if (example.readText().contains("fun main")) {
-            appendln()
-            if (name == "AtomicTest") continue
-            appendln("""
+            imports += "import $packageName.$classForFileName;"
+            tests += """
                 @Test
-                fun test${packageName.upperCaseFirstLetter()}() = $packageName.main(args)
-                """.replaceIndent("    "))
+                public void test${name.upperCaseFirstLetter()}() {
+                    $classForFileName.main(args);
+                }""".replaceIndent("    ")
         }
     }
-    append("}")
+
+    return buildString {
+        appendln("import org.junit.Test;")
+        for (import in imports) {
+            appendln(import)
+        }
+        appendln()
+        appendln("""
+                public class $className {
+                    private final String[] args = new String[] {};
+                """.trimIndent())
+        for (test in tests) {
+            appendln()
+            appendln(test)
+        }
+        append("}")
+    }
 }
 
 fun String.lowerCaseFirstLetter() = this[0].toLowerCase() + substring(1)

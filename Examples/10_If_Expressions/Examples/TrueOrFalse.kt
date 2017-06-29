@@ -1,4 +1,4 @@
-package ifexpressions7
+package ifexpressions
 
 fun trueOrFalse(exp: Boolean): String {
   if (exp) {

@@ -1,4 +1,4 @@
-package combininglists2
+package combininglists
 
 import com.atomickotlin.test.eq
 

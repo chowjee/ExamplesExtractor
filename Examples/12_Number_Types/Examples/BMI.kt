@@ -1,4 +1,4 @@
-package numbertypes1
+package numbertypes
 
 fun getBmiStatus(kg: Double, heightM: Double): String {
   val bmi = kg / (heightM * heightM)      // [1]

@@ -1,4 +1,4 @@
-package inheritance1
+package inheritance
 
 import com.atomickotlin.test.eq
 

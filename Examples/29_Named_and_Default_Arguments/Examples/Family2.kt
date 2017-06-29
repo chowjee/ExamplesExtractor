@@ -1,4 +1,4 @@
-package namedanddefault5
+package namedanddefault
 
 class Family2(mom: String, dad: String, vararg kids: String)
 

@@ -1,4 +1,4 @@
-package classarguments2
+package classarguments
 
 import com.atomickotlin.test.eq
 

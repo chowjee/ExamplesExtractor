@@ -1,4 +1,4 @@
-package referencesmutability5
+package referencesmutability
 
 import com.atomickotlin.test.eq
 

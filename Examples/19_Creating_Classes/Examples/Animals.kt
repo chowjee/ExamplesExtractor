@@ -1,4 +1,4 @@
-package creatingclasses1
+package creatingclasses
 
 // Create some classes:
 class Giraffe

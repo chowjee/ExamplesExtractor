@@ -1,7 +1,7 @@
 package rangesandfor
 
 fun inRange(n: Int, r: IntProgression) =
-  println("$n in $r? ${n in r}")
+    println("$n in $r? ${n in r}")
 
 fun testRange(r: IntProgression) {
   inRange(0, r)

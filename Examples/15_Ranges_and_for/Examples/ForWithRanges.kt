@@ -2,7 +2,7 @@ package rangesandfor
 
 fun showRange(r: IntProgression) {
   println(r)
-  for(i in r) {
+  for (i in r) {
     print("$i ")
   }
   println()
@@ -10,7 +10,7 @@ fun showRange(r: IntProgression) {
 
 fun showCharRange(r: CharProgression) {
   println(r)
-  for(i in r) {
+  for (i in r) {
     print("$i ")
   }
   println()

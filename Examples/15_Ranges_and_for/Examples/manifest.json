@@ -10,6 +10,10 @@
       "modifiable": "true"
     },
     {
+      "filename": "FloatingPointRange.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "ForWithRanges.kt",
       "modifiable": "true"
     },

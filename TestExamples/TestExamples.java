@@ -204,6 +204,11 @@ public class TestExamples {
     }
 
     @Test
+    public void testFloatingPointRange() {
+        rangesandfor.FloatingPointRangeKt.main(args);
+    }
+
+    @Test
     public void testForWithRanges() {
         rangesandfor.ForWithRangesKt.main(args);
     }

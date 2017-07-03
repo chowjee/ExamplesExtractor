@@ -2,10 +2,10 @@ package ifexpressions
 
 fun main(args: Array<String>) {
   val y: Boolean = true
-  if (!y) {
-    println("It's false")
+  if(!y) {
+    println("!y is false")
   }
 }
 /* Output:
-It's false
+!y is false
 */

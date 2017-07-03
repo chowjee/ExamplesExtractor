@@ -4,6 +4,9 @@
     "filename" : "StringTemplates.kt",
     "modifiable" : "true"
   }, {
+    "filename" : "StringConcatenation.kt",
+    "modifiable" : "true"
+  }, {
     "filename" : "TripleQuotes.kt",
     "modifiable" : "true"
   }, {

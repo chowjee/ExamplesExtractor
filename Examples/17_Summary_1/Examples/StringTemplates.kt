@@ -1,4 +1,4 @@
-package stringtemplates
+package summary1
 
 fun main(args: Array<String>) {
   val answer = 42

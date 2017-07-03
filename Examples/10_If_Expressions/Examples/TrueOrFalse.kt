@@ -1,8 +1,8 @@
 package ifexpressions
 
 fun trueOrFalse(exp: Boolean): String {
-  if (exp) {
-    return "It's true!"
+  if(exp) {
+    return "It's true!" // [1]
   }
   return "It's false"
 }

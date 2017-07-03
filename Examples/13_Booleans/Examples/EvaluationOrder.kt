@@ -6,19 +6,24 @@ fun main(args: Array<String>) {
   val exercise = false
   val temp = 55
 
-            // [1]:
+  // [1]:
   val happy1 = sunny && temp > 50 ||
       exercise && hoursSleep > 7
-  println(happy1) // true
+  println(happy1)
 
-            // [2]:
+  // [2]:
   val sameHappy1 = (sunny && temp > 50) ||
       (exercise && hoursSleep > 7)
-  println(sameHappy1) // true
+  println(sameHappy1)
 
-            // [3]:
+  // [3]:
   val notSame =
       (sunny && temp > 50 || exercise) &&
           hoursSleep > 7
-  println(notSame) // false
+  println(notSame)
 }
+/* Output:
+true
+true
+false
+*/

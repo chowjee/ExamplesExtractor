@@ -1,7 +1,10 @@
 {
   "name" : "Examples",
   "files" : [ {
-    "filename" : "Ranges.kt",
+    "filename" : "WhileLoop.kt",
+    "modifiable" : "true"
+  }, {
+    "filename" : "DoWhileLoop.kt",
     "modifiable" : "true"
   } ],
   "args" : "",

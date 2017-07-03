@@ -1,10 +1,10 @@
-package forandwhile
+package rangesandfor
 
 fun main(args: Array<String>) {
-  for (ch in "abc") {
+  for(ch in "Jnskhm ") {
     print(ch + 1)
   }
 }
 /* Output:
-bcd
+Kotlin!
 */

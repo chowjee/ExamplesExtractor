@@ -7,6 +7,10 @@ fun cube(x: Int): Int {
 fun bang(s: String) = s + "!"
 
 fun main(args: Array<String>) {
-  println(cube(3))  // 27
-  println(bang("pop")) // pop!
+  println(cube(3))
+  println(bang("pop"))
 }
+/* Output:
+27
+pop!
+*/

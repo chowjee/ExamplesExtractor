@@ -1,7 +1,8 @@
 {
-  "name" : "Examples",
-  "files" : [  ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

@@ -1,19 +1,24 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "Booleans1.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Booleans2.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Booleans3.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "EvaluationOrder.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Booleans1.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Booleans2.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Booleans3.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "EvaluationOrder.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

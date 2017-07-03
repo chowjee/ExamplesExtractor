@@ -1,5 +1,7 @@
 {
-  "name" : "13_Booleans",
-  "folder" : "13_Booleans",
-  "examples" : [ "Examples" ]
+  "name": "13_Booleans",
+  "folder": "13_Booleans",
+  "examples": [
+    "Examples"
+  ]
 }

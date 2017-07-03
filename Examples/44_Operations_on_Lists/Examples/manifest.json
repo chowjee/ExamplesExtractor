@@ -1,19 +1,24 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "SimpleMap.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Sum.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Reduce.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "MoreReduce.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "SimpleMap.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Sum.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Reduce.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MoreReduce.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

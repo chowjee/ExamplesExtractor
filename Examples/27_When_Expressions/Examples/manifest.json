@@ -1,13 +1,16 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "WhenExpressions.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "WhenAsStatement.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "WhenExpressions.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "WhenAsStatement.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

@@ -1,28 +1,36 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "ObjectsAndMethods.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ThisKeyword.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ObjectKeyword.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "CompanionObject.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ObjectProperty.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ObjectMethods.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ObjCounter.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ObjectsAndMethods.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ThisKeyword.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ObjectKeyword.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "CompanionObject.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ObjectProperty.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ObjectMethods.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ObjCounter.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

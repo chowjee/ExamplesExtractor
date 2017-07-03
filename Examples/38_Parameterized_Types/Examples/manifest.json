@@ -1,13 +1,16 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "ParameterizedTypes.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ParameterizedReturnTypes.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ParameterizedTypes.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ParameterizedReturnTypes.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

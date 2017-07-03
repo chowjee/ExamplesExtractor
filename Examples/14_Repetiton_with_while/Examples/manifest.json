@@ -1,13 +1,16 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "WhileLoop.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "DoWhileLoop.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "WhileLoop.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DoWhileLoop.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

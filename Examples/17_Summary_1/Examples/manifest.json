@@ -1,43 +1,56 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "BasicFunctions.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Booleans.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IfResult.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IfExpression.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "StringTemplates.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TripleQuotes.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "NumberTypes.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Overflow.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Truncation.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IterateThroughString.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IntRange.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "RangeMembership.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "BasicFunctions.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Booleans.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IfResult.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IfExpression.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "StringTemplates.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TripleQuotes.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "NumberTypes.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Overflow.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Truncation.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IterateThroughString.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IntRange.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "RangeMembership.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

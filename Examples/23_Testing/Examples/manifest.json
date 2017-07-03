@@ -1,19 +1,24 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "TestingExample.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TDDFail.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TDDStillFails.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TDDWorks.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "TestingExample.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TDDFail.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TDDStillFails.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TDDWorks.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

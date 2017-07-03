@@ -1,13 +1,16 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "GreatApe2.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "AuxiliaryInitialization.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "GreatApe2.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "AuxiliaryInitialization.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

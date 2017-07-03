@@ -1,5 +1,7 @@
 {
-  "name" : "62_Late_Initialized_Properties",
-  "folder" : "62_Late_Initialized_Properties",
-  "examples" : [ "Examples" ]
+  "name": "62_Late_Initialized_Properties",
+  "folder": "62_Late_Initialized_Properties",
+  "examples": [
+    "Examples"
+  ]
 }

@@ -1,5 +1,7 @@
 {
-  "name" : "39_Nullable_Types",
-  "folder" : "39_Nullable_Types",
-  "examples" : [ "Examples" ]
+  "name": "39_Nullable_Types",
+  "folder": "39_Nullable_Types",
+  "examples": [
+    "Examples"
+  ]
 }

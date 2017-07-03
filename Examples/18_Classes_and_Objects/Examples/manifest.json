@@ -1,13 +1,16 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "IntRanges.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "RangeSum.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "IntRanges.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "RangeSum.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

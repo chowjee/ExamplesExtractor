@@ -1,31 +1,40 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "InferInt.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Modulus.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IntDivisionTruncates.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "BMI.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IntegerMath.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "IntegerOverflow.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "UsingLongs.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "BiggestLong.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "InferInt.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Modulus.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IntDivisionTruncates.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "BMI.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IntegerMath.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IntegerOverflow.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "UsingLongs.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "BiggestLong.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

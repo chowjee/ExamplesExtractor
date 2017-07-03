@@ -1,5 +1,7 @@
 {
-  "name" : "19_Creating_Classes",
-  "folder" : "19_Creating_Classes",
-  "examples" : [ "Examples" ]
+  "name": "19_Creating_Classes",
+  "folder": "19_Creating_Classes",
+  "examples": [
+    "Examples"
+  ]
 }

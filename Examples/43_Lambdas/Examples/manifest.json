@@ -1,28 +1,36 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "DisplayList.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "DisplayListWithLambda.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "DisplayDuck.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "DisplayDuckTestable.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TwoArgAnonymous.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "CallLater.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "AssignAnonymous.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "DisplayList.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DisplayListWithLambda.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DisplayDuck.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DisplayDuckTestable.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TwoArgAnonymous.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "CallLater.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "AssignAnonymous.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

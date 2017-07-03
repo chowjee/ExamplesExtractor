@@ -1,19 +1,24 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "StringTemplates.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "StringConcatenation.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "TripleQuotes.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "ExpressionInStringTemplate.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "StringTemplates.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "StringConcatenation.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TripleQuotes.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ExpressionInStringTemplate.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

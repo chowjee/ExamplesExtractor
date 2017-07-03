@@ -1,5 +1,7 @@
 {
-  "name" : "28_Smart_Casts",
-  "folder" : "28_Smart_Casts",
-  "examples" : [ "Examples" ]
+  "name": "28_Smart_Casts",
+  "folder": "28_Smart_Casts",
+  "examples": [
+    "Examples"
+  ]
 }

@@ -1,10 +1,12 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "DataClasses.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "DataClasses.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

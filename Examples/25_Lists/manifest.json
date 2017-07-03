@@ -1,5 +1,7 @@
 {
-  "name" : "25_Lists",
-  "folder" : "25_Lists",
-  "examples" : [ "Examples" ]
+  "name": "25_Lists",
+  "folder": "25_Lists",
+  "examples": [
+    "Examples"
+  ]
 }

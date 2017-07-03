@@ -1,16 +1,20 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "Vars.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "MutableVariable.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "Vals.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Vars.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MutableVariable.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Vals.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

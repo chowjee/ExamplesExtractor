@@ -1,5 +1,7 @@
 {
-  "name" : "09_Functions",
-  "folder" : "09_Functions",
-  "examples" : [ "Examples" ]
+  "name": "09_Functions",
+  "folder": "09_Functions",
+  "examples": [
+    "Examples"
+  ]
 }

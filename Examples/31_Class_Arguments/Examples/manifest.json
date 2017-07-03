@@ -1,19 +1,24 @@
 {
-  "name" : "Examples",
-  "files" : [ {
-    "filename" : "ClassArg.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "VisibleClassArgs.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "MultipleClassArgs.kt",
-    "modifiable" : "true"
-  }, {
-    "filename" : "VariableClassArgs.kt",
-    "modifiable" : "true"
-  } ],
-  "args" : "",
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ClassArg.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "VisibleClassArgs.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MultipleClassArgs.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "VariableClassArgs.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }

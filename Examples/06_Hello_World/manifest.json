@@ -1,5 +1,7 @@
 {
-  "name" : "06_Hello_World",
-  "folder" : "06_Hello_World",
-  "examples" : [ "Examples" ]
+  "name": "06_Hello_World",
+  "folder": "06_Hello_World",
+  "examples": [
+    "Examples"
+  ]
 }

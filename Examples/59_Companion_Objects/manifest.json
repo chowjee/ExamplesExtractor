@@ -1,5 +1,7 @@
 {
-  "name" : "59_Companion_Objects",
-  "folder" : "59_Companion_Objects",
-  "examples" : [ "Examples" ]
+  "name": "59_Companion_Objects",
+  "folder": "59_Companion_Objects",
+  "examples": [
+    "Examples"
+  ]
 }

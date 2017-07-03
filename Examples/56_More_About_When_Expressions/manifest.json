@@ -1,5 +1,7 @@
 {
-  "name" : "56_More_About_When_Expressions",
-  "folder" : "56_More_About_When_Expressions",
-  "examples" : [ "Examples" ]
+  "name": "56_More_About_When_Expressions",
+  "folder": "56_More_About_When_Expressions",
+  "examples": [
+    "Examples"
+  ]
 }

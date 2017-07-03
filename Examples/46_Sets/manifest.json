@@ -1,5 +1,7 @@
 {
-  "name" : "46_Sets",
-  "folder" : "46_Sets",
-  "examples" : [ "Examples" ]
+  "name": "46_Sets",
+  "folder": "46_Sets",
+  "examples": [
+    "Examples"
+  ]
 }

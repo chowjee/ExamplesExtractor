@@ -15,18 +15,20 @@ fun manifestForExercise() =
 
 fun manifestForExamples(name: String, examples: List<String>) =
         """{
-  "name" : "$name",
-  "files" : [ ${examples.joinToString(transform = ::fileInfo)} ],
-  "args" : "",
+  "name": "$name",
+  "files": [${examples.joinToString(",", transform = ::fileInfo)}
+  ],
+  "args": "",
   "searchForMain": false,
-  "confType" : "java"
+  "confType": "java"
 }"""
 
 private fun fileInfo(name: String) =
-        """{
-    "filename" : "$name",
-    "modifiable" : "true"
-  }"""
+        """
+    {
+      "filename": "$name",
+      "modifiable": "true"
+    }"""
 
 
 fun topLevelManifest(chapters: List<String>) =
@@ -38,9 +40,11 @@ fun topLevelManifest(chapters: List<String>) =
 
 fun manifestForExamplesFolder(name: String) =
         """{
-  "name" : "$name",
-  "folder" : "$name",
-  "examples" : [ "Examples" ]
+  "name": "$name",
+  "folder": "$name",
+  "examples": [
+    "Examples"
+  ]
 }"""
 
 private fun List<String>.asStringsInJson() = joinToString(",\n    ") { "\"$it\"" }

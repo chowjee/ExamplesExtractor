@@ -1,719 +1,710 @@
 import org.junit.Test;
-import helloworld.EmptyProgramKt;
-import helloworld.HelloWorldKt;
-import variables.VarsKt;
-import variables.MutableVariableKt;
-import variables.ValsKt;
-import datatypes.StringPlusNumberKt;
-import datatypes.TypesKt;
-import datatypes.InferenceKt;
-import functions.MultiplyByTwoKt;
-import functions.SayHelloKt;
-import functions.MultiplyByThreeKt;
-import functions.MultiplyByFourKt;
-import ifexpressions.If1Kt;
-import ifexpressions.If2Kt;
-import ifexpressions.If3Kt;
-import ifexpressions.If4Kt;
-import ifexpressions.If5Kt;
-import ifexpressions.If6Kt;
-import ifexpressions.TrueOrFalseKt;
-import ifexpressions.OneOrTheOtherKt;
-import stringtemplates.StringTemplatesKt;
-import stringtemplates.TripleQuotesKt;
-import stringtemplates.ExpressionInStringTemplateKt;
-import numbertypes.BMIKt;
-import numbertypes.IntegerMathKt;
-import numbertypes.IntegerOverflowKt;
-import numbertypes.ComputingLongsKt;
-import booleans.Booleans1Kt;
-import booleans.Booleans2Kt;
-import booleans.Booleans3Kt;
-import booleans.EvaluationOrderKt;
-import forandwhile.RepeatThreeTimesKt;
-import forandwhile.SimpleSumKt;
-import forandwhile.IterateOverString1Kt;
-import forandwhile.IterateOverString2Kt;
-import forandwhile.IterateOverString3Kt;
-import forandwhile.EvalBooleanKt;
-import ranges.RangesKt;
-import summary1.BasicFunctionsKt;
-import summary1.IfExpressionKt;
-import summary1.BooleansKt;
-import creatingclasses.AnimalsKt;
-import methodsinclasses.CatKt;
-import methodsinclasses.HamsterKt;
-import importsandpackages.ImportClassKt;
-import importsandpackages.ImportMultipleKt;
-import importsandpackages.ImportEverythingKt;
-import importsandpackages.FullyQualifyKt;
-import importsandpackages.ImportPythagoreanKt;
-import testing.TestingExampleKt;
-import testing.TDDFailKt;
-import testing2.TDDStillFailsKt;
-import testing3.TDDWorksKt;
-import properties.CupKt;
-import properties.Cup2Kt;
-import lists.ListsKt;
-import summary2.UseALibraryKt;
-import summary2.UsingAtomicTestKt;
-import summary2.ListCollectionKt;
-import summary2.ClassBodiesKt;
-import summary2.TemperatureKt;
-import summary2.TicTacToeKt;
-import whenexpressions.WhenExpressionsKt;
-import whenexpressionscasts.WhenExpressionAndSmartCastsKt;
-import namedanddefault.NamedArgumentsKt;
-import namedanddefault.NamedArgumentsOrderKt;
-import namedanddefault.NamedAndDefaultArgsKt;
-import namedanddefault.FamilyKt;
-import namedanddefault.Family2Kt;
-import overloading.OverloadingKt;
-import overloading.OverloadingAddKt;
-import classarguments.ClassArgKt;
-import classarguments.VisibleClassArgsKt;
-import classarguments.MultipleClassArgsKt;
-import classarguments.VariableClassArgsKt;
-import constructors.CoffeeKt;
-import secondaryconstructors.GardenGnomeKt;
-import dataclasses.DataClassesKt;
-import automaticstring.BicycleKt;
-import automaticstring.SurreyKt;
-import automaticstring.SurreyWithToStringKt;
-import parameterizedtypes.ParameterizedTypesKt;
-import parameterizedtypes.ParameterizedReturnTypesKt;
-import lambdas.DisplayListKt;
-import lambdas.DisplayListWithLambdaKt;
-import lambdas.DisplayDuckKt;
-import lambdas.DisplayDuckTestableKt;
-import lambdas.TwoArgAnonymousKt;
-import lambdas.CallLaterKt;
-import lambdas.AssignAnonymousKt;
-import mapandreduce.SimpleMapKt;
-import mapandreduce.SumKt;
-import mapandreduce.ReduceKt;
-import mapandreduce.MoreReduceKt;
-import combininglists.ZipperKt;
-import combininglists.IndexWithZipKt;
-import combininglists.ZipMapKt;
-import sets.SetsKt;
-import sets.RemoveDuplicatesKt;
-import referencesmutability.ChangingAValKt;
-import referencesmutability.AnUnchangingVarKt;
-import referencesmutability.ReferencesKt;
-import referencesmutability.ImmutableMapsKt;
-import referencesmutability.MutableMapsKt;
-import inheritance.GreatApeKt;
-import baseclassinit.GreatApe2Kt;
-import baseclassinit.AuxiliaryInitializationKt;
-import overridingmethods.GreatApe3Kt;
-import abstractclasses.AbstractClassesKt;
-import enumerations.LevelKt;
-import colorblend.ColorBlendTestKt;
-import colorblendmap.ColorBlendMapKt;
-import whenexpressionsdata.WhenExpressionAndDataClassesKt;
-import companionobjects.ObjectsAndMethodsKt;
-import companionobjects1.ThisKeywordKt;
-import companionobjects2.ObjectKeywordKt;
-import companionobjects4.ObjectPropertyKt;
-import companionobjects5.ObjectMethodsKt;
-import companionobjects.ObjCounterKt;
 
 public class TestExamples {
     private final String[] args = new String[] {};
 
     @Test
     public void testEmptyProgram() {
-        EmptyProgramKt.main(args);
+        helloworld.EmptyProgramKt.main(args);
     }
 
     @Test
     public void testHelloWorld() {
-        HelloWorldKt.main(args);
+        helloworld.HelloWorldKt.main(args);
     }
 
     @Test
     public void testVars() {
-        VarsKt.main(args);
+        variables.VarsKt.main(args);
     }
 
     @Test
     public void testMutableVariable() {
-        MutableVariableKt.main(args);
+        variables.MutableVariableKt.main(args);
     }
 
     @Test
     public void testVals() {
-        ValsKt.main(args);
+        variables.ValsKt.main(args);
     }
 
     @Test
     public void testStringPlusNumber() {
-        StringPlusNumberKt.main(args);
+        datatypes.StringPlusNumberKt.main(args);
     }
 
     @Test
     public void testTypes() {
-        TypesKt.main(args);
+        datatypes.TypesKt.main(args);
     }
 
     @Test
     public void testInference() {
-        InferenceKt.main(args);
+        datatypes.InferenceKt.main(args);
     }
 
     @Test
     public void testMultiplyByTwo() {
-        MultiplyByTwoKt.main(args);
+        functions.MultiplyByTwoKt.main(args);
     }
 
     @Test
     public void testSayHello() {
-        SayHelloKt.main(args);
+        functions.SayHelloKt.main(args);
     }
 
     @Test
     public void testMultiplyByThree() {
-        MultiplyByThreeKt.main(args);
+        functions.MultiplyByThreeKt.main(args);
     }
 
     @Test
     public void testMultiplyByFour() {
-        MultiplyByFourKt.main(args);
+        functions.MultiplyByFourKt.main(args);
     }
 
     @Test
     public void testIf1() {
-        If1Kt.main(args);
+        ifexpressions.If1Kt.main(args);
     }
 
     @Test
     public void testIf2() {
-        If2Kt.main(args);
+        ifexpressions.If2Kt.main(args);
     }
 
     @Test
     public void testIf3() {
-        If3Kt.main(args);
+        ifexpressions.If3Kt.main(args);
     }
 
     @Test
     public void testIf4() {
-        If4Kt.main(args);
+        ifexpressions.If4Kt.main(args);
     }
 
     @Test
     public void testIf5() {
-        If5Kt.main(args);
+        ifexpressions.If5Kt.main(args);
     }
 
     @Test
     public void testIf6() {
-        If6Kt.main(args);
+        ifexpressions.If6Kt.main(args);
     }
 
     @Test
     public void testTrueOrFalse() {
-        TrueOrFalseKt.main(args);
+        ifexpressions.TrueOrFalseKt.main(args);
     }
 
     @Test
     public void testOneOrTheOther() {
-        OneOrTheOtherKt.main(args);
+        ifexpressions.OneOrTheOtherKt.main(args);
     }
 
     @Test
     public void testStringTemplates() {
-        StringTemplatesKt.main(args);
+        stringtemplates.StringTemplatesKt.main(args);
+    }
+
+    @Test
+    public void testStringConcatenation() {
+        stringtemplates.StringConcatenationKt.main(args);
     }
 
     @Test
     public void testTripleQuotes() {
-        TripleQuotesKt.main(args);
+        stringtemplates.TripleQuotesKt.main(args);
     }
 
     @Test
     public void testExpressionInStringTemplate() {
-        ExpressionInStringTemplateKt.main(args);
+        stringtemplates.ExpressionInStringTemplateKt.main(args);
+    }
+
+    @Test
+    public void testInferInt() {
+        numbertypes.InferIntKt.main(args);
+    }
+
+    @Test
+    public void testModulus() {
+        numbertypes.ModulusKt.main(args);
+    }
+
+    @Test
+    public void testIntDivisionTruncates() {
+        numbertypes.IntDivisionTruncatesKt.main(args);
     }
 
     @Test
     public void testBMI() {
-        BMIKt.main(args);
+        numbertypes.BMIKt.main(args);
     }
 
     @Test
     public void testIntegerMath() {
-        IntegerMathKt.main(args);
+        numbertypes.IntegerMathKt.main(args);
     }
 
     @Test
     public void testIntegerOverflow() {
-        IntegerOverflowKt.main(args);
+        numbertypes.IntegerOverflowKt.main(args);
     }
 
     @Test
-    public void testComputingLongs() {
-        ComputingLongsKt.main(args);
+    public void testUsingLongs() {
+        numbertypes.UsingLongsKt.main(args);
+    }
+
+    @Test
+    public void testBiggestLong() {
+        numbertypes.BiggestLongKt.main(args);
     }
 
     @Test
     public void testBooleans1() {
-        Booleans1Kt.main(args);
+        booleans.Booleans1Kt.main(args);
     }
 
     @Test
     public void testBooleans2() {
-        Booleans2Kt.main(args);
+        booleans.Booleans2Kt.main(args);
     }
 
     @Test
     public void testBooleans3() {
-        Booleans3Kt.main(args);
+        booleans.Booleans3Kt.main(args);
     }
 
     @Test
     public void testEvaluationOrder() {
-        EvaluationOrderKt.main(args);
+        booleans.EvaluationOrderKt.main(args);
+    }
+
+    @Test
+    public void testWhileLoop() {
+        whilerepetition1.WhileLoopKt.main(args);
+    }
+
+    @Test
+    public void testDoWhileLoop() {
+        whilerepetition2.DoWhileLoopKt.main(args);
+    }
+
+    @Test
+    public void testDefiningRanges() {
+        rangesandfor.DefiningRangesKt.main(args);
+    }
+
+    @Test
+    public void testRangeMembership() {
+        rangesandfor.RangeMembershipKt.main(args);
+    }
+
+    @Test
+    public void testForWithRanges() {
+        rangesandfor.ForWithRangesKt.main(args);
     }
 
     @Test
     public void testRepeatThreeTimes() {
-        RepeatThreeTimesKt.main(args);
+        rangesandfor.RepeatThreeTimesKt.main(args);
     }
 
     @Test
-    public void testSimpleSum() {
-        SimpleSumKt.main(args);
+    public void testSumUsingRange() {
+        rangesandfor.SumUsingRangeKt.main(args);
     }
 
     @Test
-    public void testIterateOverString1() {
-        IterateOverString1Kt.main(args);
+    public void testIndexIntoString() {
+        rangesandfor.IndexIntoStringKt.main(args);
     }
 
     @Test
-    public void testIterateOverString2() {
-        IterateOverString2Kt.main(args);
+    public void testAddingIntToChar() {
+        rangesandfor.AddingIntToCharKt.main(args);
     }
 
     @Test
-    public void testIterateOverString3() {
-        IterateOverString3Kt.main(args);
+    public void testIterateOverString() {
+        rangesandfor.IterateOverStringKt.main(args);
     }
 
     @Test
-    public void testEvalBoolean() {
-        EvalBooleanKt.main(args);
+    public void testContainsChar() {
+        rangesandfor.ContainsCharKt.main(args);
     }
 
     @Test
-    public void testRanges() {
-        RangesKt.main(args);
+    public void testForLoopIsAStatement() {
+        expressionsandstatements.ForLoopIsAStatementKt.main(args);
+    }
+
+    @Test
+    public void testPrintlnReturnsUnit() {
+        expressionsandstatements.PrintlnReturnsUnitKt.main(args);
     }
 
     @Test
     public void testBasicFunctions() {
-        BasicFunctionsKt.main(args);
-    }
-
-    @Test
-    public void testIfExpression() {
-        IfExpressionKt.main(args);
+        summary1.BasicFunctionsKt.main(args);
     }
 
     @Test
     public void testBooleans() {
-        BooleansKt.main(args);
+        summary1.BooleansKt.main(args);
+    }
+
+    @Test
+    public void testIfResult() {
+        summary1.IfResultKt.main(args);
+    }
+
+    @Test
+    public void testIfExpression() {
+        summary1.IfExpressionKt.main(args);
+    }
+
+    @Test
+    public void testStringTemplates1() {
+        summary1.StringTemplatesKt.main(args);
+    }
+
+    @Test
+    public void testTripleQuotes1() {
+        summary1.TripleQuotesKt.main(args);
+    }
+
+    @Test
+    public void testNumberTypes() {
+        summary1.NumberTypesKt.main(args);
+    }
+
+    @Test
+    public void testOverflow() {
+        summary1.OverflowKt.main(args);
+    }
+
+    @Test
+    public void testTruncation() {
+        summary1.TruncationKt.main(args);
+    }
+
+    @Test
+    public void testIterateThroughString() {
+        summary1.IterateThroughStringKt.main(args);
+    }
+
+    @Test
+    public void testIntRange() {
+        summary1.IntRangeKt.main(args);
+    }
+
+    @Test
+    public void testRangeMembership1() {
+        summary1.RangeMembershipKt.main(args);
+    }
+
+    @Test
+    public void testIntRanges() {
+        classesandobjects.IntRangesKt.main(args);
+    }
+
+    @Test
+    public void testRangeSum() {
+        classesandobjects.RangeSumKt.main(args);
     }
 
     @Test
     public void testAnimals() {
-        AnimalsKt.main(args);
+        creatingclasses.AnimalsKt.main(args);
     }
 
     @Test
     public void testCat() {
-        CatKt.main(args);
+        methodsinclasses.CatKt.main(args);
     }
 
     @Test
     public void testHamster() {
-        HamsterKt.main(args);
+        methodsinclasses.HamsterKt.main(args);
     }
 
     @Test
     public void testImportClass() {
-        ImportClassKt.main(args);
+        importsandpackages.ImportClassKt.main(args);
     }
 
     @Test
     public void testImportMultiple() {
-        ImportMultipleKt.main(args);
+        importsandpackages.ImportMultipleKt.main(args);
     }
 
     @Test
     public void testImportEverything() {
-        ImportEverythingKt.main(args);
+        importsandpackages.ImportEverythingKt.main(args);
     }
 
     @Test
     public void testFullyQualify() {
-        FullyQualifyKt.main(args);
+        importsandpackages.FullyQualifyKt.main(args);
     }
 
     @Test
     public void testImportPythagorean() {
-        ImportPythagoreanKt.main(args);
+        importsandpackages.ImportPythagoreanKt.main(args);
     }
 
     @Test
     public void testTestingExample() {
-        TestingExampleKt.main(args);
+        testing.TestingExampleKt.main(args);
     }
 
     @Test
     public void testTDDFail() {
-        TDDFailKt.main(args);
+        testing.TDDFailKt.main(args);
     }
 
     @Test
     public void testTDDStillFails() {
-        TDDStillFailsKt.main(args);
+        testing2.TDDStillFailsKt.main(args);
     }
 
     @Test
     public void testTDDWorks() {
-        TDDWorksKt.main(args);
+        testing3.TDDWorksKt.main(args);
     }
 
     @Test
     public void testCup() {
-        CupKt.main(args);
+        properties.CupKt.main(args);
     }
 
     @Test
     public void testCup2() {
-        Cup2Kt.main(args);
+        properties.Cup2Kt.main(args);
     }
 
     @Test
     public void testLists() {
-        ListsKt.main(args);
+        lists.ListsKt.main(args);
     }
 
     @Test
     public void testUseALibrary() {
-        UseALibraryKt.main(args);
+        summary2.UseALibraryKt.main(args);
     }
 
     @Test
     public void testUsingAtomicTest() {
-        UsingAtomicTestKt.main(args);
+        summary2.UsingAtomicTestKt.main(args);
     }
 
     @Test
     public void testListCollection() {
-        ListCollectionKt.main(args);
+        summary2.ListCollectionKt.main(args);
     }
 
     @Test
     public void testClassBodies() {
-        ClassBodiesKt.main(args);
+        summary2.ClassBodiesKt.main(args);
     }
 
     @Test
     public void testTemperature() {
-        TemperatureKt.main(args);
+        summary2.TemperatureKt.main(args);
     }
 
     @Test
     public void testTicTacToe() {
-        TicTacToeKt.main(args);
+        summary2.TicTacToeKt.main(args);
     }
 
     @Test
     public void testWhenExpressions() {
-        WhenExpressionsKt.main(args);
+        whenexpressions.WhenExpressionsKt.main(args);
     }
 
     @Test
     public void testWhenExpressionAndSmartCasts() {
-        WhenExpressionAndSmartCastsKt.main(args);
+        whenexpressionscasts.WhenExpressionAndSmartCastsKt.main(args);
     }
 
     @Test
     public void testNamedArguments() {
-        NamedArgumentsKt.main(args);
+        namedanddefault.NamedArgumentsKt.main(args);
     }
 
     @Test
     public void testNamedArgumentsOrder() {
-        NamedArgumentsOrderKt.main(args);
+        namedanddefault.NamedArgumentsOrderKt.main(args);
     }
 
     @Test
     public void testNamedAndDefaultArgs() {
-        NamedAndDefaultArgsKt.main(args);
+        namedanddefault.NamedAndDefaultArgsKt.main(args);
     }
 
     @Test
     public void testFamily() {
-        FamilyKt.main(args);
+        namedanddefault.FamilyKt.main(args);
     }
 
     @Test
     public void testFamily2() {
-        Family2Kt.main(args);
+        namedanddefault.Family2Kt.main(args);
     }
 
     @Test
     public void testOverloading() {
-        OverloadingKt.main(args);
+        overloading.OverloadingKt.main(args);
     }
 
     @Test
     public void testOverloadingAdd() {
-        OverloadingAddKt.main(args);
+        overloading.OverloadingAddKt.main(args);
     }
 
     @Test
     public void testClassArg() {
-        ClassArgKt.main(args);
+        classarguments.ClassArgKt.main(args);
     }
 
     @Test
     public void testVisibleClassArgs() {
-        VisibleClassArgsKt.main(args);
+        classarguments.VisibleClassArgsKt.main(args);
     }
 
     @Test
     public void testMultipleClassArgs() {
-        MultipleClassArgsKt.main(args);
+        classarguments.MultipleClassArgsKt.main(args);
     }
 
     @Test
     public void testVariableClassArgs() {
-        VariableClassArgsKt.main(args);
+        classarguments.VariableClassArgsKt.main(args);
     }
 
     @Test
     public void testCoffee() {
-        CoffeeKt.main(args);
+        constructors.CoffeeKt.main(args);
     }
 
     @Test
     public void testGardenGnome() {
-        GardenGnomeKt.main(args);
+        secondaryconstructors.GardenGnomeKt.main(args);
     }
 
     @Test
     public void testDataClasses() {
-        DataClassesKt.main(args);
+        dataclasses.DataClassesKt.main(args);
     }
 
     @Test
     public void testBicycle() {
-        BicycleKt.main(args);
+        automaticstring.BicycleKt.main(args);
     }
 
     @Test
     public void testSurrey() {
-        SurreyKt.main(args);
+        automaticstring.SurreyKt.main(args);
     }
 
     @Test
     public void testSurreyWithToString() {
-        SurreyWithToStringKt.main(args);
+        automaticstring.SurreyWithToStringKt.main(args);
     }
 
     @Test
     public void testParameterizedTypes() {
-        ParameterizedTypesKt.main(args);
+        parameterizedtypes.ParameterizedTypesKt.main(args);
     }
 
     @Test
     public void testParameterizedReturnTypes() {
-        ParameterizedReturnTypesKt.main(args);
+        parameterizedtypes.ParameterizedReturnTypesKt.main(args);
     }
 
     @Test
     public void testDisplayList() {
-        DisplayListKt.main(args);
+        lambdas.DisplayListKt.main(args);
     }
 
     @Test
     public void testDisplayListWithLambda() {
-        DisplayListWithLambdaKt.main(args);
+        lambdas.DisplayListWithLambdaKt.main(args);
     }
 
     @Test
     public void testDisplayDuck() {
-        DisplayDuckKt.main(args);
+        lambdas.DisplayDuckKt.main(args);
     }
 
     @Test
     public void testDisplayDuckTestable() {
-        DisplayDuckTestableKt.main(args);
+        lambdas.DisplayDuckTestableKt.main(args);
     }
 
     @Test
     public void testTwoArgAnonymous() {
-        TwoArgAnonymousKt.main(args);
+        lambdas.TwoArgAnonymousKt.main(args);
     }
 
     @Test
     public void testCallLater() {
-        CallLaterKt.main(args);
+        lambdas.CallLaterKt.main(args);
     }
 
     @Test
     public void testAssignAnonymous() {
-        AssignAnonymousKt.main(args);
+        lambdas.AssignAnonymousKt.main(args);
     }
 
     @Test
     public void testSimpleMap() {
-        SimpleMapKt.main(args);
+        mapandreduce.SimpleMapKt.main(args);
     }
 
     @Test
     public void testSum() {
-        SumKt.main(args);
+        mapandreduce.SumKt.main(args);
     }
 
     @Test
     public void testReduce() {
-        ReduceKt.main(args);
+        mapandreduce.ReduceKt.main(args);
     }
 
     @Test
     public void testMoreReduce() {
-        MoreReduceKt.main(args);
+        mapandreduce.MoreReduceKt.main(args);
     }
 
     @Test
     public void testZipper() {
-        ZipperKt.main(args);
+        combininglists.ZipperKt.main(args);
     }
 
     @Test
     public void testIndexWithZip() {
-        IndexWithZipKt.main(args);
+        combininglists.IndexWithZipKt.main(args);
     }
 
     @Test
     public void testZipMap() {
-        ZipMapKt.main(args);
+        combininglists.ZipMapKt.main(args);
     }
 
     @Test
     public void testSets() {
-        SetsKt.main(args);
+        sets.SetsKt.main(args);
     }
 
     @Test
     public void testRemoveDuplicates() {
-        RemoveDuplicatesKt.main(args);
+        sets.RemoveDuplicatesKt.main(args);
     }
 
     @Test
     public void testChangingAVal() {
-        ChangingAValKt.main(args);
+        referencesmutability.ChangingAValKt.main(args);
     }
 
     @Test
     public void testAnUnchangingVar() {
-        AnUnchangingVarKt.main(args);
+        referencesmutability.AnUnchangingVarKt.main(args);
     }
 
     @Test
     public void testReferences() {
-        ReferencesKt.main(args);
+        referencesmutability.ReferencesKt.main(args);
     }
 
     @Test
     public void testImmutableMaps() {
-        ImmutableMapsKt.main(args);
+        referencesmutability.ImmutableMapsKt.main(args);
     }
 
     @Test
     public void testMutableMaps() {
-        MutableMapsKt.main(args);
+        referencesmutability.MutableMapsKt.main(args);
     }
 
     @Test
     public void testGreatApe() {
-        GreatApeKt.main(args);
+        inheritance.GreatApeKt.main(args);
     }
 
     @Test
     public void testGreatApe2() {
-        GreatApe2Kt.main(args);
+        baseclassinit.GreatApe2Kt.main(args);
     }
 
     @Test
     public void testAuxiliaryInitialization() {
-        AuxiliaryInitializationKt.main(args);
+        baseclassinit.AuxiliaryInitializationKt.main(args);
     }
 
     @Test
     public void testGreatApe3() {
-        GreatApe3Kt.main(args);
+        overridingmethods.GreatApe3Kt.main(args);
     }
 
     @Test
     public void testAbstractClasses() {
-        AbstractClassesKt.main(args);
+        abstractclasses.AbstractClassesKt.main(args);
     }
 
     @Test
     public void testLevel() {
-        LevelKt.main(args);
+        enumerations.LevelKt.main(args);
     }
 
     @Test
     public void testColorBlendTest() {
-        ColorBlendTestKt.main(args);
+        colorblend.ColorBlendTestKt.main(args);
     }
 
     @Test
     public void testColorBlendMap() {
-        ColorBlendMapKt.main(args);
+        colorblendmap.ColorBlendMapKt.main(args);
     }
 
     @Test
     public void testWhenExpressionAndDataClasses() {
-        WhenExpressionAndDataClassesKt.main(args);
+        whenexpressionsdata.WhenExpressionAndDataClassesKt.main(args);
     }
 
     @Test
     public void testObjectsAndMethods() {
-        ObjectsAndMethodsKt.main(args);
+        companionobjects.ObjectsAndMethodsKt.main(args);
     }
 
     @Test
     public void testThisKeyword() {
-        ThisKeywordKt.main(args);
+        companionobjects1.ThisKeywordKt.main(args);
     }
 
     @Test
     public void testObjectKeyword() {
-        ObjectKeywordKt.main(args);
+        companionobjects2.ObjectKeywordKt.main(args);
     }
 
     @Test
     public void testObjectProperty() {
-        ObjectPropertyKt.main(args);
+        companionobjects4.ObjectPropertyKt.main(args);
     }
 
     @Test
     public void testObjectMethods() {
-        ObjectMethodsKt.main(args);
+        companionobjects5.ObjectMethodsKt.main(args);
     }
 
     @Test
     public void testObjCounter() {
-        ObjCounterKt.main(args);
+        companionobjects.ObjCounterKt.main(args);
     }
 }

@@ -21,28 +21,34 @@ fun getAllExamples(atoms: List<IntRange>): List<File> {
 }
 
 fun generateTests(files: List<File>, className: String): String {
-    val imports = mutableListOf<String>()
+    val namesFrequency = mutableMapOf<String, Int>()
     val tests = mutableListOf<String>()
     for (example in files) {
+        if (!example.readText().contains("fun main")) continue
+
         val name = example.nameWithoutExtension
         val classForFileName = name + "Kt"
+
+        val index = if (classForFileName in namesFrequency) {
+            val frequency = namesFrequency.getValue(classForFileName)
+            namesFrequency[classForFileName] = frequency + 1
+            "$frequency"
+        }
+        else {
+            namesFrequency[classForFileName] = 1
+            ""
+        }
         val packageName = example.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
                 ?: name.lowerCaseFirstLetter()
-        if (example.readText().contains("fun main")) {
-            imports += "import $packageName.$classForFileName;"
-            tests += """
-                @Test
-                public void test${name.upperCaseFirstLetter()}() {
-                    $classForFileName.main(args);
-                }""".replaceIndent("    ")
-        }
+        tests += """
+            @Test
+            public void test${name.upperCaseFirstLetter()}$index() {
+                $packageName.$classForFileName.main(args);
+            }""".replaceIndent("    ")
     }
 
     return buildString {
         appendln("import org.junit.Test;")
-        for (import in imports) {
-            appendln(import)
-        }
         appendln()
         appendln("""
                 public class $className {

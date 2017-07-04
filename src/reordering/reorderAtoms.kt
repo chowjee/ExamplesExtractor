@@ -39,17 +39,17 @@ fun main(args: Array<String>) {
                 ?: exercisesByAtomName[atomName]
         AtomInfo(atomName, it, exercisesFile)
     }
-    atoms.forEachIndexed {
-        index, atom ->
+    atoms.forEachIndexed { index, atom ->
+        val newFileName = atom.fileName.replace("${atom.index}", "$index")
         if (atom.index != index) {
-            val newFileName = atom.fileName.replace("${atom.index}", "$index")
             atomsDir.subFile(newFileName).writeText(atom.mdFile.readText())
             atom.mdFile.delete()
-            val newExercisesFile = exercisesDir.subFile(atom.fileName)
+        }
+        val newExercisesFile = exercisesDir.subFile(newFileName)
+        if (!newExercisesFile.exists() && index != 0) {
             if (atom.exercisesFile != null) {
                 newExercisesFile.writeText(atom.exercisesFile.readText())
-            }
-            else {
+            } else {
                 newExercisesFile.writeText(placeholderExercisesFile(atom))
             }
             if (atom.exercisesFile?.absolutePath != newExercisesFile.absolutePath) {

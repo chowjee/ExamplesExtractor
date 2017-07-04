@@ -12,3 +12,7 @@ fun main(args: Array<String>) {
   println(trueOrFalse(b < 3))
   println(trueOrFalse(b >= 3))
 }
+/* Output:
+It's true!
+It's false
+*/

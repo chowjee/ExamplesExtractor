@@ -6,9 +6,9 @@ fun main(args: Array<String>) {
   val closes = 20
   println("Operating hours: $opens - $closes")
   val isClosed = hour < opens || hour > closes
-  println(isClosed)
+  println("Closed: $isClosed")
 }
 /* Output:
 Operating hours: 9 - 20
-true
+Closed: true
 */

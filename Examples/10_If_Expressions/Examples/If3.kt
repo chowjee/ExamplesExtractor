@@ -5,9 +5,9 @@ fun main(args: Array<String>) {
   if (n > 0) {
     println("It's positive")
   } else {
-    println("It's negative")
+    println("It's negative or zero")
   }
 }
 /* Output:
-It's negative
+It's negative or zero
 */

@@ -1,11 +1,11 @@
 package ifexpressions
 
 fun main(args: Array<String>) {
-  val y: Boolean = true
+  val y: Boolean = false
   if (!y) {
-    println("!y is false")
+    println("!y is true")
   }
 }
 /* Output:
-!y is false
+!y is true
 */

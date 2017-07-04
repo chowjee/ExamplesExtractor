@@ -1,8 +1,8 @@
 package numbertypes
 
 fun main(args: Array<String>) {
-  val i: Long = 0L + Int.MAX_VALUE // [1]
-  println(i + i)
+  val i = Int.MAX_VALUE
+  println(0L + i + i)              // [1]
   println(1_000_000 * 1_000_000L)  // [2]
 }
 /* Output:

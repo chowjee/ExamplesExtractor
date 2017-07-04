@@ -30,7 +30,7 @@ fun replaceSample(atomText: String, example: File): String {
         append(before.substringBeforeLast(openingTag))
         appendln(openingTag)
         appendln(fileNameComment)
-        appendln(example.readText())
+        appendln(example.readText().trimEnd())
         append(closingTag)
         append(after.substringAfter(closingTag))
     }

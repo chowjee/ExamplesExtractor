@@ -10,9 +10,9 @@ fun main(args: Array<String>) {
         true
       else
         false
-  println(isOpen)
+  println("Open: $isOpen")
 }
 /* Output:
 Operating hours: 9 - 20
-false
+Open: false
 */

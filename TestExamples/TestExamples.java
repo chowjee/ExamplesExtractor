@@ -114,13 +114,13 @@ public class TestExamples {
     }
 
     @Test
-    public void testTripleQuotes() {
-        stringtemplates.TripleQuotesKt.main(args);
+    public void testExpressionInStringTemplate() {
+        stringtemplates.ExpressionInStringTemplateKt.main(args);
     }
 
     @Test
-    public void testExpressionInStringTemplate() {
-        stringtemplates.ExpressionInStringTemplateKt.main(args);
+    public void testTripleQuotes() {
+        stringtemplates.TripleQuotesKt.main(args);
     }
 
     @Test

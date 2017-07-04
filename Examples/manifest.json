@@ -8,7 +8,7 @@
     "11_String_Templates",
     "12_Number_Types",
     "13_Booleans",
-    "14_Repetiton_with_while",
+    "14_Repetition_with_while",
     "15_Ranges_and_for",
     "16_Expressions_and_Statements",
     "17_Summary_1",
@@ -22,7 +22,7 @@
     "25_Lists",
     "26_Summary_2",
     "27_When_Expressions",
-    "28_Smart_Casts",
+    "28_When_Expressions_and_Smart_Casts",
     "29_Named_and_Default_Arguments",
     "30_Overloading",
     "31_Class_Arguments",
@@ -54,7 +54,7 @@
     "62_Late_Initialized_Properties",
     "63_Delegated_Properties",
     "65_Nothing_Type",
-    "67_Function_Type_and_Type_Aliases",
+    "67_Function_Types_and_Type_Aliases",
     "68_With_and_Apply",
     "69_Lambda_with_Receiver"
   ]

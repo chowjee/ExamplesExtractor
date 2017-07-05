@@ -1,10 +1,14 @@
 package expressionsandstatements
 
+fun g() = Unit
+
 fun main(args: Array<String>) {
-  val u: Unit = println(42)
+  println(g())
+  val u: Unit = println(42) 
   println(u)
 }
 /* Output:
+kotlin.Unit
 42
 kotlin.Unit
 */

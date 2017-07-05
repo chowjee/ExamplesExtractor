@@ -1,4 +1,4 @@
-package rangesandfor
+package forandranges
 
 fun main(args: Array<String>) {
   for (ch in "Jnskhm ") {

@@ -195,57 +195,72 @@ public class TestExamples {
 
     @Test
     public void testRepeatThreeTimes() {
-        rangesandfor.RepeatThreeTimesKt.main(args);
+        forandranges.RepeatThreeTimesKt.main(args);
     }
 
     @Test
     public void testDefiningRanges() {
-        rangesandfor.DefiningRangesKt.main(args);
+        forandranges.DefiningRangesKt.main(args);
     }
 
     @Test
     public void testSumUsingRange() {
-        rangesandfor.SumUsingRangeKt.main(args);
+        forandranges.SumUsingRangeKt.main(args);
     }
 
     @Test
     public void testForWithRanges() {
-        rangesandfor.ForWithRangesKt.main(args);
+        forandranges.ForWithRangesKt.main(args);
     }
 
     @Test
     public void testCharRange() {
-        rangesandfor.CharRangeKt.main(args);
+        forandranges.CharRangeKt.main(args);
     }
 
     @Test
     public void testIndexIntoString() {
-        rangesandfor.IndexIntoStringKt.main(args);
+        forandranges.IndexIntoStringKt.main(args);
     }
 
     @Test
     public void testAddingIntToChar() {
-        rangesandfor.AddingIntToCharKt.main(args);
+        forandranges.AddingIntToCharKt.main(args);
     }
 
     @Test
     public void testIterateOverString() {
-        rangesandfor.IterateOverStringKt.main(args);
+        forandranges.IterateOverStringKt.main(args);
     }
 
     @Test
     public void testContainsChar() {
-        rangesandfor.ContainsCharKt.main(args);
+        forandranges.ContainsCharKt.main(args);
     }
 
     @Test
     public void testRangeMembership() {
-        rangesandfor.RangeMembershipKt.main(args);
+        moreaboutranges.RangeMembershipKt.main(args);
+    }
+
+    @Test
+    public void testInString() {
+        moreaboutranges.InStringKt.main(args);
+    }
+
+    @Test
+    public void testCharRange1() {
+        moreaboutranges.CharRangeKt.main(args);
     }
 
     @Test
     public void testFloatingPointRange() {
-        rangesandfor.FloatingPointRangeKt.main(args);
+        moreaboutranges.FloatingPointRangeKt.main(args);
+    }
+
+    @Test
+    public void testStringRange() {
+        moreaboutranges.StringRangeKt.main(args);
     }
 
     @Test
@@ -254,8 +269,8 @@ public class TestExamples {
     }
 
     @Test
-    public void testPrintlnReturnsUnit() {
-        expressionsandstatements.PrintlnReturnsUnitKt.main(args);
+    public void testUnitReturnType() {
+        expressionsandstatements.UnitReturnTypeKt.main(args);
     }
 
     @Test

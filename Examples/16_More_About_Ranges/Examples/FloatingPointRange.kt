@@ -1,4 +1,4 @@
-package rangesandfor
+package moreaboutranges
 
 fun main(args: Array<String>) {
   val r = 1.0..10.0

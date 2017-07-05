@@ -1,9 +1,10 @@
 package moreaboutranges
 
 fun main(args: Array<String>) {
-  val percentage = 35
-  println(percentage in 1..100)
+  println("ab" in "aa".."az")
+  println("ba" in "aa".."az")
 }
 /* Output:
 true
+false
 */

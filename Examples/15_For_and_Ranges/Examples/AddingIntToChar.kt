@@ -1,4 +1,4 @@
-package rangesandfor
+package forandranges
 
 fun main(args: Array<String>) {
   val ch: Char = 'a'

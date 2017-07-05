@@ -1,4 +1,4 @@
-package rangesandfor
+package forandranges
 
 fun showRange(r: IntProgression) {
   for (i in r) {

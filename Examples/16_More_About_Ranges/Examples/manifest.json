@@ -6,7 +6,19 @@
       "modifiable": "true"
     },
     {
+      "filename": "InString.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "CharRange.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "FloatingPointRange.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "StringRange.kt",
       "modifiable": "true"
     }
   ],

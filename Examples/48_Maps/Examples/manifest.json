@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Maps.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "PetMap.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

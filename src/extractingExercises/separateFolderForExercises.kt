@@ -10,7 +10,7 @@ import java.io.File
 fun main(args: Array<String>) {
     val exercisesDir = File(Settings.exercisesPath)
     buildString {
-        for (chapter in getAtomFiles(listOf())) {
+        for (chapter in getAtomFiles()) {
             val exercisesText = generateTasksForChapter(chapter)
             val exercisesForChapterFile = exercisesDir.subFile(chapter.name)
             exercisesForChapterFile.writeText(exercisesText)

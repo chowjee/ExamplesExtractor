@@ -1,0 +1,44 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "RepeatThreeTimes.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DefiningRanges.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "SumUsingRange.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ForWithRanges.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "CharRange.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IndexIntoString.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "AddingIntToChar.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IterateOverString.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ContainsChar.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

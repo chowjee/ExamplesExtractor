@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "RangeMembership.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "FloatingPointRange.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

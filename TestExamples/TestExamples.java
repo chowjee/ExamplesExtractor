@@ -194,18 +194,18 @@ public class TestExamples {
     }
 
     @Test
+    public void testRepeatThreeTimes() {
+        rangesandfor.RepeatThreeTimesKt.main(args);
+    }
+
+    @Test
     public void testDefiningRanges() {
         rangesandfor.DefiningRangesKt.main(args);
     }
 
     @Test
-    public void testRangeMembership() {
-        rangesandfor.RangeMembershipKt.main(args);
-    }
-
-    @Test
-    public void testFloatingPointRange() {
-        rangesandfor.FloatingPointRangeKt.main(args);
+    public void testSumUsingRange() {
+        rangesandfor.SumUsingRangeKt.main(args);
     }
 
     @Test
@@ -214,13 +214,8 @@ public class TestExamples {
     }
 
     @Test
-    public void testRepeatThreeTimes() {
-        rangesandfor.RepeatThreeTimesKt.main(args);
-    }
-
-    @Test
-    public void testSumUsingRange() {
-        rangesandfor.SumUsingRangeKt.main(args);
+    public void testCharRange() {
+        rangesandfor.CharRangeKt.main(args);
     }
 
     @Test
@@ -241,6 +236,16 @@ public class TestExamples {
     @Test
     public void testContainsChar() {
         rangesandfor.ContainsCharKt.main(args);
+    }
+
+    @Test
+    public void testRangeMembership() {
+        rangesandfor.RangeMembershipKt.main(args);
+    }
+
+    @Test
+    public void testFloatingPointRange() {
+        rangesandfor.FloatingPointRangeKt.main(args);
     }
 
     @Test
@@ -611,6 +616,16 @@ public class TestExamples {
     @Test
     public void testRemoveDuplicates() {
         sets.RemoveDuplicatesKt.main(args);
+    }
+
+    @Test
+    public void testMaps() {
+        maps.MapsKt.main(args);
+    }
+
+    @Test
+    public void testPetMap() {
+        maps.PetMapKt.main(args);
     }
 
     @Test

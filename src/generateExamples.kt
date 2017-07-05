@@ -10,8 +10,8 @@ import util.subDir
 import util.subFile
 import java.io.File
 
-fun generateExamples(atoms: List<IntRange>) {
-    val allExamples: List<AtomExamples> = getAtomFiles(atoms).map { extractCodeExamples(it) }
+fun generateExamples() {
+    val allExamples: List<AtomExamples> = getAtomFiles().mapNotNull { extractCodeExamples(it) }
 
     val examplesDir = File(Settings.examplesDir)
     if (examplesDir.exists()) {
@@ -83,7 +83,7 @@ class ExampleBuilder {
     }
 }
 
-fun extractCodeExamples(atom: File): AtomExamples {
+fun extractCodeExamples(atom: File): AtomExamples? {
     val result = mutableListOf<Example>()
     val exampleBuilder = ExampleBuilder()
     for (line in atom.readLines()) {
@@ -95,5 +95,13 @@ fun extractCodeExamples(atom: File): AtomExamples {
             else -> exampleBuilder.addLine(line)
         }
     }
+    if (result.isEmpty()) return null
+
+    // scala check
+    val scalaKeywords = setOf("def", "trait", "new")
+    if (result.any { example ->
+        scalaKeywords.any { keyword -> example.text.contains("$keyword ") }
+    }) return null
+
     return AtomExamples(atom.nameWithoutExtension, result)
 }

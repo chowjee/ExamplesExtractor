@@ -2,21 +2,20 @@ package generatingTests
 
 import atoms.getAtomFiles
 import atoms.getExamplesForAtom
-import examplesExtractor.exampleRanges
 import java.io.File
 
 fun main(args: Array<String>) {
-    generateExampleTests(exampleRanges)
+    generateExampleTests()
 }
 
-fun generateExampleTests(atoms: List<IntRange>) {
-    val sourceFiles = getAllExamples(atoms)
+fun generateExampleTests() {
+    val sourceFiles = getAllExamples()
     val tests = generateTests(sourceFiles, "TestExamples")
     File("TestExamples/TestExamples.java").writeText(tests)
 }
 
-fun getAllExamples(atoms: List<IntRange>): List<File> {
-    val atomFiles = getAtomFiles(atoms)
+fun getAllExamples(): List<File> {
+    val atomFiles = getAtomFiles()
     return atomFiles.flatMap { getExamplesForAtom(it) }
 }
 

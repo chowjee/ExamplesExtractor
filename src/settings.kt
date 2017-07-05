@@ -15,11 +15,10 @@ object Settings {
         }
     }
 
-    private operator fun Properties.getValue(thisRef: Any?, property: KProperty<*>): String =
-            getProperty(property.name) ?: throw IllegalStateException("No value for '${property.name}' property in $propertiesFile")
+    private val atomicKotlinPath = properties.getProperty("atomicKotlinPath")
 
-    val atomsPath by properties
-    val exercisesPath by properties
-    val examplesDir by properties
-    val exercisesDir by properties
+    val atomsPath = atomicKotlinPath + "/Markdown"
+    val exercisesPath = atomicKotlinPath + "/Exercises"
+    val examplesDir = "Examples"
+    val exercisesDir = "Exercises"
 }

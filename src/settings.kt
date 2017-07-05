@@ -19,6 +19,7 @@ object Settings {
 
     val atomsPath = atomicKotlinPath + "/Markdown"
     val exercisesPath = atomicKotlinPath + "/Exercises"
+    val statusPath = atomicKotlinPath + "/STATUS.md"
     val examplesDir = "Examples"
     val exercisesDir = "Exercises"
 }

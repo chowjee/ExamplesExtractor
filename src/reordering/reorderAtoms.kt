@@ -20,7 +20,7 @@ val AtomInfo.index: Int
     get() = nameWithoutExtension.substringBefore("_").toInt()
 
 val File.nameWithoutIndex: String
-    get() = nameWithoutExtension.substring(startIndex = 3)
+    get() = nameWithoutExtension.substringAfter("_")
 
 fun main(args: Array<String>) {
     val atomsDir = File(Settings.atomsPath)
@@ -35,7 +35,7 @@ fun main(args: Array<String>) {
 
     val atoms = atomsDir.listFiles().map {
         val atomName = it.readLines().first()
-        val exercisesFile = exercisesByFileName[it.nameWithoutExtension]
+        val exercisesFile = exercisesByFileName[it.nameWithoutIndex]
                 ?: exercisesByAtomName[atomName]
         AtomInfo(atomName, it, exercisesFile)
     }
@@ -57,6 +57,7 @@ fun main(args: Array<String>) {
             }
         }
     }
+    reorderAtomsInStatusFile()
 }
 
 fun placeholderExercisesFile(atom: AtomInfo) = buildString {

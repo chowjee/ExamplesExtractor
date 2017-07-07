@@ -1,8 +1,12 @@
 package namedanddefault
 
-class Color(red: Int, blue: Int, green: Int)
+import com.atomickotlin.test.eq
+
+fun getColor(red: Int, green: Int, blue: Int) =
+    "($red, $green, $blue)"
 
 fun main(args: Array<String>) {
-  Color(red = 80, blue = 9, green = 100)
-  Color(80, 9, green = 100)
+  val yellow = "(255, 255, 0)"
+  getColor(red = 255, green = 255, blue = 0) eq yellow
+  getColor(255, 255, blue = 0) eq yellow
 }

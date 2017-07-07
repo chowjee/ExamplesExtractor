@@ -2,6 +2,10 @@
   "name": "Examples",
   "files": [
     {
+      "filename": "InitSection.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "Coffee.kt",
       "modifiable": "true"
     }

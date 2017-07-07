@@ -470,17 +470,7 @@ public class TestExamples {
 
     @Test
     public void testNamedAndDefaultArgs() {
-        namedanddefault.NamedAndDefaultArgsKt.main(args);
-    }
-
-    @Test
-    public void testFamily() {
-        namedanddefault.FamilyKt.main(args);
-    }
-
-    @Test
-    public void testFamily2() {
-        namedanddefault.Family2Kt.main(args);
+        namedanddefault1.NamedAndDefaultArgsKt.main(args);
     }
 
     @Test
@@ -509,8 +499,8 @@ public class TestExamples {
     }
 
     @Test
-    public void testVariableClassArgs() {
-        classarguments.VariableClassArgsKt.main(args);
+    public void testInitSection() {
+        constructors.InitSectionKt.main(args);
     }
 
     @Test
@@ -641,6 +631,31 @@ public class TestExamples {
     @Test
     public void testPetMap() {
         maps.PetMapKt.main(args);
+    }
+
+    @Test
+    public void testListOf() {
+        varargs.ListOfKt.main(args);
+    }
+
+    @Test
+    public void testVariableArgLists() {
+        varargs.VariableArgListsKt.main(args);
+    }
+
+    @Test
+    public void testVarargSum() {
+        varargs.VarargSumKt.main(args);
+    }
+
+    @Test
+    public void testSpreadOperator() {
+        varargs.SpreadOperatorKt.main(args);
+    }
+
+    @Test
+    public void testTwoFunctionsWithVarargs() {
+        varargs.TwoFunctionsWithVarargsKt.main(args);
     }
 
     @Test

@@ -2,8 +2,11 @@ package secondaryconstructors
 
 import com.atomickotlin.test.eq
 
-class GardenGnome(val height: Double,
-                  val weight: Double, val happy: Boolean) {
+class GardenGnome(
+    val height: Double,
+    val weight: Double, 
+    val happy: Boolean
+) {
   init {
     println("Inside primary constructor")
   }
@@ -11,8 +14,10 @@ class GardenGnome(val height: Double,
   var painted = true
   fun magic(level: Int): String = "Poof! " + level
 
-  constructor(height: Double) : this(height, 100.0, true)
-  constructor(name: String) : this(15.0) {
+  constructor(height: Double)                // [1]
+      : this(height, 100.0, true)
+
+  constructor(name: String) : this(15.0) {   // [2]
     painted eq true
   }
 

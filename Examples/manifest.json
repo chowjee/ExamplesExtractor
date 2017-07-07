@@ -36,14 +36,15 @@
     "46_Combining_Lists_with_zip",
     "47_Sets",
     "48_Maps",
-    "49_References_and_Mutability",
-    "50_Inheritance",
-    "51_Base_Class_Initialization",
-    "52_Overriding_Methods",
-    "54_Abstract_Classes",
-    "56_Enumerations",
-    "57_More_About_When_Expressions",
-    "58_Sealed_Classes",
-    "60_Companion_Objects"
+    "49_Varargs_and_Arrays",
+    "50_References_and_Mutability",
+    "51_Inheritance",
+    "52_Base_Class_Initialization",
+    "53_Overriding_Methods",
+    "55_Abstract_Classes",
+    "57_Enumerations",
+    "58_More_About_When_Expressions",
+    "59_Sealed_Classes",
+    "61_Companion_Objects"
   ]
 }

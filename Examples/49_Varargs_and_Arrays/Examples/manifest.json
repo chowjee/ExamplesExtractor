@@ -1,0 +1,28 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ListOf.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "VariableArgLists.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "VarargSum.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "SpreadOperator.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "TwoFunctionsWithVarargs.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

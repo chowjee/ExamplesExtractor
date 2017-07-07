@@ -3,10 +3,6 @@ package classarguments
 import com.atomickotlin.test.eq
 
 class ClassArg(a: Int) {
-  init {
-    println("a = " + a)
-  }
-
   val f = a * 10
 }
 

@@ -23,13 +23,14 @@ class Coffee(val shots: Int = 2,
   }
 
   fun pourShots() {
-    for (s in 0 until shots)
+    for (s in 1..shots)
       result += if (decaf) "decaf shot " else "shot "
   }
 
   fun addMilk() {
-    if (milk)
+    if (milk) {
       result += "milk "
+    }
   }
 
   fun addSyrup() {

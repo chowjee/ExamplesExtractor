@@ -5,12 +5,16 @@ import com.atomickotlin.test.eq
 fun acceptAnything(x: Any): String =
     when (x) {
       is String -> "A String: $x of length ${x.length}"
-      is Int -> if (x < 20) "An Int Less than 20: $x" else "Some Other Int: $x"
-      is Person -> "A person ${x.name}"
+      is Int ->
+        if (x < 20) "An Int Less than 20: $x"
+        else "Some Other Int: $x"
+      is Dog -> "A dog: ${x.bark()}"
       else -> "I don't know what that is!"
     }
 
-data class Person(val name: String)
+class Dog {
+  fun bark(): String = "yip!"
+}
 
 fun main(args: Array<String>) {
   acceptAnything(5) eq
@@ -19,8 +23,7 @@ fun main(args: Array<String>) {
   acceptAnything("Some text") eq
       "A String: Some text of length 9"
 
-  val bob = Person("Bob")
-  acceptAnything(bob) eq "A person Bob"
+  acceptAnything(Dog()) eq "A dog: yip!"
   acceptAnything(listOf(1, 2, 5)) eq
       "I don't know what that is!"
 }

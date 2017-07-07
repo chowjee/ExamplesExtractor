@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
   println(h)
   println(b)
 }
-/* Output:
+/* Sample output:
 creatingclasses.Giraffe@279f2327
 creatingclasses.Giraffe@2ff4acd0
 creatingclasses.Hippo@54bedef2

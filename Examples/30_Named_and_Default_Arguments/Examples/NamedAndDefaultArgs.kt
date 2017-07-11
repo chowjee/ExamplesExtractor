@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
   val darkBlue = "(0, 0, 139)"
   val orange = "(255, 165, 0)"
   val purple = "(128, 0, 128)"
-  
+
   getColor(139) eq darkRed
   getColor(blue = 139) eq darkBlue
   getColor(255, 165) eq orange

@@ -4,7 +4,7 @@ import com.atomickotlin.test.eq
 
 class GardenGnome(
     val height: Double,
-    val weight: Double, 
+    val weight: Double,
     val happy: Boolean
 ) {
   init {

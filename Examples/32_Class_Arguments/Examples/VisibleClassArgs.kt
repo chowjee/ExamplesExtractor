@@ -13,6 +13,6 @@ fun main(args: Array<String>) {
   ca3.a eq 21
   ca2.a = 24
   ca2.a eq 24
-  // Can't do this: 
+  // Can't do this:
   // ca3.a = 35
 }

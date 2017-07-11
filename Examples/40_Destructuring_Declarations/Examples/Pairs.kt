@@ -13,6 +13,6 @@ fun main(args: Array<String>) {
   compute(4) eq Pair(8, "Low")
 
   val result = compute(5)
-  result.first eq 5
+  result.first eq 10
   result.second eq "Low"
 }

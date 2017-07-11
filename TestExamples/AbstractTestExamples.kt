@@ -21,6 +21,8 @@ abstract class AbstractTestExamples {
         val out = ByteArrayOutputStream()
         System.setOut(PrintStream(out))
         main.accept(arrayOf())
-        Assert.assertEquals(extractOutput(exampleCode).trim(), out.toString().trim())
+        Assert.assertEquals(extractOutput(exampleCode).trimLines(), out.toString().trimLines())
     }
+
+    private fun String.trimLines() = trim().lines().map { it.trim() }.joinToString("\n")
 }

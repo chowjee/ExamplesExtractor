@@ -2,19 +2,19 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "Overloading.kt",
+      "filename": "DataClasses.kt",
       "modifiable": "true"
     },
     {
-      "filename": "OverloadingAdd.kt",
+      "filename": "CopyDataClass.kt",
       "modifiable": "true"
     },
     {
-      "filename": "WithoutDefaultArguments.kt",
+      "filename": "DataClassesWithVars.kt",
       "modifiable": "true"
     },
     {
-      "filename": "WithDefaultArguments.kt",
+      "filename": "DataClassAndHashCode.kt",
       "modifiable": "true"
     }
   ],

@@ -2,19 +2,23 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "Overloading.kt",
+      "filename": "Pairs.kt",
       "modifiable": "true"
     },
     {
-      "filename": "OverloadingAdd.kt",
+      "filename": "PairsAndDesctructuring.kt",
       "modifiable": "true"
     },
     {
-      "filename": "WithoutDefaultArguments.kt",
+      "filename": "ComputationResult.kt",
       "modifiable": "true"
     },
     {
-      "filename": "WithDefaultArguments.kt",
+      "filename": "Tuple.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DestructuringAndForLoop.kt",
       "modifiable": "true"
     }
   ],

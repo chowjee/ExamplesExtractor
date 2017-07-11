@@ -194,47 +194,47 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testRepeatThreeTimes() {
-        testExample("Examples/15_For_and_Ranges/Examples/RepeatThreeTimes.kt", forandranges.RepeatThreeTimesKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/RepeatThreeTimes.kt", forandranges.RepeatThreeTimesKt::main);
     }
 
     @Test
     public void testDefiningRanges() {
-        testExample("Examples/15_For_and_Ranges/Examples/DefiningRanges.kt", forandranges.DefiningRangesKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/DefiningRanges.kt", forandranges.DefiningRangesKt::main);
     }
 
     @Test
     public void testSumUsingRange() {
-        testExample("Examples/15_For_and_Ranges/Examples/SumUsingRange.kt", forandranges.SumUsingRangeKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/SumUsingRange.kt", forandranges.SumUsingRangeKt::main);
     }
 
     @Test
     public void testForWithRanges() {
-        testExample("Examples/15_For_and_Ranges/Examples/ForWithRanges.kt", forandranges.ForWithRangesKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/ForWithRanges.kt", forandranges.ForWithRangesKt::main);
     }
 
     @Test
     public void testCharRange() {
-        testExample("Examples/15_For_and_Ranges/Examples/CharRange.kt", forandranges.CharRangeKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/CharRange.kt", forandranges.CharRangeKt::main);
     }
 
     @Test
     public void testIndexIntoString() {
-        testExample("Examples/15_For_and_Ranges/Examples/IndexIntoString.kt", forandranges.IndexIntoStringKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/IndexIntoString.kt", forandranges.IndexIntoStringKt::main);
     }
 
     @Test
     public void testAddingIntToChar() {
-        testExample("Examples/15_For_and_Ranges/Examples/AddingIntToChar.kt", forandranges.AddingIntToCharKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/AddingIntToChar.kt", forandranges.AddingIntToCharKt::main);
     }
 
     @Test
     public void testIterateOverString() {
-        testExample("Examples/15_For_and_Ranges/Examples/IterateOverString.kt", forandranges.IterateOverStringKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/IterateOverString.kt", forandranges.IterateOverStringKt::main);
     }
 
     @Test
     public void testContainsChar() {
-        testExample("Examples/15_For_and_Ranges/Examples/ContainsChar.kt", forandranges.ContainsCharKt::main);
+        testExample("Examples/15_for_and_Ranges/Examples/ContainsChar.kt", forandranges.ContainsCharKt::main);
     }
 
     @Test
@@ -270,6 +270,11 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testUnitReturnType() {
         testExample("Examples/17_Expressions_and_Statements/Examples/UnitReturnType.kt", expressionsandstatements.UnitReturnTypeKt::main);
+    }
+
+    @Test
+    public void testAssigningAnIf() {
+        testExample("Examples/17_Expressions_and_Statements/Examples/AssigningAnIf.kt", expressionsandstatements.AssigningAnIfKt::main);
     }
 
     @Test
@@ -449,12 +454,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testWhenExpressions() {
-        testExample("Examples/28_When_Expressions/Examples/WhenExpressions.kt", whenexpressions.WhenExpressionsKt::main);
+        testExample("Examples/28_when_Expressions/Examples/WhenExpressions.kt", whenexpressions.WhenExpressionsKt::main);
     }
 
     @Test
     public void testWhenExpressionAndSmartCasts() {
-        testExample("Examples/29_When_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenexpressionscasts.WhenExpressionAndSmartCastsKt::main);
+        testExample("Examples/29_when_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenexpressionscasts.WhenExpressionAndSmartCastsKt::main);
     }
 
     @Test
@@ -480,6 +485,16 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testOverloadingAdd() {
         testExample("Examples/31_Overloading/Examples/OverloadingAdd.kt", overloading.OverloadingAddKt::main);
+    }
+
+    @Test
+    public void testWithoutDefaultArguments() {
+        testExample("Examples/31_Overloading/Examples/WithoutDefaultArguments.kt", overloading.WithoutDefaultArgumentsKt::main);
+    }
+
+    @Test
+    public void testWithDefaultArguments() {
+        testExample("Examples/31_Overloading/Examples/WithDefaultArguments.kt", overloading.WithDefaultArgumentsKt::main);
     }
 
     @Test
@@ -513,247 +528,287 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDataClasses() {
-        testExample("Examples/35_Data_Classes/Examples/DataClasses.kt", dataclasses.DataClassesKt::main);
-    }
-
-    @Test
-    public void testBicycle() {
-        testExample("Examples/36_Automatic_String_Conversion/Examples/Bicycle.kt", automaticstring.BicycleKt::main);
-    }
-
-    @Test
-    public void testSurrey() {
-        testExample("Examples/36_Automatic_String_Conversion/Examples/Surrey.kt", automaticstring.SurreyKt::main);
-    }
-
-    @Test
-    public void testSurreyWithToString() {
-        testExample("Examples/36_Automatic_String_Conversion/Examples/SurreyWithToString.kt", automaticstring.SurreyWithToStringKt::main);
-    }
-
-    @Test
     public void testParameterizedTypes() {
-        testExample("Examples/39_Parameterized_Types/Examples/ParameterizedTypes.kt", parameterizedtypes.ParameterizedTypesKt::main);
+        testExample("Examples/35_Parameterized_Types/Examples/ParameterizedTypes.kt", parameterizedtypes.ParameterizedTypesKt::main);
     }
 
     @Test
     public void testParameterizedReturnTypes() {
-        testExample("Examples/39_Parameterized_Types/Examples/ParameterizedReturnTypes.kt", parameterizedtypes.ParameterizedReturnTypesKt::main);
-    }
-
-    @Test
-    public void testDisplayList() {
-        testExample("Examples/44_Lambdas/Examples/DisplayList.kt", lambdas.DisplayListKt::main);
-    }
-
-    @Test
-    public void testDisplayListWithLambda() {
-        testExample("Examples/44_Lambdas/Examples/DisplayListWithLambda.kt", lambdas.DisplayListWithLambdaKt::main);
-    }
-
-    @Test
-    public void testDisplayDuck() {
-        testExample("Examples/44_Lambdas/Examples/DisplayDuck.kt", lambdas.DisplayDuckKt::main);
-    }
-
-    @Test
-    public void testDisplayDuckTestable() {
-        testExample("Examples/44_Lambdas/Examples/DisplayDuckTestable.kt", lambdas.DisplayDuckTestableKt::main);
-    }
-
-    @Test
-    public void testTwoArgAnonymous() {
-        testExample("Examples/44_Lambdas/Examples/TwoArgAnonymous.kt", lambdas.TwoArgAnonymousKt::main);
-    }
-
-    @Test
-    public void testCallLater() {
-        testExample("Examples/44_Lambdas/Examples/CallLater.kt", lambdas.CallLaterKt::main);
-    }
-
-    @Test
-    public void testAssignAnonymous() {
-        testExample("Examples/44_Lambdas/Examples/AssignAnonymous.kt", lambdas.AssignAnonymousKt::main);
-    }
-
-    @Test
-    public void testSimpleMap() {
-        testExample("Examples/45_Operations_on_Lists/Examples/SimpleMap.kt", mapandreduce.SimpleMapKt::main);
-    }
-
-    @Test
-    public void testSum() {
-        testExample("Examples/45_Operations_on_Lists/Examples/Sum.kt", mapandreduce.SumKt::main);
-    }
-
-    @Test
-    public void testReduce() {
-        testExample("Examples/45_Operations_on_Lists/Examples/Reduce.kt", mapandreduce.ReduceKt::main);
-    }
-
-    @Test
-    public void testMoreReduce() {
-        testExample("Examples/45_Operations_on_Lists/Examples/MoreReduce.kt", mapandreduce.MoreReduceKt::main);
-    }
-
-    @Test
-    public void testZipper() {
-        testExample("Examples/46_Combining_Lists_with_zip/Examples/Zipper.kt", combininglists.ZipperKt::main);
-    }
-
-    @Test
-    public void testIndexWithZip() {
-        testExample("Examples/46_Combining_Lists_with_zip/Examples/IndexWithZip.kt", combininglists.IndexWithZipKt::main);
-    }
-
-    @Test
-    public void testZipMap() {
-        testExample("Examples/46_Combining_Lists_with_zip/Examples/ZipMap.kt", combininglists.ZipMapKt::main);
+        testExample("Examples/35_Parameterized_Types/Examples/ParameterizedReturnTypes.kt", parameterizedtypes.ParameterizedReturnTypesKt::main);
     }
 
     @Test
     public void testSets() {
-        testExample("Examples/47_Sets/Examples/Sets.kt", sets.SetsKt::main);
+        testExample("Examples/36_Sets/Examples/Sets.kt", sets.SetsKt::main);
     }
 
     @Test
     public void testRemoveDuplicates() {
-        testExample("Examples/47_Sets/Examples/RemoveDuplicates.kt", sets.RemoveDuplicatesKt::main);
+        testExample("Examples/36_Sets/Examples/RemoveDuplicates.kt", sets.RemoveDuplicatesKt::main);
     }
 
     @Test
     public void testMaps() {
-        testExample("Examples/48_Maps/Examples/Maps.kt", maps.MapsKt::main);
+        testExample("Examples/37_Maps/Examples/Maps.kt", maps.MapsKt::main);
     }
 
     @Test
     public void testPetMap() {
-        testExample("Examples/48_Maps/Examples/PetMap.kt", maps.PetMapKt::main);
+        testExample("Examples/37_Maps/Examples/PetMap.kt", maps.PetMapKt::main);
+    }
+
+    @Test
+    public void testDataClasses() {
+        testExample("Examples/38_Data_Classes/Examples/DataClasses.kt", dataclasses.DataClassesKt::main);
+    }
+
+    @Test
+    public void testCopyDataClass() {
+        testExample("Examples/38_Data_Classes/Examples/CopyDataClass.kt", dataclasses2.CopyDataClassKt::main);
+    }
+
+    @Test
+    public void testDataClassesWithVars() {
+        testExample("Examples/38_Data_Classes/Examples/DataClassesWithVars.kt", dataclasses3.DataClassesWithVarsKt::main);
+    }
+
+    @Test
+    public void testDataClassAndHashCode() {
+        testExample("Examples/38_Data_Classes/Examples/DataClassAndHashCode.kt", dataclasses4.DataClassAndHashCodeKt::main);
+    }
+
+    @Test
+    public void testBicycle() {
+        testExample("Examples/39_Automatic_String_Conversion/Examples/Bicycle.kt", automaticstring.BicycleKt::main);
+    }
+
+    @Test
+    public void testSurrey() {
+        testExample("Examples/39_Automatic_String_Conversion/Examples/Surrey.kt", automaticstring.SurreyKt::main);
+    }
+
+    @Test
+    public void testSurreyWithToString() {
+        testExample("Examples/39_Automatic_String_Conversion/Examples/SurreyWithToString.kt", automaticstring.SurreyWithToStringKt::main);
+    }
+
+    @Test
+    public void testPairs() {
+        testExample("Examples/40_Destructuring_Declarations/Examples/Pairs.kt", destructuring1.PairsKt::main);
+    }
+
+    @Test
+    public void testPairsAndDesctructuring() {
+        testExample("Examples/40_Destructuring_Declarations/Examples/PairsAndDesctructuring.kt", destructuring2.PairsAndDesctructuringKt::main);
+    }
+
+    @Test
+    public void testComputationResult() {
+        testExample("Examples/40_Destructuring_Declarations/Examples/ComputationResult.kt", destructuring3.ComputationResultKt::main);
+    }
+
+    @Test
+    public void testTuple() {
+        testExample("Examples/40_Destructuring_Declarations/Examples/Tuple.kt", destructuring.TupleKt::main);
+    }
+
+    @Test
+    public void testDestructuringAndForLoop() {
+        testExample("Examples/40_Destructuring_Declarations/Examples/DestructuringAndForLoop.kt", destructuring.DestructuringAndForLoopKt::main);
+    }
+
+    @Test
+    public void testDisplayList() {
+        testExample("Examples/47_Lambdas/Examples/DisplayList.kt", lambdas.DisplayListKt::main);
+    }
+
+    @Test
+    public void testDisplayListWithLambda() {
+        testExample("Examples/47_Lambdas/Examples/DisplayListWithLambda.kt", lambdas.DisplayListWithLambdaKt::main);
+    }
+
+    @Test
+    public void testDisplayDuck() {
+        testExample("Examples/47_Lambdas/Examples/DisplayDuck.kt", lambdas.DisplayDuckKt::main);
+    }
+
+    @Test
+    public void testDisplayDuckTestable() {
+        testExample("Examples/47_Lambdas/Examples/DisplayDuckTestable.kt", lambdas.DisplayDuckTestableKt::main);
+    }
+
+    @Test
+    public void testTwoArgAnonymous() {
+        testExample("Examples/47_Lambdas/Examples/TwoArgAnonymous.kt", lambdas.TwoArgAnonymousKt::main);
+    }
+
+    @Test
+    public void testCallLater() {
+        testExample("Examples/47_Lambdas/Examples/CallLater.kt", lambdas.CallLaterKt::main);
+    }
+
+    @Test
+    public void testAssignAnonymous() {
+        testExample("Examples/47_Lambdas/Examples/AssignAnonymous.kt", lambdas.AssignAnonymousKt::main);
+    }
+
+    @Test
+    public void testSimpleMap() {
+        testExample("Examples/48_Operations_on_Lists/Examples/SimpleMap.kt", mapandreduce.SimpleMapKt::main);
+    }
+
+    @Test
+    public void testSum() {
+        testExample("Examples/48_Operations_on_Lists/Examples/Sum.kt", mapandreduce.SumKt::main);
+    }
+
+    @Test
+    public void testReduce() {
+        testExample("Examples/48_Operations_on_Lists/Examples/Reduce.kt", mapandreduce.ReduceKt::main);
+    }
+
+    @Test
+    public void testMoreReduce() {
+        testExample("Examples/48_Operations_on_Lists/Examples/MoreReduce.kt", mapandreduce.MoreReduceKt::main);
+    }
+
+    @Test
+    public void testZipper() {
+        testExample("Examples/49_Combining_Lists_with_zip/Examples/Zipper.kt", combininglists.ZipperKt::main);
+    }
+
+    @Test
+    public void testIndexWithZip() {
+        testExample("Examples/49_Combining_Lists_with_zip/Examples/IndexWithZip.kt", combininglists.IndexWithZipKt::main);
+    }
+
+    @Test
+    public void testZipMap() {
+        testExample("Examples/49_Combining_Lists_with_zip/Examples/ZipMap.kt", combininglists.ZipMapKt::main);
     }
 
     @Test
     public void testListOf() {
-        testExample("Examples/49_Varargs_and_Arrays/Examples/ListOf.kt", varargs.ListOfKt::main);
+        testExample("Examples/50_Varargs_and_Arrays/Examples/ListOf.kt", varargs.ListOfKt::main);
     }
 
     @Test
     public void testVariableArgLists() {
-        testExample("Examples/49_Varargs_and_Arrays/Examples/VariableArgLists.kt", varargs.VariableArgListsKt::main);
+        testExample("Examples/50_Varargs_and_Arrays/Examples/VariableArgLists.kt", varargs.VariableArgListsKt::main);
     }
 
     @Test
     public void testVarargSum() {
-        testExample("Examples/49_Varargs_and_Arrays/Examples/VarargSum.kt", varargs.VarargSumKt::main);
+        testExample("Examples/50_Varargs_and_Arrays/Examples/VarargSum.kt", varargs.VarargSumKt::main);
     }
 
     @Test
     public void testSpreadOperator() {
-        testExample("Examples/49_Varargs_and_Arrays/Examples/SpreadOperator.kt", varargs.SpreadOperatorKt::main);
+        testExample("Examples/50_Varargs_and_Arrays/Examples/SpreadOperator.kt", varargs.SpreadOperatorKt::main);
     }
 
     @Test
     public void testTwoFunctionsWithVarargs() {
-        testExample("Examples/49_Varargs_and_Arrays/Examples/TwoFunctionsWithVarargs.kt", varargs.TwoFunctionsWithVarargsKt::main);
+        testExample("Examples/50_Varargs_and_Arrays/Examples/TwoFunctionsWithVarargs.kt", varargs.TwoFunctionsWithVarargsKt::main);
     }
 
     @Test
     public void testChangingAVal() {
-        testExample("Examples/50_References_and_Mutability/Examples/ChangingAVal.kt", referencesmutability.ChangingAValKt::main);
+        testExample("Examples/51_References_and_Mutability/Examples/ChangingAVal.kt", referencesmutability.ChangingAValKt::main);
     }
 
     @Test
     public void testAnUnchangingVar() {
-        testExample("Examples/50_References_and_Mutability/Examples/AnUnchangingVar.kt", referencesmutability.AnUnchangingVarKt::main);
+        testExample("Examples/51_References_and_Mutability/Examples/AnUnchangingVar.kt", referencesmutability.AnUnchangingVarKt::main);
     }
 
     @Test
     public void testReferences() {
-        testExample("Examples/50_References_and_Mutability/Examples/References.kt", referencesmutability.ReferencesKt::main);
+        testExample("Examples/51_References_and_Mutability/Examples/References.kt", referencesmutability.ReferencesKt::main);
     }
 
     @Test
     public void testImmutableMaps() {
-        testExample("Examples/50_References_and_Mutability/Examples/ImmutableMaps.kt", referencesmutability.ImmutableMapsKt::main);
+        testExample("Examples/51_References_and_Mutability/Examples/ImmutableMaps.kt", referencesmutability.ImmutableMapsKt::main);
     }
 
     @Test
     public void testMutableMaps() {
-        testExample("Examples/50_References_and_Mutability/Examples/MutableMaps.kt", referencesmutability.MutableMapsKt::main);
+        testExample("Examples/51_References_and_Mutability/Examples/MutableMaps.kt", referencesmutability.MutableMapsKt::main);
     }
 
     @Test
     public void testGreatApe() {
-        testExample("Examples/51_Inheritance/Examples/GreatApe.kt", inheritance.GreatApeKt::main);
+        testExample("Examples/52_Inheritance/Examples/GreatApe.kt", inheritance.GreatApeKt::main);
     }
 
     @Test
     public void testGreatApe2() {
-        testExample("Examples/52_Base_Class_Initialization/Examples/GreatApe2.kt", baseclassinit.GreatApe2Kt::main);
+        testExample("Examples/53_Base_Class_Initialization/Examples/GreatApe2.kt", baseclassinit.GreatApe2Kt::main);
     }
 
     @Test
     public void testAuxiliaryInitialization() {
-        testExample("Examples/52_Base_Class_Initialization/Examples/AuxiliaryInitialization.kt", baseclassinit.AuxiliaryInitializationKt::main);
+        testExample("Examples/53_Base_Class_Initialization/Examples/AuxiliaryInitialization.kt", baseclassinit.AuxiliaryInitializationKt::main);
     }
 
     @Test
     public void testGreatApe3() {
-        testExample("Examples/53_Overriding_Methods/Examples/GreatApe3.kt", overridingmethods.GreatApe3Kt::main);
+        testExample("Examples/54_Overriding_Methods/Examples/GreatApe3.kt", overridingmethods.GreatApe3Kt::main);
     }
 
     @Test
     public void testAbstractClasses() {
-        testExample("Examples/55_Abstract_Classes/Examples/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
+        testExample("Examples/56_Abstract_Classes/Examples/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
     }
 
     @Test
     public void testLevel() {
-        testExample("Examples/57_Enumerations/Examples/Level.kt", enumerations.LevelKt::main);
+        testExample("Examples/58_Enumerations/Examples/Level.kt", enumerations.LevelKt::main);
     }
 
     @Test
     public void testColorBlendTest() {
-        testExample("Examples/58_More_About_When_Expressions/Examples/ColorBlendTest.kt", colorblend.ColorBlendTestKt::main);
+        testExample("Examples/59_More_About_when_Expressions/Examples/ColorBlendTest.kt", colorblend.ColorBlendTestKt::main);
     }
 
     @Test
     public void testColorBlendMap() {
-        testExample("Examples/58_More_About_When_Expressions/Examples/ColorBlendMap.kt", colorblendmap.ColorBlendMapKt::main);
+        testExample("Examples/59_More_About_when_Expressions/Examples/ColorBlendMap.kt", colorblendmap.ColorBlendMapKt::main);
     }
 
     @Test
     public void testWhenExpressionAndDataClasses() {
-        testExample("Examples/59_Sealed_Classes/Examples/WhenExpressionAndDataClasses.kt", whenexpressionsdata.WhenExpressionAndDataClassesKt::main);
+        testExample("Examples/60_Sealed_Classes/Examples/WhenExpressionAndDataClasses.kt", whenexpressionsdata.WhenExpressionAndDataClassesKt::main);
     }
 
     @Test
     public void testObjectsAndMethods() {
-        testExample("Examples/61_Companion_Objects/Examples/ObjectsAndMethods.kt", companionobjects.ObjectsAndMethodsKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ObjectsAndMethods.kt", companionobjects.ObjectsAndMethodsKt::main);
     }
 
     @Test
     public void testThisKeyword() {
-        testExample("Examples/61_Companion_Objects/Examples/ThisKeyword.kt", companionobjects1.ThisKeywordKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ThisKeyword.kt", companionobjects1.ThisKeywordKt::main);
     }
 
     @Test
     public void testObjectKeyword() {
-        testExample("Examples/61_Companion_Objects/Examples/ObjectKeyword.kt", companionobjects2.ObjectKeywordKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ObjectKeyword.kt", companionobjects2.ObjectKeywordKt::main);
     }
 
     @Test
     public void testObjectProperty() {
-        testExample("Examples/61_Companion_Objects/Examples/ObjectProperty.kt", companionobjects4.ObjectPropertyKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ObjectProperty.kt", companionobjects4.ObjectPropertyKt::main);
     }
 
     @Test
     public void testObjectMethods() {
-        testExample("Examples/61_Companion_Objects/Examples/ObjectMethods.kt", companionobjects5.ObjectMethodsKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ObjectMethods.kt", companionobjects5.ObjectMethodsKt::main);
     }
 
     @Test
     public void testObjCounter() {
-        testExample("Examples/61_Companion_Objects/Examples/ObjCounter.kt", companionobjects.ObjCounterKt::main);
+        testExample("Examples/62_Companion_Objects/Examples/ObjCounter.kt", companionobjects.ObjCounterKt::main);
     }
 }

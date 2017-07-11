@@ -1,9 +1,10 @@
 package moreaboutranges
 
+fun inFloatRange(n: Double) =
+  println("$n in $r? ${n in r}")
+
 fun main(args: Array<String>) {
   val r = 1.0..10.0
-  fun inFloatRange(n: Double) = // [1]
-      println("$n in $r? ${n in r}")
   inFloatRange(0.999999)
   inFloatRange(5.0)
   inFloatRange(10.0)

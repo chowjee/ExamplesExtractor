@@ -4,7 +4,7 @@ fun g() = Unit
 
 fun main(args: Array<String>) {
   println(g())
-  val u: Unit = println(42) 
+  val u: Unit = println(42)
   println(u)
 }
 /* Output:

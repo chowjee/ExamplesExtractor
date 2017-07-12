@@ -1,0 +1,10 @@
+package mapandreduce
+
+import com.atomickotlin.test.eq
+
+fun main(args: Array<String>) {
+  val l = listOf(1, 10, 100, 1000)
+  var sum = 0
+  l.forEach { x -> sum += x }
+  sum eq 1111
+}

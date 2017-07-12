@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "MutableList.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MutableListIsList.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DifferentReferencesToList.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

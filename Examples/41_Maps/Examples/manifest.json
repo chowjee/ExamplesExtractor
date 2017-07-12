@@ -1,0 +1,24 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Maps.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MutableMaps.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ReadOnlyMaps.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ContactMap.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

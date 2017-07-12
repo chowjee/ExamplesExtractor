@@ -8,14 +8,6 @@
     {
       "filename": "CopyDataClass.kt",
       "modifiable": "true"
-    },
-    {
-      "filename": "DataClassesWithVars.kt",
-      "modifiable": "true"
-    },
-    {
-      "filename": "DataClassAndHashCode.kt",
-      "modifiable": "true"
     }
   ],
   "args": "",

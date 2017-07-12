@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ChangingAVal.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "AnUnchangingVar.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "References.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

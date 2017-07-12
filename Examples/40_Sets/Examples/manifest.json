@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Sets.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "RemoveDuplicates.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MutableSet.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

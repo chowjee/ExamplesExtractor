@@ -2,12 +2,12 @@ package reordering
 
 import settings.Settings
 import java.io.File
+import atoms.AtomName
+import atoms.withoutIndex
 
 fun main(args: Array<String>) {
     reorderAtomsInStatusFile()
 }
-
-typealias AtomName = String
 
 data class AtomStatus(
         val name: AtomName,
@@ -28,9 +28,6 @@ data class AtomStatus(
         appendln("+ Notes:$notes")
     }
 }
-
-val AtomName.withoutIndex: String
-    get() = substringAfter("_")
 
 fun reorderAtomsInStatusFile() {
     val atomsDir = File(Settings.atomsPath)

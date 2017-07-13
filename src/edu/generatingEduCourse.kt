@@ -20,6 +20,7 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
     if (atomInfo.examplesMap.isEmpty() && atomInfo.exercisesMap.isEmpty()) {
         return null
     }
+    val atomicTest = File("AtomicTest/AtomicTest.kt").readText()
     val taskForExercises = atomInfo.exercisesMap.map {
         (_, exerciseDir) ->
 
@@ -31,22 +32,31 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
 
         Task(taskName, 0, taskFiles, testsMap, tasksMap)
     }
-    return Lesson(0, atomInfo.title, arrayListOf<Task>() + generateTaskForExamples(atomInfo) + taskForExercises)
+    return Lesson(0, atomInfo.title,
+            arrayListOf<Task>() + generateTaskForExamples(atomInfo, atomicTest) + taskForExercises)
 }
 
-fun generateTaskForExamples(atomInfo: AtomInfo): Task {
+fun generateTaskForExamples(atomInfo: AtomInfo, atomicTest: String): Task {
     val taskFiles = atomInfo.examplesMap.map {
         (exampleName, exampleFile) ->
         TaskFile(exampleName, exampleFile.readText(), listOf())
     }.associateBy {
         it.name
     }
-    return Task("Examples", 0, taskFiles, emptyMap(), emptyMap())
+    val allFiles = if (taskFiles.values.any { it.text.contains("import com.atomickotlin.test.eq") }) {
+        val atomicFile = TaskFile("AtomicTest.kt", atomicTest, listOf())
+        taskFiles + (atomicFile.name to atomicFile)
+    }
+    else {
+        taskFiles
+    }
+    return Task("Examples", 0, allFiles, emptyMap(), emptyMap())
 }
 
 fun generateTaskFile(solutionFile: File): TaskFile {
-    val taskText = solutionFile.readText().uncommentTags().removeSolutions().removeTaskWindowTags()
-    val solutions = solutionFile.readText().uncommentTags().getSolutionsInTaskWindows()
+    val solutionText = solutionFile.readText().uncommentTags()
+    val taskText = solutionText.removeSolutions().removeTaskWindowTags()
+    val solutions = solutionText.getSolutionsInTaskWindows()
     if (solutions.isEmpty()) {
         throw IllegalArgumentException("Can't find solutions for ${solutionFile.path}")
     }

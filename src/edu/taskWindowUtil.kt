@@ -41,3 +41,8 @@ fun String.getSolutionsInTaskWindows(): List<String> {
 fun String.removeSolutions(): String {
     return split(CLOSED).map { it.substringBefore(OPEN) }.joinToString(OPEN + "TODO()" + CLOSED)
 }
+
+fun String.removePackageDeclarations(): String {
+    val lines = lines()
+    return lines.subList(2, lines.size).joinToString("\n")
+}

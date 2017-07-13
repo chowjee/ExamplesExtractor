@@ -18,7 +18,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Hello, World!\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -103,7 +105,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Variables\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -188,7 +192,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Data Types\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -249,7 +255,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Functions\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -388,7 +396,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"If Expressions\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -478,7 +488,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"String Templates\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -612,7 +624,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Number Types\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -808,7 +822,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Booleans\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -924,7 +940,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Repetition with `while`\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -981,7 +999,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"`for` & Ranges\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -1146,7 +1166,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"More About Ranges\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -1301,7 +1323,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Expressions & Statements\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     }, {
       "name" : "Exercise 1",
@@ -1402,7 +1426,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Summary 1\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1424,7 +1450,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Classes & Objects\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1441,7 +1469,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Creating Classes\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1468,7 +1498,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Methods In Classes\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1515,7 +1547,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Imports & Packages\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1552,7 +1586,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Testing\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1579,7 +1615,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Properties\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1611,7 +1649,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"References & Mutability\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1633,7 +1673,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Lists\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1660,7 +1702,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Parameterized Types\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1692,7 +1736,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Read-only & Mutable Lists\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1744,7 +1790,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Summary 2\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1771,7 +1819,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"`when` Expressions\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1793,7 +1843,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"`when` Expressions & Smart Casts\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1825,7 +1877,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Named & Default Arguments\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1862,7 +1916,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Overloading\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1894,7 +1950,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Class Arguments\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1921,7 +1979,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Constructors\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1943,7 +2003,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Secondary Constructors\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -1970,7 +2032,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Data Classes\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2002,7 +2066,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Automatic String Conversion\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2034,7 +2100,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Sets\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2071,7 +2139,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Maps\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2113,7 +2183,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Destructuring Declarations\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2165,7 +2237,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Lambdas\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2202,7 +2276,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Operations on Lists\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2234,7 +2310,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Combining Lists with zip\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2276,7 +2354,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Varargs & Arrays\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2298,7 +2378,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Inheritance\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2325,7 +2407,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Base Class Initialization\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2347,7 +2431,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Overriding Methods\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2379,7 +2465,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Abstract Classes\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2401,7 +2489,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Enumerations\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2438,7 +2528,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"More About `when` Expressions\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2460,7 +2552,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Sealed Classes\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2512,7 +2606,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Companion Objects\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   }, {
@@ -2539,7 +2635,9 @@
         }
       },
       "test_files" : { },
-      "task_texts" : { },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Data Classes & Immutability\".\n\nMark as `completed` after reading the atom."
+      },
       "task_type" : "pycharm"
     } ]
   } ],

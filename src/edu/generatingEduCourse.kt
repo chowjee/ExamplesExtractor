@@ -50,7 +50,8 @@ fun generateTaskForExamples(atomInfo: AtomInfo, atomicTest: String): Task {
     else {
         taskFiles
     }
-    return Task("Examples", 0, allFiles, emptyMap(), emptyMap())
+    val tasksMap = mapOf("task" to examplesTask(atomInfo))
+    return Task("Examples", 0, allFiles, emptyMap(), tasksMap)
 }
 
 fun generateTaskFile(solutionFile: File): TaskFile {

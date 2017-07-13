@@ -32,7 +32,7 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
 
         Task(taskName, 0, taskFiles, testsMap, tasksMap)
     }
-    return Lesson(0, atomInfo.title,
+    return Lesson(0, atomInfo.title.removeCodeFormatting(),
             arrayListOf<Task>() + generateTaskForExamples(atomInfo, atomicTest) + taskForExercises)
 }
 

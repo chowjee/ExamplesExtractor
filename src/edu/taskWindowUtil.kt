@@ -46,3 +46,5 @@ fun String.removePackageDeclarations(): String {
     val lines = lines()
     return lines.subList(2, lines.size).joinToString("\n")
 }
+
+fun String.removeCodeFormatting() = filter { it != '`' }

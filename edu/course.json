@@ -907,7 +907,7 @@
     } ]
   }, {
     "id" : 0,
-    "title" : "Repetition with `while`",
+    "title" : "Repetition with while",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
@@ -929,7 +929,7 @@
     } ]
   }, {
     "id" : 0,
-    "title" : "`for` & Ranges",
+    "title" : "for & Ranges",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
@@ -1749,7 +1749,7 @@
     } ]
   }, {
     "id" : 0,
-    "title" : "`when` Expressions",
+    "title" : "when Expressions",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
@@ -1776,7 +1776,7 @@
     } ]
   }, {
     "id" : 0,
-    "title" : "`when` Expressions & Smart Casts",
+    "title" : "when Expressions & Smart Casts",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
@@ -2406,7 +2406,7 @@
     } ]
   }, {
     "id" : 0,
-    "title" : "More About `when` Expressions",
+    "title" : "More About when Expressions",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,

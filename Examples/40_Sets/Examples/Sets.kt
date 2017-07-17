@@ -6,9 +6,9 @@ fun main(args: Array<String>) {
   val set = setOf(1, 1, 2, 3, 9, 9, 4)
   // No duplicates:
   set eq setOf(1, 9, 2, 3, 4)
-  
+
   // Order of elements is not important:
-  setOf(1, 2) eq setOf(2, 1)  
+  setOf(1, 2) eq setOf(2, 1)
 
   // Set membership:
   (9 in set) eq true

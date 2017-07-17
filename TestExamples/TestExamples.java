@@ -354,12 +354,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testCat() {
-        testExample("Examples/22_Methods_In_Classes/Examples/Cat.kt", methodsinclasses.CatKt::main);
+        testExample("Examples/22_Member_Functions/Examples/Cat.kt", memberfunctions.CatKt::main);
     }
 
     @Test
     public void testHamster() {
-        testExample("Examples/22_Methods_In_Classes/Examples/Hamster.kt", methodsinclasses.HamsterKt::main);
+        testExample("Examples/22_Member_Functions/Examples/Hamster.kt", memberfunctions.HamsterKt::main);
     }
 
     @Test
@@ -653,6 +653,21 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testQuoting() {
+        testExample("Examples/43_Extension_Functions/Examples/Quoting.kt", quoting.QuotingKt::main);
+    }
+
+    @Test
+    public void testQuote() {
+        testExample("Examples/43_Extension_Functions/Examples/Quote.kt", extensionfunctions.QuoteKt::main);
+    }
+
+    @Test
+    public void testExtensionFunctionArguments() {
+        testExample("Examples/43_Extension_Functions/Examples/ExtensionFunctionArguments.kt", extensionfunctions.ExtensionFunctionArgumentsKt::main);
+    }
+
+    @Test
     public void testDisplayList() {
         testExample("Examples/49_Lambdas/Examples/DisplayList.kt", lambdas.DisplayListKt::main);
     }
@@ -764,7 +779,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testGreatApe3() {
-        testExample("Examples/55_Overriding_Methods/Examples/GreatApe3.kt", overridingmethods.GreatApe3Kt::main);
+        testExample("Examples/55_Overriding_Functions/Examples/GreatApe3.kt", overridingfunctions.GreatApe3Kt::main);
     }
 
     @Test
@@ -793,8 +808,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testObjectsAndMethods() {
-        testExample("Examples/63_Companion_Objects/Examples/ObjectsAndMethods.kt", companionobjects.ObjectsAndMethodsKt::main);
+    public void testObjectsAndFunctions() {
+        testExample("Examples/63_Companion_Objects/Examples/ObjectsAndFunctions.kt", companionobjects.ObjectsAndFunctionsKt::main);
     }
 
     @Test
@@ -813,8 +828,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testObjectMethods() {
-        testExample("Examples/63_Companion_Objects/Examples/ObjectMethods.kt", companionobjects5.ObjectMethodsKt::main);
+    public void testObjectFunctions() {
+        testExample("Examples/63_Companion_Objects/Examples/ObjectFunctions.kt", companionobjects5.ObjectFunctionsKt::main);
     }
 
     @Test

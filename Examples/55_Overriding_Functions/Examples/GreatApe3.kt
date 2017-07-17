@@ -1,4 +1,4 @@
-package overridingmethods
+package overridingfunctions
 
 import com.atomickotlin.test.eq
 
@@ -26,7 +26,7 @@ class Bonobo : GreatApe() {
   // Call the base-class version:
   override fun eat() = super.eat() * 2
 
-  // Add a method():
+  // Add a function():
   fun run() = "Bonobo run"
 }
 
@@ -38,7 +38,7 @@ class Chimpanzee : GreatApe() {
 }
 
 fun talk(ape: GreatApe): String {
-  // ape.run()  // Not an ape method
+  // ape.run()  // Not an ape function
   // ape.jump // Nor this
   ape.climb(4)
   return ape.call() + ape.eat()

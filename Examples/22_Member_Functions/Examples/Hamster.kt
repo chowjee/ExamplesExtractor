@@ -1,4 +1,4 @@
-package methodsinclasses
+package memberfunctions
 
 class Hamster {
   fun speak(): String = "squeak!"

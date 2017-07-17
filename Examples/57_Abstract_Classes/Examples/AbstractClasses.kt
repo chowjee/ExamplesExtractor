@@ -4,9 +4,9 @@ import com.atomickotlin.test.eq
 
 abstract class Animal {
 
-  fun templateMethod() = "The ${animal()} goes ${sound()}"
+  fun templateFunction() = "The ${animal()} goes ${sound()}"
 
-  // Abstract methods (no method body):
+  // Abstract functions (no function body):
   abstract fun animal(): String
 
   abstract fun sound(): String
@@ -28,8 +28,8 @@ fun main(args: Array<String>) {
   // an instance of an abstract class:
 //  val a = Animal()
 
-  Duck().templateMethod() eq
+  Duck().templateFunction() eq
       "The Duck goes Quack"
-  Cow().templateMethod() eq
+  Cow().templateFunction() eq
       "The Cow goes Moo"
 }

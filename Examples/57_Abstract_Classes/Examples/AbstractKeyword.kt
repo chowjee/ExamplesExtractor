@@ -5,7 +5,7 @@ abstract class WithValVar {
   abstract var y: Int
 }
 
-abstract class WithMethod {
+abstract class WithFunction {
   abstract fun f(): Int
   abstract fun g(n: Double)
 }

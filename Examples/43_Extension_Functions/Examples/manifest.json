@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "Quoting.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Quote.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ExtensionFunctionArguments.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

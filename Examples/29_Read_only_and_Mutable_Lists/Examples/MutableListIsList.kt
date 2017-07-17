@@ -5,7 +5,7 @@ fun getList(): List<Int> {
 }
 
 fun main(args: Array<String>) {
-  // can't change a List:
+  // Can't change a List:
   val list = getList()
 //  list += 3
 }

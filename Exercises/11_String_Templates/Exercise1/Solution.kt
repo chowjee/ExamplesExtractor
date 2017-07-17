@@ -10,8 +10,8 @@ fun checkSign(number: Int) = /*<taskWindow>*/
 
 fun main(args: Array<String>) {
     val n = 17
-    /*<taskWindow>*/println("The number $n is ${checkSign(n)}.")/*</taskWindow>*/
+    /*<taskWindow>*/println("Number $n is ${checkSign(n)}.")/*</taskWindow>*/
 }
 /* Expected output:
-The number 17 is positive.
+Number 17 is positive.
 */

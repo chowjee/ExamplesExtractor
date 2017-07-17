@@ -13,6 +13,6 @@ fun main(args: Array<String>) {
   favLanguage[contact] eq "Kotlin"             // [1]
 
   contact.name = "Melissa"
-  // the information stored by this contact is lost:
+  // Information stored by this contact is lost:
   favLanguage[contact] eq null                 // [2]
 }

@@ -2,7 +2,7 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "ObjectsAndMethods.kt",
+      "filename": "ObjectsAndFunctions.kt",
       "modifiable": "true"
     },
     {
@@ -22,7 +22,7 @@
       "modifiable": "true"
     },
     {
-      "filename": "ObjectMethods.kt",
+      "filename": "ObjectFunctions.kt",
       "modifiable": "true"
     },
     {

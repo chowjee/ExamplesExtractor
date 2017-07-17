@@ -8,13 +8,22 @@ data class Course(
 
 data class Lesson(val id: Int, val title: String, val task_list: List<Task>)
 
-data class Task(
+interface Task
+
+data class GeneralTask(
         val name: String,
         val stepic_id: Int,
         val task_files: Map<String, TaskFile>,
         val test_files: Map<String, String>,
         val task_texts: Map<String, String>,
-        val task_type: String = "pycharm")
+        val task_type: String = "pycharm"): Task
+
+data class TheoryTask(
+        val name: String,
+        val stepic_id: Int,
+        val task_files: Map<String, TaskFile>,
+        val task_texts: Map<String, String>,
+        val task_type: String = "theory"): Task
 
 data class TaskFile(
     val name: String,

@@ -27,10 +27,10 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
         val taskName = "Exercise " + exerciseDir.name.substringAfter("Exercise")
 
         val taskFiles = mapOf("Task.kt" to generateTaskFile(exerciseDir.subFile("Solution.kt")))
-        val testsMap = mapOf("Test.kt" to exerciseDir.subFile("Test.kt").readText())
+        val testsMap = mapOf("Tests.kt" to exerciseDir.subFile("Test.kt").readText().removePackageDeclarations())
         val tasksMap = mapOf("task" to exerciseDir.subFile("task.md").readText())
 
-        Task(taskName, 0, taskFiles, testsMap, tasksMap)
+        GeneralTask(taskName, 0, taskFiles, testsMap, tasksMap)
     }
     return Lesson(0, atomInfo.title.removeCodeFormatting(),
             arrayListOf<Task>() + generateTaskForExamples(atomInfo, atomicTest) + taskForExercises)
@@ -51,11 +51,11 @@ fun generateTaskForExamples(atomInfo: AtomInfo, atomicTest: String): Task {
         taskFiles
     }
     val tasksMap = mapOf("task" to examplesTask(atomInfo))
-    return Task("Examples", 0, allFiles, emptyMap(), tasksMap)
+    return TheoryTask("Examples", 0, allFiles, tasksMap)
 }
 
 fun generateTaskFile(solutionFile: File): TaskFile {
-    val solutionText = solutionFile.readText().uncommentTags()
+    val solutionText = solutionFile.readText().uncommentTags().removePackageDeclarations()
     val taskText = solutionText.removeSolutions().removeTaskWindowTags()
     val solutions = solutionText.getSolutionsInTaskWindows()
     if (solutions.isEmpty()) {

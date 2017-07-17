@@ -8,7 +8,7 @@
       "task_files" : {
         "EmptyProgram.kt" : {
           "name" : "EmptyProgram.kt",
-          "text" : "package helloworld\n\nfun main(args: Array<String>) {\n  // code of your simple program\n}",
+          "text" : "package helloworld\n\nfun main(args: Array<String>) {\n  // Program code here ...\n}",
           "placeholders" : [ ]
         },
         "HelloWorld.kt" : {
@@ -17,20 +17,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Hello, World!\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package helloWorld1\n\nfun main(args: Array<String>) {\n    TODO()\n}",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 57,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -45,7 +44,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package helloWorld1\n\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Hello, World! (#1)\n\nCreate and run a program that prints the phrase \"Hello, Kotlin!\" to the console."
@@ -57,9 +56,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package helloWorld2\n\nfun main(args: Array<String>) {\n    TODO()\n}",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 57,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -74,7 +73,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package helloWorld2\n\nimport org.junit.Test\n\nclass TestHelloWorld2 {\n    @Test fun test1() {\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld2 {\n    @Test fun test1() {\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Hello, World! (#2)\n\nPrint the same phrase \"Hello, Kotlin!\" to the console, but \"Kotlin\" should appear on the next line.\nYou can print two separate strings to achieve that:\n\n```\nHello,\nKotlin!\n```\n\nTry replacing `println` with `print` and see what changes."
@@ -104,20 +103,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Variables\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package exercises.variables1\n\nfun main(args: Array<String>) {\n    TODO()\n}",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 66,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -132,7 +130,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package variables1\n\nimport org.junit.Test\n\nclass TestVariables1 {\n    @Test fun test1() {\n        println(\"error: val cannot be reassigned\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestVariables1 {\n    @Test fun test1() {\n        println(\"error: val cannot be reassigned\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Variables (#1)\n\nDeclare a `val answer` and set its value to `42`.\nTry to reassign the `answer` to `43` in the next line.\nWhat error does the compiler produce?\nFix the error by replacing `val` with `var`."
@@ -144,9 +142,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package exercises.variables2\n\nfun main(args: Array<String>) {\n    var x = 1\n    var y = 2\n    TODO()\n    println(x)\n    println(y)\n}\n/* Expected output:\n2\n1\n*/",
+          "text" : "\nfun main(args: Array<String>) {\n    var x = 1\n    var y = 2\n    TODO()\n    println(x)\n    println(y)\n}\n/* Expected output:\n2\n1\n*/",
           "placeholders" : [ {
-            "offset" : 94,
+            "offset" : 65,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -161,7 +159,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package variables2\n\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n        println(\"TODO. Check expected output: 2\\n1\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n        println(\"TODO. Check expected output: 2\\n1\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Variables (#2)\n\nDeclare two `var`s `x` and `y`.\nSwap their contents (you can first try saying `x = y`, `y = x` and then fix the erroneous solution):\n```\nvar x = 1\nvar y = 2\n// swap\nprintln(x) // 2\nprintln(y) // 1\n```\n\nYour code should remain unchanged for different initializers, like\n`var x = \"first\"`, `var y = \"second\"`.\nThus saying just `x = 2`, `y = 1` is not the expected solution.\nTip: you may need to introduce a third auxiliary variable."
@@ -191,20 +189,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Data Types\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n    TODO()\n}",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 55,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -219,7 +216,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package dataTypes\n\nimport org.junit.Test\n\nclass TestDataTypes {\n    @Test fun test1() {\n        println(\"type mismatch error\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestDataTypes {\n    @Test fun test1() {\n        println(\"type mismatch error\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Data Types (#1)\n\nDeclare the mutable variable `answer` of the `Int` type and set its value to `42`.\nIn the next line try to reassign `answer` to the string \"unknown\".\nWhat error does the compiler produce?\n\nRemove the `Int` type specification.\nDoes the error change?"
@@ -254,20 +251,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Functions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package functions1\n\nfun getSquare(i: Int) = TODO()",
+          "text" : "\nfun getSquare(i: Int) = TODO()",
           "placeholders" : [ {
-            "offset" : 44,
+            "offset" : 25,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -282,7 +278,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package functions1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions1 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSquare(5) should return 25\",\n                25, getSquare(5))\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSquare(-3) should return 9\",\n                9, getSquare(-3))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions1 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSquare(5) should return 25\",\n                25, getSquare(5))\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSquare(-3) should return 9\",\n                9, getSquare(-3))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Functions (#1)\n\nCreate a function `getSquare` that takes an `Int` argument and\nreturns its square."
@@ -294,9 +290,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package functions2\n\nfun getSum(a: Double, b: Double, c: Double) = TODO()",
+          "text" : "\nfun getSum(a: Double, b: Double, c: Double) = TODO()",
           "placeholders" : [ {
-            "offset" : 66,
+            "offset" : 47,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -311,7 +307,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package functions2\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions2 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSum(1.0, 2.1, 7.9) should return 10.0\",\n                10.0, getSum(1.0, 2.1, 6.9), 0.000001)\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSum(0.0, 42.0, -42.0) should return 0.0\",\n                0.0, getSum(0.0, 42.0, -42.0), 0.000001)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions2 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSum(1.0, 2.1, 7.9) should return 10.0\",\n                10.0, getSum(1.0, 2.1, 6.9), 0.000001)\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSum(0.0, 42.0, -42.0) should return 0.0\",\n                0.0, getSum(0.0, 42.0, -42.0), 0.000001)\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Functions (#2)\n\nCreate a function `getSum` that takes three `Double` arguments\nand returns their sum."
@@ -323,9 +319,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package functions3\n\nfun duplicate(s: String) = TODO()",
+          "text" : "\nfun duplicate(s: String) = TODO()",
           "placeholders" : [ {
-            "offset" : 47,
+            "offset" : 28,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -340,7 +336,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package functions3\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions3 {\n    @Test fun test1() {\n        Assert.assertEquals(\"\"\"duplicate(\"abc\") should return \"abcabc\"\"\"\",\n                duplicate(\"abc\"), \"abcabc\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions3 {\n    @Test fun test1() {\n        Assert.assertEquals(\"\"\"duplicate(\"abc\") should return \"abcabc\"\"\"\",\n                duplicate(\"abc\"), \"abcabc\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Functions (#3)\n\nCreate a function `duplicate` that takes a `String`\nand returns this `String` repeated twice."
@@ -395,20 +391,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"If Expressions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ifExpressions1\n\nfun checkSign(number: Int) = TODO()",
+          "text" : "\nfun checkSign(number: Int) = TODO()",
           "placeholders" : [ {
-            "offset" : 53,
+            "offset" : 30,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -423,7 +418,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ifExpressions1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions1 {\n    @Test fun testPositive() {\n        Assert.assertEquals(\"\"\"checkSign(10) should return \"positive\"\"\"\",\n                \"positive\", checkSign(10))\n    }\n\n    @Test fun testZero() {\n        Assert.assertEquals(\"\"\"checkSign(0) should return \"zero\"\"\"\",\n                \"zero\", checkSign(0))\n    }\n\n    @Test fun testNegative() {\n        Assert.assertEquals(\"\"\"checkSign(-10) should return \"negative\"\"\"\",\n                \"negative\", checkSign(-10))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions1 {\n    @Test fun testPositive() {\n        Assert.assertEquals(\"\"\"checkSign(10) should return \"positive\"\"\"\",\n                \"positive\", checkSign(10))\n    }\n\n    @Test fun testZero() {\n        Assert.assertEquals(\"\"\"checkSign(0) should return \"zero\"\"\"\",\n                \"zero\", checkSign(0))\n    }\n\n    @Test fun testNegative() {\n        Assert.assertEquals(\"\"\"checkSign(-10) should return \"negative\"\"\"\",\n                \"negative\", checkSign(-10))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## If Expressions (#1)\n\nCreate a function `checkSign` that checks whether an integer number is positive, negative or zero,\nand returns one of the strings \"positive\", \"negative\" or \"zero\" as a result."
@@ -435,9 +430,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ifExpressions2\n\nfun findMax(first: Int, second: Int) = TODO()",
+          "text" : "\nfun findMax(first: Int, second: Int) = TODO()",
           "placeholders" : [ {
-            "offset" : 63,
+            "offset" : 40,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -452,7 +447,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ifExpressions2\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions2 {\n    @Test fun testMax1() {\n        Assert.assertEquals(2, findMax(1, 2))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions2 {\n    @Test fun testMax1() {\n        Assert.assertEquals(2, findMax(1, 2))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## If Expressions (#2)\n\nCreate a function `findMax` that finds the maximum between two integer numbers."
@@ -487,20 +482,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"String Templates\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package stringTemplates1\n\nfun checkSign(number: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val n = 17\n    TODO()\n}\n/* Expected output:\nNumber 17 is positive.\n*/",
+          "text" : "\nfun checkSign(number: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val n = 17\n    TODO()\n}\n/* Expected output:\nNumber 17 is positive.\n*/",
           "placeholders" : [ {
-            "offset" : 55,
+            "offset" : 30,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -512,7 +506,7 @@
               }
             }
           }, {
-            "offset" : 114,
+            "offset" : 89,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -527,7 +521,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package stringTemplates1\n\nimport org.junit.Test\n\nclass TestStringTemplates1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The number -17 is negative\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestStringTemplates1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The number -17 is negative\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## String Templates (#1)\n\nPrint the result of the function `checkSign` in the form \"The number 5 is positive\" for a given number."
@@ -539,9 +533,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package stringTemplates2\n\nfun findMax(first: Int, second: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val first = 17\n    val second = 31\n    TODO()\n}\n/* Expected output:\nThe maximum between 17 and 31 is 31.\n*/",
+          "text" : "\nfun findMax(first: Int, second: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val first = 17\n    val second = 31\n    TODO()\n}\n/* Expected output:\nThe maximum between 17 and 31 is 31.\n*/",
           "placeholders" : [ {
-            "offset" : 65,
+            "offset" : 40,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -553,7 +547,7 @@
               }
             }
           }, {
-            "offset" : 148,
+            "offset" : 123,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -568,7 +562,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package stringTemplates2\n\nimport org.junit.Test\n\nclass TestStringTemplates2 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The maximum between 17 and 31 is 31\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestStringTemplates2 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The maximum between 17 and 31 is 31\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## String Templates (#2)\n\nPrint the result of the function `findMax` in the form \"The maximum between x and y is max\"\nwith values of the corresponding variables instead of `x`, `y` and `max`."
@@ -623,20 +617,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Number Types\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package numberTypes1\n\n// 11 / 3\nval a = TODO()\n\n// 11 % 3\nval b = TODO()\n\n// a * 3 + b\nval c = TODO()\n\n// 6 / 5.0\nval d = TODO()",
+          "text" : "\n// 11 / 3\nval a = TODO()\n\n// 11 % 3\nval b = TODO()\n\n// a * 3 + b\nval c = TODO()\n\n// 6 / 5.0\nval d = TODO()",
           "placeholders" : [ {
-            "offset" : 40,
+            "offset" : 19,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -648,7 +641,7 @@
               }
             }
           }, {
-            "offset" : 66,
+            "offset" : 45,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -660,7 +653,7 @@
               }
             }
           }, {
-            "offset" : 95,
+            "offset" : 74,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -672,7 +665,7 @@
               }
             }
           }, {
-            "offset" : 122,
+            "offset" : 101,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -687,7 +680,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package numberTypes1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes1 {\n    @Test fun testA() {\n        Assert.assertEquals(3, a)\n    }\n\n    @Test fun testB() {\n        Assert.assertEquals(2, b)\n    }\n\n    @Test fun testC() {\n        Assert.assertEquals(11, c)\n    }\n\n    @Test fun testD() {\n        Assert.assertEquals(1.2, d, 0.0001)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes1 {\n    @Test fun testA() {\n        Assert.assertEquals(3, a)\n    }\n\n    @Test fun testB() {\n        Assert.assertEquals(2, b)\n    }\n\n    @Test fun testC() {\n        Assert.assertEquals(11, c)\n    }\n\n    @Test fun testD() {\n        Assert.assertEquals(1.2, d, 0.0001)\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Number Types (#1)\n\nMake sure you understand how arithmetical operations work.\nWrite down your answers to the following expressions and then check yourself using Kotlin:\n\n```kotlin\nval a = 11 / 3\nval b = 11 % 3\nval c = a * 3 + b\n\nval d = 6 / 5.0\n```\n\nNote that the variables `a`, `b` and `c` have `Int` type, while the variable `d` has `Double` type."
@@ -699,9 +692,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package numberTypes2\n\nfun main(args: Array<String>) {\n    TODO()\n}",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 58,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -716,7 +709,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package numberTypes2\n\nimport org.junit.Test\n\nclass TestNumberTypes2 {\n    @Test fun test() {\n        main(arrayOf())\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestNumberTypes2 {\n    @Test fun test() {\n        main(arrayOf())\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Number Types (#2)\n\nCheck which of the following numbers are small enough to be stored in variables of `Int` and `Long` types:\na million (10<sup>6</sup>), a billion (10<sup>9</sup>), a trillion (10<sup>12</sup>),\na quintillion (10<sup>18</sup>), a centillion (10<sup>303</sup>)."
@@ -728,9 +721,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package numberTypes3\n\nfun convertFahrenheitToCelsius(f: Int): Double =\n        TODO()\n\nfun convertCelsiusToFahrenheit(c: Int): Double =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(convertFahrenheitToCelsius(68)) // 20.0\n    println(convertCelsiusToFahrenheit(20)) // 68.0\n}",
+          "text" : "\nfun convertFahrenheitToCelsius(f: Int): Double =\n        TODO()\n\nfun convertCelsiusToFahrenheit(c: Int): Double =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(convertFahrenheitToCelsius(68)) // 20.0\n    println(convertCelsiusToFahrenheit(20)) // 68.0\n}",
           "placeholders" : [ {
-            "offset" : 79,
+            "offset" : 58,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -742,7 +735,7 @@
               }
             }
           }, {
-            "offset" : 144,
+            "offset" : 123,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -757,7 +750,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package numberTypes3\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes3 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testFahrenheitToCelsius1() {\n        Assert.assertEquals(\"5 F should be -15 C\",\n                -15.0, convertFahrenheitToCelsius(5), 0.0001)\n    }\n\n    @Test fun testFahrenheitToCelsius2() {\n        Assert.assertEquals(\"100 F should be 37.7778 C\",\n                37.7778, convertFahrenheitToCelsius(100), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit1() {\n        Assert.assertEquals(\"-15 C should be 5 F\",\n                5.0, convertCelsiusToFahrenheit(-15), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit2() {\n        Assert.assertEquals(\"20 C should be 68 F\",\n                68.0, convertCelsiusToFahrenheit(20), 0.0001)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes3 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testFahrenheitToCelsius1() {\n        Assert.assertEquals(\"5 F should be -15 C\",\n                -15.0, convertFahrenheitToCelsius(5), 0.0001)\n    }\n\n    @Test fun testFahrenheitToCelsius2() {\n        Assert.assertEquals(\"100 F should be 37.7778 C\",\n                37.7778, convertFahrenheitToCelsius(100), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit1() {\n        Assert.assertEquals(\"-15 C should be 5 F\",\n                5.0, convertCelsiusToFahrenheit(-15), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit2() {\n        Assert.assertEquals(\"20 C should be 68 F\",\n                68.0, convertCelsiusToFahrenheit(20), 0.0001)\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Number Types (#3)\n\nCreate two functions: one converting Fahrenheit to Celsius, another converting Celsius to Fahrenheit.\nTo convert Fahrenheit to Celsius first subtract `32`, then multiply by `5/9`.\nIf you get 0, check to make sure you didn't do integer math.\nFor backward conversion first multiply by `9/5`, then add `32`."
@@ -769,9 +762,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package numberTypes4\n\nfun convertTime(hours: Int, minutes: Int, seconds: Int): Long =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(convertTime(1, 30, 0))\n}",
+          "text" : "\nfun convertTime(hours: Int, minutes: Int, seconds: Int): Long =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(convertTime(1, 30, 0))\n}",
           "placeholders" : [ {
-            "offset" : 94,
+            "offset" : 73,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -786,7 +779,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package numberTypes4\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes4 {\n    @Test fun test1() {\n        Assert.assertEquals(\"One hour and a half is 5_400_000 milliseconds\",\n                5_400_000, convertTime(1, 30, 0))\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"One billion hours is 3_600_000_000_000_000 milliseconds \" +\n                \"(note that only Long variable can store this value)\",\n                3_600_000_000_000_000, convertTime(1_000_000_000, 0, 0))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes4 {\n    @Test fun test1() {\n        Assert.assertEquals(\"One hour and a half is 5_400_000 milliseconds\",\n                5_400_000, convertTime(1, 30, 0))\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"One billion hours is 3_600_000_000_000_000 milliseconds \" +\n                \"(note that only Long variable can store this value)\",\n                3_600_000_000_000_000, convertTime(1_000_000_000, 0, 0))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Number Types (#4)\n\nCreate a function that converts a period of time given in a number of hours, minutes and seconds to milliseconds.\n(One second is a thousand of milliseconds).\nFor instance, one hour and a half is 5_400_000 milliseconds."
@@ -821,20 +814,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Booleans\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package booleans1\n\n// (178 + 131 > 209 + 99) && false\nval a = TODO()\n\n// 1 > 2 || 1 < 2\nval b = TODO()\n\n// (111 - 101 >= 10) && (11.0 > 10.99) && true\nval c = TODO()",
+          "text" : "\n// (178 + 131 > 209 + 99) && false\nval a = TODO()\n\n// 1 > 2 || 1 < 2\nval b = TODO()\n\n// (111 - 101 >= 10) && (11.0 > 10.99) && true\nval c = TODO()",
           "placeholders" : [ {
-            "offset" : 62,
+            "offset" : 44,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -846,7 +838,7 @@
               }
             }
           }, {
-            "offset" : 96,
+            "offset" : 78,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -858,7 +850,7 @@
               }
             }
           }, {
-            "offset" : 159,
+            "offset" : 141,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -873,7 +865,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package booleans1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans1 {\n    @Test fun testA() {\n        Assert.assertFalse(a)\n    }\n\n    @Test fun testB() {\n        Assert.assertTrue(b)\n    }\n\n    @Test fun testC() {\n        Assert.assertTrue(c)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans1 {\n    @Test fun testA() {\n        Assert.assertFalse(a)\n    }\n\n    @Test fun testB() {\n        Assert.assertTrue(b)\n    }\n\n    @Test fun testC() {\n        Assert.assertTrue(c)\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Booleans (#1)\n\nWrite down your own guess answers to the following boolean expressions and then check yourself using Kotlin:\n\n```kotlin\nval a = (178 +  131 > 209 + 99) && false\nval b = 1 > 2 || 1 < 2\nval c = (111 - 101 >= 10) && (11.0 > 10.99) && true\n```"
@@ -885,9 +877,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package exercises.booleans2\n\nfun and(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun or(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(and(true, true)) // true\n    println(or(true, false)) // true\n}\n",
+          "text" : "\nfun and(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun or(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(and(true, true)) // true\n    println(or(true, false)) // true\n}\n",
           "placeholders" : [ {
-            "offset" : 82,
+            "offset" : 54,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -899,7 +891,7 @@
               }
             }
           }, {
-            "offset" : 142,
+            "offset" : 114,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -914,7 +906,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package exercises.booleans2\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans2 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testAnd() {\n        Assert.assertEquals(\"and(true, true) should be true\", true && true, and(true, true))\n        Assert.assertEquals(\"and(true, false) should be false\", true && false, and(true, false))\n        Assert.assertEquals(\"and(false, true) should be false\", false && true, and(false, true))\n        Assert.assertEquals(\"and(false, false) should be false\", false && false, and(false, false))\n    }\n\n    @Test fun testOr() {\n        Assert.assertEquals(\"or(true, true) should be true\", true || true, or(true, true))\n        Assert.assertEquals(\"or(true, false) should be true\", true || false, or(true, false))\n        Assert.assertEquals(\"or(false, true) should be true\", false || true, or(false, true))\n        Assert.assertEquals(\"or(false, false) should be false\", false || false, or(false, false))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans2 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testAnd() {\n        Assert.assertEquals(\"and(true, true) should be true\", true && true, and(true, true))\n        Assert.assertEquals(\"and(true, false) should be false\", true && false, and(true, false))\n        Assert.assertEquals(\"and(false, true) should be false\", false && true, and(false, true))\n        Assert.assertEquals(\"and(false, false) should be false\", false && false, and(false, false))\n    }\n\n    @Test fun testOr() {\n        Assert.assertEquals(\"or(true, true) should be true\", true || true, or(true, true))\n        Assert.assertEquals(\"or(true, false) should be true\", true || false, or(true, false))\n        Assert.assertEquals(\"or(false, true) should be true\", false || true, or(false, true))\n        Assert.assertEquals(\"or(false, false) should be false\", false || false, or(false, false))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Booleans (#2)\n\nImplement the `and`, `or` functions taking two Boolean arguments\nand returning the same results as built-in `&&`, `||` operators.\nThese functions shouldn't use `&&` or `||` (using `if` expression is enough)."
@@ -939,11 +931,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Repetition with `while`\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -998,20 +989,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"`for` & Ranges\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package forLoops1\n\nfun factorial(n: Long): Long {\n    TODO()\n}",
+          "text" : "\nfun factorial(n: Long): Long {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 54,
+            "offset" : 36,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1026,7 +1016,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package forLoops1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFactorial {\n\n    @Test fun test1() {\n        Assert.assertEquals(\"1! should be 1\",\n                1, factorial(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"3! should be 6\",\n                6, factorial(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"10! should be 3628800\",\n                3628800, factorial(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"20! should be 2432902008176640000\",\n                2432902008176640000, factorial(20))\n    }\n\n    @Test fun test0() {\n        Assert.assertEquals(\"0! should be 1\",\n                1, factorial(0))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFactorial {\n\n    @Test fun test1() {\n        Assert.assertEquals(\"1! should be 1\",\n                1, factorial(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"3! should be 6\",\n                6, factorial(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"10! should be 3628800\",\n                3628800, factorial(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"20! should be 2432902008176640000\",\n                2432902008176640000, factorial(20))\n    }\n\n    @Test fun test0() {\n        Assert.assertEquals(\"0! should be 1\",\n                1, factorial(0))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## For and While Loops (#1)\n\nCreate a function that calculates a factorial of a given number (`n! = 1 * 2 * ... * n`)."
@@ -1038,9 +1028,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package forLoops2\n\nfun factorial(n: Long): Long {\n    // copy the implementation of 'factorial' here\n    TODO()\n}\n\nfun sumOfFactorials(n: Long): Long {\n    TODO()\n}",
+          "text" : "\nfun factorial(n: Long): Long {\n    // copy the implementation of 'factorial' here\n    TODO()\n}\n\nfun sumOfFactorials(n: Long): Long {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 105,
+            "offset" : 87,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1052,7 +1042,7 @@
               }
             }
           }, {
-            "offset" : 156,
+            "offset" : 138,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1067,7 +1057,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package forLoops2\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfFactorials {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfFactorials(1) should be 1\",\n                1, sumOfFactorials(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfFactorials(3) should be 9\",\n                9, sumOfFactorials(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfFactorials(10) should be 4037913\",\n                4037913, sumOfFactorials(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfFactorials(20) should be 2561327494111820313\",\n                2561327494111820313, sumOfFactorials(20))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfFactorials {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfFactorials(1) should be 1\",\n                1, sumOfFactorials(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfFactorials(3) should be 9\",\n                9, sumOfFactorials(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfFactorials(10) should be 4037913\",\n                4037913, sumOfFactorials(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfFactorials(20) should be 2561327494111820313\",\n                2561327494111820313, sumOfFactorials(20))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## For and While Loops (#2)\n\nCreate a function that sums up the factorials up to a given number (`1! + 2! + ... + n!`)."
@@ -1079,9 +1069,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package forLoops3\n\nfun sumOfEven(n: Int): Int {\n    TODO()\n}",
+          "text" : "\nfun sumOfEven(n: Int): Int {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 52,
+            "offset" : 34,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1096,7 +1086,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package forLoops3\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## For and While Loops (#3)\n\nCreate a function that sums up only even numbers up to a given number."
@@ -1108,9 +1098,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package forLoops4\n\nfun sumOfEven(n: Int): Int {\n  TODO()\n}",
+          "text" : "\nfun sumOfEven(n: Int): Int {\n  TODO()\n}",
           "placeholders" : [ {
-            "offset" : 50,
+            "offset" : 32,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1125,7 +1115,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package forLoops4\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n            0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n            2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n            6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n            110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n            110, sumOfEven(21))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n            0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n            2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n            6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n            110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n            110, sumOfEven(21))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## For and While Loops (#4)\n\nRewrite the function from the previous exercise using the `while` loop."
@@ -1165,20 +1155,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"More About Ranges\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ranges1\n\nfun getAlphabet(): String {\n    TODO()\n}",
+          "text" : "\nfun getAlphabet(): String {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 49,
+            "offset" : 33,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1193,7 +1182,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ranges1\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestAlphabet {\n    @Test fun test1() {\n        Assert.assertEquals(\"abcdefghijklmnopqrstuvwxyz\", getAlphabet())\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestAlphabet {\n    @Test fun test1() {\n        Assert.assertEquals(\"abcdefghijklmnopqrstuvwxyz\", getAlphabet())\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Ranges (#1)\n\nIterate over a range of characters to return a string containing all english letters in the alphabetical order: \"abc...z\"."
@@ -1205,9 +1194,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ranges2\n\nfun sumOfEven(n: Int): Int {\n    TODO()\n}",
+          "text" : "\nfun sumOfEven(n: Int): Int {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 50,
+            "offset" : 34,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1222,7 +1211,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ranges2\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Ranges (#2)\n\nRewrite the function that sums up only even numbers up to a given number using `step`."
@@ -1234,9 +1223,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ranges3\n\nfun isLowerCase(ch: Char): Boolean = TODO()",
+          "text" : "\nfun isLowerCase(ch: Char): Boolean = TODO()",
           "placeholders" : [ {
-            "offset" : 54,
+            "offset" : 38,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1251,7 +1240,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ranges3\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestForLoops3 {\n    @Test fun testLowerCaseC() {\n        Assert.assertTrue(\"'c' is a lower case letter\", isLowerCase('c'))\n    }\n\n    @Test fun testLowerCaseA() {\n        Assert.assertTrue(\"'a' is a lower case letter\", isLowerCase('a'))\n    }\n\n    @Test fun testLowerCaseZ() {\n        Assert.assertTrue(\"'z' is a lower case letter\", isLowerCase('z'))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertFalse(\"'A' is an upper case letter\", isLowerCase('A'))\n    }\n\n    @Test fun testDigit() {\n        Assert.assertFalse(\"'1' is not a lower case letter\", isLowerCase('1'))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestForLoops3 {\n    @Test fun testLowerCaseC() {\n        Assert.assertTrue(\"'c' is a lower case letter\", isLowerCase('c'))\n    }\n\n    @Test fun testLowerCaseA() {\n        Assert.assertTrue(\"'a' is a lower case letter\", isLowerCase('a'))\n    }\n\n    @Test fun testLowerCaseZ() {\n        Assert.assertTrue(\"'z' is a lower case letter\", isLowerCase('z'))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertFalse(\"'A' is an upper case letter\", isLowerCase('A'))\n    }\n\n    @Test fun testDigit() {\n        Assert.assertFalse(\"'1' is not a lower case letter\", isLowerCase('1'))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Ranges (#3)\n\nCreate a function that checks that a character is a lowercase letter\n(its code should be between the codes for `a` and `z`)."
@@ -1263,9 +1252,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package ranges4\n\nTODO()\n\nfun isValidIdentifier(s: String): Boolean {\n    TODO()\n}",
+          "text" : "\nTODO()\n\nfun isValidIdentifier(s: String): Boolean {\n    TODO()\n}",
           "placeholders" : [ {
-            "offset" : 17,
+            "offset" : 1,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1277,7 +1266,7 @@
               }
             }
           }, {
-            "offset" : 73,
+            "offset" : 57,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1292,7 +1281,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package ranges4\n\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestValidIdentifier {\n    @Test fun testSimple() {\n        Assert.assertTrue(\"'name' is a valid identifier\", isValidIdentifier(\"name\"))\n    }\n\n    @Test fun testStartsWithUnderscore() {\n        Assert.assertTrue(\"'_name' is a valid identifier\", isValidIdentifier(\"_name\"))\n    }\n\n    @Test fun testUnderscore() {\n        Assert.assertTrue(\"'_' is a valid identifier\", isValidIdentifier(\"_\"))\n    }\n\n    @Test fun testContainsDigits() {\n        Assert.assertTrue(\"'n01' is a valid identifier\", isValidIdentifier(\"n01\"))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertTrue(\"'NNN' is a valid identifier\", isValidIdentifier(\"NNN\"))\n    }\n\n    @Test fun testValid() {\n        Assert.assertTrue(\"'_N01' is a valid identifier\", isValidIdentifier(\"_N01\"))\n    }\n\n    @Test fun testStartsWithDigit() {\n        Assert.assertFalse(\"'1_' is not a valid identifier\", isValidIdentifier(\"1_\"))\n    }\n\n    @Test fun testContainsIllegalCharacters() {\n        Assert.assertFalse(\"'&%$' is not a valid identifier\", isValidIdentifier(\"&%$\"))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestValidIdentifier {\n    @Test fun testSimple() {\n        Assert.assertTrue(\"'name' is a valid identifier\", isValidIdentifier(\"name\"))\n    }\n\n    @Test fun testStartsWithUnderscore() {\n        Assert.assertTrue(\"'_name' is a valid identifier\", isValidIdentifier(\"_name\"))\n    }\n\n    @Test fun testUnderscore() {\n        Assert.assertTrue(\"'_' is a valid identifier\", isValidIdentifier(\"_\"))\n    }\n\n    @Test fun testContainsDigits() {\n        Assert.assertTrue(\"'n01' is a valid identifier\", isValidIdentifier(\"n01\"))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertTrue(\"'NNN' is a valid identifier\", isValidIdentifier(\"NNN\"))\n    }\n\n    @Test fun testValid() {\n        Assert.assertTrue(\"'_N01' is a valid identifier\", isValidIdentifier(\"_N01\"))\n    }\n\n    @Test fun testStartsWithDigit() {\n        Assert.assertFalse(\"'1_' is not a valid identifier\", isValidIdentifier(\"1_\"))\n    }\n\n    @Test fun testContainsIllegalCharacters() {\n        Assert.assertFalse(\"'&%$' is not a valid identifier\", isValidIdentifier(\"&%$\"))\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Ranges (#4)\n\nCreate a function that checks that a string is a valid identifier.\nValid identifier begins with a letter or underscore and consists of only letters, digits and underscores.\nTry to extract the repetitive logic into auxiliary functions."
@@ -1322,20 +1311,19 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Expressions & Statements\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     }, {
       "name" : "Exercise 1",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "package expressionsAndStatements1\n\nfun main(args: Array<String>) {\n    TODO()\n}\n",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}\n",
           "placeholders" : [ {
-            "offset" : 71,
+            "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -1350,7 +1338,7 @@
         }
       },
       "test_files" : {
-        "Test.kt" : "package expressionsAndStatements1\n\nimport org.junit.Test\n\nclass TestExpressionsAndStatements1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: Unit\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestExpressionsAndStatements1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: Unit\")\n    }\n}"
       },
       "task_texts" : {
         "task" : "## Expressions and Statements (#1)\n\nTry to print out the result of the other `println` call."
@@ -1425,11 +1413,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Summary 1\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1449,11 +1436,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Classes & Objects\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1468,40 +1454,38 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Creating Classes\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
-    "title" : "Methods In Classes",
+    "title" : "Member Functions",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
       "task_files" : {
         "Dog.kt" : {
           "name" : "Dog.kt",
-          "text" : "package methodsinclasses\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}",
+          "text" : "package memberfunctions\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}",
           "placeholders" : [ ]
         },
         "Cat.kt" : {
           "name" : "Cat.kt",
-          "text" : "package methodsinclasses\n\nclass Cat {\n  fun meow(): String = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow()\n  println(m1)\n}\n/* Output:\nmew!\n*/",
+          "text" : "package memberfunctions\n\nclass Cat {\n  fun meow(): String = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow()\n  println(m1)\n}\n/* Output:\nmew!\n*/",
           "placeholders" : [ ]
         },
         "Hamster.kt" : {
           "name" : "Hamster.kt",
-          "text" : "package methodsinclasses\n\nclass Hamster {\n  fun speak(): String = \"squeak!\"\n  fun exercise(): String =\n      speak() + \" Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! Running on wheel\n*/",
+          "text" : "package memberfunctions\n\nclass Hamster {\n  fun speak(): String = \"squeak!\"\n  fun exercise(): String =\n      speak() + \" Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! Running on wheel\n*/",
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
-        "task" : "Examples accompanying the atom \"Methods In Classes\".\n\nMark as `completed` after reading the atom."
+        "task" : "Examples accompanying the atom \"Member Functions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1546,11 +1530,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Imports & Packages\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1585,11 +1568,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Testing\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1614,11 +1596,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Properties\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1648,11 +1629,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"References & Mutability\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1672,11 +1652,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Lists\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1701,11 +1680,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Parameterized Types\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1716,17 +1694,17 @@
       "task_files" : {
         "MutableList.kt" : {
           "name" : "MutableList.kt",
-          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n  \n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
+          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n\n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
           "placeholders" : [ ]
         },
         "MutableListIsList.kt" : {
           "name" : "MutableListIsList.kt",
-          "text" : "package lists\n\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // can't change a List:\n  val list = getList()\n//  list += 3\n}",
+          "text" : "package lists\n\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // Can't change a List:\n  val list = getList()\n//  list += 3\n}",
           "placeholders" : [ ]
         },
         "DifferentReferencesToList.kt" : {
           "name" : "DifferentReferencesToList.kt",
-          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n  \n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
+          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n\n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
           "placeholders" : [ ]
         },
         "AtomicTest.kt" : {
@@ -1735,11 +1713,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Read-only & Mutable Lists\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1789,11 +1766,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Summary 2\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1818,11 +1794,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"`when` Expressions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1842,11 +1817,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"`when` Expressions & Smart Casts\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1862,7 +1836,7 @@
         },
         "NamedArgumentsOrder.kt" : {
           "name" : "NamedArgumentsOrder.kt",
-          "text" : "package namedanddefault\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
+          "text" : "package namedanddefault\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // Can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
           "placeholders" : [ ]
         },
         "NamedAndDefaultArgs.kt" : {
@@ -1876,11 +1850,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Named & Default Arguments\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1915,11 +1888,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Overloading\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1949,11 +1921,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Class Arguments\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -1978,11 +1949,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Constructors\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2002,11 +1972,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Secondary Constructors\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2017,7 +1986,7 @@
       "task_files" : {
         "DataClasses.kt" : {
           "name" : "DataClasses.kt",
-          "text" : "package dataclasses\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n      Contact(\"Miffy\", \"1-234-567890\")\n\n  // these two instances are not equal:\n//  Person(\"Cleo\") eq Person(\"Cleo\")\n\n  Contact(\"Miffy\", \"1-234-567890\").toString() eq\n      \"Contact(name=Miffy, number=1-234-567890)\"\n}",
+          "text" : "package dataclasses\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n      Contact(\"Miffy\", \"1-234-567890\")\n\n  // These two instances are not equal:\n//  Person(\"Cleo\") eq Person(\"Cleo\")\n\n  Contact(\"Miffy\", \"1-234-567890\").toString() eq\n      \"Contact(name=Miffy, number=1-234-567890)\"\n}",
           "placeholders" : [ ]
         },
         "CopyDataClass.kt" : {
@@ -2031,11 +2000,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Data Classes\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2065,11 +2033,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Automatic String Conversion\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2080,7 +2047,7 @@
       "task_files" : {
         "Sets.kt" : {
           "name" : "Sets.kt",
-          "text" : "package sets\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val set = setOf(1, 1, 2, 3, 9, 9, 4)\n  // No duplicates:\n  set eq setOf(1, 9, 2, 3, 4)\n  \n  // Order of elements is not important:\n  setOf(1, 2) eq setOf(2, 1)  \n\n  // Set membership:\n  (9 in set) eq true\n  (99 in set) eq false\n\n  set.contains(9) eq true\n  set.contains(99) eq false\n\n  // Is this set contains another one?\n  set.containsAll(setOf(1, 9, 2)) eq true\n\n  // Set union:\n  set.union(setOf(3, 4, 5, 6)) eq\n      setOf(1, 2, 3, 4, 5, 6, 9)\n\n  // Set intersection:\n  set intersect setOf(0, 1, 2, 7, 8) eq\n      setOf(1, 2)\n\n  // Set difference:\n  set - setOf(0, 1, 9, 10) eq\n      setOf(2, 3, 4)\n  set.minus(setOf(0, 1, 9, 10)) eq\n      setOf(2, 3, 4)\n}",
+          "text" : "package sets\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val set = setOf(1, 1, 2, 3, 9, 9, 4)\n  // No duplicates:\n  set eq setOf(1, 9, 2, 3, 4)\n\n  // Order of elements is not important:\n  setOf(1, 2) eq setOf(2, 1)\n\n  // Set membership:\n  (9 in set) eq true\n  (99 in set) eq false\n\n  set.contains(9) eq true\n  set.contains(99) eq false\n\n  // Is this set contains another one?\n  set.containsAll(setOf(1, 9, 2)) eq true\n\n  // Set union:\n  set.union(setOf(3, 4, 5, 6)) eq\n      setOf(1, 2, 3, 4, 5, 6, 9)\n\n  // Set intersection:\n  set intersect setOf(0, 1, 2, 7, 8) eq\n      setOf(1, 2)\n\n  // Set difference:\n  set - setOf(0, 1, 9, 10) eq\n      setOf(2, 3, 4)\n  set.minus(setOf(0, 1, 9, 10)) eq\n      setOf(2, 3, 4)\n}",
           "placeholders" : [ ]
         },
         "RemoveDuplicates.kt" : {
@@ -2099,11 +2066,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Sets\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2138,11 +2104,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Maps\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2182,11 +2147,43 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Destructuring Declarations\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Extension Functions",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "Quoting.kt" : {
+          "name" : "Quoting.kt",
+          "text" : "package quoting\n\nimport com.atomickotlin.test.eq\n\nfun String.singleQuote() = \"'$this'\"\nfun String.doubleQuote() = \"\\\"$this\\\"\"\n\nfun main(args: Array<String>) {\n  \"Hi\".singleQuote() eq \"'Hi'\"\n  \"Hi\".doubleQuote() eq \"\\\"Hi\\\"\"\n}",
+          "placeholders" : [ ]
+        },
+        "Quote.kt" : {
+          "name" : "Quote.kt",
+          "text" : "package extensionfunctions\n\nimport com.atomickotlin.test.eq\nimport quoting.doubleQuote\nimport quoting.singleQuote\n\nfun main(args: Array<String>) {\n  \"Single\".singleQuote() eq \"'Single'\"\n  \"Double\".doubleQuote() eq \"\\\"Double\\\"\"\n}",
+          "placeholders" : [ ]
+        },
+        "ExtensionFunctionArguments.kt" : {
+          "name" : "ExtensionFunctionArguments.kt",
+          "text" : "package extensionfunctions\n\nimport com.atomickotlin.test.eq\n\ndata class Book(val title: String)\n\nfun Book.categorize(category: String) =\n    \"$this, category: $category\"\n\nfun main(args: Array<String>) {\n  Book(\"Dracula\").categorize(\"Vampire\") eq\n      \"Book(title=Dracula), category: Vampire\"\n}",
+          "placeholders" : [ ]
+        },
+        "AtomicTest.kt" : {
+          "name" : "AtomicTest.kt",
+          "text" : "package com.atomickotlin.test\n\nimport org.junit.Assert\nimport java.util.*\nimport kotlin.test.assertEquals\nimport kotlin.test.assertTrue\n\n// Log everything to \"_AtomicTestErrors.txt\" instead?\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  assertEquals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  assertEquals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  Assert.assertEquals(this, value, 0.0000001)\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  assertTrue(Arrays.equals(this, value))\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Extension Functions\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2236,11 +2233,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Lambdas\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2275,11 +2271,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Operations on Lists\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2309,11 +2304,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Combining Lists with zip\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2339,7 +2333,7 @@
         },
         "SpreadOperator.kt" : {
           "name" : "SpreadOperator.kt",
-          "text" : "package varargs\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
+          "text" : "package varargs\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // Doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
           "placeholders" : [ ]
         },
         "TwoFunctionsWithVarargs.kt" : {
@@ -2353,11 +2347,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Varargs & Arrays\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2377,11 +2370,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Inheritance\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2406,22 +2398,21 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Base Class Initialization\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
-    "title" : "Overriding Methods",
+    "title" : "Overriding Functions",
     "task_list" : [ {
       "name" : "Examples",
       "stepic_id" : 0,
       "task_files" : {
         "GreatApe3.kt" : {
           "name" : "GreatApe3.kt",
-          "text" : "package overridingmethods\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe {\n  open fun call() = \"Hoo!\"\n  var energy = 3\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n  override fun call() = \"Eep!\"\n\n  init {\n    // Modify the base-class var:\n    energy = 5\n  }\n\n  // Call the base-class version:\n  override fun eat() = super.eat() * 2\n\n  // Add a method():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  override fun call() = \"Yawp!\"\n  override fun eat() = super.eat() * 3\n  fun jump() = \"Chimp jump\"\n  val kind = \"Common\" // New property\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape method\n  // ape.jump // Nor this\n  ape.climb(4)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!9\"\n  talk(Bonobo()) eq \"Eep!22\"\n  talk(Chimpanzee()) eq \"Yawp!27\"\n}",
+          "text" : "package overridingfunctions\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe {\n  open fun call() = \"Hoo!\"\n  var energy = 3\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n  override fun call() = \"Eep!\"\n\n  init {\n    // Modify the base-class var:\n    energy = 5\n  }\n\n  // Call the base-class version:\n  override fun eat() = super.eat() * 2\n\n  // Add a function():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  override fun call() = \"Yawp!\"\n  override fun eat() = super.eat() * 3\n  fun jump() = \"Chimp jump\"\n  val kind = \"Common\" // New property\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape function\n  // ape.jump // Nor this\n  ape.climb(4)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!9\"\n  talk(Bonobo()) eq \"Eep!22\"\n  talk(Chimpanzee()) eq \"Yawp!27\"\n}",
           "placeholders" : [ ]
         },
         "AtomicTest.kt" : {
@@ -2430,11 +2421,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
-        "task" : "Examples accompanying the atom \"Overriding Methods\".\n\nMark as `completed` after reading the atom."
+        "task" : "Examples accompanying the atom \"Overriding Functions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2445,12 +2435,12 @@
       "task_files" : {
         "AbstractKeyword.kt" : {
           "name" : "AbstractKeyword.kt",
-          "text" : "package abstractclasses\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithMethod {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
+          "text" : "package abstractclasses\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithFunction {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
           "placeholders" : [ ]
         },
         "AbstractClasses.kt" : {
           "name" : "AbstractClasses.kt",
-          "text" : "package abstractclasses\n\nimport com.atomickotlin.test.eq\n\nabstract class Animal {\n\n  fun templateMethod() = \"The ${animal()} goes ${sound()}\"\n\n  // Abstract methods (no method body):\n  abstract fun animal(): String\n\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n//  val a = Animal()\n\n  Duck().templateMethod() eq\n      \"The Duck goes Quack\"\n  Cow().templateMethod() eq\n      \"The Cow goes Moo\"\n}",
+          "text" : "package abstractclasses\n\nimport com.atomickotlin.test.eq\n\nabstract class Animal {\n\n  fun templateFunction() = \"The ${animal()} goes ${sound()}\"\n\n  // Abstract functions (no function body):\n  abstract fun animal(): String\n\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n//  val a = Animal()\n\n  Duck().templateFunction() eq\n      \"The Duck goes Quack\"\n  Cow().templateFunction() eq\n      \"The Cow goes Moo\"\n}",
           "placeholders" : [ ]
         },
         "AbstractAdder.kt" : {
@@ -2464,11 +2454,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Abstract Classes\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2488,11 +2477,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Enumerations\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2527,11 +2515,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"More About `when` Expressions\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2551,11 +2538,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Sealed Classes\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2564,8 +2550,8 @@
       "name" : "Examples",
       "stepic_id" : 0,
       "task_files" : {
-        "ObjectsAndMethods.kt" : {
-          "name" : "ObjectsAndMethods.kt",
+        "ObjectsAndFunctions.kt" : {
+          "name" : "ObjectsAndFunctions.kt",
           "text" : "package companionobjects\n\nimport com.atomickotlin.test.eq\n\nclass X(val n: Int) {\n  fun f() = n * 10\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n  x1.f() eq 10\n  x2.f() eq 20\n}",
           "placeholders" : [ ]
         },
@@ -2589,8 +2575,8 @@
           "text" : "package companionobjects4\n\nimport com.atomickotlin.test.eq\n\nclass X {\n  fun increment(): Int {\n    X.n += 1\n    return X.n\n  }\n\n  companion object {\n    var n: Int = 0 // Only one of these\n  }\n}\n\n\nfun main(args: Array<String>) {\n  val a = X()\n  val b = X()\n  a.increment() eq 1\n  b.increment() eq 2\n  a.increment() eq 3\n}",
           "placeholders" : [ ]
         },
-        "ObjectMethods.kt" : {
-          "name" : "ObjectMethods.kt",
+        "ObjectFunctions.kt" : {
+          "name" : "ObjectFunctions.kt",
           "text" : "package companionobjects5\n\nimport com.atomickotlin.test.eq\n\nclass X {\n  companion object {\n    var n: Int = 0\n    fun increment(): Int {\n      n += 1\n      return n\n    }\n\n    fun count() = increment()\n  }\n}\n\nfun main(args: Array<String>) {\n  X.increment() eq 1\n  X.increment() eq 2\n  X.count() eq 3\n}",
           "placeholders" : [ ]
         },
@@ -2605,11 +2591,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Companion Objects\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   }, {
     "id" : 0,
@@ -2620,7 +2605,7 @@
       "task_files" : {
         "DataClassesWithVars.kt" : {
           "name" : "DataClassesWithVars.kt",
-          "text" : "package dataclasses3\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(\n    var name: String,\n    var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  val favLanguage = hashMapOf(contact to \"Kotlin\")\n  favLanguage[contact] eq \"Kotlin\"             // [1]\n\n  contact.name = \"Melissa\"\n  // the information stored by this contact is lost:\n  favLanguage[contact] eq null                 // [2]\n}",
+          "text" : "package dataclasses3\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(\n    var name: String,\n    var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  val favLanguage = hashMapOf(contact to \"Kotlin\")\n  favLanguage[contact] eq \"Kotlin\"             // [1]\n\n  contact.name = \"Melissa\"\n  // Information stored by this contact is lost:\n  favLanguage[contact] eq null                 // [2]\n}",
           "placeholders" : [ ]
         },
         "DataClassAndHashCode.kt" : {
@@ -2634,11 +2619,10 @@
           "placeholders" : [ ]
         }
       },
-      "test_files" : { },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Data Classes & Immutability\".\n\nMark as `completed` after reading the atom."
       },
-      "task_type" : "pycharm"
+      "task_type" : "theory"
     } ]
   } ],
   "summary" : "The examples and exercises accompanying the AtomicKotlin book",

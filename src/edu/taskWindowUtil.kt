@@ -12,7 +12,7 @@ private val EMPTY_TASK_WINDOW = "$OPEN$TODO$CLOSED"
 
 fun String.uncommentTags(): String {
     val tags = listOf(OPEN, CLOSED, "<answer>$OPEN", "$CLOSED</answer>", "<answer>", "</answer>")
-    return tags.fold(this) { result, tag -> result.replace("/*$tag*/", tag)}
+    return tags.fold(this) { result, tag -> result.replace("/*$tag*/", tag) }
 }
 
 fun String.getTaskWindowsFromText(): List<TextRange> {
@@ -44,7 +44,9 @@ fun String.removeSolutions(): String {
 
 fun String.removePackageDeclarations(): String {
     val lines = lines()
-    return lines.subList(2, lines.size).joinToString("\n")
+    return if (lines.first().startsWith("package"))
+        lines.subList(1, lines.size).joinToString("\n")
+    else this
 }
 
 fun String.removeCodeFormatting() = filter { it != '`' }

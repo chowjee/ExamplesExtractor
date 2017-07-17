@@ -34,7 +34,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "println(\"Hello, Kotlin!\")",
+                "possible_answer" : "println(\"Hello, Kotlin!\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -63,7 +63,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "// #1\n    println(\"Hello, Kotlin!\")\n    // #2\n    println(\"Hello,\")\n    println(\"Kotlin!\")",
+                "possible_answer" : "// #1\n    println(\"Hello, Kotlin!\")\n    // #2\n    println(\"Hello,\")\n    println(\"Kotlin!\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -120,7 +120,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    val answer = 42\n    // error: val cannot be reassigned\n    //answer = 43",
+                "possible_answer" : "\n    val answer = 42\n    // error: val cannot be reassigned\n    //answer = 43",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -149,7 +149,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    var tmp = x\n    x = y\n    y = tmp",
+                "possible_answer" : "\n    var tmp = x\n    x = y\n    y = tmp",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -206,7 +206,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    var answer = 42\n    // Type mismatch error\n//  answer = \"unknown\"",
+                "possible_answer" : "\n    var answer = 42\n    // Type mismatch error\n//  answer = \"unknown\"",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -268,7 +268,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "i * i",
+                "possible_answer" : "i * i",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -297,7 +297,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "a + b + c",
+                "possible_answer" : "a + b + c",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -326,7 +326,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "s + s",
+                "possible_answer" : "s + s",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -408,7 +408,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n        if (number > 0)\n            \"positive\"\n        else if (number < 0)\n            \"negative\"\n        else\n            \"zero\"",
+                "possible_answer" : "\n        if (number > 0)\n            \"positive\"\n        else if (number < 0)\n            \"negative\"\n        else\n            \"zero\"",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -437,7 +437,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n        if (first > second) first else second",
+                "possible_answer" : "\n        if (first > second) first else second",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -499,7 +499,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n        if (number > 0)\n            \"positive\"\n        else if (number == 0)\n            \"zero\"\n        else\n            \"negative\"",
+                "possible_answer" : "\n        if (number > 0)\n            \"positive\"\n        else if (number == 0)\n            \"zero\"\n        else\n            \"negative\"",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -511,7 +511,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "println(\"Number $n is ${checkSign(n)}.\")",
+                "possible_answer" : "println(\"Number $n is ${checkSign(n)}.\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -540,7 +540,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n        if (first > second) first else second",
+                "possible_answer" : "\n        if (first > second) first else second",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -552,7 +552,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    val max = findMax(first, second)\n    println(\"The maximum between $first and $second is $max.\")",
+                "possible_answer" : "\n    val max = findMax(first, second)\n    println(\"The maximum between $first and $second is $max.\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -634,7 +634,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "3",
+                "possible_answer" : "3",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -646,7 +646,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "2",
+                "possible_answer" : "2",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -658,7 +658,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "11",
+                "possible_answer" : "11",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -670,7 +670,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "1.2",
+                "possible_answer" : "1.2",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -699,7 +699,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    val million: Int = 1_000_000\n    val billion: Int = 1_000_000_000\n\n    val trillion: Long = 1_000_000_000_000\n    val quintillion: Long = 1_000_000_000_000_000_000\n\n    // only in Double\n    val centillion: Double = Math.pow(10.0, 303.0)\n\n    println(million)\n    println(billion)\n    println(trillion)\n    println(quintillion)\n    println(centillion)",
+                "possible_answer" : "\n    val million: Int = 1_000_000\n    val billion: Int = 1_000_000_000\n\n    val trillion: Long = 1_000_000_000_000\n    val quintillion: Long = 1_000_000_000_000_000_000\n\n    // only in Double\n    val centillion: Double = Math.pow(10.0, 303.0)\n\n    println(million)\n    println(billion)\n    println(trillion)\n    println(quintillion)\n    println(centillion)",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -728,7 +728,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "(f - 32) * (5.0 / 9)",
+                "possible_answer" : "(f - 32) * (5.0 / 9)",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -740,7 +740,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "c * (9.0 / 5) + 32",
+                "possible_answer" : "c * (9.0 / 5) + 32",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -769,7 +769,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "(((hours * 60L + minutes) * 60) + seconds) * 1000",
+                "possible_answer" : "(((hours * 60L + minutes) * 60) + seconds) * 1000",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -831,7 +831,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "false",
+                "possible_answer" : "false",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -843,7 +843,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "true",
+                "possible_answer" : "true",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -855,7 +855,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "true",
+                "possible_answer" : "true",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -884,7 +884,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "if (b1) b2 else false",
+                "possible_answer" : "if (b1) b2 else false",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -896,7 +896,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "if (b1) true else b2",
+                "possible_answer" : "if (b1) true else b2",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1006,7 +1006,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 1L\n    for (i in 1..n) {\n        result *= i\n    }\n    return result",
+                "possible_answer" : "var result = 1L\n    for (i in 1..n) {\n        result *= i\n    }\n    return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1035,7 +1035,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 1L\n    for (i in 1..n) {\n        result *= i\n    }\n    return result",
+                "possible_answer" : "var result = 1L\n    for (i in 1..n) {\n        result *= i\n    }\n    return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1047,7 +1047,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 0L\n    for (i in 1..n) {\n        result += factorial(i)\n    }\n    return result",
+                "possible_answer" : "var result = 0L\n    for (i in 1..n) {\n        result += factorial(i)\n    }\n    return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1076,7 +1076,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 0\n    for (i in 1..n) {\n        if (i % 2 == 0) {\n            result += i\n        }\n    }\n    return result",
+                "possible_answer" : "var result = 0\n    for (i in 1..n) {\n        if (i % 2 == 0) {\n            result += i\n        }\n    }\n    return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1105,7 +1105,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 0\n  var i = 0\n  while (i <= n) {\n    if (i % 2 == 0) {\n      result += i\n    }\n    i++\n  }\n  return result",
+                "possible_answer" : "var result = 0\n  var i = 0\n  while (i <= n) {\n    if (i % 2 == 0) {\n      result += i\n    }\n    i++\n  }\n  return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1172,7 +1172,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var s = \"\"\n    for (c in 'a'..'z') {\n        s += c\n    }\n    return s",
+                "possible_answer" : "var s = \"\"\n    for (c in 'a'..'z') {\n        s += c\n    }\n    return s",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1201,7 +1201,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "var result = 0\n    for (i in 0..n step 2) {\n        result += i\n    }\n    return result",
+                "possible_answer" : "var result = 0\n    for (i in 0..n step 2) {\n        result += i\n    }\n    return result",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1230,7 +1230,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "ch in 'a'..'z'",
+                "possible_answer" : "ch in 'a'..'z'",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1259,7 +1259,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\nfun isLowerCase(ch: Char): Boolean = ch in 'a'..'z'\n\nfun isUpperCase(ch: Char): Boolean = ch in 'A'..'Z'\n\nfun isLetterOrUnderscore(ch: Char): Boolean = ch == '_' || isLowerCase(ch) || isUpperCase(ch)\n\nfun isDigit(ch: Char): Boolean = ch in '0'..'9'\n",
+                "possible_answer" : "\nfun isLowerCase(ch: Char): Boolean = ch in 'a'..'z'\n\nfun isUpperCase(ch: Char): Boolean = ch in 'A'..'Z'\n\nfun isLetterOrUnderscore(ch: Char): Boolean = ch == '_' || isLowerCase(ch) || isUpperCase(ch)\n\nfun isDigit(ch: Char): Boolean = ch in '0'..'9'\n",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1271,7 +1271,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "\n    if (s.isEmpty() || !isLetterOrUnderscore(s[0])) return false\n    for (ch in s) {\n        if (!isLetterOrUnderscore(ch) && !isDigit(ch)) return false\n    }\n    return true\n    ",
+                "possible_answer" : "\n    if (s.isEmpty() || !isLetterOrUnderscore(s[0])) return false\n    for (ch in s) {\n        if (!isLetterOrUnderscore(ch) && !isDigit(ch)) return false\n    }\n    return true\n    ",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1328,7 +1328,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possibleAnswer" : "println(println(42))",
+                "possible_answer" : "println(println(42))",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false

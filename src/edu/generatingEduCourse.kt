@@ -8,7 +8,7 @@ import java.io.File
 fun main(args: Array<String>) {
     val atoms = Atoms()
     val lessons = atoms.atomInfoList.map(::generateLesson)
-    val course = Course(lessons.filterNotNull(),
+    val course = Course(lessons.filterNotNull() + getLessonWithUtilFunctions(),
             "The examples and exercises accompanying the AtomicKotlin book",
             "AtomicKotlin",
             "kotlin")
@@ -20,7 +20,6 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
     if (atomInfo.examplesMap.isEmpty() && atomInfo.exercisesMap.isEmpty()) {
         return null
     }
-    val atomicTest = File("AtomicTest/AtomicTest.kt").readText()
     val taskForExercises = atomInfo.exercisesMap.map {
         (_, exerciseDir) ->
 
@@ -33,25 +32,26 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
         GeneralTask(taskName, 0, taskFiles, testsMap, tasksMap)
     }
     return Lesson(0, atomInfo.title.removeCodeFormatting(),
-            arrayListOf<Task>() + generateTaskForExamples(atomInfo, atomicTest) + taskForExercises)
+            arrayListOf<Task>() + generateTaskForExamples(atomInfo) + taskForExercises)
 }
 
-fun generateTaskForExamples(atomInfo: AtomInfo, atomicTest: String): Task {
+fun getLessonWithUtilFunctions(): Lesson {
+    val atomicTest = File("AtomicTest/AtomicTest.kt").readText()
+    val taskFile = TaskFile("AtomicKotlin.kt", atomicTest, listOf())
+    val task = GeneralTask("PyCharm additional materials", 0,
+            mapOf(taskFile.name to taskFile), emptyMap(), emptyMap())
+    return Lesson(0, "PyCharm additional materials", listOf(task))
+}
+
+fun generateTaskForExamples(atomInfo: AtomInfo): Task {
     val taskFiles = atomInfo.examplesMap.map {
         (exampleName, exampleFile) ->
         TaskFile(exampleName, exampleFile.readText(), listOf())
     }.associateBy {
         it.name
     }
-    val allFiles = if (taskFiles.values.any { it.text.contains("import com.atomickotlin.test.eq") }) {
-        val atomicFile = TaskFile("AtomicTest.kt", atomicTest, listOf())
-        taskFiles + (atomicFile.name to atomicFile)
-    }
-    else {
-        taskFiles
-    }
     val tasksMap = mapOf("task" to examplesTask(atomInfo))
-    return TheoryTask("Examples", 0, allFiles, tasksMap)
+    return TheoryTask("Examples", 0, taskFiles, tasksMap)
 }
 
 fun generateTaskFile(solutionFile: File): TaskFile {

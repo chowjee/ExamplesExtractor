@@ -2,23 +2,19 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "Quoting.kt",
+      "filename": "Dereference.kt",
       "modifiable": "true"
     },
     {
-      "filename": "Quote.kt",
+      "filename": "SafeCall.kt",
       "modifiable": "true"
     },
     {
-      "filename": "StrangeQuote.kt",
+      "filename": "ChainedSafeCalls.kt",
       "modifiable": "true"
     },
     {
-      "filename": "MemberVsExtension.kt",
-      "modifiable": "true"
-    },
-    {
-      "filename": "BookExtensions.kt",
+      "filename": "ElvisOperator.kt",
       "modifiable": "true"
     }
   ],

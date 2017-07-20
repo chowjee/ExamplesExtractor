@@ -663,8 +663,83 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testExtensionFunctionArguments() {
-        testExample("Examples/43_Extension_Functions/Examples/ExtensionFunctionArguments.kt", extensionfunctions.ExtensionFunctionArgumentsKt::main);
+    public void testStrangeQuote() {
+        testExample("Examples/43_Extension_Functions/Examples/StrangeQuote.kt", extensionfunctions.StrangeQuoteKt::main);
+    }
+
+    @Test
+    public void testMemberVsExtension() {
+        testExample("Examples/43_Extension_Functions/Examples/MemberVsExtension.kt", extensionfunctions.MemberVsExtensionKt::main);
+    }
+
+    @Test
+    public void testBookExtensions() {
+        testExample("Examples/43_Extension_Functions/Examples/BookExtensions.kt", extensionfunctions.BookExtensionsKt::main);
+    }
+
+    @Test
+    public void testLocalFunctions() {
+        testExample("Examples/44_Local_Functions/Examples/LocalFunctions.kt", localfunctions.LocalFunctionsKt::main);
+    }
+
+    @Test
+    public void testLocalExtensions() {
+        testExample("Examples/44_Local_Functions/Examples/LocalExtensions.kt", localfunctions.LocalExtensionsKt::main);
+    }
+
+    @Test
+    public void testNullInMaps() {
+        testExample("Examples/45_Nullable_Types/Examples/NullInMaps.kt", nullableTypes.NullInMapsKt::main);
+    }
+
+    @Test
+    public void testNullableAndNonnullTypes() {
+        testExample("Examples/45_Nullable_Types/Examples/NullableAndNonnullTypes.kt", nullabletypes.NullableAndNonnullTypesKt::main);
+    }
+
+    @Test
+    public void testDereference() {
+        testExample("Examples/45_Nullable_Types/Examples/Dereference.kt", nullabletypes.DereferenceKt::main);
+    }
+
+    @Test
+    public void testExplicitCheck() {
+        testExample("Examples/45_Nullable_Types/Examples/ExplicitCheck.kt", nullabletypes.ExplicitCheckKt::main);
+    }
+
+    @Test
+    public void testDereference1() {
+        testExample("Examples/46_Safe_Calls_and_Elvis_Operator/Examples/Dereference.kt", safecalls.DereferenceKt::main);
+    }
+
+    @Test
+    public void testSafeCall() {
+        testExample("Examples/46_Safe_Calls_and_Elvis_Operator/Examples/SafeCall.kt", safecalls.SafeCallKt::main);
+    }
+
+    @Test
+    public void testChainedSafeCalls() {
+        testExample("Examples/46_Safe_Calls_and_Elvis_Operator/Examples/ChainedSafeCalls.kt", safecalls.ChainedSafeCallsKt::main);
+    }
+
+    @Test
+    public void testElvisOperator() {
+        testExample("Examples/46_Safe_Calls_and_Elvis_Operator/Examples/ElvisOperator.kt", safecalls.ElvisOperatorKt::main);
+    }
+
+    @Test
+    public void testNonNullAssertedCalls() {
+        testExample("Examples/47_Non_null_Asserted_Calls/Examples/NonNullAssertedCalls.kt", nonnullassertion.NonNullAssertedCallsKt::main);
+    }
+
+    @Test
+    public void testNonNullAssertion() {
+        testExample("Examples/47_Non_null_Asserted_Calls/Examples/NonNullAssertion.kt", nonnullassertion.NonNullAssertionKt::main);
+    }
+
+    @Test
+    public void testGettingValueFromMap() {
+        testExample("Examples/47_Non_null_Asserted_Calls/Examples/GettingValueFromMap.kt", nonnullassertion.GettingValueFromMapKt::main);
     }
 
     @Test

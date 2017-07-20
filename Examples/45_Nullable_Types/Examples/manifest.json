@@ -2,23 +2,19 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "Quoting.kt",
+      "filename": "NullInMaps.kt",
       "modifiable": "true"
     },
     {
-      "filename": "Quote.kt",
+      "filename": "NullableAndNonnullTypes.kt",
       "modifiable": "true"
     },
     {
-      "filename": "StrangeQuote.kt",
+      "filename": "Dereference.kt",
       "modifiable": "true"
     },
     {
-      "filename": "MemberVsExtension.kt",
-      "modifiable": "true"
-    },
-    {
-      "filename": "BookExtensions.kt",
+      "filename": "ExplicitCheck.kt",
       "modifiable": "true"
     }
   ],

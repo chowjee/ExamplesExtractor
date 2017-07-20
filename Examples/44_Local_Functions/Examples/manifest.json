@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "LocalFunctions.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "LocalExtensions.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

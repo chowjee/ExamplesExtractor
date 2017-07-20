@@ -1,9 +1,10 @@
 package memberfunctions
 
 class Hamster {
-  fun speak(): String = "squeak!"
+  fun speak(): String = "squeak! "
   fun exercise(): String =
-      speak() + " Running on wheel"
+      this.speak() + speak() +
+          "Running on wheel"
 }
 
 fun main(args: Array<String>) {
@@ -11,5 +12,5 @@ fun main(args: Array<String>) {
   println(hamster.exercise())
 }
 /* Output:
-squeak! Running on wheel
+squeak! squeak! Running on wheel
 */

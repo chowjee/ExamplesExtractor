@@ -2,3 +2,5 @@
 settings.properties
 Exercises WebDemo
 src/copy.kt
+build
+.gradle

@@ -8,6 +8,14 @@
     {
       "filename": "AuxiliaryInitialization.kt",
       "modifiable": "true"
+    },
+    {
+      "filename": "CallingOtherConstructors.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "CallingNoArgConstructor.kt",
+      "modifiable": "true"
     }
   ],
   "args": "",

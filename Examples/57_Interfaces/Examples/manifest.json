@@ -1,0 +1,32 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "StateOfAClass.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "NoMultipleInheritance.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "MultipleInterfaceInheritance.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "NoStateInInterfaces.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Framework.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "InterfaceCollision.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

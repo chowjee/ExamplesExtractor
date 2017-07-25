@@ -3,8 +3,11 @@ package overridingfunctions
 import com.atomickotlin.test.eq
 
 open class GreatApe {
+
+  var energy = 0
+  
   open fun call() = "Hoo!"
-  var energy = 3
+
   open fun eat(): Int {
     energy += 10
     return energy
@@ -16,36 +19,42 @@ open class GreatApe {
 }
 
 class Bonobo : GreatApe() {
+
   override fun call() = "Eep!"
 
-  init {
+  override fun eat(): Int {
     // Modify the base-class var:
-    energy = 5
+    energy += 10
+    // Call the base-class version:
+    return super.eat()
   }
-
-  // Call the base-class version:
-  override fun eat() = super.eat() * 2
 
   // Add a function():
   fun run() = "Bonobo run"
 }
 
 class Chimpanzee : GreatApe() {
+  val additionalEnergy = 20 // New property
+
   override fun call() = "Yawp!"
-  override fun eat() = super.eat() * 3
+
+  override fun eat(): Int {
+    energy += additionalEnergy
+    return super.eat()
+  }
+
   fun jump() = "Chimp jump"
-  val kind = "Common" // New property
 }
 
 fun talk(ape: GreatApe): String {
   // ape.run()  // Not an ape function
   // ape.jump // Nor this
-  ape.climb(4)
+  ape.climb(10)
   return ape.call() + ape.eat()
 }
 
 fun main(args: Array<String>) {
-  talk(GreatApe()) eq "Hoo!9"
-  talk(Bonobo()) eq "Eep!22"
-  talk(Chimpanzee()) eq "Yawp!27"
+  talk(GreatApe()) eq "Hoo!0"
+  talk(Bonobo()) eq "Eep!10"
+  talk(Chimpanzee()) eq "Yawp!20"
 }

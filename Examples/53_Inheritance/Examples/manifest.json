@@ -2,6 +2,14 @@
   "name": "Examples",
   "files": [
     {
+      "filename": "BasicInheritance.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "OpenAndFinalClasses.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "GreatApe.kt",
       "modifiable": "true"
     }

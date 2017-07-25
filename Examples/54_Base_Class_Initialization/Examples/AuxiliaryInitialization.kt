@@ -11,21 +11,27 @@ open class House(
   constructor(zip: String) : this("address?", "state?", zip)
 }
 
-class Home(address: String, state: String,
-           zip: String, val name: String)
-  : House(address, state, zip) {
+class Home(
+    address: String, 
+    state: String,
+    zip: String, 
+    val name: String
+) : House(address, state, zip) {
+  
   override fun toString() =
       "$name: $address, $state $zip"
 }
 
 class VacationHouse(
-    state: String, zip: String,
-    val startMonth: Int, val endMonth: Int)
-  : House(state, zip)
+    state: String, 
+    zip: String,
+    val startMonth: Int, 
+    val endMonth: Int
+) : House(state, zip)
 
 class TreeHouse(
-    val name: String, zip: String)
-  : House(zip)
+    val name: String, zip: String
+) : House(zip)
 
 fun main(args: Array<String>) {
   val h = Home("888 N. Matarget St.", "KS",

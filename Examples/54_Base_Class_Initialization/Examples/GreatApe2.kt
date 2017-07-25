@@ -3,16 +3,24 @@ package baseclassinit
 import com.atomickotlin.test.eq
 
 open class GreatApe(
-    val weight: Double, val age: Int)
+    val weight: Double,
+    val age: Int
+)
 
-open class Bonobo(weight: Double, age: Int)
-  : GreatApe(weight, age)
+open class Bonobo(
+    weight: Double,
+    age: Int
+) : GreatApe(weight, age)
 
-class Chimpanzee(weight: Double, age: Int)
-  : GreatApe(weight, age)
+class Chimpanzee(
+    weight: Double,
+    age: Int
+) : GreatApe(weight, age)
 
-class BonoboB(weight: Double, age: Int)
-  : Bonobo(weight, age)
+class BonoboB(
+    weight: Double,
+    age: Int
+) : Bonobo(weight, age)
 
 fun display(ape: GreatApe) =
     "weight: ${ape.weight} age: ${ape.age}"

@@ -853,13 +853,33 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testCallingOtherConstructors() {
+        testExample("Examples/54_Base_Class_Initialization/Examples/CallingOtherConstructors.kt", baseclassinit.CallingOtherConstructorsKt::main);
+    }
+
+    @Test
     public void testGreatApe3() {
         testExample("Examples/55_Overriding_Functions/Examples/GreatApe3.kt", overridingfunctions.GreatApe3Kt::main);
     }
 
     @Test
     public void testAbstractClasses() {
-        testExample("Examples/57_Abstract_Classes/Examples/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
+        testExample("Examples/56_Abstract_Classes/Examples/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
+    }
+
+    @Test
+    public void testStateOfAClass() {
+        testExample("Examples/57_Interfaces/Examples/StateOfAClass.kt", interfaces.StateOfAClassKt::main);
+    }
+
+    @Test
+    public void testFramework() {
+        testExample("Examples/57_Interfaces/Examples/Framework.kt", interfaces.FrameworkKt::main);
+    }
+
+    @Test
+    public void testInterfaceCollision() {
+        testExample("Examples/57_Interfaces/Examples/InterfaceCollision.kt", interfaces5.InterfaceCollisionKt::main);
     }
 
     @Test

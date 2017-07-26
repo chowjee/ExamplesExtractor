@@ -5,6 +5,7 @@ import examplesExtractor.ExampleBuilder.Status.*
 import manifestUtil.manifestForExamples
 import manifestUtil.manifestForExamplesFolder
 import settings.Settings
+import util.addBlankLine
 import util.manifest
 import util.subDir
 import util.subFile
@@ -28,7 +29,7 @@ fun generateExamples() {
         val chapterDir = outerDir.subDir("Examples")
         for (chapter in atomExamples.examples) {
             val exampleFile = chapterDir.subFile(chapter.name)
-            exampleFile.writeText(chapter.text)
+            exampleFile.writeText(chapter.text.addBlankLine())
         }
         val manifestFile = chapterDir.manifest()
         manifestFile.writeText(manifestForExamples("Examples", atomExamples.examples.map { it.name }))

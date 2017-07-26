@@ -1,0 +1,28 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "House1.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "House2.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "House3.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "House4.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "House5.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

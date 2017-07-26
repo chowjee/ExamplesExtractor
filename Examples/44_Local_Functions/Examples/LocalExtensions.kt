@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
 
   "Hello".exclaim() eq "Hello!"
   "Hallo".exclaim() eq "Hallo!"
-  "Привет".exclaim() eq "Привет!"
-  "你好".exclaim() eq "你好!"
+  "Bonjour".exclaim() eq "Bonjour!"
+  "Ciao".exclaim() eq "Ciao!"
 }

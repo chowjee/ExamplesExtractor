@@ -18,6 +18,10 @@
       "modifiable": "true"
     },
     {
+      "filename": "InterfaceMemberImplementations.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "Framework.kt",
       "modifiable": "true"
     },

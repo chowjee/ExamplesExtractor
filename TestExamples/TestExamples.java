@@ -873,6 +873,11 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testInterfaceMemberImplementations() {
+        testExample("Examples/57_Interfaces/Examples/InterfaceMemberImplementations.kt", interfaces4.InterfaceMemberImplementationsKt::main);
+    }
+
+    @Test
     public void testFramework() {
         testExample("Examples/57_Interfaces/Examples/Framework.kt", interfaces.FrameworkKt::main);
     }
@@ -884,7 +889,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testLevel() {
-        testExample("Examples/59_Enumerations/Examples/Level.kt", enumerations.LevelKt::main);
+        testExample("Examples/59_Enumerations/Examples/Level.kt", enumerations1.LevelKt::main);
+    }
+
+    @Test
+    public void testImportLevel() {
+        testExample("Examples/59_Enumerations/Examples/ImportLevel.kt", enumerations.ImportLevelKt::main);
     }
 
     @Test

@@ -4,5 +4,5 @@ interface Animal
 interface Mammal : Animal
 interface AquaticAnimal : Animal
 
-// Now compiles! 
+// Now compiles!
 class Dolphin : Mammal, AquaticAnimal

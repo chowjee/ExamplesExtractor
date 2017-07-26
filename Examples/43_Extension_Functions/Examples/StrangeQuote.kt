@@ -3,7 +3,7 @@ package extensionfunctions
 import com.atomickotlin.test.eq
 import quoting.singleQuote
 
-fun String.strangeQuote() = 
+fun String.strangeQuote() =
     singleQuote().singleQuote()   // [1]
 
 fun main(args: Array<String>) {

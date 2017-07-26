@@ -5,7 +5,7 @@ import com.atomickotlin.test.eq
 open class GreatApe {
 
   var energy = 0
-  
+
   open fun call() = "Hoo!"
 
   open fun eat(): Int {

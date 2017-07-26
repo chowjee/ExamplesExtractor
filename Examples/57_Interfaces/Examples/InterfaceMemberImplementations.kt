@@ -8,13 +8,13 @@ interface Animal {
   fun talk() = "$sound!"
 }
 
-class Cat: Animal {
+class Cat : Animal {
   override val sound = "meow"
 }
 
 class Dog(
     override val sound: String
-): Animal
+) : Animal
 
 fun main(args: Array<String>) {
   val cat = Cat()

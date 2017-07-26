@@ -3,7 +3,7 @@ package interfaces
 import com.atomickotlin.test.eq
 
 class MyClass(
-  val i: Int
+    val i: Int
 ) {
   val list = mutableListOf(i)
 }

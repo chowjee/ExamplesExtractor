@@ -12,20 +12,20 @@ open class House(
 }
 
 class Home(
-    address: String, 
+    address: String,
     state: String,
-    zip: String, 
+    zip: String,
     val name: String
 ) : House(address, state, zip) {
-  
+
   override fun toString() =
       "$name: $address, $state $zip"
 }
 
 class VacationHouse(
-    state: String, 
+    state: String,
     zip: String,
-    val startMonth: Int, 
+    val startMonth: Int,
     val endMonth: Int
 ) : House(state, zip)
 

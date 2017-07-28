@@ -1,10 +1,11 @@
 package memberfunctions
 
 class Hamster {
-  fun speak(): String = "squeak! "
-  fun exercise(): String =
-      this.speak() + speak() +
-          "Running on wheel"
+  fun speak() = "squeak! "
+  fun exercise() =
+    this.speak() + // Qualified with 'this'
+    speak() +      // Without 'this'
+    "Running on wheel"
 }
 
 fun main(args: Array<String>) {

@@ -1,5 +1,9 @@
 package memberfunctions
 
 class Dog {
-  fun bark(): String = "yip!"
+  fun bark() = "yip!"
+}
+
+fun main(args: Array<String>) {
+  val dog = Dog()
 }

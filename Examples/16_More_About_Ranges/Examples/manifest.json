@@ -6,6 +6,14 @@
       "modifiable": "true"
     },
     {
+      "filename": "MembershipUsingBounds.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "IterationVsMembership.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "InString.kt",
       "modifiable": "true"
     },

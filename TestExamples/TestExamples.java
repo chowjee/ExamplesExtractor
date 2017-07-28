@@ -243,6 +243,16 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testMembershipUsingBounds() {
+        testExample("Examples/16_More_About_Ranges/Examples/MembershipUsingBounds.kt", moreaboutranges.MembershipUsingBoundsKt::main);
+    }
+
+    @Test
+    public void testIterationVsMembership() {
+        testExample("Examples/16_More_About_Ranges/Examples/IterationVsMembership.kt", moreaboutranges.IterationVsMembershipKt::main);
+    }
+
+    @Test
     public void testInString() {
         testExample("Examples/16_More_About_Ranges/Examples/InString.kt", moreaboutranges.InStringKt::main);
     }
@@ -350,6 +360,11 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testAnimals() {
         testExample("Examples/20_Creating_Classes/Examples/Animals.kt", creatingclasses.AnimalsKt::main);
+    }
+
+    @Test
+    public void testDog() {
+        testExample("Examples/22_Member_Functions/Examples/Dog.kt", memberfunctions.DogKt::main);
     }
 
     @Test

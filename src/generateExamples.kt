@@ -21,6 +21,9 @@ fun generateExamples() {
     examplesDir.mkdir()
 
     for (atomExamples in allExamples) {
+        reportCodeSnippets(atomExamples)
+        if (atomExamples.hasOnlySnippets()) continue
+
         val outerDir = examplesDir.subFile(atomExamples.name)
         outerDir.mkdir()
         val outerManifest = outerDir.manifest()
@@ -35,20 +38,34 @@ fun generateExamples() {
         manifestFile.writeText(manifestForExamples("Examples", atomExamples.examples.map { it.name }))
     }
     val topLevelManifest = examplesDir.manifest()
-    topLevelManifest.writeText(manifestUtil.topLevelManifest(allExamples.map { it.name }))
+    topLevelManifest.writeText(manifestUtil.topLevelManifest(
+        allExamples.filter { !it.hasOnlySnippets() }. map { it.name }))
 }
 
-data class AtomExamples(val name: String, val examples: List<Example>)
+private fun reportCodeSnippets(atomExamples: AtomExamples) {
+    if (atomExamples.snippets.isNotEmpty()) {
+        println(atomExamples.name)
+        for (snippet in atomExamples.snippets) {
+            println("---------")
+            println(snippet.text)
+        }
+        println("=========")
+    }
+}
+
+data class AtomExamples(val name: String, val examples: List<Example>, val snippets: List<Example>) {
+    fun hasOnlySnippets() = examples.isEmpty() && snippets.isNotEmpty()
+}
 
 data class Example(val name: String, val text: String)
 
 class ExampleBuilder {
-    private var status = TEXT;
+    private var status = TEXT
     private var text: StringBuilder = StringBuilder()
     private var name: String = ""
 
     enum class Status {
-        NAME, EXAMPLE, TEXT
+        NAME, EXAMPLE, SNIPPET, TEXT
     }
 
     fun startExample() {
@@ -58,7 +75,7 @@ class ExampleBuilder {
     }
 
     fun endExample(): Example? {
-        if (status == EXAMPLE) {
+        if (status == EXAMPLE || status == SNIPPET) {
             status = TEXT
             return Example(name, text.toString().trim())
         }
@@ -72,10 +89,11 @@ class ExampleBuilder {
                     name = line.removePrefix("// ")
                     status = EXAMPLE
                 } else {
-                    status = TEXT
+                    status = SNIPPET
+                    text.appendln(line)
                 }
             }
-            EXAMPLE -> {
+            EXAMPLE, SNIPPET -> {
                 text.appendln(line)
             }
             TEXT -> {
@@ -104,5 +122,6 @@ fun extractCodeExamples(atom: File): AtomExamples? {
         scalaKeywords.any { keyword -> example.text.contains("$keyword ") }
     }) return null
 
-    return AtomExamples(atom.nameWithoutExtension, result)
+    val (examples, snippets) = result.partition { it.name != "" }
+    return AtomExamples(atom.nameWithoutExtension, examples, snippets)
 }

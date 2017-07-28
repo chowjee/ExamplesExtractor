@@ -758,6 +758,16 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testExtensionsOnNullableString() {
+        testExample("Examples/48_Extensions_for_Nullable_Types/Examples/ExtensionsOnNullableString.kt", extensions.ExtensionsOnNullableStringKt::main);
+    }
+
+    @Test
+    public void testDeclarations() {
+        testExample("Examples/48_Extensions_for_Nullable_Types/Examples/Declarations.kt", extensions.DeclarationsKt::main);
+    }
+
+    @Test
     public void testDisplayList() {
         testExample("Examples/49_Lambdas/Examples/DisplayList.kt", lambdas.DisplayListKt::main);
     }

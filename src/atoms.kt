@@ -2,7 +2,9 @@ package atoms
 
 import examplesExtractor.extractCodeExamples
 import settings.Settings
+import util.lowerCaseFirstLetter
 import util.subFile
+import util.upperCaseFirstLetter
 import java.io.File
 
 class Atoms {
@@ -23,6 +25,11 @@ val AtomName.withoutIndex: String
             substringAfter("_")
         else this
     }
+
+fun AtomName.toPackageName(): String {
+    val words = withoutIndex.split("_")
+    return words.joinToString("") { it.upperCaseFirstLetter() }.lowerCaseFirstLetter()
+}
 
 fun String.toAtomName(): AtomName = if (endsWith(".md")) substringBeforeLast(".") else this
 

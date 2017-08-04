@@ -32,14 +32,14 @@ fun generateExamples() {
         val chapterDir = outerDir.subDir("Examples")
         for (chapter in atomExamples.examples) {
             val exampleFile = chapterDir.subFile(chapter.name)
-            exampleFile.writeText(chapter.text.addBlankLine())
+            exampleFile.writeText(chapter.getFullText())
         }
         val manifestFile = chapterDir.manifest()
         manifestFile.writeText(manifestForExamples("Examples", atomExamples.examples.map { it.name }))
     }
     val topLevelManifest = examplesDir.manifest()
     topLevelManifest.writeText(manifestUtil.topLevelManifest(
-        allExamples.filter { !it.hasOnlySnippets() }. map { it.name }))
+            allExamples.filter { !it.hasOnlySnippets() }.map { it.name }))
 }
 
 private fun reportCodeSnippets(atomExamples: AtomExamples) {
@@ -57,12 +57,23 @@ data class AtomExamples(val name: String, val examples: List<Example>, val snipp
     fun hasOnlySnippets() = examples.isEmpty() && snippets.isNotEmpty()
 }
 
-data class Example(val name: String, val text: String)
+data class Example(val name: String, val text: String, val packageName: String) {
+    fun getFullText(): String {
+        return if (text.contains("package "))
+            text.addBlankLine()
+        else buildString {
+            appendln("package $packageName")
+            appendln()
+            append(text)
+        }.addBlankLine()
+    }
+}
 
 class ExampleBuilder {
     private var status = TEXT
     private var text: StringBuilder = StringBuilder()
     private var name: String = ""
+    private var packageName: String = ""
 
     enum class Status {
         NAME, EXAMPLE, SNIPPET, TEXT
@@ -77,7 +88,7 @@ class ExampleBuilder {
     fun endExample(): Example? {
         if (status == EXAMPLE || status == SNIPPET) {
             status = TEXT
-            return Example(name, text.toString().trim())
+            return Example(name, text.toString().trim(), packageName)
         }
         return null
     }
@@ -86,7 +97,9 @@ class ExampleBuilder {
         when (status) {
             NAME -> {
                 if (line.startsWith("// ")) {
-                    name = line.removePrefix("// ")
+                    val path = line.removePrefix("// ")
+                    packageName = path.substringBefore("/")
+                    name = path.substringAfter("/")
                     status = EXAMPLE
                 } else {
                     status = SNIPPET

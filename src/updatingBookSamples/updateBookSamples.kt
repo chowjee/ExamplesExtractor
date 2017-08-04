@@ -1,23 +1,23 @@
 package updatingBookSamples
 
-import atoms.getAtomFiles
-import atoms.getExamplesForAtom
+import atoms.*
 import java.io.File
 
 fun main(args: Array<String>) {
-    val atoms = getAtomFiles()
-    for (atom in atoms) {
-        var atomText = atom.readText()
-        val examples = getExamplesForAtom(atom)
+    val atomInfoList = buildAtomInfoList()
+    for (atomInfo in atomInfoList) {
+        var atomText = atomInfo.markdownFile.readText()
+        val examples = getExamplesForAtom(atomInfo.markdownFile)
+        val packageName = atomInfo.name.toPackageName()
         for (example in examples) {
-            atomText = replaceSample(atomText, example)
+            atomText = replaceSample(atomText, packageName, example)
         }
-        atom.writeText(atomText)
+        atomInfo.markdownFile.writeText(atomText)
     }
 }
 
-fun replaceSample(atomText: String, example: File): String {
-    val fileNameComment = "// ${example.name}"
+fun replaceSample(atomText: String, packageName: String, example: File): String {
+    val fileNameComment = "// $packageName/${example.name}"
     val openingTag = "```kotlin"
     val closingTag = "```"
 
@@ -28,8 +28,18 @@ fun replaceSample(atomText: String, example: File): String {
         append(before.substringBeforeLast(openingTag))
         appendln(openingTag)
         appendln(fileNameComment)
-        appendln(example.readText().trimEnd())
+        appendln(example.dropPackageIfDefault(packageName))
         append(closingTag)
         append(after.substringAfter(closingTag))
     }
+}
+
+private fun File.dropPackageIfDefault(packageName: String): String {
+    val lines = readLines()
+    val packageLine = lines.first { it.startsWith("package") }
+    val withoutPackage = if (packageLine == "package $packageName")
+        lines.drop(2)
+    else
+        lines
+    return withoutPackage.joinToString("\n").trimEnd()
 }

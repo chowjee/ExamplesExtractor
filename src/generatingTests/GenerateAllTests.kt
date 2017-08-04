@@ -2,6 +2,8 @@ package generatingTests
 
 import atoms.getAtomFiles
 import atoms.getExamplesForAtom
+import util.lowerCaseFirstLetter
+import util.upperCaseFirstLetter
 import java.io.File
 
 fun main(args: Array<String>) {
@@ -65,6 +67,3 @@ fun generateTests(files: List<File>): String {
         append("}")
     }
 }
-
-fun String.lowerCaseFirstLetter() = this[0].toLowerCase() + substring(1)
-fun String.upperCaseFirstLetter() = this[0].toUpperCase() + substring(1)

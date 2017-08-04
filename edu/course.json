@@ -44,12 +44,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n    }\n}"
+        "output.txt": "Hello, World!\n"
       },
       "task_texts" : {
         "task" : "## Hello, World! (#1)\n\nCreate and run a program that prints the phrase \"Hello, Kotlin!\" to the console."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     }, {
       "name" : "Exercise 2",
       "stepic_id" : 0,

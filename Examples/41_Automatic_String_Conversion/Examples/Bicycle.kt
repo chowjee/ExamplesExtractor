@@ -1,4 +1,4 @@
-package automaticstring
+package automaticStringConversion
 
 import com.atomickotlin.test.eq
 

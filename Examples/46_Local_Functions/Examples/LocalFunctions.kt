@@ -1,4 +1,4 @@
-package localfunctions
+package localFunctions
 
 import com.atomickotlin.test.eq
 

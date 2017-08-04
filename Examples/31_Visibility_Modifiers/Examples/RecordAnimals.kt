@@ -1,4 +1,4 @@
-package visibilitymodifiers
+package visibilityModifiers
 
 private var counter = 0                          // [1]
 

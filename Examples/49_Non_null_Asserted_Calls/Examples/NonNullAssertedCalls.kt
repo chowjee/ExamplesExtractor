@@ -1,4 +1,4 @@
-package nonnullassertion
+package nonNullAssertedCalls
 
 import com.atomickotlin.test.eq
 

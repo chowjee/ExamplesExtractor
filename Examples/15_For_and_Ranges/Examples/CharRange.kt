@@ -1,4 +1,4 @@
-package forandranges
+package forAndRanges
 
 fun main(args: Array<String>) {
   for (c in 'a'..'z') {          // [1]

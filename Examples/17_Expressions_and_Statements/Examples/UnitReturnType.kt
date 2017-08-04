@@ -1,4 +1,4 @@
-package expressionsandstatements
+package expressionsAndStatements
 
 fun g() = Unit
 

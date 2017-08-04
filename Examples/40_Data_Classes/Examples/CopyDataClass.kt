@@ -1,8 +1,8 @@
-package dataclasses2
+package dataClasses
 
 import com.atomickotlin.test.eq
 
-data class Contact(
+data class DetailedContact(
     val name: String,
     val surname: String,
     val number: String,
@@ -10,7 +10,7 @@ data class Contact(
 )
 
 fun main(args: Array<String>) {
-  val contact = Contact(
+  val contact = DetailedContact(
       "Miffy",
       "Miller",
       "1-234-567890",

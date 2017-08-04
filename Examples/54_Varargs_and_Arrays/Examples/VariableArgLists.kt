@@ -1,4 +1,4 @@
-package varargs
+package varargsAndArrays
 
 fun foo(s: String, d: Double, vararg ints: Int) {}
 

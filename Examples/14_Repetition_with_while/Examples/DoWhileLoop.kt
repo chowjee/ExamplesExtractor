@@ -1,6 +1,4 @@
-package whilerepetition2
-
-fun condition(i: Int) = i < 10
+package repetitionWithWhile
 
 fun main(args: Array<String>) {
   var i = 0

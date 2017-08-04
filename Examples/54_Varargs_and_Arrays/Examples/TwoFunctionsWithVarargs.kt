@@ -1,4 +1,4 @@
-package varargs
+package varargsAndArrays
 
 fun firstVarargFun(vararg numbers: Int) {
   println("varargs:")

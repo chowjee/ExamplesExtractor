@@ -1,4 +1,4 @@
-package namedanddefault
+package namedAndDefaultArguments
 
 import com.atomickotlin.test.eq
 

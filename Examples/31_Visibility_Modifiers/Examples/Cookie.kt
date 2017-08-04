@@ -1,4 +1,4 @@
-package visibilitymodifers
+package visibilityModifiers
 
 class Cookie {
   private fun crumble() {  // [1]

@@ -1,4 +1,4 @@
-package extensions
+package extensionsForNullableTypes
 
 import com.atomickotlin.test.eq
 

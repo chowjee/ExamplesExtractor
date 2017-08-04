@@ -1,4 +1,4 @@
-package referencesmutability
+package maps
 
 import com.atomickotlin.test.eq
 

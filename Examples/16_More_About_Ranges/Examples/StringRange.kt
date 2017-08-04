@@ -1,4 +1,4 @@
-package moreaboutranges
+package moreAboutRanges
 
 fun main(args: Array<String>) {
   println("ab" in "aa".."az")

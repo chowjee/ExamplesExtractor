@@ -1,4 +1,4 @@
-package overridingfunctions
+package overridingFunctions
 
 import com.atomickotlin.test.eq
 

@@ -1,4 +1,4 @@
-package moreaboutranges
+package moreAboutRanges
 
 fun inFloatRange(n: Double) {
   val r = 1.0..10.0

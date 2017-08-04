@@ -1,8 +1,8 @@
-package sealedclasses1
+package sealedClasses
 
 import com.atomickotlin.test.eq
 
-open class Transport
+sealed class Transport
 
 data class Train(
     val line: String
@@ -19,7 +19,6 @@ fun travel(transport: Transport): String =
         "Train line ${transport.line}"
       is Bus ->
         "Bus number ${transport.number}, size ${transport.capacity}"
-      else -> "$transport is in limbo!"
     }
 
 fun main(args: Array<String>) {

@@ -1,4 +1,4 @@
-package lists
+package readOnlyAndMutableLists
 
 fun getList(): List<Int> {
   return mutableListOf(1, 2, 3)

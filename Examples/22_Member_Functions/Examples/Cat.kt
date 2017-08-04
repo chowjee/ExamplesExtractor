@@ -1,4 +1,4 @@
-package memberfunctions
+package memberFunctions
 
 class Cat {
   fun meow() = "mew!"

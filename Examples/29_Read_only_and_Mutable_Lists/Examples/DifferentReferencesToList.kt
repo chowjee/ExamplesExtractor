@@ -1,4 +1,4 @@
-package lists
+package readOnlyAndMutableLists
 
 import com.atomickotlin.test.eq
 

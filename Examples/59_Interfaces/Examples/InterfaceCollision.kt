@@ -1,4 +1,4 @@
-package interfaces5
+package interfaces
 
 import com.atomickotlin.test.eq
 

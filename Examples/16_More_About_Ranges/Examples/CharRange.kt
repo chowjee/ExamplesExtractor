@@ -1,4 +1,4 @@
-package moreaboutranges
+package moreAboutRanges
 
 fun isDigit(ch: Char) = ch in '0'..'9'
 

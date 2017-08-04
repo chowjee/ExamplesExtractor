@@ -1,4 +1,4 @@
-package whenexpressions
+package whenExpressions
 
 fun checkColor(color: String) {
   when (color) {

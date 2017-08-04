@@ -1,4 +1,4 @@
-package forandranges
+package forAndRanges
 
 fun main(args: Array<String>) {
   var sum = 0

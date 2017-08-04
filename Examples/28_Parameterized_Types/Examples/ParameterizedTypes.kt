@@ -1,4 +1,4 @@
-package parameterizedtypes
+package parameterizedTypes
 
 import com.atomickotlin.test.eq
 

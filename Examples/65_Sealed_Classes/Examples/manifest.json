@@ -2,11 +2,11 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "SealedClasses1.kt",
+      "filename": "RegularClasses.kt",
       "modifiable": "true"
     },
     {
-      "filename": "SealedClasses2.kt",
+      "filename": "SealedClasses.kt",
       "modifiable": "true"
     }
   ],

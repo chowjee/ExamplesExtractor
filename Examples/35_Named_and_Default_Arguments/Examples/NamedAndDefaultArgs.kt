@@ -1,8 +1,8 @@
-package namedanddefault1
+package namedAndDefaultArguments
 
 import com.atomickotlin.test.eq
 
-fun getColor(
+fun getColor1(
     red: Int = 0,
     green: Int = 0,
     blue: Int = 0
@@ -15,8 +15,8 @@ fun main(args: Array<String>) {
   val orange = "(255, 165, 0)"
   val purple = "(128, 0, 128)"
 
-  getColor(139) eq darkRed
-  getColor(blue = 139) eq darkBlue
-  getColor(255, 165) eq orange
-  getColor(red = 128, blue = 128) eq purple
+  getColor1(139) eq darkRed
+  getColor1(blue = 139) eq darkBlue
+  getColor1(255, 165) eq orange
+  getColor1(red = 128, blue = 128) eq purple
 }

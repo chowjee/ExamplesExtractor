@@ -1,4 +1,4 @@
-package safecalls
+package safeCallsAndElvisOperator
 
 import com.atomickotlin.test.eq
 

@@ -1,4 +1,4 @@
-package importsandpackages
+package importsAndPackages
 
 fun main(args: Array<String>) {
   val r = java.util.Random()

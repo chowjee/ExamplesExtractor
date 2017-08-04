@@ -1,4 +1,4 @@
-package classesandobjects
+package classesAndObjects
 
 fun main(args: Array<String>) {
   val r = IntRange(0, 10)

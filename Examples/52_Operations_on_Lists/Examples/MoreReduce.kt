@@ -1,4 +1,4 @@
-package mapandreduce
+package operationsOnLists
 
 import com.atomickotlin.test.eq
 

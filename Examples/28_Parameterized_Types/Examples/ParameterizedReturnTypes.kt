@@ -1,8 +1,8 @@
-// Return type is inferred:
-package parameterizedtypes
+package parameterizedTypes
 
 import com.atomickotlin.test.eq
 
+// Return type is inferred:
 fun inferred(c1: Char, c2: Char, c3: Char) =
     listOf(c1, c2, c3)
 

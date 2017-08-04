@@ -1,4 +1,4 @@
-package intefaces3
+package interfaces2
 
 interface Animal {
   val sound: String

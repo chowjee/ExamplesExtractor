@@ -3,10 +3,6 @@ package enumerations
 import com.atomickotlin.test.eq
 import enumerations.Level.*    // [1]
 
-enum class Level {
-  Overflow, High, Medium, Low, Empty
-}
-
 fun main(args: Array<String>) {
   Medium eq "Medium"           // [2]
 

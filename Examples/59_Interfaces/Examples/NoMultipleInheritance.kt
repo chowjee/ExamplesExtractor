@@ -1,4 +1,4 @@
-package interfaces1
+package classes
 
 open class Animal
 open class Mammal : Animal()

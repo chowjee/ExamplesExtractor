@@ -1,4 +1,4 @@
-package forandranges
+package forAndRanges
 
 fun containsChar(s: String, ch: Char): Boolean {
   for (c in s) {

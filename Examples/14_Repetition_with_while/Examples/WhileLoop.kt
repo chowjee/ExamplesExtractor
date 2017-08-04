@@ -1,4 +1,4 @@
-package whilerepetition1
+package repetitionWithWhile
 
 fun condition(i: Int) = i < 10
 

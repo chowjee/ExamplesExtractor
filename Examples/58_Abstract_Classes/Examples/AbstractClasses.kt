@@ -1,4 +1,4 @@
-package abstractclasses
+package abstractClasses
 
 import com.atomickotlin.test.eq
 

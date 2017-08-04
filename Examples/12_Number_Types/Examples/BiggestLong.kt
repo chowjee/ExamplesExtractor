@@ -1,4 +1,4 @@
-package numbertypes
+package numberTypes
 
 fun main(args: Array<String>) {
   println(Long.MAX_VALUE)

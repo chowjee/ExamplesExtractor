@@ -1,4 +1,4 @@
-package memberfunctions
+package memberFunctions
 
 class Dog {
   fun bark() = "yip!"

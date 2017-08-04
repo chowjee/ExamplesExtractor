@@ -1,4 +1,4 @@
-package destructuring
+package destructuringDeclarations
 
 import com.atomickotlin.test.eq
 

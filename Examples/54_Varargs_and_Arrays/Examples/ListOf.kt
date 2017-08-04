@@ -1,4 +1,4 @@
-package varargs
+package varargsAndArrays
 
 import com.atomickotlin.test.eq
 

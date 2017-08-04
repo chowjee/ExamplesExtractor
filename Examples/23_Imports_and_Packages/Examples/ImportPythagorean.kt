@@ -1,4 +1,4 @@
-package importsandpackages
+package importsAndPackages
 
 import pythagorean.RightTriangle
 

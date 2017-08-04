@@ -1,4 +1,4 @@
-package baseclassinit
+package baseClassInitialization
 
 open class Superclass1(val i: Int)
 class Subclass1(i: Int) : Superclass1(i)

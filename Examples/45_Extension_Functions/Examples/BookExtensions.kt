@@ -1,4 +1,4 @@
-package extensionfunctions
+package extensionFunctions
 
 import com.atomickotlin.test.eq
 

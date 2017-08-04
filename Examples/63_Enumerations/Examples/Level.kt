@@ -1,4 +1,4 @@
-package enumerations1
+package enumerations
 
 import com.atomickotlin.test.eq
 

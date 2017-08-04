@@ -1,4 +1,4 @@
-package visibilitymodifiers
+package visibilityModifiers
 
 fun main(args: Array<String>) {
   // Can't access private members declared in another file:

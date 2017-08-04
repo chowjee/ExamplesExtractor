@@ -1,4 +1,4 @@
-package interfaces2
+package interfaces1
 
 interface Animal
 interface Mammal : Animal

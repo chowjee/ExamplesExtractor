@@ -1,4 +1,4 @@
-package datatypes
+package dataTypes
 
 fun main(args: Array<String>) {
   val whole: Int = 11              // [1]

@@ -1,4 +1,4 @@
-package combininglists
+package combiningListsWithZip
 
 import com.atomickotlin.test.eq
 

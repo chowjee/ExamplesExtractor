@@ -1,4 +1,4 @@
-package numbertypes
+package numberTypes
 
 fun main(args: Array<String>) {
   val i = Int.MAX_VALUE

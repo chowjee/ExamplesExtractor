@@ -28,14 +28,14 @@ fun replaceSample(atomText: String, packageName: String, example: File): String 
         append(before.substringBeforeLast(openingTag))
         appendln(openingTag)
         appendln(fileNameComment)
-        appendln(example.dropPackageIfDefault(packageName))
+        appendln(example.readText().dropPackageIfDefault(packageName))
         append(closingTag)
         append(after.substringAfter(closingTag))
     }
 }
 
-private fun File.dropPackageIfDefault(packageName: String): String {
-    val lines = readLines()
+fun String.dropPackageIfDefault(packageName: String): String {
+    val lines = lines()
     val packageLine = lines.first { it.startsWith("package") }
     val withoutPackage = if (packageLine == "package $packageName")
         lines.drop(2)

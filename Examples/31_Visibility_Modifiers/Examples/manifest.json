@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "RecordAnimals.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ObserveAnimals.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Cookie.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

@@ -4,8 +4,10 @@ import org.junit.Assert
 import org.junit.Test
 
 class TestFunctions3 {
-    @Test fun test1() {
-        Assert.assertEquals("""duplicate("abc") should return "abcabc"""",
-                duplicate("abc"), "abcabc")
+    private fun checkFunction(s: String) {
+        Assert.assertEquals("""duplicate($s) should return "$s$s"""",
+                duplicate(s), "$s$s")
     }
+
+    @Test fun test1() = checkFunction("abc")
 }

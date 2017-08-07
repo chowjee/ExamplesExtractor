@@ -12,6 +12,3 @@ fun main(args: Array<String>) {
     val n = 17
     /*<taskWindow>*/println("Number $n is ${checkSign(n)}.")/*</taskWindow>*/
 }
-/* Expected output:
-Number 17 is positive.
-*/

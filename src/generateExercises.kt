@@ -77,7 +77,9 @@ fun generateTasksForChapter(chapterFile: File, parentDir: File) {
             else
                 this
         }
-        transform("Test.kt")
+        if (!taskDir.subFile("output.txt").exists()) {
+            transform("Test.kt")
+        }
 
         val manifestFile = taskDir.manifest()
         manifestFile.writeText(manifestForExercise())

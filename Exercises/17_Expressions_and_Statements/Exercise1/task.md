@@ -1,3 +1,3 @@
 ## Expressions and Statements (#1)
 
-Try to print out the result of the other `println` call.
+Print out the result of the `println(1)` call.

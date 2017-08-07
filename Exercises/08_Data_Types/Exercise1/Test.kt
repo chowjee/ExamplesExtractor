@@ -1,9 +1,8 @@
 package dataTypes
 
+import org.junit.Assert
 import org.junit.Test
 
 class TestDataTypes {
-    @Test fun test1() {
-        println("type mismatch error")
-    }
+    @Test fun fakeTest() {}
 }

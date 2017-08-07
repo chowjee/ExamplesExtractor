@@ -1,3 +1,3 @@
 ## `for` and Ranges (#3)
 
-Create a function that sums up only even numbers up to a given number.
+Using `for` loop create a function that sums up only even numbers up to a given number.

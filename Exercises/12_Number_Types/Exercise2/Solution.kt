@@ -11,9 +11,9 @@ fun main(args: Array<String>) {
     // only in Double
     val centillion: Double = Math.pow(10.0, 303.0)
 
-    println(million)
-    println(billion)
-    println(trillion)
-    println(quintillion)
-    println(centillion)/*</taskWindow>*/
+    println("Int: $million")
+    println("Int: $billion")
+    println("Long: $trillion")
+    println("Long: $quintillion")
+    println("Double: $centillion")/*</taskWindow>*/
 }

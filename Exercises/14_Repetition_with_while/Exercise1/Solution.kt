@@ -1,5 +1,11 @@
-package exercise1
+package repetitionWithWhile1
 
-fun sum(i: Int) {
-    /*<taskWindow>*/0/*</taskWindow>*/
+fun sum(number: Int): Int {
+    /*<taskWindow>*/var sum = 0
+    var i = 0
+    while (i <= number) {
+        sum += i
+        i++
+    }
+    return sum/*</taskWindow>*/
 }

@@ -10,6 +10,3 @@ fun main(args: Array<String>) {
     val max = findMax(first, second)
     println("The maximum between $first and $second is $max.")/*</taskWindow>*/
 }
-/* Expected output:
-The maximum between 17 and 31 is 31.
-*/

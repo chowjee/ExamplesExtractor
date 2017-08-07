@@ -4,27 +4,21 @@ import org.junit.Assert
 import org.junit.Test
 
 class TestNumberTypes3 {
-    @Test fun testMain() {
-        main(arrayOf())
+    private fun checkFahrenheitToCelsius(C: Double, F: Int) {
+        Assert.assertEquals("$F F should be $C C",
+                C, convertFahrenheitToCelsius(F), 0.0001)
     }
 
-    @Test fun testFahrenheitToCelsius1() {
-        Assert.assertEquals("5 F should be -15 C",
-                -15.0, convertFahrenheitToCelsius(5), 0.0001)
+    private fun checkCelsiusToFahrenheit(F: Double, C: Int) {
+        Assert.assertEquals("$C C should be $F F",
+                F, convertCelsiusToFahrenheit(C), 0.0001)
     }
 
-    @Test fun testFahrenheitToCelsius2() {
-        Assert.assertEquals("100 F should be 37.7778 C",
-                37.7778, convertFahrenheitToCelsius(100), 0.0001)
-    }
+    @Test fun testFahrenheitToCelsius1() = checkFahrenheitToCelsius(-15.0, 5)
 
-    @Test fun testCelsiusToFahrenheit1() {
-        Assert.assertEquals("-15 C should be 5 F",
-                5.0, convertCelsiusToFahrenheit(-15), 0.0001)
-    }
+    @Test fun testFahrenheitToCelsius2() = checkFahrenheitToCelsius(37.7778, 100)
 
-    @Test fun testCelsiusToFahrenheit2() {
-        Assert.assertEquals("20 C should be 68 F",
-                68.0, convertCelsiusToFahrenheit(20), 0.0001)
-    }
+    @Test fun testCelsiusToFahrenheit1() = checkCelsiusToFahrenheit(5.0, -15)
+
+    @Test fun testCelsiusToFahrenheit2() = checkCelsiusToFahrenheit(68.0, 20)
 }

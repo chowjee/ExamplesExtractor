@@ -4,21 +4,28 @@ import org.junit.Assert
 import org.junit.Test
 
 class TestBooleans2 {
-    @Test fun testMain() {
-        main(arrayOf())
+
+    private fun checkAnd(b1: Boolean, b2: Boolean) {
+        Assert.assertEquals("and($b1, $b2) should be ${b1 && b2}", b1 && b2, and(b1, b2))
     }
 
-    @Test fun testAnd() {
-        Assert.assertEquals("and(true, true) should be true", true && true, and(true, true))
-        Assert.assertEquals("and(true, false) should be false", true && false, and(true, false))
-        Assert.assertEquals("and(false, true) should be false", false && true, and(false, true))
-        Assert.assertEquals("and(false, false) should be false", false && false, and(false, false))
+    private fun checkOr(b1: Boolean, b2: Boolean) {
+        Assert.assertEquals("or($b1, $b2) should be ${b1 || b2}", b1 || b2, or(b1, b2))
     }
 
-    @Test fun testOr() {
-        Assert.assertEquals("or(true, true) should be true", true || true, or(true, true))
-        Assert.assertEquals("or(true, false) should be true", true || false, or(true, false))
-        Assert.assertEquals("or(false, true) should be true", false || true, or(false, true))
-        Assert.assertEquals("or(false, false) should be false", false || false, or(false, false))
-    }
+    @Test fun testAnd1() = checkAnd(true, true)
+
+    @Test fun testAnd2() = checkAnd(true, false)
+
+    @Test fun testAnd3() = checkAnd(false, true)
+
+    @Test fun testAnd4() = checkAnd(false, false)
+
+    @Test fun testOr1() = checkOr(true, true)
+
+    @Test fun testOr2() = checkOr(true, false)
+
+    @Test fun testOr3() = checkOr(false, true)
+
+    @Test fun testOr4() = checkOr(false, false)
 }

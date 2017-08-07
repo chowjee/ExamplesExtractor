@@ -10,7 +10,3 @@ fun main(args: Array<String>) {
     println(x)
     println(y)
 }
-/* Expected output:
-2
-1
-*/

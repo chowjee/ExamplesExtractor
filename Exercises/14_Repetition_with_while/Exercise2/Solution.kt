@@ -1,4 +1,4 @@
-package forLoops4
+package repetitionWithWhile2
 
 fun sumOfEven(n: Int): Int {
   /*<taskWindow>*/var result = 0

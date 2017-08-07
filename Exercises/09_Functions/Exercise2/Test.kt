@@ -4,13 +4,13 @@ import org.junit.Assert
 import org.junit.Test
 
 class TestFunctions2 {
-    @Test fun test1() {
-        Assert.assertEquals("getSum(1.0, 2.1, 7.9) should return 10.0",
-                10.0, getSum(1.0, 2.1, 6.9), 0.000001)
+    private fun checkFunction(a: Double, b: Double, c: Double) {
+        val sum = a + b + c
+        Assert.assertEquals("getSum($a, $b, $c) should return $sum",
+                sum, getSum(a, b, c), 0.000001)
     }
 
-    @Test fun test2() {
-        Assert.assertEquals("getSum(0.0, 42.0, -42.0) should return 0.0",
-                0.0, getSum(0.0, 42.0, -42.0), 0.000001)
-    }
+    @Test fun test1() = checkFunction(1.0, 2.1, 6.9)
+
+    @Test fun test2() = checkFunction(0.0, 42.0, -42.0)
 }

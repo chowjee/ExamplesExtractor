@@ -996,4 +996,44 @@ public class TestExamples extends AbstractTestExamples {
     public void testDataClassAndHashCode() {
         testExample("Examples/79_Data_Classes_and_Immutability/Examples/DataClassAndHashCode.kt", dataclasses4.DataClassAndHashCodeKt::main);
     }
+
+    @Test
+    public void testExerciseHelloWorld1() {
+        testExercise("Exercises/06_Hello_World/Exercise1/output.txt", helloWorld1.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseHelloWorld2() {
+        testExercise("Exercises/06_Hello_World/Exercise2/output.txt", helloWorld2.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseVariables1() {
+        testExercise("Exercises/07_Variables/Exercise1/output.txt", exercises.variables1.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseVariables2() {
+        testExercise("Exercises/07_Variables/Exercise2/output.txt", exercises.variables2.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseStringTemplates1() {
+        testExercise("Exercises/11_String_Templates/Exercise1/output.txt", stringTemplates1.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseStringTemplates2() {
+        testExercise("Exercises/11_String_Templates/Exercise2/output.txt", stringTemplates2.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseNumberTypes2() {
+        testExercise("Exercises/12_Number_Types/Exercise2/output.txt", numberTypes2.SolutionKt::main);
+    }
+
+    @Test
+    public void testExerciseExpressionsAndStatements1() {
+        testExercise("Exercises/17_Expressions_and_Statements/Exercise1/output.txt", expressionsAndStatements1.SolutionKt::main);
+    }
 }

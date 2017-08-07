@@ -1,6 +1,7 @@
 package atoms
 
 import examplesExtractor.extractCodeExamples
+import generatingTests.AuxiliaryFiles
 import settings.Settings
 import util.subFile
 import java.io.File
@@ -23,3 +24,21 @@ fun getExamplesForAtom(atom: File): List<File> {
         examples.subFile(it.name)
     } ?: listOf()
 }
+
+fun getAuxiliaryFilesForExercises(): List<AuxiliaryFiles> {
+    val allExercises = File(Settings.exercisesDir).listFiles().filter { it.isDirectory }.flatMap {
+        it.listFiles().filter { it.isDirectory }
+    }
+    val outputExercises = allExercises.filter {
+        it.subFile("output.txt").exists()
+    }
+    return outputExercises.map {
+        AuxiliaryFiles(it.subFile("Solution.kt"), it.subFile("output.txt"), true)
+    }
+}
+//
+//fun main(args: Array<String>) {
+//    for ((e, o) in getExercises()) {
+//        println("$e - $o")
+//    }
+//}

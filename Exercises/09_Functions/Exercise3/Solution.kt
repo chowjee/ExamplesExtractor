@@ -1,3 +1,3 @@
 package functions3
 
-fun duplicate(s: String) = /*<taskWindow>*/s + s/*</taskWindow>*/
+fun duplicate(s: String): String = /*<taskWindow>*/s + s/*</taskWindow>*/

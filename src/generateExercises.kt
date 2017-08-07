@@ -10,6 +10,10 @@ import util.subDir
 import util.subFile
 import java.io.File
 
+fun main(args: Array<String>) {
+    generateExercises(listOf(6..17))
+}
+
 fun generateExercises(atoms: List<IntRange>) {
     val parentDir = File(Settings.exercisesDir)
     parentDir.mkdir()

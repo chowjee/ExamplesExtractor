@@ -1,3 +1,3 @@
-## For and While Loops (#2)
+## `for` and Ranges (#2)
 
 Create a function that sums up the factorials up to a given number (`1! + 2! + ... + n!`).

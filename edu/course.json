@@ -8,12 +8,12 @@
       "task_files" : {
         "EmptyProgram.kt" : {
           "name" : "EmptyProgram.kt",
-          "text" : "package helloworld\n\nfun main(args: Array<String>) {\n  // Program code here ...\n}",
+          "text" : "package helloWorld\n\nfun main(args: Array<String>) {\n  // Program code here ...\n}",
           "placeholders" : [ ]
         },
         "HelloWorld.kt" : {
           "name" : "HelloWorld.kt",
-          "text" : "package helloworld\n\nfun main(args: Array<String>) {\n  println(\"Hello, world!\")\n}\n/* Output:\nHello, world!\n*/",
+          "text" : "package helloWorld\n\nfun main(args: Array<String>) {\n  println(\"Hello, world!\")\n}\n/* Output:\nHello, world!\n*/",
           "placeholders" : [ ]
         }
       },
@@ -44,7 +44,7 @@
         }
       },
       "test_files" : {
-        "output.txt": "Hello, World!\n"
+        "output.txt" : "Hello, Kotlin!\n"
       },
       "task_texts" : {
         "task" : "## Hello, World! (#1)\n\nCreate and run a program that prints the phrase \"Hello, Kotlin!\" to the console."
@@ -63,7 +63,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possible_answer" : "// #1\n    println(\"Hello, Kotlin!\")\n    // #2\n    println(\"Hello,\")\n    println(\"Kotlin!\")",
+                "possible_answer" : "// #1\n    println(\"Hello,\")\n    println(\"Kotlin!\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -73,12 +73,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld2 {\n    @Test fun test1() {\n    }\n}"
+        "output.txt" : "Hello,\nKotlin!\n"
       },
       "task_texts" : {
-        "task" : "## Hello, World! (#2)\n\nPrint the same phrase \"Hello, Kotlin!\" to the console, but \"Kotlin\" should appear on the next line.\nYou can print two separate strings to achieve that:\n\n```\nHello,\nKotlin!\n```\n\nTry replacing `println` with `print` and see what changes."
+        "task" : "## Hello, World! (#2)\n\nPrint the same phrase \"Hello, Kotlin!\" to the console, but \"Kotlin\" should appear on the next line.\nYou can print two separate strings to achieve that:\n\n```\nHello,\nKotlin!\n```\n\nTry replacing `println` with `print` and see what changes.\n\nNote that tests for all the following tasks assume that you use `println`, not `print`, \nas a default way to print out the data to the console."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     } ]
   }, {
     "id" : 0,
@@ -120,7 +120,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possible_answer" : "\n    val answer = 42\n    // error: val cannot be reassigned\n    //answer = 43",
+                "possible_answer" : "\n    var answer = 42\n    answer = 43\n    println(answer)",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -130,19 +130,19 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestVariables1 {\n    @Test fun test1() {\n        println(\"error: val cannot be reassigned\")\n    }\n}"
+        "output.txt" : "43\n"
       },
       "task_texts" : {
-        "task" : "## Variables (#1)\n\nDeclare a `val answer` and set its value to `42`.\nTry to reassign the `answer` to `43` in the next line.\nWhat error does the compiler produce?\nFix the error by replacing `val` with `var`."
+        "task" : "## Variables (#1)\n\nDeclare a `val answer` and set its value to `42`.\nTry to reassign the `answer` to `43` in the next line.\nWhat error does the compiler produce?\nFix the error by replacing `val` with `var`.\nPrint out the value of `answer` to the console."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     }, {
       "name" : "Exercise 2",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun main(args: Array<String>) {\n    var x = 1\n    var y = 2\n    TODO()\n    println(x)\n    println(y)\n}\n/* Expected output:\n2\n1\n*/",
+          "text" : "\nfun main(args: Array<String>) {\n    var x = 1\n    var y = 2\n    TODO()\n    println(x)\n    println(y)\n}",
           "placeholders" : [ {
             "offset" : 65,
             "length" : 6,
@@ -159,12 +159,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestHelloWorld1 {\n    @Test fun test1() {\n        println(\"TODO. Check expected output: 2\\n1\")\n    }\n}"
+        "output.txt" : "2\n1\n"
       },
       "task_texts" : {
         "task" : "## Variables (#2)\n\nDeclare two `var`s `x` and `y`.\nSwap their contents (you can first try saying `x = y`, `y = x` and then fix the erroneous solution):\n```\nvar x = 1\nvar y = 2\n// swap\nprintln(x) // 2\nprintln(y) // 1\n```\n\nYour code should remain unchanged for different initializers, like\n`var x = \"first\"`, `var y = \"second\"`.\nThus saying just `x = 2`, `y = 1` is not the expected solution.\nTip: you may need to introduce a third auxiliary variable."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     } ]
   }, {
     "id" : 0,
@@ -175,17 +175,17 @@
       "task_files" : {
         "StringPlusNumber.kt" : {
           "name" : "StringPlusNumber.kt",
-          "text" : "package datatypes\n\nfun main(args: Array<String>) {\n  println(\"Sally\" + 5.9)\n}\n/* Output:\nSally5.9\n*/",
+          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  println(\"Sally\" + 5.9)\n}\n/* Output:\nSally5.9\n*/",
           "placeholders" : [ ]
         },
         "Types.kt" : {
           "name" : "Types.kt",
-          "text" : "package datatypes\n\nfun main(args: Array<String>) {\n  val whole: Int = 11              // [1]\n  val fractional: Double = 1.4     // [2]\n  // true or false:\n  val trueOrFalse: Boolean = true  // [3]\n  val words: String = \"A value\"    // [4]\n  val lines: String = \"\"\"Triple quotes let\nyou have many lines\ntarget your string\"\"\"              // [5]\n\n  println(whole)\n  println(fractional)\n  println(trueOrFalse)\n  println(words)\n  println(lines)\n}\n/* Output:\n11\n1.4\ntrue\nA value\nTriple quotes let\nyou have many lines\ntarget your string\n*/",
+          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  val whole: Int = 11              // [1]\n  val fractional: Double = 1.4     // [2]\n  // true or false:\n  val trueOrFalse: Boolean = true  // [3]\n  val words: String = \"A value\"    // [4]\n  val lines: String = \"\"\"Triple quotes let\nyou have many lines\ntarget your string\"\"\"              // [5]\n\n  println(whole)\n  println(fractional)\n  println(trueOrFalse)\n  println(words)\n  println(lines)\n}\n/* Output:\n11\n1.4\ntrue\nA value\nTriple quotes let\nyou have many lines\ntarget your string\n*/",
           "placeholders" : [ ]
         },
         "Inference.kt" : {
           "name" : "Inference.kt",
-          "text" : "package datatypes\n\nfun main(args: Array<String>) {\n  val n = 1 + 1.2\n  println(n)\n}\n/* Output:\n2.2\n*/",
+          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  val n = 1 + 1.2\n  println(n)\n}\n/* Output:\n2.2\n*/",
           "placeholders" : [ ]
         }
       },
@@ -216,7 +216,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestDataTypes {\n    @Test fun test1() {\n        println(\"type mismatch error\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestDataTypes {\n    @Test fun fakeTest() {}\n}\n"
       },
       "task_texts" : {
         "task" : "## Data Types (#1)\n\nDeclare the mutable variable `answer` of the `Int` type and set its value to `42`.\nIn the next line try to reassign `answer` to the string \"unknown\".\nWhat error does the compiler produce?\n\nRemove the `Int` type specification.\nDoes the error change?"
@@ -278,7 +278,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions1 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSquare(5) should return 25\",\n                25, getSquare(5))\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSquare(-3) should return 9\",\n                9, getSquare(-3))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions1 {\n    private fun testFunction(i: Int) {\n        Assert.assertEquals(\"getSquare($i) should return ${i * i}\",\n                i * i, getSquare(i))\n    }\n\n    @Test fun test1() = testFunction(5)\n\n    @Test fun test2() = testFunction(-3)\n}\n"
       },
       "task_texts" : {
         "task" : "## Functions (#1)\n\nCreate a function `getSquare` that takes an `Int` argument and\nreturns its square."
@@ -307,7 +307,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions2 {\n    @Test fun test1() {\n        Assert.assertEquals(\"getSum(1.0, 2.1, 7.9) should return 10.0\",\n                10.0, getSum(1.0, 2.1, 6.9), 0.000001)\n    }\n\n    @Test fun test2() {\n        Assert.assertEquals(\"getSum(0.0, 42.0, -42.0) should return 0.0\",\n                0.0, getSum(0.0, 42.0, -42.0), 0.000001)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions2 {\n    private fun checkFunction(a: Double, b: Double, c: Double) {\n        val sum = a + b + c\n        Assert.assertEquals(\"getSum($a, $b, $c) should return $sum\",\n                sum, getSum(a, b, c), 0.000001)\n    }\n\n    @Test fun test1() = checkFunction(1.0, 2.1, 6.9)\n\n    @Test fun test2() = checkFunction(0.0, 42.0, -42.0)\n}\n"
       },
       "task_texts" : {
         "task" : "## Functions (#2)\n\nCreate a function `getSum` that takes three `Double` arguments\nand returns their sum."
@@ -336,7 +336,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions3 {\n    @Test fun test1() {\n        Assert.assertEquals(\"\"\"duplicate(\"abc\") should return \"abcabc\"\"\"\",\n                duplicate(\"abc\"), \"abcabc\")\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFunctions3 {\n    private fun checkFunction(s: String) {\n        Assert.assertEquals(\"\"\"duplicate($s) should return \"$s$s\"\"\"\",\n                duplicate(s), \"$s$s\")\n    }\n\n    @Test fun test1() = checkFunction(\"abc\")\n}\n"
       },
       "task_texts" : {
         "task" : "## Functions (#3)\n\nCreate a function `duplicate` that takes a `String`\nand returns this `String` repeated twice."
@@ -352,42 +352,42 @@
       "task_files" : {
         "If1.kt" : {
           "name" : "If1.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  if (1 > 0) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  if (1 > 0) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
           "placeholders" : [ ]
         },
         "If2.kt" : {
           "name" : "If2.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  val x: Boolean = 1 >= 1\n  if (x) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val x: Boolean = 1 >= 1\n  if (x) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
           "placeholders" : [ ]
         },
         "If3.kt" : {
           "name" : "If3.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else {\n    println(\"It's negative or zero\")\n  }\n}\n/* Output:\nIt's negative or zero\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else {\n    println(\"It's negative or zero\")\n  }\n}\n/* Output:\nIt's negative or zero\n*/",
           "placeholders" : [ ]
         },
         "If4.kt" : {
           "name" : "If4.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else if (n == 0) {\n    println(\"It's zero\")\n  } else {\n    println(\"It's negative\")\n  }\n}\n/* Output:\nIt's negative\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else if (n == 0) {\n    println(\"It's zero\")\n  } else {\n    println(\"It's negative\")\n  }\n}\n/* Output:\nIt's negative\n*/",
           "placeholders" : [ ]
         },
         "If5.kt" : {
           "name" : "If5.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  val y: Boolean = false\n  if (!y) {\n    println(\"!y is true\")\n  }\n}\n/* Output:\n!y is true\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val y: Boolean = false\n  if (!y) {\n    println(\"!y is true\")\n  }\n}\n/* Output:\n!y is true\n*/",
           "placeholders" : [ ]
         },
         "If6.kt" : {
           "name" : "If6.kt",
-          "text" : "package ifexpressions\n\nfun main(args: Array<String>) {\n  val result = if (99 > 100) 4 else 42\n  println(result)\n}\n/* Output:\n42\n*/",
+          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val result = if (99 > 100) 4 else 42\n  println(result)\n}\n/* Output:\n42\n*/",
           "placeholders" : [ ]
         },
         "TrueOrFalse.kt" : {
           "name" : "TrueOrFalse.kt",
-          "text" : "package ifexpressions\n\nfun trueOrFalse(exp: Boolean): String {\n  if (exp) {\n    return \"It's true!\" // [1]\n  }\n  return \"It's false\"\n}\n\nfun main(args: Array<String>) {\n  val b = 1\n  println(trueOrFalse(b < 3))\n  println(trueOrFalse(b >= 3))\n}\n/* Output:\nIt's true!\nIt's false\n*/",
+          "text" : "package ifExpressions\n\nfun trueOrFalse(exp: Boolean): String {\n  if (exp) {\n    return \"It's true!\" // [1]\n  }\n  return \"It's false\"\n}\n\nfun main(args: Array<String>) {\n  val b = 1\n  println(trueOrFalse(b < 3))\n  println(trueOrFalse(b >= 3))\n}\n/* Output:\nIt's true!\nIt's false\n*/",
           "placeholders" : [ ]
         },
         "OneOrTheOther.kt" : {
           "name" : "OneOrTheOther.kt",
-          "text" : "package ifexpressions\n\nfun oneOrTheOther(exp: Boolean): String =\n    if (exp) {\n      \"True!\" // No 'return' necessary\n    } else {\n      \"False\"\n    }\n\nfun main(args: Array<String>) {\n  val x = 1\n  println(oneOrTheOther(x == 1))\n  println(oneOrTheOther(x == 2))\n}\n/* Output:\nTrue!\nFalse\n*/",
+          "text" : "package ifExpressions\n\nfun oneOrTheOther(exp: Boolean): String =\n    if (exp) {\n      \"True!\" // No 'return' necessary\n    } else {\n      \"False\"\n    }\n\nfun main(args: Array<String>) {\n  val x = 1\n  println(oneOrTheOther(x == 1))\n  println(oneOrTheOther(x == 2))\n}\n/* Output:\nTrue!\nFalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -418,7 +418,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions1 {\n    @Test fun testPositive() {\n        Assert.assertEquals(\"\"\"checkSign(10) should return \"positive\"\"\"\",\n                \"positive\", checkSign(10))\n    }\n\n    @Test fun testZero() {\n        Assert.assertEquals(\"\"\"checkSign(0) should return \"zero\"\"\"\",\n                \"zero\", checkSign(0))\n    }\n\n    @Test fun testNegative() {\n        Assert.assertEquals(\"\"\"checkSign(-10) should return \"negative\"\"\"\",\n                \"negative\", checkSign(-10))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions1 {\n    private fun checkFunction(number: Int, sign: String) {\n        Assert.assertEquals(\"\"\"checkSign($number) should return \"$sign\"\"\"\",\n                sign, checkSign(number))\n    }\n\n    @Test fun testPositive() = checkFunction(10, \"positive\")\n\n    @Test fun testZero() = checkFunction(0, \"zero\")\n\n    @Test fun testNegative() = checkFunction(-10, \"negative\")\n}\n"
       },
       "task_texts" : {
         "task" : "## If Expressions (#1)\n\nCreate a function `checkSign` that checks whether an integer number is positive, negative or zero,\nand returns one of the strings \"positive\", \"negative\" or \"zero\" as a result."
@@ -447,7 +447,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions2 {\n    @Test fun testMax1() {\n        Assert.assertEquals(2, findMax(1, 2))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestIfExpressions2 {\n    private fun checkFunction(first: Int, second: Int) {\n        val max = if (first > second) first else second\n        Assert.assertEquals(\"findMax($first, $second) should return $max\",\n                max, findMax(first, second))\n    }\n\n    @Test fun testMax1() = checkFunction(1, 2)\n\n    @Test fun testMax2() = checkFunction(-1001, 22)\n\n    @Test fun testMax3() = checkFunction(-3, -3)\n}\n"
       },
       "task_texts" : {
         "task" : "## If Expressions (#2)\n\nCreate a function `findMax` that finds the maximum between two integer numbers."
@@ -463,22 +463,22 @@
       "task_files" : {
         "StringTemplates.kt" : {
           "name" : "StringTemplates.kt",
-          "text" : "package stringtemplates\n\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  println(\"printing a $1\")                   // [2]\n}\n/* Output:\nFound 42!\nprinting a $1\n*/",
+          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  println(\"printing a $1\")                   // [2]\n}\n/* Output:\nFound 42!\nprinting a $1\n*/",
           "placeholders" : [ ]
         },
         "StringConcatenation.kt" : {
           "name" : "StringConcatenation.kt",
-          "text" : "package stringtemplates\n\nfun main(args: Array<String>) {\n  val s = \"hi\\n\"          // [1]\n  val n = 11\n  val d = 3.14\n  println(\"first: \" + s + \"second: \" +\n      n + \", third: \" + d)\n}\n/* Output:\nfirst: hi\nsecond: 11, third: 3.14\n*/",
+          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val s = \"hi\\n\"          // [1]\n  val n = 11\n  val d = 3.14\n  println(\"first: \" + s + \"second: \" +\n    n + \", third: \" + d)\n}\n/* Output:\nfirst: hi\nsecond: 11, third: 3.14\n*/",
           "placeholders" : [ ]
         },
         "ExpressionInStringTemplate.kt" : {
           "name" : "ExpressionInStringTemplate.kt",
-          "text" : "package stringtemplates\n\nfun main(args: Array<String>) {\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [1]\n\n  val x = 11\n  println(\"$x + 4 = ${x + 4}\")\n}\n/* Output:\na\n11 + 4 = 15\n*/",
+          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [1]\n\n  val x = 11\n  println(\"$x + 4 = ${x + 4}\")\n}\n/* Output:\na\n11 + 4 = 15\n*/",
           "placeholders" : [ ]
         },
         "TripleQuotes.kt" : {
           "name" : "TripleQuotes.kt",
-          "text" : "package stringtemplates\n\nfun main(args: Array<String>) {\n  val s = \"value\"\n  println(\"s = \\\"$s\\\".\")\n  println(\"\"\"s = \"$s\".\"\"\")\n}\n/* Output:\ns = \"value\".\ns = \"value\".\n*/",
+          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val s = \"value\"\n  println(\"s = \\\"$s\\\".\")\n  println(\"\"\"s = \"$s\".\"\"\")\n}\n/* Output:\ns = \"value\".\ns = \"value\".\n*/",
           "placeholders" : [ ]
         }
       },
@@ -492,7 +492,7 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun checkSign(number: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val n = 17\n    TODO()\n}\n/* Expected output:\nNumber 17 is positive.\n*/",
+          "text" : "\nfun checkSign(number: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val n = 17\n    TODO()\n}",
           "placeholders" : [ {
             "offset" : 30,
             "length" : 6,
@@ -521,19 +521,19 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestStringTemplates1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The number -17 is negative\")\n    }\n}"
+        "output.txt" : "Number 17 is positive.\n"
       },
       "task_texts" : {
         "task" : "## String Templates (#1)\n\nPrint the result of the function `checkSign` in the form \"The number 5 is positive\" for a given number."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     }, {
       "name" : "Exercise 2",
       "stepic_id" : 0,
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun findMax(first: Int, second: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val first = 17\n    val second = 31\n    TODO()\n}\n/* Expected output:\nThe maximum between 17 and 31 is 31.\n*/",
+          "text" : "\nfun findMax(first: Int, second: Int) = TODO()\n\nfun main(args: Array<String>) {\n    val first = 17\n    val second = 31\n    TODO()\n}",
           "placeholders" : [ {
             "offset" : 40,
             "length" : 6,
@@ -562,12 +562,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestStringTemplates2 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: The maximum between 17 and 31 is 31\")\n    }\n}"
+        "output.txt" : "The maximum between 17 and 31 is 31.\n"
       },
       "task_texts" : {
         "task" : "## String Templates (#2)\n\nPrint the result of the function `findMax` in the form \"The maximum between x and y is max\"\nwith values of the corresponding variables instead of `x`, `y` and `max`."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     } ]
   }, {
     "id" : 0,
@@ -578,42 +578,42 @@
       "task_files" : {
         "InferInt.kt" : {
           "name" : "InferInt.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  val million = 1_000_000  // Compiler infers Int\n  println(million)\n}\n/* Output:\n1000000\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val million = 1_000_000  // Compiler infers Int\n  println(million)\n}\n/* Output:\n1000000\n*/",
           "placeholders" : [ ]
         },
         "Modulus.kt" : {
           "name" : "Modulus.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator % denominator)\n}\n/* Output:\n9\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator % denominator)\n}\n/* Output:\n9\n*/",
           "placeholders" : [ ]
         },
         "IntDivisionTruncates.kt" : {
           "name" : "IntDivisionTruncates.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator / denominator)\n}\n/* Output:\n1\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator / denominator)\n}\n/* Output:\n1\n*/",
           "placeholders" : [ ]
         },
         "BMI.kt" : {
           "name" : "BMI.kt",
-          "text" : "package numbertypes\n\nfun getBmiStatus(kg: Double, heightM: Double): String {\n  val bmi = kg / (heightM * heightM)      // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val kg = 72.57 // 160 lbs\n  val heightM = 1.727 // 68 inches\n  val status = getBmiStatus(kg, heightM)\n  println(status)\n}\n/* Output:\nNormal weight\n*/",
+          "text" : "package numberTypes\n\nfun getBmiStatus(kg: Double, heightM: Double): String {\n  val bmi = kg / (heightM * heightM)      // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val kg = 72.57 // 160 lbs\n  val heightM = 1.727 // 68 inches\n  val status = getBmiStatus(kg, heightM)\n  println(status)\n}\n/* Output:\nNormal weight\n*/",
           "placeholders" : [ ]
         },
         "IntegerMath.kt" : {
           "name" : "IntegerMath.kt",
-          "text" : "package numbertypes\n\nfun getBmiStatusInt(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07 // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val lbs = 160\n  val height = 68\n  val status = getBmiStatusInt(lbs, height)\n  println(status)\n}\n/* Output:\nUnderweight\n*/",
+          "text" : "package numberTypes\n\nfun getBmiStatusInt(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07 // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val lbs = 160\n  val height = 68\n  val status = getBmiStatusInt(lbs, height)\n  println(status)\n}\n/* Output:\nUnderweight\n*/",
           "placeholders" : [ ]
         },
         "IntegerOverflow.kt" : {
           "name" : "IntegerOverflow.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  val i: Int = Int.MAX_VALUE\n  println(i + i)\n}\n/* Output:\n-2\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val i: Int = Int.MAX_VALUE\n  println(i + i)\n}\n/* Output:\n-2\n*/",
           "placeholders" : [ ]
         },
         "UsingLongs.kt" : {
           "name" : "UsingLongs.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  val i = Int.MAX_VALUE\n  println(0L + i + i)              // [1]\n  println(1_000_000 * 1_000_000L)  // [2]\n}\n/* Output:\n4294967294\n1000000000000\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val i = Int.MAX_VALUE\n  println(0L + i + i)              // [1]\n  println(1_000_000 * 1_000_000L)  // [2]\n}\n/* Output:\n4294967294\n1000000000000\n*/",
           "placeholders" : [ ]
         },
         "BiggestLong.kt" : {
           "name" : "BiggestLong.kt",
-          "text" : "package numbertypes\n\nfun main(args: Array<String>) {\n  println(Long.MAX_VALUE)\n}\n/* Output:\n9223372036854775807\n*/",
+          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  println(Long.MAX_VALUE)\n}\n/* Output:\n9223372036854775807\n*/",
           "placeholders" : [ ]
         }
       },
@@ -699,7 +699,7 @@
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possible_answer" : "\n    val million: Int = 1_000_000\n    val billion: Int = 1_000_000_000\n\n    val trillion: Long = 1_000_000_000_000\n    val quintillion: Long = 1_000_000_000_000_000_000\n\n    // only in Double\n    val centillion: Double = Math.pow(10.0, 303.0)\n\n    println(million)\n    println(billion)\n    println(trillion)\n    println(quintillion)\n    println(centillion)",
+                "possible_answer" : "\n    val million: Int = 1_000_000\n    val billion: Int = 1_000_000_000\n\n    val trillion: Long = 1_000_000_000_000\n    val quintillion: Long = 1_000_000_000_000_000_000\n\n    // only in Double\n    val centillion: Double = Math.pow(10.0, 303.0)\n\n    println(\"Int: $million\")\n    println(\"Int: $billion\")\n    println(\"Long: $trillion\")\n    println(\"Long: $quintillion\")\n    println(\"Double: $centillion\")",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -709,12 +709,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestNumberTypes2 {\n    @Test fun test() {\n        main(arrayOf())\n    }\n}"
+        "output.txt" : "Int: 1000000\nInt: 1000000000\nLong: 1000000000000\nLong: 1000000000000000000\nDouble: 1.0E303\n"
       },
       "task_texts" : {
-        "task" : "## Number Types (#2)\n\nCheck which of the following numbers are small enough to be stored in variables of `Int` and `Long` types:\na million (10<sup>6</sup>), a billion (10<sup>9</sup>), a trillion (10<sup>12</sup>),\na quintillion (10<sup>18</sup>), a centillion (10<sup>303</sup>)."
+        "task" : "## Number Types (#2)\n\nCheck which of the following numbers are small enough to be stored in variables of `Int` and `Long` types:\na million (10<sup>6</sup>), a billion (10<sup>9</sup>), a trillion (10<sup>12</sup>),\na quintillion (10<sup>18</sup>), a centillion (10<sup>303</sup>).\nPrint out the values in the form `type: value`, like:\n\n```\nInt: 1\nLong: 10\n```"
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     }, {
       "name" : "Exercise 3",
       "stepic_id" : 0,
@@ -750,7 +750,7 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes3 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testFahrenheitToCelsius1() {\n        Assert.assertEquals(\"5 F should be -15 C\",\n                -15.0, convertFahrenheitToCelsius(5), 0.0001)\n    }\n\n    @Test fun testFahrenheitToCelsius2() {\n        Assert.assertEquals(\"100 F should be 37.7778 C\",\n                37.7778, convertFahrenheitToCelsius(100), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit1() {\n        Assert.assertEquals(\"-15 C should be 5 F\",\n                5.0, convertCelsiusToFahrenheit(-15), 0.0001)\n    }\n\n    @Test fun testCelsiusToFahrenheit2() {\n        Assert.assertEquals(\"20 C should be 68 F\",\n                68.0, convertCelsiusToFahrenheit(20), 0.0001)\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestNumberTypes3 {\n    private fun checkFahrenheitToCelsius(C: Double, F: Int) {\n        Assert.assertEquals(\"$F F should be $C C\",\n                C, convertFahrenheitToCelsius(F), 0.0001)\n    }\n\n    private fun checkCelsiusToFahrenheit(F: Double, C: Int) {\n        Assert.assertEquals(\"$C C should be $F F\",\n                F, convertCelsiusToFahrenheit(C), 0.0001)\n    }\n\n    @Test fun testFahrenheitToCelsius1() = checkFahrenheitToCelsius(-15.0, 5)\n\n    @Test fun testFahrenheitToCelsius2() = checkFahrenheitToCelsius(37.7778, 100)\n\n    @Test fun testCelsiusToFahrenheit1() = checkCelsiusToFahrenheit(5.0, -15)\n\n    @Test fun testCelsiusToFahrenheit2() = checkCelsiusToFahrenheit(68.0, 20)\n}\n"
       },
       "task_texts" : {
         "task" : "## Number Types (#3)\n\nCreate two functions: one converting Fahrenheit to Celsius, another converting Celsius to Fahrenheit.\nTo convert Fahrenheit to Celsius first subtract `32`, then multiply by `5/9`.\nIf you get 0, check to make sure you didn't do integer math.\nFor backward conversion first multiply by `9/5`, then add `32`."
@@ -877,7 +877,7 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun and(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun or(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(and(true, true)) // true\n    println(or(true, false)) // true\n}\n",
+          "text" : "\nfun and(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun or(b1: Boolean, b2: Boolean): Boolean =\n        TODO()\n\nfun main(args: Array<String>) {\n    println(and(true, true)) // true\n    println(or(true, false)) // true\n}",
           "placeholders" : [ {
             "offset" : 54,
             "length" : 6,
@@ -906,10 +906,10 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans2 {\n    @Test fun testMain() {\n        main(arrayOf())\n    }\n\n    @Test fun testAnd() {\n        Assert.assertEquals(\"and(true, true) should be true\", true && true, and(true, true))\n        Assert.assertEquals(\"and(true, false) should be false\", true && false, and(true, false))\n        Assert.assertEquals(\"and(false, true) should be false\", false && true, and(false, true))\n        Assert.assertEquals(\"and(false, false) should be false\", false && false, and(false, false))\n    }\n\n    @Test fun testOr() {\n        Assert.assertEquals(\"or(true, true) should be true\", true || true, or(true, true))\n        Assert.assertEquals(\"or(true, false) should be true\", true || false, or(true, false))\n        Assert.assertEquals(\"or(false, true) should be true\", false || true, or(false, true))\n        Assert.assertEquals(\"or(false, false) should be false\", false || false, or(false, false))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestBooleans2 {\n\n    private fun checkAnd(b1: Boolean, b2: Boolean) {\n        Assert.assertEquals(\"and($b1, $b2) should be ${b1 && b2}\", b1 && b2, and(b1, b2))\n    }\n\n    private fun checkOr(b1: Boolean, b2: Boolean) {\n        Assert.assertEquals(\"or($b1, $b2) should be ${b1 || b2}\", b1 || b2, or(b1, b2))\n    }\n\n    @Test fun testAnd1() = checkAnd(true, true)\n\n    @Test fun testAnd2() = checkAnd(true, false)\n\n    @Test fun testAnd3() = checkAnd(false, true)\n\n    @Test fun testAnd4() = checkAnd(false, false)\n\n    @Test fun testOr1() = checkOr(true, true)\n\n    @Test fun testOr2() = checkOr(true, false)\n\n    @Test fun testOr3() = checkOr(false, true)\n\n    @Test fun testOr4() = checkOr(false, false)\n}\n"
       },
       "task_texts" : {
-        "task" : "## Booleans (#2)\n\nImplement the `and`, `or` functions taking two Boolean arguments\nand returning the same results as built-in `&&`, `||` operators.\nThese functions shouldn't use `&&` or `||` (using `if` expression is enough)."
+        "task" : "## Booleans (#2)\n\nUsing only `if` expression implement the `and`, `or` functions \ntaking two Boolean arguments and returning the same results \nas built-in `&&`, `||` operators."
       },
       "task_type" : "pycharm"
     } ]
@@ -922,12 +922,12 @@
       "task_files" : {
         "WhileLoop.kt" : {
           "name" : "WhileLoop.kt",
-          "text" : "package whilerepetition1\n\nfun condition(i: Int) = i < 10\n\nfun main(args: Array<String>) {\n  var i = 0\n  while (condition(i)) {\n    print(\".\")\n    i++         // [1]\n  }\n}\n/* Output:\n..........\n*/",
+          "text" : "package repetitionWithWhile\n\nfun condition(i: Int) = i < 10\n\nfun main(args: Array<String>) {\n  var i = 0\n  while (condition(i)) {\n    print(\".\")\n    i++         // [1]\n  }\n}\n/* Output:\n..........\n*/",
           "placeholders" : [ ]
         },
         "DoWhileLoop.kt" : {
           "name" : "DoWhileLoop.kt",
-          "text" : "package whilerepetition2\n\nfun condition(i: Int) = i < 10\n\nfun main(args: Array<String>) {\n  var i = 0\n  do {\n    print(\".\")\n    i++\n  } while (condition(i))\n}\n/* Output:\n..........\n*/",
+          "text" : "package repetitionWithWhile\n\nfun main(args: Array<String>) {\n  var i = 0\n  do {\n    print(\".\")\n    i++\n  } while (condition(i))\n}\n/* Output:\n..........\n*/",
           "placeholders" : [ ]
         }
       },
@@ -935,6 +935,64 @@
         "task" : "Examples accompanying the atom \"Repetition with `while`\".\n\nMark as `completed` after reading the atom."
       },
       "task_type" : "theory"
+    }, {
+      "name" : "Exercise 1",
+      "stepic_id" : 0,
+      "task_files" : {
+        "Task.kt" : {
+          "name" : "Task.kt",
+          "text" : "\nfun sum(number: Int): Int {\n    TODO()\n}",
+          "placeholders" : [ {
+            "offset" : 33,
+            "length" : 6,
+            "subtask_infos" : {
+              "0" : {
+                "hints" : [ ],
+                "possible_answer" : "var sum = 0\n    var i = 0\n    while (i <= number) {\n        sum += i\n        i++\n    }\n    return sum",
+                "placeholder_text" : "TODO()",
+                "has_frame" : true,
+                "need_insert_text" : false
+              }
+            }
+          } ]
+        }
+      },
+      "test_files" : {
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestRepetitionWithWhile {\n    private fun checkSum(i: Int) {\n        val expectedSum = (1..i).sum()\n        Assert.assertEquals(\"sum($i) should be $expectedSum\", expectedSum, sum(i))\n    }\n\n    @Test fun testSum1() = checkSum(1)\n\n    @Test fun testSum2() = checkSum(2)\n\n    @Test fun testSum5() = checkSum(5)\n\n    @Test fun testSum10() = checkSum(10)\n\n    @Test fun testSum100() = checkSum(100)\n}\n"
+      },
+      "task_texts" : {
+        "task" : "## Repetition with `while` (#1)\n\nUsing `while` loop create a function that sums up the numbers up to a given number."
+      },
+      "task_type" : "pycharm"
+    }, {
+      "name" : "Exercise 2",
+      "stepic_id" : 0,
+      "task_files" : {
+        "Task.kt" : {
+          "name" : "Task.kt",
+          "text" : "\nfun sumOfEven(n: Int): Int {\n  TODO()\n}",
+          "placeholders" : [ {
+            "offset" : 32,
+            "length" : 6,
+            "subtask_infos" : {
+              "0" : {
+                "hints" : [ ],
+                "possible_answer" : "var result = 0\n  var i = 0\n  while (i <= n) {\n    if (i % 2 == 0) {\n      result += i\n    }\n    i++\n  }\n  return result",
+                "placeholder_text" : "TODO()",
+                "has_frame" : true,
+                "need_insert_text" : false
+              }
+            }
+          } ]
+        }
+      },
+      "test_files" : {
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n            0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n            2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n            6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n            110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n            110, sumOfEven(21))\n    }\n}\n"
+      },
+      "task_texts" : {
+        "task" : "## Repetition with `while` (#2)\n\nUsing `while` loop create a function that sums up only even numbers up to a given number."
+      },
+      "task_type" : "pycharm"
     } ]
   }, {
     "id" : 0,
@@ -945,47 +1003,47 @@
       "task_files" : {
         "RepeatThreeTimes.kt" : {
           "name" : "RepeatThreeTimes.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  for (i in 1..3) {\n    println(\"Hey $i!\")\n  }\n}\n/* Output:\nHey 1!\nHey 2!\nHey 3!\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (i in 1..3) {\n    println(\"Hey $i!\")\n  }\n}\n/* Output:\nHey 1!\nHey 2!\nHey 3!\n*/",
           "placeholders" : [ ]
         },
         "DefiningRanges.kt" : {
           "name" : "DefiningRanges.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  val range1 = 1..10             // [1]\n  val range2 = 0 until 10        // [2]\n  println(range1)\n  println(range2)\n}\n/* Output:\n1..10\n0..9\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val range1 = 1..10             // [1]\n  val range2 = 0 until 10        // [2]\n  println(range1)\n  println(range2)\n}\n/* Output:\n1..10\n0..9\n*/",
           "placeholders" : [ ]
         },
         "SumUsingRange.kt" : {
           "name" : "SumUsingRange.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  var sum = 0\n  for (n in 10..100) {\n    sum += n\n  }\n  println(\"sum = $sum\")\n}\n/* Output:\nsum = 5005\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  var sum = 0\n  for (n in 10..100) {\n    sum += n\n  }\n  println(\"sum = $sum\")\n}\n/* Output:\nsum = 5005\n*/",
           "placeholders" : [ ]
         },
         "ForWithRanges.kt" : {
           "name" : "ForWithRanges.kt",
-          "text" : "package forandranges\n\nfun showRange(r: IntProgression) {\n  for (i in r) {\n    print(\"$i \")\n  }\n  print(\"// $r\")\n  println()\n}\n\nfun main(args: Array<String>) {\n  showRange(1..5)\n  showRange(0 until 5)\n  showRange(5 downTo 1)           // [1]\n  showRange(0..9 step 2)          // [2]\n  showRange(0 until 10 step 3)    // [3]\n  showRange(9 downTo 2 step 3)\n}\n/* Output:\n1 2 3 4 5 // 1..5\n0 1 2 3 4 // 0..4\n5 4 3 2 1 // 5 downTo 1 step 1\n0 2 4 6 8 // 0..8 step 2\n0 3 6 9 // 0..9 step 3\n9 6 3 // 9 downTo 3 step 3\n*/",
+          "text" : "package forAndRanges\n\nfun showRange(r: IntProgression) {\n  for (i in r) {\n    print(\"$i \")\n  }\n  print(\"// $r\")\n  println()\n}\n\nfun main(args: Array<String>) {\n  showRange(1..5)\n  showRange(0 until 5)\n  showRange(5 downTo 1)           // [1]\n  showRange(0..9 step 2)          // [2]\n  showRange(0 until 10 step 3)    // [3]\n  showRange(9 downTo 2 step 3)\n}\n/* Output:\n1 2 3 4 5 // 1..5\n0 1 2 3 4 // 0..4\n5 4 3 2 1 // 5 downTo 1 step 1\n0 2 4 6 8 // 0..8 step 2\n0 3 6 9 // 0..9 step 3\n9 6 3 // 9 downTo 3 step 3\n*/",
           "placeholders" : [ ]
         },
         "CharRange.kt" : {
           "name" : "CharRange.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  for (c in 'a'..'z') {          // [1]\n    print(c)\n  }\n}\n/* Output:\nabcdefghijklmnopqrstuvwxyz\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (c in 'a'..'z') {          // [1]\n    print(c)\n  }\n}\n/* Output:\nabcdefghijklmnopqrstuvwxyz\n*/",
           "placeholders" : [ ]
         },
         "IndexIntoString.kt" : {
           "name" : "IndexIntoString.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  val s = \"abc\"\n  for (i in 0..s.lastIndex) {\n    print(s[i] + 1)\n  }\n}\n/* Output:\nbcd\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val s = \"abc\"\n  for (i in 0..s.lastIndex) {\n    print(s[i] + 1)\n  }\n}\n/* Output:\nbcd\n*/",
           "placeholders" : [ ]
         },
         "AddingIntToChar.kt" : {
           "name" : "AddingIntToChar.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  val ch: Char = 'a'\n  println(ch + 25)\n  println(ch < 'z')\n}\n/* Output:\nz\ntrue\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val ch: Char = 'a'\n  println(ch + 25)\n  println(ch < 'z')\n}\n/* Output:\nz\ntrue\n*/",
           "placeholders" : [ ]
         },
         "IterateOverString.kt" : {
           "name" : "IterateOverString.kt",
-          "text" : "package forandranges\n\nfun main(args: Array<String>) {\n  for (ch in \"Jnskhm \") {\n    print(ch + 1)\n  }\n}\n/* Output:\nKotlin!\n*/",
+          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (ch in \"Jnskhm \") {\n    print(ch + 1)\n  }\n}\n/* Output:\nKotlin!\n*/",
           "placeholders" : [ ]
         },
         "ContainsChar.kt" : {
           "name" : "ContainsChar.kt",
-          "text" : "package forandranges\n\nfun containsChar(s: String, ch: Char): Boolean {\n  for (c in s) {\n    if (c == ch)\n      return true\n  }\n  return false\n}\n\nfun main(args: Array<String>) {\n  println(containsChar(\"kotlin\", 't'))\n  println(containsChar(\"kotlin\", 'a'))\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "package forAndRanges\n\nfun containsChar(s: String, ch: Char): Boolean {\n  for (c in s) {\n    if (c == ch)\n      return true\n  }\n  return false\n}\n\nfun main(args: Array<String>) {\n  println(containsChar(\"kotlin\", 't'))\n  println(containsChar(\"kotlin\", 'a'))\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1019,7 +1077,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestFactorial {\n\n    @Test fun test1() {\n        Assert.assertEquals(\"1! should be 1\",\n                1, factorial(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"3! should be 6\",\n                6, factorial(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"10! should be 3628800\",\n                3628800, factorial(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"20! should be 2432902008176640000\",\n                2432902008176640000, factorial(20))\n    }\n\n    @Test fun test0() {\n        Assert.assertEquals(\"0! should be 1\",\n                1, factorial(0))\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## For and While Loops (#1)\n\nCreate a function that calculates a factorial of a given number (`n! = 1 * 2 * ... * n`)."
+        "task" : "## `for` and Ranges (#1)\n\nUsing `for` loop create a function that calculates a factorial of a given number (`n! = 1 * 2 * ... * n`)."
       },
       "task_type" : "pycharm"
     }, {
@@ -1060,7 +1118,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfFactorials {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfFactorials(1) should be 1\",\n                1, sumOfFactorials(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfFactorials(3) should be 9\",\n                9, sumOfFactorials(3))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfFactorials(10) should be 4037913\",\n                4037913, sumOfFactorials(10))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfFactorials(20) should be 2561327494111820313\",\n                2561327494111820313, sumOfFactorials(20))\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## For and While Loops (#2)\n\nCreate a function that sums up the factorials up to a given number (`1! + 2! + ... + n!`)."
+        "task" : "## `for` and Ranges (#2)\n\nUsing `for` loop create a function that sums up the factorials up to a given number (`1! + 2! + ... + n!`)."
       },
       "task_type" : "pycharm"
     }, {
@@ -1089,36 +1147,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## For and While Loops (#3)\n\nCreate a function that sums up only even numbers up to a given number."
-      },
-      "task_type" : "pycharm"
-    }, {
-      "name" : "Exercise 4",
-      "stepic_id" : 0,
-      "task_files" : {
-        "Task.kt" : {
-          "name" : "Task.kt",
-          "text" : "\nfun sumOfEven(n: Int): Int {\n  TODO()\n}",
-          "placeholders" : [ {
-            "offset" : 32,
-            "length" : 6,
-            "subtask_infos" : {
-              "0" : {
-                "hints" : [ ],
-                "possible_answer" : "var result = 0\n  var i = 0\n  while (i <= n) {\n    if (i % 2 == 0) {\n      result += i\n    }\n    i++\n  }\n  return result",
-                "placeholder_text" : "TODO()",
-                "has_frame" : true,
-                "need_insert_text" : false
-              }
-            }
-          } ]
-        }
-      },
-      "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n            0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n            2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n            6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n            110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n            110, sumOfEven(21))\n    }\n}"
-      },
-      "task_texts" : {
-        "task" : "## For and While Loops (#4)\n\nRewrite the function from the previous exercise using the `while` loop."
+        "task" : "## `for` and Ranges (#3)\n\nUsing `for` loop create a function that sums up only even numbers up to a given number."
       },
       "task_type" : "pycharm"
     } ]
@@ -1131,27 +1160,37 @@
       "task_files" : {
         "RangeMembership.kt" : {
           "name" : "RangeMembership.kt",
-          "text" : "package moreaboutranges\n\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(percentage in 1..100)\n}\n/* Output:\ntrue\n*/",
+          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(percentage in 1..100)\n}\n/* Output:\ntrue\n*/",
+          "placeholders" : [ ]
+        },
+        "MembershipUsingBounds.kt" : {
+          "name" : "MembershipUsingBounds.kt",
+          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(0 <= percentage &&\n    percentage <= 100)\n}\n/* Output:\ntrue\n*/",
+          "placeholders" : [ ]
+        },
+        "IterationVsMembership.kt" : {
+          "name" : "IterationVsMembership.kt",
+          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val values = 1..3\n  for (v in values) {\n    println(\"iteration $v\")\n  }\n  val v = 2\n  if (v in values) {\n    println(\"$v is a member of $values\")\n  }\n}\n/* Output:\niteration 1\niteration 2\niteration 3\n2 is a member of 1..3\n*/",
           "placeholders" : [ ]
         },
         "InString.kt" : {
           "name" : "InString.kt",
-          "text" : "package moreaboutranges\n\nfun main(args: Array<String>) {\n  println('t' in \"kotlin\")\n  println('a' in \"kotlin\")\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  println('t' in \"kotlin\")\n  println('a' in \"kotlin\")\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         },
         "CharRange.kt" : {
           "name" : "CharRange.kt",
-          "text" : "package moreaboutranges\n\nfun isDigit(ch: Char) = ch in '0'..'9'\n\nfun isNotDigit(ch: Char) = ch !in '0'..'9'   // [1]\n\nfun main(args: Array<String>) {\n  println(isDigit('a'))\n  println(isDigit('5'))\n  println(isNotDigit('z'))\n}\n/* Output:\nfalse\ntrue\ntrue\n*/",
+          "text" : "package moreAboutRanges\n\nfun isDigit(ch: Char) = ch in '0'..'9'\n\nfun isNotDigit(ch: Char) = ch !in '0'..'9'  // [1]\n\nfun main(args: Array<String>) {\n  println(isDigit('a'))\n  println(isDigit('5'))\n  println(isNotDigit('z'))\n}\n/* Output:\nfalse\ntrue\ntrue\n*/",
           "placeholders" : [ ]
         },
         "FloatingPointRange.kt" : {
           "name" : "FloatingPointRange.kt",
-          "text" : "package moreaboutranges\n\nfun inFloatRange(n: Double) {\n  val r = 1.0..10.0\n  println(\"$n in $r? ${n in r}\")\n}\n\nfun main(args: Array<String>) {\n  inFloatRange(0.999999)\n  inFloatRange(5.0)\n  inFloatRange(10.0)\n  inFloatRange(10.0000001)\n}\n/* Output:\n0.999999 in 1.0..10.0? false\n5.0 in 1.0..10.0? true\n10.0 in 1.0..10.0? true\n10.0000001 in 1.0..10.0? false\n*/",
+          "text" : "package moreAboutRanges\n\nfun inFloatRange(n: Double) {\n  val r = 1.0..10.0\n  println(\"$n in $r? ${n in r}\")\n}\n\nfun main(args: Array<String>) {\n  inFloatRange(0.999999)\n  inFloatRange(5.0)\n  inFloatRange(10.0)\n  inFloatRange(10.0000001)\n}\n/* Output:\n0.999999 in 1.0..10.0? false\n5.0 in 1.0..10.0? true\n10.0 in 1.0..10.0? true\n10.0000001 in 1.0..10.0? false\n*/",
           "placeholders" : [ ]
         },
         "StringRange.kt" : {
           "name" : "StringRange.kt",
-          "text" : "package moreaboutranges\n\nfun main(args: Array<String>) {\n  println(\"ab\" in \"aa\"..\"az\")\n  println(\"ba\" in \"aa\"..\"az\")\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  println(\"ab\" in \"aa\"..\"az\")\n  println(\"ba\" in \"aa\"..\"az\")\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1185,7 +1224,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestAlphabet {\n    @Test fun test1() {\n        Assert.assertEquals(\"abcdefghijklmnopqrstuvwxyz\", getAlphabet())\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## Ranges (#1)\n\nIterate over a range of characters to return a string containing all english letters in the alphabetical order: \"abc...z\"."
+        "task" : "## More about Ranges (#1)\n\nIterate over a range of characters to return a string containing all english letters in the alphabetical order: \"abc...z\"."
       },
       "task_type" : "pycharm"
     }, {
@@ -1214,7 +1253,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestSumOfEven {\n    @Test fun test1() {\n        Assert.assertEquals(\"sumOfEven(1) should be 0\",\n                0, sumOfEven(1))\n    }\n\n    @Test fun test3() {\n        Assert.assertEquals(\"sumOfEven(2) should be 2\",\n                2, sumOfEven(2))\n    }\n\n    @Test fun test10() {\n        Assert.assertEquals(\"sumOfEven(4) should be 6\",\n                6, sumOfEven(4))\n    }\n\n    @Test fun test20() {\n        Assert.assertEquals(\"sumOfEven(20) should be 110\",\n                110, sumOfEven(20))\n    }\n\n    @Test fun test21() {\n        Assert.assertEquals(\"sumOfEven(21) should be 110\",\n                110, sumOfEven(21))\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## Ranges (#2)\n\nRewrite the function that sums up only even numbers up to a given number using `step`."
+        "task" : "## More about Ranges (#2)\n\nRewrite the function that sums up only even numbers up to a given number using `step`."
       },
       "task_type" : "pycharm"
     }, {
@@ -1243,7 +1282,7 @@
         "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestForLoops3 {\n    @Test fun testLowerCaseC() {\n        Assert.assertTrue(\"'c' is a lower case letter\", isLowerCase('c'))\n    }\n\n    @Test fun testLowerCaseA() {\n        Assert.assertTrue(\"'a' is a lower case letter\", isLowerCase('a'))\n    }\n\n    @Test fun testLowerCaseZ() {\n        Assert.assertTrue(\"'z' is a lower case letter\", isLowerCase('z'))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertFalse(\"'A' is an upper case letter\", isLowerCase('A'))\n    }\n\n    @Test fun testDigit() {\n        Assert.assertFalse(\"'1' is not a lower case letter\", isLowerCase('1'))\n    }\n}"
       },
       "task_texts" : {
-        "task" : "## Ranges (#3)\n\nCreate a function that checks that a character is a lowercase letter\n(its code should be between the codes for `a` and `z`)."
+        "task" : "## More about Ranges (#3)\n\nCreate a function that checks that a character is a lowercase letter\n(its code should be between the codes for `a` and `z`)."
       },
       "task_type" : "pycharm"
     }, {
@@ -1281,10 +1320,10 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestValidIdentifier {\n    @Test fun testSimple() {\n        Assert.assertTrue(\"'name' is a valid identifier\", isValidIdentifier(\"name\"))\n    }\n\n    @Test fun testStartsWithUnderscore() {\n        Assert.assertTrue(\"'_name' is a valid identifier\", isValidIdentifier(\"_name\"))\n    }\n\n    @Test fun testUnderscore() {\n        Assert.assertTrue(\"'_' is a valid identifier\", isValidIdentifier(\"_\"))\n    }\n\n    @Test fun testContainsDigits() {\n        Assert.assertTrue(\"'n01' is a valid identifier\", isValidIdentifier(\"n01\"))\n    }\n\n    @Test fun testUpperCase() {\n        Assert.assertTrue(\"'NNN' is a valid identifier\", isValidIdentifier(\"NNN\"))\n    }\n\n    @Test fun testValid() {\n        Assert.assertTrue(\"'_N01' is a valid identifier\", isValidIdentifier(\"_N01\"))\n    }\n\n    @Test fun testStartsWithDigit() {\n        Assert.assertFalse(\"'1_' is not a valid identifier\", isValidIdentifier(\"1_\"))\n    }\n\n    @Test fun testContainsIllegalCharacters() {\n        Assert.assertFalse(\"'&%$' is not a valid identifier\", isValidIdentifier(\"&%$\"))\n    }\n}"
+        "Tests.kt" : "\nimport org.junit.Assert\nimport org.junit.Test\n\nclass TestValidIdentifier {\n\n    private fun checkValidIdentifier(s: String) {\n        Assert.assertTrue(\"'$s' is a valid identifier\", isValidIdentifier(s))\n    }\n\n    private fun checkInvalidIdentifier(s: String) {\n        Assert.assertFalse(\"'$s' is not a valid identifier\", isValidIdentifier(s))\n    }\n\n    @Test fun testSimple() = checkValidIdentifier(\"name\")\n\n    @Test fun testStartsWithUnderscore() = checkValidIdentifier(\"_name\")\n\n    @Test fun testUnderscore() = checkValidIdentifier(\"_\")\n\n    @Test fun testContainsDigits() = checkValidIdentifier(\"n01\")\n\n    @Test fun testUpperCase() = checkValidIdentifier(\"NNN\")\n\n    @Test fun testValid() = checkValidIdentifier(\"_N01\")\n\n    @Test fun testStartsWithDigit() = checkInvalidIdentifier(\"1_\")\n\n    @Test fun testContainsIllegalCharacters() = checkInvalidIdentifier(\"&%$\")\n}\n"
       },
       "task_texts" : {
-        "task" : "## Ranges (#4)\n\nCreate a function that checks that a string is a valid identifier.\nValid identifier begins with a letter or underscore and consists of only letters, digits and underscores.\nTry to extract the repetitive logic into auxiliary functions."
+        "task" : "## More about Ranges (#4)\n\nCreate a function that checks that a string is a valid identifier.\nValid identifier begins with a letter or underscore and consists of only letters, digits and underscores.\nTry to extract the repetitive logic into auxiliary functions."
       },
       "task_type" : "pycharm"
     } ]
@@ -1297,17 +1336,17 @@
       "task_files" : {
         "ForLoopIsAStatement.kt" : {
           "name" : "ForLoopIsAStatement.kt",
-          "text" : "package expressionsandstatements\n\nfun main(args: Array<String>) {\n  // Can't do this:\n  // val f = for (i in 1..10) {}\n  // Compiler error message:\n  // for is not an expression, and\n  // only expressions are allowed here\n}",
+          "text" : "package expressionsAndStatements\n\nfun main(args: Array<String>) {\n  // Can't do this:\n  // val f = for (i in 1..10) {}\n  // Compiler error message:\n  // for is not an expression, and\n  // only expressions are allowed here\n}",
           "placeholders" : [ ]
         },
         "UnitReturnType.kt" : {
           "name" : "UnitReturnType.kt",
-          "text" : "package expressionsandstatements\n\nfun g() = Unit\n\nfun main(args: Array<String>) {\n  println(g())\n  val u: Unit = println(42)\n  println(u)\n}\n/* Output:\nkotlin.Unit\n42\nkotlin.Unit\n*/",
+          "text" : "package expressionsAndStatements\n\nfun g() = Unit\n\nfun main(args: Array<String>) {\n  println(g())\n  val u: Unit = println(42)\n  println(u)\n}\n/* Output:\nkotlin.Unit\n42\nkotlin.Unit\n*/",
           "placeholders" : [ ]
         },
         "AssigningAnIf.kt" : {
           "name" : "AssigningAnIf.kt",
-          "text" : "package expressionsandstatements\n\nfun main(args: Array<String>) {\n  val result1 = if (11 > 42) 9 else 5\n\n  val result2 = if (1 < 2) {\n    val a = 11\n    a + 42\n  } else 42\n\n  val result3 = if ('x' < 'y') {\n    println(\"x < y\")\n  } else {\n    println(\"x > y\")\n  }\n\n  println(result1)\n  println(result2)\n  println(result3)\n}\n/* Output:\nx < y\n5\n53\nkotlin.Unit\n*/",
+          "text" : "package expressionsAndStatements\n\nfun main(args: Array<String>) {\n  val result1 = if (11 > 42) 9 else 5\n\n  val result2 = if (1 < 2) {\n    val a = 11\n    a + 42\n  } else 42\n\n  val result3 = if ('x' < 'y') {\n    println(\"x < y\")\n  } else {\n    println(\"x > y\")\n  }\n\n  println(result1)\n  println(result2)\n  println(result3)\n}\n/* Output:\nx < y\n5\n53\nkotlin.Unit\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1321,14 +1360,14 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}\n",
+          "text" : "\nfun main(args: Array<String>) {\n    TODO()\n}",
           "placeholders" : [ {
             "offset" : 37,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
                 "hints" : [ ],
-                "possible_answer" : "println(println(42))",
+                "possible_answer" : "println(println(1))",
                 "placeholder_text" : "TODO()",
                 "has_frame" : true,
                 "need_insert_text" : false
@@ -1338,12 +1377,12 @@
         }
       },
       "test_files" : {
-        "Tests.kt" : "\nimport org.junit.Test\n\nclass TestExpressionsAndStatements1 {\n    @Test fun test1() {\n        main(arrayOf())\n        println(\"TODO. Check expected output: Unit\")\n    }\n}"
+        "output.txt" : "1\nkotlin.Unit\n"
       },
       "task_texts" : {
-        "task" : "## Expressions and Statements (#1)\n\nTry to print out the result of the other `println` call."
+        "task" : "## Expressions and Statements (#1)\n\nPrint out the result of the `println(1)` call."
       },
-      "task_type" : "pycharm"
+      "task_type" : "output"
     } ]
   }, {
     "id" : 0,
@@ -1427,12 +1466,12 @@
       "task_files" : {
         "IntRanges.kt" : {
           "name" : "IntRanges.kt",
-          "text" : "package classesandobjects\n\nfun main(args: Array<String>) {\n  val r1 = IntRange(0, 10)\n  val r2 = IntRange(5, 7)\n  println(r1)\n  println(r2)\n}\n/* Output:\n0..10\n5..7\n*/",
+          "text" : "package classesAndObjects\n\nfun main(args: Array<String>) {\n  val r1 = IntRange(0, 10)\n  val r2 = IntRange(5, 7)\n  println(r1)\n  println(r2)\n}\n/* Output:\n0..10\n5..7\n*/",
           "placeholders" : [ ]
         },
         "RangeSum.kt" : {
           "name" : "RangeSum.kt",
-          "text" : "package classesandobjects\n\nfun main(args: Array<String>) {\n  val r = IntRange(0, 10)\n  println(r.sum())\n}\n/* Output:\n55\n*/",
+          "text" : "package classesAndObjects\n\nfun main(args: Array<String>) {\n  val r = IntRange(0, 10)\n  println(r.sum())\n}\n/* Output:\n55\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1450,7 +1489,7 @@
       "task_files" : {
         "Animals.kt" : {
           "name" : "Animals.kt",
-          "text" : "package creatingclasses\n\n// Create some classes:\nclass Giraffe\nclass Bear\nclass Hippo\n\nfun main(args: Array<String>) {\n  // Create some objects:\n  val g1 = Giraffe()\n  val g2 = Giraffe()\n  val b = Bear()\n  val h = Hippo()\n\n  // Each object() is unique:\n  println(g1)\n  println(g2)\n  println(h)\n  println(b)\n}\n/* Sample output:\ncreatingclasses.Giraffe@279f2327\ncreatingclasses.Giraffe@2ff4acd0\ncreatingclasses.Hippo@54bedef2\ncreatingclasses.Bear@5caf905d\n*/",
+          "text" : "package creatingClasses\n\n// Create some classes:\nclass Giraffe\nclass Bear\nclass Hippo\n\nfun main(args: Array<String>) {\n  // Create some objects:\n  val g1 = Giraffe()\n  val g2 = Giraffe()\n  val b = Bear()\n  val h = Hippo()\n\n  // Each object() is unique:\n  println(g1)\n  println(g2)\n  println(h)\n  println(b)\n}\n/* Sample output:\ncreatingclasses.Giraffe@279f2327\ncreatingclasses.Giraffe@2ff4acd0\ncreatingclasses.Hippo@54bedef2\ncreatingclasses.Bear@5caf905d\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1468,17 +1507,17 @@
       "task_files" : {
         "Dog.kt" : {
           "name" : "Dog.kt",
-          "text" : "package memberfunctions\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}",
+          "text" : "package memberFunctions\n\nclass Dog {\n  fun bark() = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  val dog = Dog()\n}",
           "placeholders" : [ ]
         },
         "Cat.kt" : {
           "name" : "Cat.kt",
-          "text" : "package memberfunctions\n\nclass Cat {\n  fun meow(): String = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow()\n  println(m1)\n}\n/* Output:\nmew!\n*/",
+          "text" : "package memberFunctions\n\nclass Cat {\n  fun meow() = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow() // Call 'meow()' for 'cat'\n  println(m1)\n}\n/* Output:\nmew!\n*/",
           "placeholders" : [ ]
         },
         "Hamster.kt" : {
           "name" : "Hamster.kt",
-          "text" : "package memberfunctions\n\nclass Hamster {\n  fun speak(): String = \"squeak!\"\n  fun exercise(): String =\n      speak() + \" Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! Running on wheel\n*/",
+          "text" : "package memberFunctions\n\nclass Hamster {\n  fun speak() = \"squeak! \"\n  fun exercise() =\n    this.speak() + // Qualified with 'this'\n    speak() +      // Without 'this'\n    \"Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! squeak! Running on wheel\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1496,27 +1535,27 @@
       "task_files" : {
         "ImportClass.kt" : {
           "name" : "ImportClass.kt",
-          "text" : "package importsandpackages\n\nimport java.util.Random\n\nfun main(args: Array<String>) {\n  val r = Random()\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n}",
+          "text" : "package importsAndPackages\n\nimport java.util.Random\n\nfun main(args: Array<String>) {\n  val r = Random(47)\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n}\n/* Output:\n8\n5\n3\n*/",
           "placeholders" : [ ]
         },
         "ImportMultiple.kt" : {
           "name" : "ImportMultiple.kt",
-          "text" : "package importsandpackages\n\nimport java.util.Random\nimport java.util.Properties\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
+          "text" : "package importsAndPackages\n\nimport java.util.Random\nimport java.util.Properties\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
           "placeholders" : [ ]
         },
         "ImportNameChange.kt" : {
           "name" : "ImportNameChange.kt",
-          "text" : "package importsandpackages\n\nimport java.util.Random as Bob\nimport java.util.Properties as Jill\n\nval r = Bob()\nval p = Jill()",
+          "text" : "package importsAndPackages\n\nimport java.util.Random as Bob\nimport java.util.Properties as Jill\n\nfun main(args: Array<String>) {\n  val r = Bob()\n  val p = Jill()\n}",
           "placeholders" : [ ]
         },
         "ImportEverything.kt" : {
           "name" : "ImportEverything.kt",
-          "text" : "package importsandpackages\n\nimport java.util.*\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
+          "text" : "package importsAndPackages\n\nimport java.util.*\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
           "placeholders" : [ ]
         },
         "FullyQualify.kt" : {
           "name" : "FullyQualify.kt",
-          "text" : "package importsandpackages\n\nfun main(args: Array<String>) {\n  val r = java.util.Random()\n  val p = java.util.Properties()\n}",
+          "text" : "package importsAndPackages\n\nfun main(args: Array<String>) {\n  val r = java.util.Random()\n  val p = java.util.Properties()\n}",
           "placeholders" : [ ]
         },
         "PythagoreanTheorem.kt" : {
@@ -1526,7 +1565,7 @@
         },
         "ImportPythagorean.kt" : {
           "name" : "ImportPythagorean.kt",
-          "text" : "package importsandpackages\n\nimport pythagorean.RightTriangle\n\nfun main(args: Array<String>) {\n  val rt = RightTriangle()\n  println(rt.hypotenuse(3.0, 4.0))\n  println(rt.area(3.0, 4.0))\n}\n/* Output:\n5.0\n6.0\n*/",
+          "text" : "package importsAndPackages\n\nimport pythagorean.RightTriangle\n\nfun main(args: Array<String>) {\n  val rt = RightTriangle()\n  println(rt.hypotenuse(3.0, 4.0))\n  println(rt.area(3.0, 4.0))\n}\n/* Output:\n5.0\n6.0\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1549,7 +1588,7 @@
         },
         "TDDFail.kt" : {
           "name" : "TDDFail.kt",
-          "text" : "package testing\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160, 68) eq \"Normal weight\"\n//  calculateBMI(100, 68) eq \"Underweight\"\n//  calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String = \"Normal weight\"",
+          "text" : "package testing1\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160, 68) eq \"Normal weight\"\n//  calculateBMI(100, 68) eq \"Underweight\"\n//  calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String = \"Normal weight\"",
           "placeholders" : [ ]
         },
         "TDDStillFails.kt" : {
@@ -1600,17 +1639,17 @@
       "task_files" : {
         "ChangingAVal.kt" : {
           "name" : "ChangingAVal.kt",
-          "text" : "package referencesmutability\n\nimport com.atomickotlin.test.eq\n\nclass X(var n: Int)\n\nfun main(args: Array<String>) {\n  val x = X(11)\n  x.n eq 11\n  x.n = 22\n  x.n eq 22\n//  x = X(22) // Not allowed\n}",
+          "text" : "package referencesAndMutability\n\nimport com.atomickotlin.test.eq\n\nclass X(var n: Int)\n\nfun main(args: Array<String>) {\n  val x = X(11)\n  x.n eq 11\n  x.n = 22\n  x.n eq 22\n//  x = X(22) // Not allowed\n}",
           "placeholders" : [ ]
         },
         "AnUnchangingVar.kt" : {
           "name" : "AnUnchangingVar.kt",
-          "text" : "package referencesmutability\n\nimport com.atomickotlin.test.eq\n\nclass Y(val n: Int)\n\nfun main(args: Array<String>) {\n  var y = Y(11)\n  y.n eq 11\n//  y.n = 22 // Not allowed\n  y = Y(22)\n}",
+          "text" : "package referencesAndMutability\n\nimport com.atomickotlin.test.eq\n\nclass Y(val n: Int)\n\nfun main(args: Array<String>) {\n  var y = Y(11)\n  y.n eq 11\n//  y.n = 22 // Not allowed\n  y = Y(22)\n}",
           "placeholders" : [ ]
         },
         "References.kt" : {
           "name" : "References.kt",
-          "text" : "package referencesmutability\n\nimport com.atomickotlin.test.eq\n\nclass Z(var n: Int)\n\nfun main(args: Array<String>) {\n  val z1 = Z(13)\n  val z2 = z1\n  z2.n eq 13\n  z1.n = 97\n  z2.n eq 97\n}",
+          "text" : "package referencesAndMutability\n\nimport com.atomickotlin.test.eq\n\nclass Z(var n: Int)\n\nfun main(args: Array<String>) {\n  val z1 = Z(13)\n  val z2 = z1\n  z2.n eq 13\n  z1.n = 97\n  z2.n eq 97\n}",
           "placeholders" : [ ]
         }
       },
@@ -1646,12 +1685,12 @@
       "task_files" : {
         "ParameterizedTypes.kt" : {
           "name" : "ParameterizedTypes.kt",
-          "text" : "package parameterizedtypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  // Type is inferred:\n  val l1 = listOf(1, 2, 3)\n  val l2 = listOf(\"one\", \"two\", \"three\")\n  // Exactly the same, but explicitly typed:\n  val p1: List<Int> = listOf(1, 2, 3)\n  val p2: List<String> =\n      listOf(\"one\", \"two\", \"three\")\n\n  l1 eq p1\n  l2 eq p2\n}",
+          "text" : "package parameterizedTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  // Type is inferred:\n  val l1 = listOf(1, 2, 3)\n  val l2 = listOf(\"one\", \"two\", \"three\")\n  // Exactly the same, but explicitly typed:\n  val p1: List<Int> = listOf(1, 2, 3)\n  val p2: List<String> =\n      listOf(\"one\", \"two\", \"three\")\n\n  l1 eq p1\n  l2 eq p2\n}",
           "placeholders" : [ ]
         },
         "ParameterizedReturnTypes.kt" : {
           "name" : "ParameterizedReturnTypes.kt",
-          "text" : "// Return type is inferred:\npackage parameterizedtypes\n\nimport com.atomickotlin.test.eq\n\nfun inferred(c1: Char, c2: Char, c3: Char) =\n    listOf(c1, c2, c3)\n\n// Explicit return type:\nfun explicit(c1: Char, c2: Char, c3: Char): List<Char> =\n    listOf(c1, c2, c3)\n\nfun main(args: Array<String>) {\n  inferred('a', 'b', 'c') eq\n      \"[a, b, c]\"\n  explicit('a', 'b', 'c') eq\n      \"[a, b, c]\"\n}",
+          "text" : "package parameterizedTypes\n\nimport com.atomickotlin.test.eq\n\n// Return type is inferred:\nfun inferred(c1: Char, c2: Char, c3: Char) =\n    listOf(c1, c2, c3)\n\n// Explicit return type:\nfun explicit(c1: Char, c2: Char, c3: Char): List<Char> =\n    listOf(c1, c2, c3)\n\nfun main(args: Array<String>) {\n  inferred('a', 'b', 'c') eq\n      \"[a, b, c]\"\n  explicit('a', 'b', 'c') eq\n      \"[a, b, c]\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1669,17 +1708,17 @@
       "task_files" : {
         "MutableList.kt" : {
           "name" : "MutableList.kt",
-          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n\n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
+          "text" : "package readOnlyAndMutableLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n\n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
           "placeholders" : [ ]
         },
         "MutableListIsList.kt" : {
           "name" : "MutableListIsList.kt",
-          "text" : "package lists\n\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // Can't change a List:\n  val list = getList()\n//  list += 3\n}",
+          "text" : "package readOnlyAndMutableLists\n\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // Can't change a List:\n  val list = getList()\n//  list += 3\n}",
           "placeholders" : [ ]
         },
         "DifferentReferencesToList.kt" : {
           "name" : "DifferentReferencesToList.kt",
-          "text" : "package lists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n\n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
+          "text" : "package readOnlyAndMutableLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n\n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
           "placeholders" : [ ]
         }
       },
@@ -1738,6 +1777,34 @@
     } ]
   }, {
     "id" : 0,
+    "title" : "Visibility Modifiers",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "RecordAnimals.kt" : {
+          "name" : "RecordAnimals.kt",
+          "text" : "package visibilityModifiers\n\nprivate var counter = 0                          // [1]\n\nprivate fun recordAnimal(animal: Animal) {       // [2]\n  println(\"Animal #${counter++}: ${animal.name}\")\n}\n\nprivate class Animal(val name: String)           // [3]\n\nfun recordAnimals() {\n  recordAnimal(Animal(\"Tiger\"))\n  recordAnimal(Animal(\"Antelope\"))\n}\n\nfun recordAnimalsCount() {\n  println(\"$counter animals are here!\")\n}",
+          "placeholders" : [ ]
+        },
+        "ObserveAnimals.kt" : {
+          "name" : "ObserveAnimals.kt",
+          "text" : "package visibilityModifiers\n\nfun main(args: Array<String>) {\n  // Can't access private members declared in another file:\n  // val rabbit = Animal(\"Rabbit\") // Class is private\n  // recordAnimal(rabbit) // Function is private\n  // counter++  // Property is private\n  \n  recordAnimals()\n  recordAnimalsCount()\n}\n/* Output:\nAnimal #0: Tiger\nAnimal #1: Antelope\n2 animals are here!\n*/",
+          "placeholders" : [ ]
+        },
+        "Cookie.kt" : {
+          "name" : "Cookie.kt",
+          "text" : "package visibilityModifiers\n\nclass Cookie {\n  private fun crumble() {  // [1]\n    println(\"crumble\")\n  }\n\n  public fun bite() {      // [2]\n    println(\"bite\")\n  }\n  \n  fun eatUp() {            // [3]\n    crumble()              // [4]\n    bite()\n  }\n}\n\nfun main(args: Array<String>) {\n  val x = Cookie()\n  x.bite()\n  // Can't access private members:\n  // x.crumble()\n  x.eatUp()\n}\n/* Output:\nbite\ncrumble\nbite\n*/",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Visibility Modifiers\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
     "title" : "when Expressions",
     "task_list" : [ {
       "name" : "Examples",
@@ -1745,12 +1812,12 @@
       "task_files" : {
         "WhenExpressions.kt" : {
           "name" : "WhenExpressions.kt",
-          "text" : "package whenexpressions\n\nimport com.atomickotlin.test.eq\n\nfun matchColor(color: String) =\n    when (color) {           // [1]\n      \"red\" -> \"RED\"         // [2]\n      \"blue\" -> \"BLUE\"\n      \"green\" -> \"GREEN\"\n      else -> \"UNKNOWN COLOR: \" + color\n    }\n\nfun main(args: Array<String>) {\n  matchColor(\"white\") eq\n      \"UNKNOWN COLOR: white\"\n  matchColor(\"blue\") eq \"BLUE\"\n}",
+          "text" : "package whenExpressions\n\nimport com.atomickotlin.test.eq\n\nfun matchColor(color: String) =\n    when (color) {           // [1]\n      \"red\" -> \"RED\"         // [2]\n      \"blue\" -> \"BLUE\"\n      \"green\" -> \"GREEN\"\n      else -> \"UNKNOWN COLOR: \" + color\n    }\n\nfun main(args: Array<String>) {\n  matchColor(\"white\") eq\n      \"UNKNOWN COLOR: white\"\n  matchColor(\"blue\") eq \"BLUE\"\n}",
           "placeholders" : [ ]
         },
         "WhenAsStatement.kt" : {
           "name" : "WhenAsStatement.kt",
-          "text" : "package whenexpressions\n\nfun checkColor(color: String) {\n  when (color) {\n    \"red\" -> println(\"RED\")\n    \"blue\" -> println(\"BLUE\")\n    \"green\" -> println(\"GREEN\")\n  }\n}",
+          "text" : "package whenExpressions\n\nfun checkColor(color: String) {\n  when (color) {\n    \"red\" -> println(\"RED\")\n    \"blue\" -> println(\"BLUE\")\n    \"green\" -> println(\"GREEN\")\n  }\n}",
           "placeholders" : [ ]
         }
       },
@@ -1768,7 +1835,7 @@
       "task_files" : {
         "WhenExpressionAndSmartCasts.kt" : {
           "name" : "WhenExpressionAndSmartCasts.kt",
-          "text" : "package whenexpressionscasts\n\nimport com.atomickotlin.test.eq\n\nfun acceptAnything(x: Any): String =\n    when (x) {\n      is String -> \"A String: $x of length ${x.length}\"\n      is Int ->\n        if (x < 20) \"An Int Less than 20: $x\"\n        else \"Some Other Int: $x\"\n      is Dog -> \"A dog: ${x.bark()}\"\n      else -> \"I don't know what that is!\"\n    }\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  acceptAnything(5) eq\n      \"An Int Less than 20: 5\"\n  acceptAnything(25) eq \"Some Other Int: 25\"\n  acceptAnything(\"Some text\") eq\n      \"A String: Some text of length 9\"\n\n  acceptAnything(Dog()) eq \"A dog: yip!\"\n  acceptAnything(listOf(1, 2, 5)) eq\n      \"I don't know what that is!\"\n}",
+          "text" : "package whenExpressionsAndSmartCasts\n\nimport com.atomickotlin.test.eq\n\nfun acceptAnything(x: Any): String =\n    when (x) {\n      is String -> \"A String: $x of length ${x.length}\"\n      is Int ->\n        if (x < 20) \"An Int Less than 20: $x\"\n        else \"Some Other Int: $x\"\n      is Dog -> \"A dog: ${x.bark()}\"\n      else -> \"I don't know what that is!\"\n    }\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  acceptAnything(5) eq\n      \"An Int Less than 20: 5\"\n  acceptAnything(25) eq \"Some Other Int: 25\"\n  acceptAnything(\"Some text\") eq\n      \"A String: Some text of length 9\"\n\n  acceptAnything(Dog()) eq \"A dog: yip!\"\n  acceptAnything(listOf(1, 2, 5)) eq\n      \"I don't know what that is!\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1786,17 +1853,17 @@
       "task_files" : {
         "NamedArguments.kt" : {
           "name" : "NamedArguments.kt",
-          "text" : "package namedanddefault\n\nimport com.atomickotlin.test.eq\n\nfun getColor(red: Int, green: Int, blue: Int) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val yellow = \"(255, 255, 0)\"\n  getColor(red = 255, green = 255, blue = 0) eq yellow\n  getColor(255, 255, blue = 0) eq yellow\n}",
+          "text" : "package namedAndDefaultArguments\n\nimport com.atomickotlin.test.eq\n\nfun getColor(red: Int, green: Int, blue: Int) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val yellow = \"(255, 255, 0)\"\n  getColor(red = 255, green = 255, blue = 0) eq yellow\n  getColor(255, 255, blue = 0) eq yellow\n}",
           "placeholders" : [ ]
         },
         "NamedArgumentsOrder.kt" : {
           "name" : "NamedArgumentsOrder.kt",
-          "text" : "package namedanddefault\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // Can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
+          "text" : "package namedAndDefaultArguments\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // Can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
           "placeholders" : [ ]
         },
         "NamedAndDefaultArgs.kt" : {
           "name" : "NamedAndDefaultArgs.kt",
-          "text" : "package namedanddefault1\n\nimport com.atomickotlin.test.eq\n\nfun getColor(\n    red: Int = 0,\n    green: Int = 0,\n    blue: Int = 0\n) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val darkRed = \"(139, 0, 0)\"\n  val darkBlue = \"(0, 0, 139)\"\n  val orange = \"(255, 165, 0)\"\n  val purple = \"(128, 0, 128)\"\n\n  getColor(139) eq darkRed\n  getColor(blue = 139) eq darkBlue\n  getColor(255, 165) eq orange\n  getColor(red = 128, blue = 128) eq purple\n}",
+          "text" : "package namedAndDefaultArguments\n\nimport com.atomickotlin.test.eq\n\nfun getColor1(\n    red: Int = 0,\n    green: Int = 0,\n    blue: Int = 0\n) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val darkRed = \"(139, 0, 0)\"\n  val darkBlue = \"(0, 0, 139)\"\n  val orange = \"(255, 165, 0)\"\n  val purple = \"(128, 0, 128)\"\n\n  getColor1(139) eq darkRed\n  getColor1(blue = 139) eq darkBlue\n  getColor1(255, 165) eq orange\n  getColor1(red = 128, blue = 128) eq purple\n}",
           "placeholders" : [ ]
         }
       },
@@ -1847,17 +1914,17 @@
       "task_files" : {
         "ClassArg.kt" : {
           "name" : "ClassArg.kt",
-          "text" : "package classarguments\n\nimport com.atomickotlin.test.eq\n\nclass ClassArg(a: Int) {\n  val f = a * 10\n}\n\nfun main(args: Array<String>) {\n  val ca = ClassArg(19)\n  ca.f eq 190\n//  ca.a // error\n}",
+          "text" : "package classArguments\n\nimport com.atomickotlin.test.eq\n\nclass ClassArg(a: Int) {\n  val f = a * 10\n}\n\nfun main(args: Array<String>) {\n  val ca = ClassArg(19)\n  ca.f eq 190\n//  ca.a // error\n}",
           "placeholders" : [ ]
         },
         "VisibleClassArgs.kt" : {
           "name" : "VisibleClassArgs.kt",
-          "text" : "package classarguments\n\nimport com.atomickotlin.test.eq\n\nclass ClassArg2(var a: Int)\nclass ClassArg3(val a: Int)\n\nfun main(args: Array<String>) {\n  val ca2 = ClassArg2(20)\n  val ca3 = ClassArg3(21)\n\n  ca2.a eq 20\n  ca3.a eq 21\n  ca2.a = 24\n  ca2.a eq 24\n  // Can't do this:\n  // ca3.a = 35\n}",
+          "text" : "package classArguments\n\nimport com.atomickotlin.test.eq\n\nclass ClassArg2(var a: Int)\nclass ClassArg3(val a: Int)\n\nfun main(args: Array<String>) {\n  val ca2 = ClassArg2(20)\n  val ca3 = ClassArg3(21)\n\n  ca2.a eq 20\n  ca3.a eq 21\n  ca2.a = 24\n  ca2.a eq 24\n  // Can't do this:\n  // ca3.a = 35\n}",
           "placeholders" : [ ]
         },
         "MultipleClassArgs.kt" : {
           "name" : "MultipleClassArgs.kt",
-          "text" : "package classarguments\n\nimport com.atomickotlin.test.eq\n\nclass Sum(val a1: Int, val a2: Int, val a3: Int) {\n  fun result(): Int = a1 + a2 + a3\n}\n\nfun main(args: Array<String>) {\n  Sum(13, 27, 44).result() eq 84\n}",
+          "text" : "package classArguments\n\nimport com.atomickotlin.test.eq\n\nclass Sum(val a1: Int, val a2: Int, val a3: Int) {\n  fun result(): Int = a1 + a2 + a3\n}\n\nfun main(args: Array<String>) {\n  Sum(13, 27, 44).result() eq 84\n}",
           "placeholders" : [ ]
         }
       },
@@ -1880,7 +1947,7 @@
         },
         "Coffee.kt" : {
           "name" : "Coffee.kt",
-          "text" : "package constructors\n\nimport com.atomickotlin.test.eq\n\nclass Coffee(val shots: Int = 2,\n             val decaf: Boolean = false,\n             val milk: Boolean = false,\n             val toGo: Boolean = false,\n             val syrup: String = \"\") {\n  var result = \"\"\n\n  init {\n    println(listOf(shots, decaf, milk, toGo, syrup))\n\n    getCup()\n    pourShots()\n    addMilk()\n    addSyrup()\n  }\n\n  fun getCup() {\n    result += if (toGo) \"ToGoCup \" else \"HereCup \"\n  }\n\n  fun pourShots() {\n    for (s in 1..shots)\n      result += if (decaf) \"decaf shot \" else \"shot \"\n  }\n\n  fun addMilk() {\n    if (milk) {\n      result += \"milk \"\n    }\n  }\n\n  fun addSyrup() {\n    result += syrup\n  }\n}\n\nfun main(args: Array<String>) {\n  val usual = Coffee()\n  usual.result eq \"HereCup shot shot \"\n  val mocha = Coffee(decaf = true,\n      toGo = true, syrup = \"Chocolate\")\n  mocha.result eq\n      \"ToGoCup decaf shot decaf shot Chocolate\"\n}",
+          "text" : "package constructors\n\nimport com.atomickotlin.test.eq\n\nclass Coffee(\n    val shots: Int = 2,\n    val decaf: Boolean = false,\n    val milk: Boolean = false,\n    val toGo: Boolean = false,\n    val syrup: String = \"\"\n) {\n  var result = \"\"\n\n  init {\n    println(listOf(shots, decaf, milk, toGo, syrup))\n\n    getCup()\n    pourShots()\n    addMilk()\n    addSyrup()\n  }\n\n  fun getCup() {\n    result += if (toGo) \"ToGoCup \" else \"HereCup \"\n  }\n\n  fun pourShots() {\n    for (s in 1..shots)\n      result += if (decaf) \"decaf shot \" else \"shot \"\n  }\n\n  fun addMilk() {\n    if (milk) {\n      result += \"milk \"\n    }\n  }\n\n  fun addSyrup() {\n    result += syrup\n  }\n}\n\nfun main(args: Array<String>) {\n  val usual = Coffee()\n  usual.result eq \"HereCup shot shot \"\n  val mocha = Coffee(decaf = true,\n      toGo = true, syrup = \"Chocolate\")\n  mocha.result eq\n      \"ToGoCup decaf shot decaf shot Chocolate\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1898,7 +1965,7 @@
       "task_files" : {
         "GardenGnome.kt" : {
           "name" : "GardenGnome.kt",
-          "text" : "package secondaryconstructors\n\nimport com.atomickotlin.test.eq\n\nclass GardenGnome(\n    val height: Double,\n    val weight: Double,\n    val happy: Boolean\n) {\n  init {\n    println(\"Inside primary constructor\")\n  }\n\n  var painted = true\n  fun magic(level: Int): String = \"Poof! \" + level\n\n  constructor(height: Double)                // [1]\n      : this(height, 100.0, true)\n\n  constructor(name: String) : this(15.0) {   // [2]\n    painted eq true\n  }\n\n  fun show(): String = \"$height $weight $happy $painted\"\n}\n\nfun main(args: Array<String>) {\n  GardenGnome(20.0, 110.0, false).\n      show() eq \"20.0 110.0 false true\"\n  GardenGnome(\"Bob\").show() eq\n      \"15.0 100.0 true true\"\n}",
+          "text" : "package secondaryConstructors\n\nimport com.atomickotlin.test.eq\n\nclass GardenGnome(\n    val height: Double,\n    val weight: Double,\n    val happy: Boolean\n) {\n  init {\n    println(\"Inside primary constructor\")\n  }\n\n  var painted = true\n  fun magic(level: Int): String = \"Poof! \" + level\n\n  constructor(height: Double)                // [1]\n      : this(height, 100.0, true)\n\n  constructor(name: String) : this(15.0) {   // [2]\n    painted eq true\n  }\n\n  fun show(): String = \"$height $weight $happy $painted\"\n}\n\nfun main(args: Array<String>) {\n  GardenGnome(20.0, 110.0, false).\n      show() eq \"20.0 110.0 false true\"\n  GardenGnome(\"Bob\").show() eq\n      \"15.0 100.0 true true\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1916,12 +1983,12 @@
       "task_files" : {
         "DataClasses.kt" : {
           "name" : "DataClasses.kt",
-          "text" : "package dataclasses\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n      Contact(\"Miffy\", \"1-234-567890\")\n\n  // These two instances are not equal:\n//  Person(\"Cleo\") eq Person(\"Cleo\")\n\n  Contact(\"Miffy\", \"1-234-567890\").toString() eq\n      \"Contact(name=Miffy, number=1-234-567890)\"\n}",
+          "text" : "package dataClasses\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n      Contact(\"Miffy\", \"1-234-567890\")\n\n  // These two instances are not equal:\n//  Person(\"Cleo\") eq Person(\"Cleo\")\n\n  Contact(\"Miffy\", \"1-234-567890\").toString() eq\n      \"Contact(name=Miffy, number=1-234-567890)\"\n}",
           "placeholders" : [ ]
         },
         "CopyDataClass.kt" : {
           "name" : "CopyDataClass.kt",
-          "text" : "package dataclasses2\n\nimport com.atomickotlin.test.eq\n\ndata class Contact(\n    val name: String,\n    val surname: String,\n    val number: String,\n    val address: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\n      \"Miffy\",\n      \"Miller\",\n      \"1-234-567890\",\n      \"1600 Amphitheatre Parkway\")\n  val newContact = contact.copy(\n      number = \"098-765-4321\",\n      address = \"Brandschenkestrasse 110\")\n  newContact.name eq \"Miffy\"\n  newContact.number eq \"098-765-4321\"\n}",
+          "text" : "package dataClasses\n\nimport com.atomickotlin.test.eq\n\ndata class DetailedContact(\n    val name: String,\n    val surname: String,\n    val number: String,\n    val address: String\n)\n\nfun main(args: Array<String>) {\n  val contact = DetailedContact(\n      \"Miffy\",\n      \"Miller\",\n      \"1-234-567890\",\n      \"1600 Amphitheatre Parkway\")\n  val newContact = contact.copy(\n      number = \"098-765-4321\",\n      address = \"Brandschenkestrasse 110\")\n  newContact.name eq \"Miffy\"\n  newContact.number eq \"098-765-4321\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1939,17 +2006,17 @@
       "task_files" : {
         "Bicycle.kt" : {
           "name" : "Bicycle.kt",
-          "text" : "package automaticstring\n\nimport com.atomickotlin.test.eq\n\ndata class Bicycle(val riders: Int)\n\nfun main(args: Array<String>) {\n  val forTwo = Bicycle(2)\n  forTwo eq \"Bicycle(riders=2)\" // Nice\n}",
+          "text" : "package automaticStringConversion\n\nimport com.atomickotlin.test.eq\n\ndata class Bicycle(val riders: Int)\n\nfun main(args: Array<String>) {\n  val forTwo = Bicycle(2)\n  forTwo eq \"Bicycle(riders=2)\" // Nice\n}",
           "placeholders" : [ ]
         },
         "Surrey.kt" : {
           "name" : "Surrey.kt",
-          "text" : "package automaticstring\n\nclass Surrey(val adornment: String)\n\nfun main(args: Array<String>) {\n  val fancy = Surrey(\"fringe on top\")\n  println(fancy) // Ugly\n}",
+          "text" : "package automaticStringConversion\n\nclass Surrey(val adornment: String)\n\nfun main(args: Array<String>) {\n  val fancy = Surrey(\"fringe on top\")\n  println(fancy) // Ugly\n}",
           "placeholders" : [ ]
         },
         "SurreyWithToString.kt" : {
           "name" : "SurreyWithToString.kt",
-          "text" : "package automaticstring\n\nimport com.atomickotlin.test.eq\n\nclass Surrey2(val adornment: String) {\n  override fun toString() =\n      \"Surrey, the $adornment\"\n}\n\nfun main(args: Array<String>) {\n  val fancy2 = Surrey2(\"fringe on top\")\n  fancy2 eq \"Surrey, the fringe on top\"\n}",
+          "text" : "package automaticStringConversion\n\nimport com.atomickotlin.test.eq\n\nclass Surrey2(val adornment: String) {\n  override fun toString() =\n      \"Surrey, the $adornment\"\n}\n\nfun main(args: Array<String>) {\n  val fancy2 = Surrey2(\"fringe on top\")\n  fancy2 eq \"Surrey, the fringe on top\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2000,12 +2067,12 @@
         },
         "MutableMaps.kt" : {
           "name" : "MutableMaps.kt",
-          "text" : "package referencesmutability\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val m = mutableMapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n  m[5] = \"5ive\"\n  m[5] eq \"5ive\"\n  m += 4 to \"four\"\n  m eq mapOf(5 to \"5ive\", 4 to \"four\", 6 to \"six\")\n}",
+          "text" : "package maps\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val m = mutableMapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n  m[5] = \"5ive\"\n  m[5] eq \"5ive\"\n  m += 4 to \"four\"\n  m eq mapOf(5 to \"5ive\", 4 to \"four\", 6 to \"six\")\n}",
           "placeholders" : [ ]
         },
         "ReadOnlyMaps.kt" : {
           "name" : "ReadOnlyMaps.kt",
-          "text" : "package referencesmutability\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val m = mapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n//  m[5] = \"5ive\" // Fails\n  m + (4 to \"four\") // Doesn't change m\n  m eq mapOf(5 to \"five\", 6 to \"six\")\n  val m2 = m + (4 to \"four\")\n  m2 eq mapOf(5 to \"five\", 6 to \"six\", 4 to \"four\")\n}",
+          "text" : "package maps\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val m = mapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n//  m[5] = \"5ive\" // Fails\n  m + (4 to \"four\") // Doesn't change m\n  m eq mapOf(5 to \"five\", 6 to \"six\")\n  val m2 = m + (4 to \"four\")\n  m2 eq mapOf(5 to \"five\", 6 to \"six\", 4 to \"four\")\n}",
           "placeholders" : [ ]
         },
         "ContactMap.kt" : {
@@ -2028,27 +2095,27 @@
       "task_files" : {
         "Pairs.kt" : {
           "name" : "Pairs.kt",
-          "text" : "package destructuring1\n\nimport com.atomickotlin.test.eq\n\nfun compute(input: Int) =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  compute(7) eq Pair(14, \"High\")\n  compute(4) eq Pair(8, \"Low\")\n\n  val result = compute(5)\n  result.first eq 10\n  result.second eq \"Low\"\n}",
+          "text" : "package destructuringDeclarations\n\nimport com.atomickotlin.test.eq\n\nfun compute1(input: Int) =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  compute1(7) eq Pair(14, \"High\")\n  compute1(4) eq Pair(8, \"Low\")\n\n  val result = compute1(5)\n  result.first eq 10\n  result.second eq \"Low\"\n}",
           "placeholders" : [ ]
         },
         "PairsAndDesctructuring.kt" : {
           "name" : "PairsAndDesctructuring.kt",
-          "text" : "package destructuring2\n\nimport com.atomickotlin.test.eq\n\nfun compute(input: Int): Pair<Int, String> =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute(7)\n  value eq 14\n  description eq \"High\"\n}",
+          "text" : "package destructuringDeclarations\n\nimport com.atomickotlin.test.eq\n\nfun compute2(input: Int): Pair<Int, String> =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute2(7)\n  value eq 14\n  description eq \"High\"\n}",
           "placeholders" : [ ]
         },
         "ComputationResult.kt" : {
           "name" : "ComputationResult.kt",
-          "text" : "package destructuring3\n\nimport com.atomickotlin.test.eq\n\ndata class ComputationResult(val data: Int, val info: String)\n\nfun compute(input: Int) =\n    if (input > 5)\n      ComputationResult(input * 2, \"High\")\n    else\n      ComputationResult(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute(7)\n  value eq 14\n  description eq \"High\"\n}",
+          "text" : "package destructuringDeclarations\n\nimport com.atomickotlin.test.eq\n\ndata class ComputationResult(val data: Int, val info: String)\n\nfun compute3(input: Int) =\n    if (input > 5)\n      ComputationResult(input * 2, \"High\")\n    else\n      ComputationResult(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute3(7)\n  value eq 14\n  description eq \"High\"\n}",
           "placeholders" : [ ]
         },
         "Tuple.kt" : {
           "name" : "Tuple.kt",
-          "text" : "package destructuring\n\nimport com.atomickotlin.test.eq\n\ndata class Tuple(\n    val i: Int,\n    val d: Double,\n    val s: String,\n    val b: Boolean,\n    val l: List<Int>\n)\n\nfun main(args: Array<String>) {\n  val tuple = Tuple(1, 3.14, \"Mouse\", false, listOf())\n  val (i, d, s, b, l) = tuple\n  i eq 1\n  d eq 3.14\n  s eq \"Mouse\"\n  b eq false\n  l eq listOf()\n\n  val (_, _, animal) = tuple\n  animal eq \"Mouse\"\n}",
+          "text" : "package destructuringDeclarations\n\nimport com.atomickotlin.test.eq\n\ndata class Tuple(\n    val i: Int,\n    val d: Double,\n    val s: String,\n    val b: Boolean,\n    val l: List<Int>\n)\n\nfun main(args: Array<String>) {\n  val tuple = Tuple(1, 3.14, \"Mouse\", false, listOf())\n  val (i, d, s, b, l) = tuple\n  i eq 1\n  d eq 3.14\n  s eq \"Mouse\"\n  b eq false\n  l eq listOf()\n\n  val (_, _, animal) = tuple\n  animal eq \"Mouse\"\n}",
           "placeholders" : [ ]
         },
         "DestructuringAndForLoop.kt" : {
           "name" : "DestructuringAndForLoop.kt",
-          "text" : "package destructuring\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\", 2 to \"two\")\n  for ((key, value) in map) {\n    print(\"$key = $value, \")\n  }\n  println()\n\n  val listOfPairs =\n      listOf(Pair(1, \"one\"), Pair(2, \"two\"))\n  for ((i, s) in listOfPairs) {\n    print(\"($i, $s), \")\n  }\n}\n/* Output:\n1 = one, 2 = two,\n(1, one), (2, two),\n*/",
+          "text" : "package destructuringDeclarations\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\", 2 to \"two\")\n  for ((key, value) in map) {\n    print(\"$key = $value, \")\n  }\n  println()\n\n  val listOfPairs =\n      listOf(Pair(1, \"one\"), Pair(2, \"two\"))\n  for ((i, s) in listOfPairs) {\n    print(\"($i, $s), \")\n  }\n}\n/* Output:\n1 = one, 2 = two,\n(1, one), (2, two),\n*/",
           "placeholders" : [ ]
         }
       },
@@ -2071,17 +2138,167 @@
         },
         "Quote.kt" : {
           "name" : "Quote.kt",
-          "text" : "package extensionfunctions\n\nimport com.atomickotlin.test.eq\nimport quoting.doubleQuote\nimport quoting.singleQuote\n\nfun main(args: Array<String>) {\n  \"Single\".singleQuote() eq \"'Single'\"\n  \"Double\".doubleQuote() eq \"\\\"Double\\\"\"\n}",
+          "text" : "package extensionFunctions\n\nimport com.atomickotlin.test.eq\nimport quoting.doubleQuote\nimport quoting.singleQuote\n\nfun main(args: Array<String>) {\n  \"Single\".singleQuote() eq \"'Single'\"\n  \"Double\".doubleQuote() eq \"\\\"Double\\\"\"\n}",
           "placeholders" : [ ]
         },
-        "ExtensionFunctionArguments.kt" : {
-          "name" : "ExtensionFunctionArguments.kt",
-          "text" : "package extensionfunctions\n\nimport com.atomickotlin.test.eq\n\ndata class Book(val title: String)\n\nfun Book.categorize(category: String) =\n    \"$this, category: $category\"\n\nfun main(args: Array<String>) {\n  Book(\"Dracula\").categorize(\"Vampire\") eq\n      \"Book(title=Dracula), category: Vampire\"\n}",
+        "StrangeQuote.kt" : {
+          "name" : "StrangeQuote.kt",
+          "text" : "package extensionFunctions\n\nimport com.atomickotlin.test.eq\nimport quoting.singleQuote\n\nfun String.strangeQuote() =\n    singleQuote().singleQuote()   // [1]\n\nfun main(args: Array<String>) {\n  \"Hi\".strangeQuote() eq \"''Hi''\" // Two single quotes\n}",
+          "placeholders" : [ ]
+        },
+        "MemberVsExtension.kt" : {
+          "name" : "MemberVsExtension.kt",
+          "text" : "package extensionFunctions\n\nimport com.atomickotlin.test.eq\n\nclass My {\n  fun foo() = 1\n}\n\nfun My.foo() = 2\n\nfun main(args: Array<String>) {\n  My().foo() eq 1\n}",
+          "placeholders" : [ ]
+        },
+        "BookExtensions.kt" : {
+          "name" : "BookExtensions.kt",
+          "text" : "package extensionFunctions\n\nimport com.atomickotlin.test.eq\n\ndata class Book(val title: String)\n\nfun Book.categorize(category: String) =\n    \"\"\"title: \"$title\", category: $category\"\"\"\n\nfun main(args: Array<String>) {\n  Book(\"Dracula\").categorize(\"Vampire\") eq\n      \"\"\"title: \"Dracula\", category: Vampire\"\"\"\n}",
           "placeholders" : [ ]
         }
       },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Extension Functions\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Local Functions",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "LocalFunctions.kt" : {
+          "name" : "LocalFunctions.kt",
+          "text" : "package localFunctions\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val sb = StringBuilder()\n\n  fun log(message: String) {\n    sb.appendln(message)\n  }\n\n  log(\"Starting computation\")\n  // Imitating computation\n  val x = 42\n  log(\"Computation result: $x\")\n\n  sb.toString().trim() eq \"\"\"\n    Starting computation\n    Computation result: 42\"\"\".trimIndent()\n}",
+          "placeholders" : [ ]
+        },
+        "LocalExtensions.kt" : {
+          "name" : "LocalExtensions.kt",
+          "text" : "package localFunctions\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n\n  fun String.exclaim() = \"$this!\"\n\n  \"Hello\".exclaim() eq \"Hello!\"\n  \"Hallo\".exclaim() eq \"Hallo!\"\n  \"Bonjour\".exclaim() eq \"Bonjour!\"\n  \"Ciao\".exclaim() eq \"Ciao!\"\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Local Functions\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Nullable Types",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "NullInMaps.kt" : {
+          "name" : "NullInMaps.kt",
+          "text" : "package nullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(0 to \"yes\", 1 to \"no\")\n  map[2] eq null\n}",
+          "placeholders" : [ ]
+        },
+        "NullableAndNonnullTypes.kt" : {
+          "name" : "NullableAndNonnullTypes.kt",
+          "text" : "package nullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"    // [1]\n\n  // Doesn't compile:\n  // val s2: String = null  // [2]\n\n  val s3: String? = null    // [3]\n  val s4: String? = s1      // [4]\n\n  // Doesn't compile:\n  // val s5: String = s4    // [5]\n\n  s1 eq \"abc\"\n  s3 eq null\n  s4 eq \"abc\"\n}",
+          "placeholders" : [ ]
+        },
+        "Dereference.kt" : {
+          "name" : "Dereference.kt",
+          "text" : "package nullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"\n  val s2: String? = s1\n\n  s1.length eq 3          // [1]\n  // Doesn't compile\n  // s2.length            // [2]\n}",
+          "placeholders" : [ ]
+        },
+        "ExplicitCheck.kt" : {
+          "name" : "ExplicitCheck.kt",
+          "text" : "package nullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  if (s != null) {\n    s.length eq 3\n  }\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Nullable Types\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Safe Calls & Elvis Operator",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "Dereference.kt" : {
+          "name" : "Dereference.kt",
+          "text" : "package safeCallsAndElvisOperator\n\nfun main(args: Array<String>) {\n  val s: String? = null\n  // Doesn't compile:\n  // s.length\n}",
+          "placeholders" : [ ]
+        },
+        "SafeCall.kt" : {
+          "name" : "SafeCall.kt",
+          "text" : "package safeCallsAndElvisOperator\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else null\n  val length2 = s1?.length\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else null\n  val length4 = s2?.length\n  length3 eq null\n  length4 eq null\n}",
+          "placeholders" : [ ]
+        },
+        "ChainedSafeCalls.kt" : {
+          "name" : "ChainedSafeCalls.kt",
+          "text" : "package safeCallsAndElvisOperator\n\nimport com.atomickotlin.test.eq\n\nclass Person(val name: String, var bestFriend: Person? = null)\n\nfun main(args: Array<String>) {\n  val alice = Person(\"Alice\")\n  val bob = Person(\"Bob\", alice)\n\n  alice.bestFriend?.bestFriend?.name eq null     // [1]\n\n  alice.bestFriend = bob\n\n  alice.bestFriend?.bestFriend?.name eq \"Alice\"  // [2]\n}",
+          "placeholders" : [ ]
+        },
+        "ElvisOperator.kt" : {
+          "name" : "ElvisOperator.kt",
+          "text" : "package safeCallsAndElvisOperator\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else 0\n  val length2 = s1?.length ?: 0\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else 0\n  val length4 = s2?.length ?: 0\n  length3 eq 0\n  length4 eq 0\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Safe Calls & Elvis Operator\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Non-null Asserted Calls",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "NonNullAssertedCalls.kt" : {
+          "name" : "NonNullAssertedCalls.kt",
+          "text" : "package nonNullAssertedCalls\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  s1!!.length eq 3\n\n  val s2: String? = null\n  // Throws KotlinNullPointerException:\n  // s2!!.length\n}",
+          "placeholders" : [ ]
+        },
+        "NonNullAssertion.kt" : {
+          "name" : "NonNullAssertion.kt",
+          "text" : "package nonNullAssertedCalls\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  s!! eq \"abc\"\n\n  // Throws KotlinNullPointerException:\n  // null!!\n}",
+          "placeholders" : [ ]
+        },
+        "GettingValueFromMap.kt" : {
+          "name" : "GettingValueFromMap.kt",
+          "text" : "package nonNullAssertedCalls\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\")\n  map[1]!!.toUpperCase() eq \"ONE\"\n  map.getValue(1).toUpperCase() eq \"ONE\"\n\n  // Throws KotlinNullPointerException:\n  map[1]!!.toUpperCase()           // [1]\n  // Throws NoSuchElementException:\n  map.getValue(1).toUpperCase()    // [2]\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Non-null Asserted Calls\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Extensions for Nullable Types",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "ExtensionsOnNullableString.kt" : {
+          "name" : "ExtensionsOnNullableString.kt",
+          "text" : "package extensionsForNullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = null\n  s1.isNullOrEmpty() eq true\n\n  val s2: String? = \"abc\"\n  s2.isNullOrBlank() eq false\n\n  val s3: String = \"    \"\n  s3.isNullOrBlank() eq true\n}",
+          "placeholders" : [ ]
+        },
+        "Declarations.kt" : {
+          "name" : "Declarations.kt",
+          "text" : "package extensionsForNullableTypes\n\nimport com.atomickotlin.test.eq\n\nfun String?.isNullOrEmpty(): Boolean =\n    this == null || this.isEmpty()\n\nfun main(args: Array<String>) {\n  \"\".isNullOrEmpty() eq true\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Extensions for Nullable Types\".\n\nMark as `completed` after reading the atom."
       },
       "task_type" : "theory"
     } ]
@@ -2142,22 +2359,22 @@
       "task_files" : {
         "SimpleMap.kt" : {
           "name" : "SimpleMap.kt",
-          "text" : "package mapandreduce\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.map { it + 1 } eq listOf(2, 3, 4, 5)\n}",
+          "text" : "package operationsOnLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.map { it + 1 } eq listOf(2, 3, 4, 5)\n}",
           "placeholders" : [ ]
         },
         "Sum.kt" : {
           "name" : "Sum.kt",
-          "text" : "package mapandreduce\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  var sum = 0\n  l.forEach { x -> sum += x }\n  sum eq 1111\n}",
+          "text" : "package operationsOnLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  var sum = 0\n  l.forEach { x -> sum += x }\n  sum eq 1111\n}",
           "placeholders" : [ ]
         },
         "Reduce.kt" : {
           "name" : "Reduce.kt",
-          "text" : "package mapandreduce\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  l.reduce { sum, n -> sum + n } eq 1111\n}",
+          "text" : "package operationsOnLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  l.reduce { sum, n -> sum + n } eq 1111\n}",
           "placeholders" : [ ]
         },
         "MoreReduce.kt" : {
           "name" : "MoreReduce.kt",
-          "text" : "package mapandreduce\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  (1..100).reduce { sum, n -> sum + n } eq\n      5050\n  val l2 = listOf(\"D\", \"u\", \"c\", \"k\")\n  l2.reduce { sum, n -> sum + n } eq \"Duck\"\n}",
+          "text" : "package operationsOnLists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  (1..100).reduce { sum, n -> sum + n } eq\n      5050\n  val l2 = listOf(\"D\", \"u\", \"c\", \"k\")\n  l2.reduce { sum, n -> sum + n } eq \"Duck\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2175,17 +2392,17 @@
       "task_files" : {
         "Zipper.kt" : {
           "name" : "Zipper.kt",
-          "text" : "package combininglists\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val left = listOf(\"a\", \"b\", \"c\", \"d\")\n  val right = listOf(\"q\", \"r\", \"s\", \"t\")\n\n  left.zip(right) eq\n      \"[(a, q), (b, r), (c, s), (d, t)]\"\n\n  left.zip(0..4) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n\n  left.zip(left.indices) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n}",
+          "text" : "package combiningListsWithZip\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val left = listOf(\"a\", \"b\", \"c\", \"d\")\n  val right = listOf(\"q\", \"r\", \"s\", \"t\")\n\n  left.zip(right) eq\n      \"[(a, q), (b, r), (c, s), (d, t)]\"\n\n  left.zip(0..4) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n\n  left.zip(left.indices) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n}",
           "placeholders" : [ ]
         },
         "IndexWithZip.kt" : {
           "name" : "IndexWithZip.kt",
-          "text" : "package combininglists\n\nimport com.atomickotlin.test.eq\n\nfun number(s: String) =\n    s.indices.zip(s.toList())\n\nfun main(args: Array<String>) {\n  number(\"Howdy\") eq\n      listOf(0 to 'H', 1 to 'o', 2 to 'w', 3 to 'd', 4 to 'y')\n}",
+          "text" : "package combiningListsWithZip\n\nimport com.atomickotlin.test.eq\n\nfun number(s: String) =\n    s.indices.zip(s.toList())\n\nfun main(args: Array<String>) {\n  number(\"Howdy\") eq\n      listOf(0 to 'H', 1 to 'o', 2 to 'w', 3 to 'd', 4 to 'y')\n}",
           "placeholders" : [ ]
         },
         "ZipMap.kt" : {
           "name" : "ZipMap.kt",
-          "text" : "package combininglists\n\nimport com.atomickotlin.test.eq\n\ndata class Person(val name: String, val ID: Int)\n\nfun main(args: Array<String>) {\n  val names = listOf(\"Bob\", \"Jill\", \"Jim\")\n  val IDs = listOf(1731, 9274, 8378)\n  names.zip(IDs).map {\n    (n, id) ->\n    Person(n, id)\n  } eq \"[Person(name=Bob, ID=1731), \" +\n      \"Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]\"\n}",
+          "text" : "package combiningListsWithZip\n\nimport com.atomickotlin.test.eq\n\ndata class Person(val name: String, val ID: Int)\n\nfun main(args: Array<String>) {\n  val names = listOf(\"Bob\", \"Jill\", \"Jim\")\n  val IDs = listOf(1731, 9274, 8378)\n  names.zip(IDs).map {\n    (n, id) ->\n    Person(n, id)\n  } eq \"[Person(name=Bob, ID=1731), \" +\n      \"Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2203,27 +2420,27 @@
       "task_files" : {
         "ListOf.kt" : {
           "name" : "ListOf.kt",
-          "text" : "package varargs\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  listOf(1) eq \"[1]\"\n  listOf(\"a\", \"b\") eq \"[a, b]\"\n}",
+          "text" : "package varargsAndArrays\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  listOf(1) eq \"[1]\"\n  listOf(\"a\", \"b\") eq \"[a, b]\"\n}",
           "placeholders" : [ ]
         },
         "VariableArgLists.kt" : {
           "name" : "VariableArgLists.kt",
-          "text" : "package varargs\n\nfun foo(s: String, d: Double, vararg ints: Int) {}\n\nfun main(args: Array<String>) {\n  foo(\"abc\", 1.0, 1, 2, 3, 4)\n}",
+          "text" : "package varargsAndArrays\n\nfun foo(s: String, d: Double, vararg ints: Int) {}\n\nfun main(args: Array<String>) {\n  foo(\"abc\", 1.0, 1, 2, 3, 4)\n}",
           "placeholders" : [ ]
         },
         "VarargSum.kt" : {
           "name" : "VarargSum.kt",
-          "text" : "package varargs\n\nimport com.atomickotlin.test.eq\n\nfun sum(vararg numbers: Int): Int {\n  var total = 0\n  for (n in numbers) {\n    total += n\n  }\n  return total\n}\n\nfun main(args: Array<String>) {\n  sum(13, 27, 44) eq 84\n  sum(1, 3, 5, 7, 9, 11) eq 36\n  sum() eq 0\n}",
+          "text" : "package varargsAndArrays\n\nimport com.atomickotlin.test.eq\n\nfun sum(vararg numbers: Int): Int {\n  var total = 0\n  for (n in numbers) {\n    total += n\n  }\n  return total\n}\n\nfun main(args: Array<String>) {\n  sum(13, 27, 44) eq 84\n  sum(1, 3, 5, 7, 9, 11) eq 36\n  sum() eq 0\n}",
           "placeholders" : [ ]
         },
         "SpreadOperator.kt" : {
           "name" : "SpreadOperator.kt",
-          "text" : "package varargs\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // Doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
+          "text" : "package varargsAndArrays\n\nimport com.atomickotlin.test.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // Doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
           "placeholders" : [ ]
         },
         "TwoFunctionsWithVarargs.kt" : {
           "name" : "TwoFunctionsWithVarargs.kt",
-          "text" : "package varargs\n\nfun firstVarargFun(vararg numbers: Int) {\n  println(\"varargs:\")\n  for (n in numbers) {\n    print(\"$n \")\n  }\n}\n\nfun secondVarargFun(vararg numbers: Int) {\n  firstVarargFun(*numbers)\n}\n\nfun main(args: Array<String>) {\n  secondVarargFun(1, 2, 3)\n}\n/* Output:\nvarargs:\n1 2 3\n*/",
+          "text" : "package varargsAndArrays\n\nfun firstVarargFun(vararg numbers: Int) {\n  println(\"varargs:\")\n  for (n in numbers) {\n    print(\"$n \")\n  }\n}\n\nfun secondVarargFun(vararg numbers: Int) {\n  firstVarargFun(*numbers)\n}\n\nfun main(args: Array<String>) {\n  secondVarargFun(1, 2, 3)\n}\n/* Output:\nvarargs:\n1 2 3\n*/",
           "placeholders" : [ ]
         }
       },
@@ -2239,6 +2456,16 @@
       "name" : "Examples",
       "stepic_id" : 0,
       "task_files" : {
+        "BasicInheritance.kt" : {
+          "name" : "BasicInheritance.kt",
+          "text" : "package inheritance\n\nopen class Base\nclass Derived : Base()",
+          "placeholders" : [ ]
+        },
+        "OpenAndFinalClasses.kt" : {
+          "name" : "OpenAndFinalClasses.kt",
+          "text" : "package inheritance\n\n// This class can be inherited from:\nopen class Parent\n\nclass Child : Parent()\n\n// This class can't be inherited from:\nfinal class Single\n\n// The same as using 'final':\nclass AnotherSingle",
+          "placeholders" : [ ]
+        },
         "GreatApe.kt" : {
           "name" : "GreatApe.kt",
           "text" : "package inheritance\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe {\n  val weight = 100.0\n  val age = 12\n}\n\nopen class Bonobo : GreatApe()\nclass Chimpanzee : GreatApe()\nclass BonoboB : Bonobo()\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe()) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo()) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee()) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB()) eq\n      \"weight: 100.0 age: 12\"\n}",
@@ -2259,12 +2486,22 @@
       "task_files" : {
         "GreatApe2.kt" : {
           "name" : "GreatApe2.kt",
-          "text" : "package baseclassinit\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe(\n    val weight: Double, val age: Int)\n\nopen class Bonobo(weight: Double, age: Int)\n  : GreatApe(weight, age)\n\nclass Chimpanzee(weight: Double, age: Int)\n  : GreatApe(weight, age)\n\nclass BonoboB(weight: Double, age: Int)\n  : Bonobo(weight, age)\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n}",
+          "text" : "package baseClassInitialization\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe(\n    val weight: Double,\n    val age: Int\n)\n\nopen class Bonobo(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass Chimpanzee(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass BonoboB(\n    weight: Double,\n    age: Int\n) : Bonobo(weight, age)\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n}",
           "placeholders" : [ ]
         },
         "AuxiliaryInitialization.kt" : {
           "name" : "AuxiliaryInitialization.kt",
-          "text" : "package baseclassinit\n\nimport com.atomickotlin.test.eq\n\nopen class House(\n    val address: String,\n    val state: String,\n    val zip: String\n) {\n  constructor(state: String, zip: String) : this(\"address?\", state, zip)\n  constructor(zip: String) : this(\"address?\", \"state?\", zip)\n}\n\nclass Home(address: String, state: String,\n           zip: String, val name: String)\n  : House(address, state, zip) {\n  override fun toString() =\n      \"$name: $address, $state $zip\"\n}\n\nclass VacationHouse(\n    state: String, zip: String,\n    val startMonth: Int, val endMonth: Int)\n  : House(state, zip)\n\nclass TreeHouse(\n    val name: String, zip: String)\n  : House(zip)\n\nfun main(args: Array<String>) {\n  val h = Home(\"888 N. Matarget St.\", \"KS\",\n      \"66632\", \"Metropolis\")\n  h.address eq \"888 N. Matarget St.\"\n  h.state eq \"KS\"\n  h.name eq \"Metropolis\"\n  h eq \"Metropolis: 888 N. Matarget St., KS 66632\"\n\n  val v = VacationHouse(\"KS\", \"66632\", 6, 8)\n  v.state eq \"KS\"\n  v.startMonth eq 6\n  v.endMonth eq 8\n\n  val tree = TreeHouse(\"Oak\", \"48104\")\n  tree.name eq \"Oak\"\n  tree.zip eq \"48104\"\n}",
+          "text" : "package baseClassInitialization\n\nimport com.atomickotlin.test.eq\n\nopen class House(\n    val address: String,\n    val state: String,\n    val zip: String\n) {\n  constructor(state: String, zip: String) : this(\"address?\", state, zip)\n  constructor(zip: String) : this(\"address?\", \"state?\", zip)\n}\n\nclass Home(\n    address: String,\n    state: String,\n    zip: String,\n    val name: String\n) : House(address, state, zip) {\n\n  override fun toString() =\n      \"$name: $address, $state $zip\"\n}\n\nclass VacationHouse(\n    state: String,\n    zip: String,\n    val startMonth: Int,\n    val endMonth: Int\n) : House(state, zip)\n\nclass TreeHouse(\n    val name: String, zip: String\n) : House(zip)\n\nfun main(args: Array<String>) {\n  val h = Home(\"888 N. Matarget St.\", \"KS\",\n      \"66632\", \"Metropolis\")\n  h.address eq \"888 N. Matarget St.\"\n  h.state eq \"KS\"\n  h.name eq \"Metropolis\"\n  h eq \"Metropolis: 888 N. Matarget St., KS 66632\"\n\n  val v = VacationHouse(\"KS\", \"66632\", 6, 8)\n  v.state eq \"KS\"\n  v.startMonth eq 6\n  v.endMonth eq 8\n\n  val tree = TreeHouse(\"Oak\", \"48104\")\n  tree.name eq \"Oak\"\n  tree.zip eq \"48104\"\n}",
+          "placeholders" : [ ]
+        },
+        "CallingOtherConstructors.kt" : {
+          "name" : "CallingOtherConstructors.kt",
+          "text" : "package baseClassInitialization\n\nimport com.atomickotlin.test.eq\n\nopen class Base(val i: Int)\n\nclass Derived : Base {\n  constructor(i: Int) : super(i)\n  constructor() : this(0)\n}\n\nfun main(args: Array<String>) {\n  val d1 = Derived(1)\n  d1.i eq 1\n\n  val d2 = Derived()\n  d2.i eq 0\n}",
+          "placeholders" : [ ]
+        },
+        "CallingNoArgConstructor.kt" : {
+          "name" : "CallingNoArgConstructor.kt",
+          "text" : "package baseClassInitialization\n\nopen class Superclass1(val i: Int)\nclass Subclass1(i: Int) : Superclass1(i)\n\nopen class Superclass2\nclass Subclass2 : Superclass2()",
           "placeholders" : [ ]
         }
       },
@@ -2282,7 +2519,7 @@
       "task_files" : {
         "GreatApe3.kt" : {
           "name" : "GreatApe3.kt",
-          "text" : "package overridingfunctions\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe {\n  open fun call() = \"Hoo!\"\n  var energy = 3\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n  override fun call() = \"Eep!\"\n\n  init {\n    // Modify the base-class var:\n    energy = 5\n  }\n\n  // Call the base-class version:\n  override fun eat() = super.eat() * 2\n\n  // Add a function():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  override fun call() = \"Yawp!\"\n  override fun eat() = super.eat() * 3\n  fun jump() = \"Chimp jump\"\n  val kind = \"Common\" // New property\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape function\n  // ape.jump // Nor this\n  ape.climb(4)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!9\"\n  talk(Bonobo()) eq \"Eep!22\"\n  talk(Chimpanzee()) eq \"Yawp!27\"\n}",
+          "text" : "package overridingFunctions\n\nimport com.atomickotlin.test.eq\n\nopen class GreatApe {\n\n  protected var energy = 0\n\n  open fun call() = \"Hoo!\"\n\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n\n  override fun call() = \"Eep!\"\n\n  override fun eat(): Int {\n    // Modify the base-class var:\n    energy += 10\n    // Call the base-class version:\n    return super.eat()\n  }\n\n  // Add a function():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  val additionalEnergy = 20 // New property\n\n  override fun call() = \"Yawp!\"\n\n  override fun eat(): Int {\n    energy += additionalEnergy\n    return super.eat()\n  }\n\n  fun jump() = \"Chimp jump\"\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape function\n  // ape.jump // Nor this\n  ape.climb(10)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!0\"\n  talk(Bonobo()) eq \"Eep!10\"\n  talk(Chimpanzee()) eq \"Yawp!20\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2300,22 +2537,108 @@
       "task_files" : {
         "AbstractKeyword.kt" : {
           "name" : "AbstractKeyword.kt",
-          "text" : "package abstractclasses\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithFunction {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
+          "text" : "package abstractClasses\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithFunction {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
           "placeholders" : [ ]
         },
         "AbstractClasses.kt" : {
           "name" : "AbstractClasses.kt",
-          "text" : "package abstractclasses\n\nimport com.atomickotlin.test.eq\n\nabstract class Animal {\n\n  fun templateFunction() = \"The ${animal()} goes ${sound()}\"\n\n  // Abstract functions (no function body):\n  abstract fun animal(): String\n\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n//  val a = Animal()\n\n  Duck().templateFunction() eq\n      \"The Duck goes Quack\"\n  Cow().templateFunction() eq\n      \"The Cow goes Moo\"\n}",
+          "text" : "package abstractClasses\n\nimport com.atomickotlin.test.eq\n\nabstract class Animal {\n\n  fun templateFunction() = \"The ${animal()} goes ${sound()}\"\n\n  // Abstract functions (no function body):\n  abstract fun animal(): String\n\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n//  val a = Animal()\n\n  Duck().templateFunction() eq\n      \"The Duck goes Quack\"\n  Cow().templateFunction() eq\n      \"The Cow goes Moo\"\n}",
           "placeholders" : [ ]
         },
         "AbstractAdder.kt" : {
           "name" : "AbstractAdder.kt",
-          "text" : "package abstractclasses\n\nabstract class Adder(x: Int) {\n  abstract fun add(y: Int): Int\n}",
+          "text" : "package abstractClasses\n\nabstract class Adder(x: Int) {\n  abstract fun add(y: Int): Int\n}",
           "placeholders" : [ ]
         }
       },
       "task_texts" : {
         "task" : "Examples accompanying the atom \"Abstract Classes\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Interfaces",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "StateOfAClass.kt" : {
+          "name" : "StateOfAClass.kt",
+          "text" : "package interfaces\n\nimport com.atomickotlin.test.eq\n\nclass MyClass(\n    val i: Int\n) {\n  val list = mutableListOf(i)\n}\n\nfun main(args: Array<String>) {\n  val my = MyClass(0)\n  my.i eq 0\n  my.list += 1\n  my.list eq listOf(0, 1)\n}",
+          "placeholders" : [ ]
+        },
+        "NoMultipleInheritance.kt" : {
+          "name" : "NoMultipleInheritance.kt",
+          "text" : "package classes\n\nopen class Animal\nopen class Mammal : Animal()\nopen class AquaticAnimal : Animal()\n\n// Doesn't compile:\n// class Dolphin : Mammal(), AquaticAnimal()",
+          "placeholders" : [ ]
+        },
+        "MultipleInterfaceInheritance.kt" : {
+          "name" : "MultipleInterfaceInheritance.kt",
+          "text" : "package interfaces1\n\ninterface Animal\ninterface Mammal : Animal\ninterface AquaticAnimal : Animal\n\n// Now compiles!\nclass Dolphin : Mammal, AquaticAnimal",
+          "placeholders" : [ ]
+        },
+        "NoStateInInterfaces.kt" : {
+          "name" : "NoStateInInterfaces.kt",
+          "text" : "package interfaces2\n\ninterface Animal {\n  val sound: String\n  fun talk(): String\n\n  // Doesn't compile:\n  // val age = 1\n}",
+          "placeholders" : [ ]
+        },
+        "InterfaceMemberImplementations.kt" : {
+          "name" : "InterfaceMemberImplementations.kt",
+          "text" : "package interfaces\n\nimport com.atomickotlin.test.eq\n\ninterface Animal {\n  val sound: String\n\n  fun talk() = \"$sound!\"\n}\n\nclass Cat : Animal {\n  override val sound = \"meow\"\n}\n\nclass Dog(\n    override val sound: String\n) : Animal\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  cat.talk() eq \"meow!\"\n  val dog = Dog(\"woof\")\n  dog.talk() eq \"woof!\"\n}",
+          "placeholders" : [ ]
+        },
+        "Framework.kt" : {
+          "name" : "Framework.kt",
+          "text" : "package interfaces\n\nimport com.atomickotlin.test.eq\n\ninterface Framework {\n  val part1: Int\n  fun part2(): Double\n  // Even without definitions:\n  fun templateMethod() = part1 + part2()\n}\n\nfun operation(impl: Framework) =\n    impl.templateMethod()\n\nclass Implementation : Framework {\n  override val part1 = 42\n  override fun part2() = 2.71828\n}\n\nfun main(args: Array<String>) {\n  operation(Implementation()) eq 44.71828\n}",
+          "placeholders" : [ ]
+        },
+        "InterfaceCollision.kt" : {
+          "name" : "InterfaceCollision.kt",
+          "text" : "package interfaces\n\nimport com.atomickotlin.test.eq\n\ninterface A {\n  fun f() = 1.1\n  fun g() = \"A.g\"\n  val n: Int\n    get() = 7\n}\n\ninterface B {\n  fun f() = 7.7\n  fun g() = \"B.g\"\n  val n: Int\n    get() = 17\n}\n\nclass C : A, B {\n  override fun f() = 9.9\n  override fun g() = super<A>.g()\n  override val n: Int\n    get() = super<A>.n + super<B>.n\n}\n\nfun main(args: Array<String>) {\n  val c = C()\n  c.f() eq 9.9\n  c.g() eq \"A.g\"\n  c.n eq 24\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Interfaces\".\n\nMark as `completed` after reading the atom."
+      },
+      "task_type" : "theory"
+    } ]
+  }, {
+    "id" : 0,
+    "title" : "Composition",
+    "task_list" : [ {
+      "name" : "Examples",
+      "stepic_id" : 0,
+      "task_files" : {
+        "House1.kt" : {
+          "name" : "House1.kt",
+          "text" : "package composition1\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchen: Kitchen\n}",
+          "placeholders" : [ ]
+        },
+        "House2.kt" : {
+          "name" : "House2.kt",
+          "text" : "package composition2\n\ninterface Building\ninterface Kitchen\ninterface House : Building {\n  val kitchen1: Kitchen\n  val kitchen2: Kitchen\n}",
+          "placeholders" : [ ]
+        },
+        "House3.kt" : {
+          "name" : "House3.kt",
+          "text" : "package composition3\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "placeholders" : [ ]
+        },
+        "House4.kt" : {
+          "name" : "House4.kt",
+          "text" : "package composition4\n\ninterface Building\ninterface Food\ninterface Utensil\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Kitchen : Store<Food>, Cook<Food>, Clean<Utensil>\n  // Oops. Can't do this:\n  // , Store<Utensil>, Clean<Food>\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "placeholders" : [ ]
+        },
+        "House5.kt" : {
+          "name" : "House5.kt",
+          "text" : "package composition5\n\ninterface Building\ninterface Room\ninterface Storage\ninterface Sink\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Food : Store<Food>,\n    Clean<Food>, Cook<Food>\n\ninterface Utensil : Store<Utensil>,\n    Clean<Utensil>, Cook<Utensil>\n\ninterface Kitchen : Room {\n  val storage: Storage\n  val sinks: List<Sink>\n  val food: Food\n  val utensils: List<Utensil>\n}\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "task_texts" : {
+        "task" : "Examples accompanying the atom \"Composition\".\n\nMark as `completed` after reading the atom."
       },
       "task_type" : "theory"
     } ]
@@ -2328,7 +2651,12 @@
       "task_files" : {
         "Level.kt" : {
           "name" : "Level.kt",
-          "text" : "package enumerations\n\nimport com.atomickotlin.test.eq\nimport enumerations.Level.*\n\nenum class Level {\n  Overflow, High, Medium, Low, Empty\n}\n\nfun main(args: Array<String>) {\n  Level.Medium eq \"Medium\"     // [1]\n\n  Medium eq \"Medium\"           // [2]\n\n  Level.values().toList() eq   // [3]\n      listOf(Overflow, High,\n          Medium, Low, Empty)\n\n  checkLevel(Low) eq \"Level Low OK\"\n  checkLevel(Empty) eq \"Alert: Empty\"\n  checkLevel(Overflow) eq \">>> Overflow!\"\n\n  Level.values().map { \"${it.ordinal} - $it\" } eq\n      listOf(\"0 - Overflow\", \"1 - High\", \"2 - Medium\", \"3 - Low\", \"4 - Empty\")\n\n}\n\nfun checkLevel(level: Level) = when (level) {\n  Overflow -> \">>> Overflow!\"\n  Empty -> \"Alert: Empty\"\n  else -> \"Level $level OK\"\n}",
+          "text" : "package enumerations\n\nimport com.atomickotlin.test.eq\n\nenum class Level {\n  Overflow, High, Medium, Low, Empty\n}\n\nfun main(args: Array<String>) {\n  Level.Medium eq \"Medium\"\n}",
+          "placeholders" : [ ]
+        },
+        "ImportLevel.kt" : {
+          "name" : "ImportLevel.kt",
+          "text" : "package enumerations\n\nimport com.atomickotlin.test.eq\nimport enumerations.Level.*    // [1]\n\nfun main(args: Array<String>) {\n  Medium eq \"Medium\"           // [2]\n\n  Level.values().toList() eq   // [3]\n      listOf(Overflow, High,\n          Medium, Low, Empty)\n\n  fun checkLevel(level: Level) = when (level) {\n    Overflow -> \">>> Overflow!\"\n    Empty -> \"Alert: Empty\"\n    else -> \"Level $level OK\"\n  }\n\n  checkLevel(Low) eq \"Level Low OK\"\n  checkLevel(Empty) eq \"Alert: Empty\"\n  checkLevel(Overflow) eq \">>> Overflow!\"\n\n  Level.values().map { \"${it.ordinal} - $it\" } eq\n      listOf(\"0 - Overflow\", \"1 - High\", \"2 - Medium\", \"3 - Low\", \"4 - Empty\")\n}",
           "placeholders" : [ ]
         }
       },
@@ -2351,17 +2679,17 @@
         },
         "ColorBlend.kt" : {
           "name" : "ColorBlend.kt",
-          "text" : "package colorblend\n\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nfun blend(a: Color, b: Color) = when {\n  a == b -> a\n  a == brown || b == brown -> brown\n  else -> when (a to b) {\n    red to blue, blue to red -> purple\n    red to yellow, yellow to red -> orange\n    blue to yellow, yellow to blue -> green\n    else -> {\n      // Interesting, not accurate:\n      val values = Color.values()\n      values[(a.ordinal + b.ordinal) % values.size]\n    }\n  }\n}",
+          "text" : "package colorblend\n\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nfun blend(a: Color, b: Color) = when {\n  a == b -> a\n  a == brown || b == brown -> brown\n  else -> blendRest(a, b)\n}\n\nprivate fun blendRest(a: Color, b: Color) = when (a to b) {\n  red to blue, blue to red -> purple\n  red to yellow, yellow to red -> orange\n  blue to yellow, yellow to blue -> green\n  else -> {\n    // Interesting, not accurate:\n    val values = values()\n    values[(a.ordinal + b.ordinal) % values.size]\n  }\n}",
           "placeholders" : [ ]
         },
         "ColorBlendTest.kt" : {
           "name" : "ColorBlendTest.kt",
-          "text" : "package colorblend\n\nimport com.atomickotlin.test.eq\nimport paintcolors.Color.*\n\nfun main(args: Array<String>) {\n  blend(red, yellow) eq orange\n  blend(red, red) eq red\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n  blend(purple, brown) eq brown\n}",
+          "text" : "package colorblend\n\nimport com.atomickotlin.test.eq\nimport paintcolors.Color.*\n\nfun main(args: Array<String>) {\n  blend(red, red) eq red\n  blend(purple, brown) eq brown\n  blend(red, yellow) eq orange\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n}",
           "placeholders" : [ ]
         },
         "ColorBlendMap.kt" : {
           "name" : "ColorBlendMap.kt",
-          "text" : "package colorblendmap\n\nimport com.atomickotlin.test.eq\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nval blender = run {\n  val result = mutableMapOf<Pair<Color, Color>, Color>()\n  for (a in Color.values()) {\n    for (b in Color.values()) {\n      result[a to b] = colorblend.blend(a, b)\n    }\n  }\n  result\n}\n\nfun blend(a: Color, b: Color) = blender[a to b]\n\nfun main(args: Array<String>) {\n  blender.forEach(::println)\n\n  blend(red, yellow) eq orange\n  blend(red, red) eq red\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n  blend(purple, brown) eq brown\n}",
+          "text" : "package colorblendmap\n\nimport com.atomickotlin.test.eq\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nval blender = createBlendMap()\n\nprivate fun createBlendMap(): Map<Pair<Color, Color>, Color> {\n  val result = mutableMapOf<Pair<Color, Color>, Color>()\n  for (a in Color.values()) {\n    for (b in Color.values()) {\n      result[a to b] = colorblend.blend(a, b)\n    }\n  }\n  return result\n}\n\nfun blend(a: Color, b: Color) = blender[a to b]\n\nfun main(args: Array<String>) {\n  blend(red, yellow) eq orange\n  blend(red, red) eq red\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n  blend(purple, brown) eq brown\n}",
           "placeholders" : [ ]
         }
       },
@@ -2377,9 +2705,14 @@
       "name" : "Examples",
       "stepic_id" : 0,
       "task_files" : {
-        "WhenExpressionAndDataClasses.kt" : {
-          "name" : "WhenExpressionAndDataClasses.kt",
-          "text" : "package whenexpressionsdata\n\nimport com.atomickotlin.test.eq\n\ndata class Passenger(\n    val first: String, val last: String)\n\ndata class Train(\n    val travelers: List<Passenger>,\n    val line: String)\n\ndata class Bus(\n    val passengers: List<Passenger>,\n    val capacity: Int)\n\nfun travel(transport: Any): String =\n    when (transport) {\n      is Train ->\n        \"Tratarget line ${transport.line} ${transport.travelers}\"\n      is Bus ->\n        \"Bus size ${transport.capacity} ${transport.passengers}\"\n      is Passenger -> \"Walking along\"\n      else -> \"$transport eq target limbo!\"\n    }\n\n\nfun main(args: Array<String>) {\n  val travelers = listOf(\n      Passenger(\"Harvey\", \"Rabbit\"),\n      Passenger(\"Dorothy\", \"Gale\"))\n\n  val trip = listOf(\n      Train(travelers, \"Reading\"),\n      Bus(travelers, 100))\n\n  travel(trip[0]) eq \"Tratarget line Reading \" +\n      \"[Passenger(first=Harvey, last=Rabbit), \" +\n      \"Passenger(first=Dorothy, last=Gale)]\"\n  travel(trip[1]) eq \"Bus size 100 \" +\n      \"[Passenger(first=Harvey, last=Rabbit), \" +\n      \"Passenger(first=Dorothy, last=Gale)]\"\n}",
+        "RegularClasses.kt" : {
+          "name" : "RegularClasses.kt",
+          "text" : "package regularClasses\n\nimport com.atomickotlin.test.eq\n\nopen class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n      else -> \"$transport is in limbo!\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
+          "placeholders" : [ ]
+        },
+        "SealedClasses.kt" : {
+          "name" : "SealedClasses.kt",
+          "text" : "package sealedClasses\n\nimport com.atomickotlin.test.eq\n\nsealed class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2465,8 +2798,14 @@
     "task_list" : [ {
       "name" : "PyCharm additional materials",
       "stepic_id" : 0,
-      "task_files" : { },
-      "test_files" : { "util/src/AtomicKotlin.kt" : "package com.atomickotlin.test\n\nimport org.junit.Assert\nimport java.util.*\nimport kotlin.test.assertEquals\nimport kotlin.test.assertTrue\n\n// Log everything to \"_AtomicTestErrors.txt\" instead?\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  assertEquals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  assertEquals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  Assert.assertEquals(this, value, 0.0000001)\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  assertTrue(Arrays.equals(this, value))\n}" },
+      "task_files" : {
+        "AtomicKotlin.kt" : {
+          "name" : "AtomicKotlin.kt",
+          "text" : "package com.atomickotlin.test\n\nimport org.junit.Assert\nimport java.util.*\nimport kotlin.test.assertEquals\nimport kotlin.test.assertTrue\n\n// Log everything to \"_AtomicTestErrors.txt\" instead?\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  assertEquals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  assertEquals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  Assert.assertEquals(this, value, 0.0000001)\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  assertTrue(Arrays.equals(this, value))\n}",
+          "placeholders" : [ ]
+        }
+      },
+      "test_files" : { },
       "task_texts" : { },
       "task_type" : "pycharm"
     } ]

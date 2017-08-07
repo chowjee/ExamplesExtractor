@@ -26,10 +26,19 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
         val taskName = "Exercise " + exerciseDir.name.substringAfter("Exercise")
 
         val taskFiles = mapOf("Task.kt" to generateTaskFile(exerciseDir.subFile("Solution.kt")))
-        val testsMap = mapOf("Tests.kt" to exerciseDir.subFile("Test.kt").readText().removePackageDeclarations())
+
+        val outputFile = exerciseDir.subFile("output.txt")
+        val testingOutput = outputFile.exists()
+        val testsMap = if (testingOutput) {
+            mapOf("output.txt" to outputFile.readText())
+        }
+        else {
+            mapOf("Tests.kt" to exerciseDir.subFile("Test.kt").readText().removePackageDeclarations())
+        }
         val tasksMap = mapOf("task" to exerciseDir.subFile("task.md").readText())
 
-        GeneralTask(taskName, 0, taskFiles, testsMap, tasksMap)
+        GeneralTask(taskName, 0, taskFiles, testsMap, tasksMap,
+                if (testingOutput) "output" else "pycharm")
     }
     return Lesson(0, atomInfo.title.removeCodeFormatting(),
             arrayListOf<Task>() + generateTaskForExamples(atomInfo) + taskForExercises)
@@ -46,7 +55,7 @@ fun getLessonWithUtilFunctions(): Lesson {
 fun generateTaskForExamples(atomInfo: AtomInfo): Task {
     val taskFiles = atomInfo.examplesMap.map {
         (exampleName, exampleFile) ->
-        TaskFile(exampleName, exampleFile.readText(), listOf())
+        TaskFile(exampleName, exampleFile.readText().trimEnd(), listOf())
     }.associateBy {
         it.name
     }
@@ -55,7 +64,7 @@ fun generateTaskForExamples(atomInfo: AtomInfo): Task {
 }
 
 fun generateTaskFile(solutionFile: File): TaskFile {
-    val solutionText = solutionFile.readText().uncommentTags().removePackageDeclarations()
+    val solutionText = solutionFile.readText().uncommentTags().removePackageDeclarations().trimEnd()
     val taskText = solutionText.removeSolutions().removeTaskWindowTags()
     val solutions = solutionText.getSolutionsInTaskWindows()
     if (solutions.isEmpty()) {

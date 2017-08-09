@@ -1,3 +1,3 @@
 package classesAndObjects1
 
-fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/
+fun isPalindrome(s: String): Boolean = /*<taskWindow>*/s.reversed() == s/*</taskWindow>*/

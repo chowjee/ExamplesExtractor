@@ -98,8 +98,8 @@ class ExampleBuilder {
             NAME -> {
                 if (line.startsWith("// ")) {
                     val path = line.removePrefix("// ")
-                    packageName = path.substringBefore("/")
-                    name = path.substringAfter("/")
+                    packageName = path.substringBeforeLast("/").replace("/", ".")
+                    name = path.substringAfterLast("/")
                     status = EXAMPLE
                 } else {
                     status = SNIPPET

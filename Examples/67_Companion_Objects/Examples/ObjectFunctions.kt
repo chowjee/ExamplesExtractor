@@ -9,7 +9,6 @@ class X {
       n += 1
       return n
     }
-
     fun count() = increment()
   }
 }

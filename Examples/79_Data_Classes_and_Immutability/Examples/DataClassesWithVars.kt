@@ -3,8 +3,8 @@ package dataclasses3
 import com.atomickotlin.test.eq
 
 data class Contact(
-    var name: String,
-    var number: String
+  var name: String,
+  var number: String
 )
 
 fun main(args: Array<String>) {

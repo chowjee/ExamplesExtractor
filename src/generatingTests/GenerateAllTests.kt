@@ -37,7 +37,7 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
     val namesFrequency = mutableMapOf<String, Int>()
     val tests = mutableListOf<String>()
     for ((code, output, isExercise) in files) {
-        if (!code.readText().contains("fun separateExamplesProject.main")) continue
+        if (!code.readText().contains("fun main")) continue
 
         val name = code.nameWithoutExtension
 
@@ -64,7 +64,7 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
         tests += """
             @Test
             public void $exampleName() {
-                $testFunction("${output.path}", $packageName.$classForFileName::separateExamplesProject.main);
+                $testFunction("${output.path}", $packageName.$classForFileName::main);
             }""".replaceIndent("    ")
     }
 

@@ -127,12 +127,6 @@ fun extractCodeExamples(atom: File): AtomExamples? {
     }
     if (result.isEmpty()) return null
 
-    // scala check
-    val scalaKeywords = setOf("def", "trait", "new")
-    if (result.any { example ->
-        scalaKeywords.any { keyword -> example.text.contains("$keyword ") }
-    }) return null
-
     val (examples, snippets) = result.partition { it.name != "" }
     return AtomExamples(atom.nameWithoutExtension, examples, snippets)
 }

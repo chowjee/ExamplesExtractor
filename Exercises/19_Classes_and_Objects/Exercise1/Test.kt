@@ -1,9 +1,9 @@
-package exercise1
+package classesAndObjects1
 
 import org.junit.Assert
 import org.junit.Test
 
-class TestExercise1 {
+class TestClassesAndObjects1 {
     @Test fun test() {
     }
 }

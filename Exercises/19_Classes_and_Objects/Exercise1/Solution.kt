@@ -1,3 +1,3 @@
-package exercise1
+package classesAndObjects1
 
 fun _funName_() = /*<taskWindow>*/0/*</taskWindow>*/

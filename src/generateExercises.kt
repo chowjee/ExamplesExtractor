@@ -1,6 +1,7 @@
 package examplesExtractor
 
 import atoms.getExerciseFiles
+import atoms.toPackageName
 import manifestUtil.manifestForExercise
 import manifestUtil.manifestForExercisesFolder
 import manifestUtil.manifestForTopLevelExercisesFolder
@@ -8,6 +9,7 @@ import settings.Settings
 import util.manifest
 import util.subDir
 import util.subFile
+import util.upperCaseFirstLetter
 import java.io.File
 
 fun generateExercises(atoms: List<IntRange>) {
@@ -17,7 +19,7 @@ fun generateExercises(atoms: List<IntRange>) {
     generateDirStructure(parentDir, atoms)
 
     for (chapter in getExerciseFiles(atoms)) {
-        generateTasksForChapter(chapter, parentDir)
+        generateTasksForAtom(chapter, parentDir)
     }
 }
 
@@ -37,7 +39,7 @@ fun generateDirStructure(exercisesDir: File, atoms: List<IntRange>) {
     manifest.writeText(manifestForTopLevelExercisesFolder(chapters.map { it.nameWithoutExtension }))
 }
 
-fun generateTasksForChapter(chapterFile: File, parentDir: File) {
+fun generateTasksForAtom(chapterFile: File, parentDir: File) {
     if (!chapterFile.exists()) {
         println("File ${chapterFile.name} not found")
         return
@@ -58,9 +60,10 @@ fun generateTasksForChapter(chapterFile: File, parentDir: File) {
             if (newFile.exists()) return
 
             val oldFile = File("task/$file")
+            val packageName = "${task.atomName.toPackageName()}${task.index}"
             val newText = oldFile.readText()
-                    .replace("package _name_", "package ${task.name.decapitalize()}")
-                    .replace("Test_name_", "Test${task.name}")
+                    .replace("package _name_", "package $packageName")
+                    .replace("Test_name_", "Test${packageName.upperCaseFirstLetter()}")
                     .transform()
 
             newFile.writeText(newText)

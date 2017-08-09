@@ -53,5 +53,5 @@ fun extractTasksFromChapter(chapter: File): List<Task> {
     val tasks = divideIntoTasks(exercisesText)
 
     val chapterName = chapter.name.substringAfter("_").substringBefore(".md").replace("_", "")
-    return tasks.mapIndexed { index, s -> Task(chapterName, index + 1, s) }
+    return tasks.mapIndexed { index, s -> Task(chapterName, chapter.name,index + 1, s) }
 }

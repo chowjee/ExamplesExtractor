@@ -4,16 +4,16 @@ import java.io.File
 
 val LINE_SEPARATOR = System.getProperty("line.separator")
 
-data class Task(val chapter: String, val index: Int, val text: String) {
+data class Task(val atomTitle: String, val atomName: String, val index: Int, val text: String) {
     val name get() = "Exercise" + index
-    val heading get() = "## $chapter (#$index)"
+    val heading get() = "## $atomTitle (#$index)"
 }
 
-fun extractTasks(chapter: File): List<Task> {
-    val tasks = divideIntoTasks(chapter.readText())
-    val chapterName = chapter.readLines().first()
+fun extractTasks(atom: File): List<Task> {
+    val tasks = divideIntoTasks(atom.readText())
+    val atomTitle = atom.readLines().first()
     return tasks.mapIndexed { index, exercise ->
-        Task(chapterName, index + 1, exercise)
+        Task(atomTitle, atom.nameWithoutExtension,index + 1, exercise)
     }
 }
 

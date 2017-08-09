@@ -1,6 +1,6 @@
 package examplesExtractor
 
-import atoms.getAtomFiles
+import atoms.Atoms
 import examplesExtractor.ExampleBuilder.Status.*
 import manifestUtil.manifestForExamples
 import manifestUtil.manifestForExamplesFolder
@@ -12,7 +12,7 @@ import util.subFile
 import java.io.File
 
 fun generateExamples() {
-    val allExamples: List<AtomExamples> = getAtomFiles().mapNotNull { extractCodeExamples(it) }
+    val allExamples: List<AtomExamples> = Atoms().atomInfoList.mapNotNull { extractCodeExamples(it.markdownFile) }
 
     val examplesDir = File(Settings.examplesDir)
     if (examplesDir.exists()) {

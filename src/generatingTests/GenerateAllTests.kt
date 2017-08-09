@@ -1,10 +1,9 @@
 package generatingTests
 
-import atoms.getAtomFiles
-import atoms.getAuxiliaryFilesForExercises
-import atoms.getExamplesForAtom
-import atoms.getExerciseFiles
+import atoms.Atoms
+import settings.Settings
 import util.lowerCaseFirstLetter
+import util.subFile
 import util.upperCaseFirstLetter
 import java.io.File
 
@@ -13,7 +12,7 @@ fun main(args: Array<String>) {
 }
 
 fun generateExampleTests() {
-    val sourceFiles = getAllExamples()
+    val sourceFiles = Atoms().atomInfoList.flatMap { it.examplesMap.values }
     val auxiliaryFiles = sourceFiles.map { AuxiliaryFiles(it, it, false) } +
             getAuxiliaryFilesForExercises()
     val tests = generateTests(auxiliaryFiles)
@@ -22,9 +21,16 @@ fun generateExampleTests() {
 
 data class AuxiliaryFiles(val code: File, val output: File, val isExercise: Boolean)
 
-fun getAllExamples(): List<File> {
-    val atomFiles = getAtomFiles()
-    return atomFiles.flatMap { getExamplesForAtom(it) }
+fun getAuxiliaryFilesForExercises(): List<AuxiliaryFiles> {
+    val allExercises = File(Settings.exercisesDir).listFiles().filter { it.isDirectory }.flatMap {
+        it.listFiles().filter { it.isDirectory }
+    }
+    val outputExercises = allExercises.filter {
+        it.subFile("output.txt").exists()
+    }
+    return outputExercises.map {
+        AuxiliaryFiles(it.subFile("Solution.kt"), it.subFile("output.txt"), true)
+    }
 }
 
 fun generateTests(files: List<AuxiliaryFiles>): String {

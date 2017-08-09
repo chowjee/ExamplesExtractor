@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     val atomInfoList = buildAtomInfoList()
     for (atomInfo in atomInfoList) {
         var atomText = atomInfo.markdownFile.readText()
-        val examples = getExamplesForAtom(atomInfo.markdownFile)
+        val examples = atomInfo.examplesMap.values
         val packageName = atomInfo.name.toPackageName()
         for (example in examples) {
             atomText = replaceSample(atomText, packageName, example)

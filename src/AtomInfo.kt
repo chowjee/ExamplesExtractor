@@ -15,6 +15,14 @@ class Atoms {
     fun getAtomByName(name: String) =
             associateByName[name.toAtomName()] ?:
                     associateByName[name.toAtomName().withoutIndex]
+
+    fun getAtomsByRanges(ranges: List<IntRange>) =
+            atomInfoList.filter {
+                atom ->
+                ranges.any { range ->
+                    atom.index in range
+                }
+            }
 }
 
 typealias AtomName = String
@@ -36,6 +44,7 @@ fun String.toAtomName(): AtomName = if (endsWith(".md")) substringBeforeLast("."
 data class AtomInfo(
         val name: AtomName,
         val title: String,
+        val index: Int,
         val markdownFile: File,
         val exercisesFile: File?,
         val examplesMap: Map<String, File>,
@@ -51,6 +60,7 @@ fun buildAtomInfoList(): List<AtomInfo> {
 
     return atomsDir.listFiles().map {
         val name = it.nameWithoutExtension
+        val index = it.name.substringBefore("_").toInt()
         val atomTitle = it.readLines().first()
         val atomFile = atomsByFileName.getValue(name)
         val exercisesFile = exercisesByFileName[name]
@@ -66,6 +76,6 @@ fun buildAtomInfoList(): List<AtomInfo> {
             emptyMap()
         }
 
-        AtomInfo(name, atomTitle, atomFile, exercisesFile, exampleMap, exerciseMap)
+        AtomInfo(name, atomTitle, index, atomFile, exercisesFile, exampleMap, exerciseMap)
     }
 }

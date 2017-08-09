@@ -1,6 +1,7 @@
 package examplesExtractor
 
-import atoms.getExerciseFiles
+import atoms.AtomInfo
+import atoms.Atoms
 import atoms.toPackageName
 import manifestUtil.manifestForExercise
 import manifestUtil.manifestForExercisesFolder
@@ -12,23 +13,25 @@ import util.subFile
 import util.upperCaseFirstLetter
 import java.io.File
 
-fun generateExercises(atoms: List<IntRange>) {
+fun generateExercises(ranges: List<IntRange>) {
     val parentDir = File(Settings.exercisesDir)
     parentDir.mkdir()
 
-    generateDirStructure(parentDir, atoms)
+    val atomsByRanges = Atoms().getAtomsByRanges(ranges)
 
-    for (chapter in getExerciseFiles(atoms)) {
+    generateDirStructure(parentDir, atomsByRanges)
+
+    for (chapter in atomsByRanges) {
         generateTasksForAtom(chapter, parentDir)
     }
 }
 
-fun generateDirStructure(exercisesDir: File, atoms: List<IntRange>) {
-    val chapters = getExerciseFiles(atoms)
-    for (chapter in chapters) {
-        val chapterDir = exercisesDir.subDir(chapter.nameWithoutExtension)
+fun generateDirStructure(exercisesDir: File, atomInfoList: List<AtomInfo>) {
+    for (atomInfo in atomInfoList) {
+        val exercisesFile = atomInfo.exercisesFile!!
+        val chapterDir = exercisesDir.subDir(exercisesFile.nameWithoutExtension)
 
-        val tasks = extractTasks(chapter)
+        val tasks = extractTasks(exercisesFile)
         for (index in tasks.indices) {
             chapterDir.subDir("Exercise" + (index + 1))
         }
@@ -36,18 +39,19 @@ fun generateDirStructure(exercisesDir: File, atoms: List<IntRange>) {
         manifest.writeText(manifestForExercisesFolder(1..tasks.size))
     }
     val manifest = exercisesDir.manifest()
-    manifest.writeText(manifestForTopLevelExercisesFolder(chapters.map { it.nameWithoutExtension }))
+    manifest.writeText(manifestForTopLevelExercisesFolder(atomInfoList.map { it.exercisesFile!!.nameWithoutExtension }))
 }
 
-fun generateTasksForAtom(chapterFile: File, parentDir: File) {
-    if (!chapterFile.exists()) {
-        println("File ${chapterFile.name} not found")
+fun generateTasksForAtom(atomInfo: AtomInfo, parentDir: File) {
+    val exercisesFile = atomInfo.exercisesFile!!
+    if (!exercisesFile.exists()) {
+        println("File ${exercisesFile.name} not found")
         return
     }
 
-    val tasks = extractTasks(chapterFile)
+    val tasks = extractTasks(exercisesFile)
 
-    val targetDir = parentDir.subDir(chapterFile.nameWithoutExtension)
+    val targetDir = parentDir.subDir(exercisesFile.nameWithoutExtension)
 
     for (task in tasks) {
         val taskDir = targetDir.subDir(task.name)

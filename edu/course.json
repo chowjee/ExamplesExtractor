@@ -261,9 +261,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun getSquare(i: Int) = TODO()",
+          "text" : "\nfun getSquare(i: Int): Int = TODO()",
           "placeholders" : [ {
-            "offset" : 25,
+            "offset" : 30,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -290,9 +290,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun getSum(a: Double, b: Double, c: Double) = TODO()",
+          "text" : "\nfun getSum(a: Double, b: Double, c: Double): Double = TODO()",
           "placeholders" : [ {
-            "offset" : 47,
+            "offset" : 55,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -319,9 +319,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun duplicate(s: String) = TODO()",
+          "text" : "\nfun duplicate(s: String): String = TODO()",
           "placeholders" : [ {
-            "offset" : 28,
+            "offset" : 36,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -401,9 +401,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun checkSign(number: Int) = TODO()",
+          "text" : "\nfun checkSign(number: Int): String = TODO()",
           "placeholders" : [ {
-            "offset" : 30,
+            "offset" : 38,
             "length" : 6,
             "subtask_infos" : {
               "0" : {
@@ -430,9 +430,9 @@
       "task_files" : {
         "Task.kt" : {
           "name" : "Task.kt",
-          "text" : "\nfun findMax(first: Int, second: Int) = TODO()",
+          "text" : "\nfun findMax(first: Int, second: Int): Int = TODO()",
           "placeholders" : [ {
-            "offset" : 40,
+            "offset" : 45,
             "length" : 6,
             "subtask_infos" : {
               "0" : {

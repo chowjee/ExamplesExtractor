@@ -10,10 +10,6 @@ import util.subDir
 import util.subFile
 import java.io.File
 
-fun main(args: Array<String>) {
-    generateExercises(listOf(6..17))
-}
-
 fun generateExercises(atoms: List<IntRange>) {
     val parentDir = File(Settings.exercisesDir)
     parentDir.mkdir()
@@ -87,13 +83,14 @@ fun generateTasksForChapter(chapterFile: File, parentDir: File) {
 }
 
 fun String.extractFunctionNameIfMentioned(): String? {
-    val markerText = "Create a function `"
-    val createIndex = indexOf(markerText)
-    if (createIndex == -1) return null
-
-    val startIndex = createIndex + markerText.length
-    val endIndex = indexOf("`", startIndex)
-    if (endIndex == -1) return null
-
-    return substring(startIndex, endIndex)
+    val markerTexts = listOf("Create a function `", "Implement a function `")
+    for (markerText in markerTexts) {
+        val createIndex = indexOf(markerText)
+        val startIndex = createIndex + markerText.length
+        val endIndex = indexOf("`", startIndex)
+        if (createIndex != -1 && endIndex != -1) {
+            return substring(startIndex, endIndex)
+        }
+    }
+    return null
 }

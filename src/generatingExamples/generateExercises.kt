@@ -1,12 +1,9 @@
-package examplesExtractor
+package generatingExamples
 
-import atoms.AtomInfo
-import atoms.Atoms
-import atoms.toPackageName
-import manifestUtil.manifestForExercise
-import manifestUtil.manifestForExercisesFolder
-import manifestUtil.manifestForTopLevelExercisesFolder
-import settings.Settings
+import atomInfo.AtomInfo
+import atomInfo.Atoms
+import atomInfo.toPackageName
+import util.Settings
 import util.manifest
 import util.subDir
 import util.subFile

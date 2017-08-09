@@ -1,9 +1,9 @@
 package reordering
 
-import settings.Settings
+import util.Settings
 import java.io.File
 import atoms.AtomName
-import atoms.withoutIndex
+import atomInfo.withoutIndex
 
 fun main(args: Array<String>) {
     reorderAtomsInStatusFile()

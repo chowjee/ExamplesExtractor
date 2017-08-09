@@ -1,6 +1,6 @@
 package reordering
 
-import settings.Settings
+import util.Settings
 import util.subFile
 import java.io.File
 

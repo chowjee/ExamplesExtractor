@@ -1,7 +1,7 @@
 package generatingTests
 
-import atoms.Atoms
-import settings.Settings
+import atomInfo.Atoms
+import util.Settings
 import util.lowerCaseFirstLetter
 import util.subFile
 import util.upperCaseFirstLetter
@@ -37,7 +37,7 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
     val namesFrequency = mutableMapOf<String, Int>()
     val tests = mutableListOf<String>()
     for ((code, output, isExercise) in files) {
-        if (!code.readText().contains("fun main")) continue
+        if (!code.readText().contains("fun separateExamplesProject.main")) continue
 
         val name = code.nameWithoutExtension
 
@@ -64,7 +64,7 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
         tests += """
             @Test
             public void $exampleName() {
-                $testFunction("${output.path}", $packageName.$classForFileName::main);
+                $testFunction("${output.path}", $packageName.$classForFileName::separateExamplesProject.main);
             }""".replaceIndent("    ")
     }
 

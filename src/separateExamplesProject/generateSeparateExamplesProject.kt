@@ -1,5 +1,7 @@
-import atoms.buildAtomInfoList
-import atoms.toPackageName
+package separateExamplesProject
+
+import atomInfo.buildAtomInfoList
+import atomInfo.toPackageName
 import java.io.File
 
 fun main(args: Array<String>) {

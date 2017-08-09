@@ -1,4 +1,4 @@
-package examplesExtractor
+package generatingExamples
 
 import java.io.File
 
@@ -13,7 +13,7 @@ fun extractTasks(atom: File): List<Task> {
     val tasks = divideIntoTasks(atom.readText())
     val atomTitle = atom.readLines().first()
     return tasks.mapIndexed { index, exercise ->
-        Task(atomTitle, atom.nameWithoutExtension,index + 1, exercise)
+        Task(atomTitle, atom.nameWithoutExtension, index + 1, exercise)
     }
 }
 

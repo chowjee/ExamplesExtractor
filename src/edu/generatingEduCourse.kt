@@ -1,7 +1,7 @@
 package edu
 
-import atoms.AtomInfo
-import atoms.Atoms
+import atomInfo.AtomInfo
+import atomInfo.Atoms
 import util.subFile
 import java.io.File
 

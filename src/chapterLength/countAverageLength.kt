@@ -1,6 +1,6 @@
 package chapterLength
 
-import atoms.Atoms
+import atomInfo.Atoms
 
 fun main(args: Array<String>) {
   val atomSizes = Atoms().atomInfoList.associate { it.name.substring(0, 2).toInt() to it.markdownFile.readLines().size }

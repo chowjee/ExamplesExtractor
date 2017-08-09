@@ -1,4 +1,4 @@
-package examplesExtractor
+package generatingExamples
 
 import generatingTests.generateExampleTests
 

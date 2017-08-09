@@ -1,10 +1,8 @@
-package examplesExtractor
+package generatingExamples
 
-import atoms.Atoms
+import atomInfo.Atoms
 import examplesExtractor.ExampleBuilder.Status.*
-import manifestUtil.manifestForExamples
-import manifestUtil.manifestForExamplesFolder
-import settings.Settings
+import util.Settings
 import util.addBlankLine
 import util.manifest
 import util.subDir
@@ -38,7 +36,7 @@ fun generateExamples() {
         manifestFile.writeText(manifestForExamples("Examples", atomExamples.examples.map { it.name }))
     }
     val topLevelManifest = examplesDir.manifest()
-    topLevelManifest.writeText(manifestUtil.topLevelManifest(
+    topLevelManifest.writeText(topLevelManifest(
             allExamples.filter { !it.hasOnlySnippets() }.map { it.name }))
 }
 

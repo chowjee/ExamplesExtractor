@@ -1,8 +1,7 @@
-package settings
+package util
 
 import java.io.FileInputStream
 import java.util.*
-import kotlin.reflect.KProperty
 
 object Settings {
     private val propertiesFile = "settings.properties"

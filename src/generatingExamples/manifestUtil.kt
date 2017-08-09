@@ -1,4 +1,4 @@
-package manifestUtil
+package generatingExamples
 
 fun manifestForExercisesFolder(range: IntRange) =
         """{

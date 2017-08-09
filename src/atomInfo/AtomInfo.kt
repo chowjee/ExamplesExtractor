@@ -1,7 +1,7 @@
-package atoms
+package atomInfo
 
-import examplesExtractor.extractCodeExamples
-import settings.Settings
+import generatingExamples.extractCodeExamples
+import util.Settings
 import util.lowerCaseFirstLetter
 import util.subFile
 import util.upperCaseFirstLetter

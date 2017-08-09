@@ -1,8 +1,8 @@
 package reordering
 
+import atomInfo.AtomName
 import util.Settings
 import java.io.File
-import atoms.AtomName
 import atomInfo.withoutIndex
 
 fun main(args: Array<String>) {

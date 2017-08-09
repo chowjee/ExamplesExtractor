@@ -1,7 +1,7 @@
 package generatingExamples
 
 import atomInfo.Atoms
-import examplesExtractor.ExampleBuilder.Status.*
+import generatingExamples.ExampleBuilder.Status.*
 import util.Settings
 import util.addBlankLine
 import util.manifest

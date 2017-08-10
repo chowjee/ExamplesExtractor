@@ -1,0 +1,28 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "MyClass.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "DefaultAccessors.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "LoggingChange.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "Hamsters.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "PropertyInInterface.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

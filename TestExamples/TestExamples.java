@@ -529,7 +529,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testWhenExpressionAndSmartCasts() {
-        testExample("Examples/34_when_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenExpressionsAndSmartCasts.WhenExpressionAndSmartCastsKt::main);
+        testExample("Examples/34_when_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenexpressionscasts.WhenExpressionAndSmartCastsKt::main);
     }
 
     @Test
@@ -599,7 +599,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testDataClasses() {
-        testExample("Examples/40_Data_Classes/Examples/DataClasses.kt", dataClasses.DataClassesKt::main);
+        testExample("Examples/40_Data_Classes/Examples/DataClasses.kt", dataclasses.DataClassesKt::main);
     }
 
     @Test
@@ -849,7 +849,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testZipMap() {
-        testExample("Examples/53_Combining_Lists_with_zip/Examples/ZipMap.kt", combiningListsWithZip.ZipMapKt::main);
+        testExample("Examples/53_Combining_Lists_with_zip/Examples/ZipMap.kt", combininglistswithzip.ZipMapKt::main);
     }
 
     @Test
@@ -884,7 +884,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testGreatApe2() {
-        testExample("Examples/56_Base_Class_Initialization/Examples/GreatApe2.kt", baseClassInitialization.GreatApe2Kt::main);
+        testExample("Examples/56_Base_Class_Initialization/Examples/GreatApe2.kt", baseclassinit.GreatApe2Kt::main);
     }
 
     @Test
@@ -894,7 +894,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testCallingOtherConstructors() {
-        testExample("Examples/56_Base_Class_Initialization/Examples/CallingOtherConstructors.kt", baseClassInitialization.CallingOtherConstructorsKt::main);
+        testExample("Examples/56_Base_Class_Initialization/Examples/CallingOtherConstructors.kt", baseclassinit.CallingOtherConstructorsKt::main);
     }
 
     @Test
@@ -914,7 +914,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testInterfaceMemberImplementations() {
-        testExample("Examples/59_Interfaces/Examples/InterfaceMemberImplementations.kt", interfaces.InterfaceMemberImplementationsKt::main);
+        testExample("Examples/59_Interfaces/Examples/InterfaceMemberImplementations.kt", interfaces3.InterfaceMemberImplementationsKt::main);
     }
 
     @Test
@@ -925,6 +925,31 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testInterfaceCollision() {
         testExample("Examples/59_Interfaces/Examples/InterfaceCollision.kt", interfaces.InterfaceCollisionKt::main);
+    }
+
+    @Test
+    public void testMyClass() {
+        testExample("Examples/60_Property_Accessors/Examples/MyClass.kt", propertyAccessors.MyClassKt::main);
+    }
+
+    @Test
+    public void testDefaultAccessors() {
+        testExample("Examples/60_Property_Accessors/Examples/DefaultAccessors.kt", propertyAccessors.DefaultAccessorsKt::main);
+    }
+
+    @Test
+    public void testLoggingChange() {
+        testExample("Examples/60_Property_Accessors/Examples/LoggingChange.kt", propertyAccessors.LoggingChangeKt::main);
+    }
+
+    @Test
+    public void testHamsters() {
+        testExample("Examples/60_Property_Accessors/Examples/Hamsters.kt", propertyAccessors.HamstersKt::main);
+    }
+
+    @Test
+    public void testPropertyInInterface() {
+        testExample("Examples/60_Property_Accessors/Examples/PropertyInInterface.kt", propertyAccessors.PropertyInInterfaceKt::main);
     }
 
     @Test

@@ -1,5 +1,4 @@
-package baseClassInitialization
-
+package baseclassinit
 import com.atomickotlin.test.eq
 
 open class GreatApe(

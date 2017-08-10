@@ -1,5 +1,4 @@
 package enumerations
-
 import com.atomickotlin.test.eq
 
 enum class Level {

@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
   // val rabbit = Animal("Rabbit") // Class is private
   // recordAnimal(rabbit) // Function is private
   // counter++  // Property is private
-  
+
   recordAnimals()
   recordAnimalsCount()
 }

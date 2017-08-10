@@ -1,5 +1,4 @@
 package enumerations
-
 import com.atomickotlin.test.eq
 import enumerations.Level.*    // [1]
 
@@ -21,5 +20,9 @@ fun main(args: Array<String>) {
   checkLevel(Overflow) eq ">>> Overflow!"
 
   Level.values().map { "${it.ordinal} - $it" } eq
-      listOf("0 - Overflow", "1 - High", "2 - Medium", "3 - Low", "4 - Empty")
+    listOf("0 - Overflow",
+           "1 - High",
+           "2 - Medium",
+           "3 - Low",
+           "4 - Empty")
 }

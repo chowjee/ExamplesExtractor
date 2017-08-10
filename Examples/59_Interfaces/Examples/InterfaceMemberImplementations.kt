@@ -1,5 +1,4 @@
-package interfaces
-
+package interfaces3
 import com.atomickotlin.test.eq
 
 interface Animal {

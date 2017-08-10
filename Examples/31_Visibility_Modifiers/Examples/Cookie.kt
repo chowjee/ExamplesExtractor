@@ -8,7 +8,7 @@ class Cookie {
   public fun bite() {      // [2]
     println("bite")
   }
-  
+
   fun eatUp() {            // [3]
     crumble()              // [4]
     bite()

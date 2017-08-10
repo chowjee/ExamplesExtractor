@@ -1,5 +1,4 @@
 package inheritance
-
 import com.atomickotlin.test.eq
 
 open class GreatApe {

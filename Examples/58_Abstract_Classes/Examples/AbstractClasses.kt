@@ -1,14 +1,10 @@
 package abstractClasses
-
 import com.atomickotlin.test.eq
 
 abstract class Animal {
-
   fun templateFunction() = "The ${animal()} goes ${sound()}"
-
   // Abstract functions (no function body):
   abstract fun animal(): String
-
   abstract fun sound(): String
 }
 
@@ -26,7 +22,7 @@ class Cow : Animal() {
 fun main(args: Array<String>) {
   // Error -- Cannot create
   // an instance of an abstract class:
-//  val a = Animal()
+  // val a = Animal()
 
   Duck().templateFunction() eq
       "The Duck goes Quack"

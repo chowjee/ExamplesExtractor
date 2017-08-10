@@ -1,5 +1,4 @@
-package combiningListsWithZip
-
+package combininglistswithzip
 import com.atomickotlin.test.eq
 
 data class Person(val name: String, val ID: Int)

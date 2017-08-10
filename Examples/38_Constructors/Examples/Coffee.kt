@@ -7,13 +7,10 @@ class Coffee(
     val decaf: Boolean = false,
     val milk: Boolean = false,
     val toGo: Boolean = false,
-    val syrup: String = ""
-) {
+    val syrup: String = "") {
   var result = ""
-
   init {
     println(listOf(shots, decaf, milk, toGo, syrup))
-
     getCup()
     pourShots()
     addMilk()

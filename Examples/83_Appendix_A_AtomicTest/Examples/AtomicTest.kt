@@ -32,3 +32,8 @@ infix fun <T> Array<T>.eq(value: Array<T>) {
   println(this)
   assertTrue(Arrays.equals(this, value))
 }
+
+infix fun <T> T.neq(value: T) {
+  println(this)
+  assertTrue(this != value)
+}

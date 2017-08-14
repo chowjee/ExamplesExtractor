@@ -11,7 +11,7 @@ abstract class AbstractTestExamples {
             val output = extractOutput(exampleCode).trimLines()
             testOutput(output, main, trimLines = true)
         } else {
-            main.accept(arrayOf())
+            testNoErrors(main)
         }
     }
 
@@ -24,14 +24,24 @@ abstract class AbstractTestExamples {
             exampleCode.substringAfter("/* Output:").substringBefore("*/")
 
     private fun testOutput(output: String, main: Consumer<Array<String>>, trimLines: Boolean) {
-        val out = ByteArrayOutputStream()
-        System.setOut(PrintStream(out))
-        main.accept(arrayOf())
-        val result = out.toString().let {
+        val result = runAndGetOutput(main).let {
             if (trimLines) it.trimLines() else it
         }
         Assert.assertEquals(output, result)
     }
 
+    private fun runAndGetOutput(main: Consumer<Array<String>>): String {
+        val out = ByteArrayOutputStream()
+        System.setOut(PrintStream(out))
+        main.accept(arrayOf())
+        val toString = out.toString()
+        return toString
+    }
+
     private fun String.trimLines() = trim().lines().map { it.trim() }.joinToString("\n")
+
+    private fun testNoErrors(main: Consumer<Array<String>>) {
+        val output = runAndGetOutput(main)
+        Assert.assertFalse("Program completed with errors:\n$output", output.contains("Error"))
+    }
 }

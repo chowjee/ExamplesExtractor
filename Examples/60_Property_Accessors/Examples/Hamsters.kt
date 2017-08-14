@@ -1,5 +1,4 @@
-package propertyAccessors
-
+package propertyaccessors
 import com.atomickotlin.test.eq
 import java.util.*
 
@@ -7,11 +6,11 @@ class Hamster(val name: String)
 
 class Cage(private val maxCapacity: Int) {
   private val hamsters = mutableListOf<Hamster>()
-  
+
   val capacity: Int
     get() = maxCapacity - hamsters.size
-    
-  fun isFull(): Boolean = 
+
+  fun isFull(): Boolean =
     hamsters.size == maxCapacity
 
   fun putHamster(hamster: Hamster): Boolean =

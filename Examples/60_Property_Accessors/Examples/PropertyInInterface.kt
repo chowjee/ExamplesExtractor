@@ -1,11 +1,10 @@
-package propertyAccessors
-
+package propertyaccessors
 import com.atomickotlin.test.eq
 
 interface MyInterface {
   val number: Int                                 // [1]
-  
-  val isPositive: Boolean          
+
+  val isPositive: Boolean
     get() = number > 0                            // [2]
 }
 
@@ -19,7 +18,7 @@ class D : MyInterface {
 fun main(args: Array<String>) {
   val list: List<MyInterface> = listOf(C(10), C(-10), D())
 
-  var sum = 0  
+  var sum = 0
   for (i in list) {                 // [5]
     if (i.isPositive) {
         sum += i.number                          // [5]

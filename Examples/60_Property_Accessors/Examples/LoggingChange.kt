@@ -2,7 +2,7 @@ package propertyAccessors
 
 class LoggingChange {
   var property: Int = 0
-    set(value) {           
+    set(value) {
       println("Value has changed from $field to $value")
       field = value
     }

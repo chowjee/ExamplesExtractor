@@ -54,6 +54,7 @@
     "59_Interfaces",
     "60_Property_Accessors",
     "61_Composition",
+    "62_Class_Delegation",
     "63_Enumerations",
     "64_More_About_when_Expressions",
     "65_Sealed_Classes",

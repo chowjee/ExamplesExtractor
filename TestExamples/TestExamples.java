@@ -213,8 +213,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCharRange() {
-        testExample("Examples/15_for_and_Ranges/Examples/CharRange.kt", forAndRanges.CharRangeKt::main);
+    public void testForWithCharRange() {
+        testExample("Examples/15_for_and_Ranges/Examples/ForWithCharRange.kt", forAndRanges.ForWithCharRangeKt::main);
     }
 
     @Test
@@ -238,8 +238,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRangeMembership() {
-        testExample("Examples/16_More_About_Ranges/Examples/RangeMembership.kt", moreAboutRanges.RangeMembershipKt::main);
+    public void testMembershipInRange() {
+        testExample("Examples/16_More_About_Ranges/Examples/MembershipInRange.kt", moreAboutRanges.MembershipInRangeKt::main);
     }
 
     @Test
@@ -258,7 +258,7 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testCharRange1() {
+    public void testCharRange() {
         testExample("Examples/16_More_About_Ranges/Examples/CharRange.kt", moreAboutRanges.CharRangeKt::main);
     }
 
@@ -308,13 +308,13 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testStringTemplates1() {
-        testExample("Examples/18_Summary_1/Examples/StringTemplates.kt", summary1.StringTemplatesKt::main);
+    public void testStrTemplates() {
+        testExample("Examples/18_Summary_1/Examples/StrTemplates.kt", summary1.StrTemplatesKt::main);
     }
 
     @Test
-    public void testTripleQuotes1() {
-        testExample("Examples/18_Summary_1/Examples/TripleQuotes.kt", summary1.TripleQuotesKt::main);
+    public void testThreeQuotes() {
+        testExample("Examples/18_Summary_1/Examples/ThreeQuotes.kt", summary1.ThreeQuotesKt::main);
     }
 
     @Test
@@ -343,7 +343,7 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testRangeMembership1() {
+    public void testRangeMembership() {
         testExample("Examples/18_Summary_1/Examples/RangeMembership.kt", summary1.RangeMembershipKt::main);
     }
 
@@ -689,7 +689,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testQuote() {
-        testExample("Examples/45_Extension_Functions/Examples/Quote.kt", extensionFunctions.QuoteKt::main);
+        testExample("Examples/45_Extension_Functions/Examples/Quote.kt", quoting.QuoteKt::main);
     }
 
     @Test
@@ -738,8 +738,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testDereference1() {
-        testExample("Examples/48_Safe_Calls_and_Elvis_Operator/Examples/Dereference.kt", safeCallsAndElvisOperator.DereferenceKt::main);
+    public void testDereferenceNull() {
+        testExample("Examples/48_Safe_Calls_and_Elvis_Operator/Examples/DereferenceNull.kt", safeCallsAndElvisOperator.DereferenceNullKt::main);
     }
 
     @Test
@@ -929,7 +929,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testMyClass() {
-        testExample("Examples/60_Property_Accessors/Examples/MyClass.kt", propertyAccessors.MyClassKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/MyClass.kt", propertyaccessors.MyClassKt::main);
     }
 
     @Test
@@ -944,12 +944,27 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testHamsters() {
-        testExample("Examples/60_Property_Accessors/Examples/Hamsters.kt", propertyAccessors.HamstersKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/Hamsters.kt", propertyaccessors.HamstersKt::main);
     }
 
     @Test
     public void testPropertyInInterface() {
-        testExample("Examples/60_Property_Accessors/Examples/PropertyInInterface.kt", propertyAccessors.PropertyInInterfaceKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/PropertyInInterface.kt", propertyaccessors.PropertyInInterfaceKt::main);
+    }
+
+    @Test
+    public void testExplicitDelegation() {
+        testExample("Examples/62_Class_Delegation/Examples/ExplicitDelegation.kt", classDelegation.ExplicitDelegationKt::main);
+    }
+
+    @Test
+    public void testAdjustedControls() {
+        testExample("Examples/62_Class_Delegation/Examples/AdjustedControls.kt", classDelegation.AdjustedControlsKt::main);
+    }
+
+    @Test
+    public void testModelingMultipleInheritance() {
+        testExample("Examples/62_Class_Delegation/Examples/ModelingMultipleInheritance.kt", classDelegation.ModelingMultipleInheritanceKt::main);
     }
 
     @Test

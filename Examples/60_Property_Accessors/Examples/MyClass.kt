@@ -1,5 +1,4 @@
-package propertyAccessors
-
+package propertyaccessors
 import com.atomickotlin.test.eq
 
 class MyClass(var property: Int)

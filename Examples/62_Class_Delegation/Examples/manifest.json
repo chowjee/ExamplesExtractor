@@ -2,19 +2,19 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "DereferenceNull.kt",
+      "filename": "SpaceShipControls.kt",
       "modifiable": "true"
     },
     {
-      "filename": "SafeCall.kt",
+      "filename": "ExplicitDelegation.kt",
       "modifiable": "true"
     },
     {
-      "filename": "ChainedSafeCalls.kt",
+      "filename": "AdjustedControls.kt",
       "modifiable": "true"
     },
     {
-      "filename": "ElvisOperator.kt",
+      "filename": "ModelingMultipleInheritance.kt",
       "modifiable": "true"
     }
   ],

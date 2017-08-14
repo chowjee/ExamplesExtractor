@@ -1,5 +1,4 @@
 package quoting
-
 import com.atomickotlin.test.eq
 
 fun String.singleQuote() = "'$this'"

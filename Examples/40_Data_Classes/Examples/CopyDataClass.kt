@@ -18,6 +18,9 @@ fun main(args: Array<String>) {
   val newContact = contact.copy(
       number = "098-765-4321",
       address = "Brandschenkestrasse 110")
-  newContact.name eq "Miffy"
-  newContact.number eq "098-765-4321"
+  newContact eq DetailedContact(
+    "Miffy",
+    "Miller",
+    "098-765-4321",
+    "Brandschenkestrasse 110")
 }

@@ -2,7 +2,7 @@
   "name": "Examples",
   "files": [
     {
-      "filename": "RangeMembership.kt",
+      "filename": "MembershipInRange.kt",
       "modifiable": "true"
     },
     {

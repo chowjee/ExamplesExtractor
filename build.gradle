@@ -28,7 +28,6 @@ dependencies {
 
 sourceSets {
     main.kotlin.srcDirs += 'src'
-    test.kotlin.srcDirs += 'AtomicTest'
     test.kotlin.srcDirs += 'Examples'
     test.kotlin.srcDirs += 'Exercises'
     test.kotlin.srcDirs += 'TestExamples'

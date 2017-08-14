@@ -46,7 +46,7 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
 
 fun getLessonWithUtilFunctions(): Lesson {
     val atomicTest = File("AtomicTest/AtomicTest.kt").readText()
-    val testFiles = mapOf("AtomicKotlin.kt" to atomicTest)
+    val testFiles = mapOf("util/src/AtomicKotlin.kt" to atomicTest)
     val task = GeneralTask("PyCharm additional materials", 0,
             emptyMap(), testFiles, emptyMap())
     return Lesson(0, "PyCharm additional materials", listOf(task))

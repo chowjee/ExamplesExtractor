@@ -1,26 +1,23 @@
 /* A tiny little testing framework, to
 display results and to introduce & promote
 unit testing early in the learning curve.
-To use in a script or App, include:
+To use in your code snippet, include:
 import com.atomickotlin.test.*
 */
 package com.atomickotlin.test
-import kotlin.system.exitProcess
-import java.util.*
 
-// Log everything to "_AtomicTestErrors.txt" instead?
+import java.util.*
 
 private fun err(msg: String) {
   println("Error: $msg")
-  exitProcess(1)
 }
 
-private fun <L, R> equals(lval: L, rval: R) {
-  if (lval != rval)
-    err("$lval != $rval")
+private fun <L, R> equals(actual: L, expected: R) {
+  if (actual != expected)
+    err("$actual != $expected")
 }
 
-infix fun <T: Any> T.eq(value: String) {
+infix fun <T : Any> T.eq(value: String) {
   println(this)
   equals(value, this.toString())
 }
@@ -32,9 +29,8 @@ infix fun <T> T.eq(value: T) {
 
 infix fun Double.eq(value: Double) {
   println(this)
-  var diff = this - value
-  if(diff < 0) diff = diff * -1.0
-  if(diff > 0.0000001)
+  val diff = this - value
+  if (Math.abs(diff) > 0.0000001)
     err("$this not equal to $value")
 }
 
@@ -45,5 +41,6 @@ infix fun <T> Array<T>.eq(value: Array<T>) {
 
 infix fun <T> T.neq(value: T) {
   println(this)
-  equals((this != value), true)
+  if (this == value)
+    err("$this == $value")
 }

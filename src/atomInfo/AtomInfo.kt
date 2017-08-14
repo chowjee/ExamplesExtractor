@@ -10,11 +10,10 @@ import java.io.File
 class Atoms {
     val atomInfoList = buildAtomInfoList()
 
-    private val associateByName = atomInfoList.associateBy { it.name }
+    private val associateByName = atomInfoList.associateBy { it.name.withoutIndex }
 
     fun getAtomByName(name: String) =
-            associateByName[name.toAtomName()] ?:
-                    associateByName[name.toAtomName().withoutIndex]
+            associateByName[name.toAtomName().withoutIndex]
 
     fun getAtomsByRanges(ranges: List<IntRange>) =
             atomInfoList.filter {

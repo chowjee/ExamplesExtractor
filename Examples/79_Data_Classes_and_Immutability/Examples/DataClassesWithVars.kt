@@ -1,6 +1,6 @@
 package dataclasses3
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class Contact(
   var name: String,

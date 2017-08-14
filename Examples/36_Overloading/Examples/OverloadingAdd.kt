@@ -1,6 +1,6 @@
 package overloading
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun addInt(i: Int, j: Int): Int = i + j
 fun addDouble(i: Double, j: Double): Double = i + j

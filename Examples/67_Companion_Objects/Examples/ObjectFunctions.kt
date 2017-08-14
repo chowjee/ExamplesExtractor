@@ -1,6 +1,6 @@
 package companionobjects5
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class X {
   companion object {

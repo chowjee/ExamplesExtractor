@@ -1,5 +1,5 @@
 package propertyaccessors
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 interface MyInterface {
   val number: Int                                 // [1]

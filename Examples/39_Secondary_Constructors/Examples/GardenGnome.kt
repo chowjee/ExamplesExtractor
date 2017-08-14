@@ -1,6 +1,6 @@
 package secondaryConstructors
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class GardenGnome(
     val height: Double,

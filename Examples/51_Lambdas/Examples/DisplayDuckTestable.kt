@@ -1,6 +1,6 @@
 package lambdas
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   var s = ""

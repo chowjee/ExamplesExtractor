@@ -1,6 +1,6 @@
 package sets
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val set = setOf(1, 1, 2, 3, 9, 9, 4)

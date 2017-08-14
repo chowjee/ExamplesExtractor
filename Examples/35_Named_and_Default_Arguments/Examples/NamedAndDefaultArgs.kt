@@ -1,6 +1,6 @@
 package namedAndDefaultArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun getColor1(
     red: Int = 0,

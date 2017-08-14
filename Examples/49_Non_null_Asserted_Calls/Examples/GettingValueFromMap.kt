@@ -1,6 +1,6 @@
 package nonNullAssertedCalls
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val map = mapOf(1 to "one")

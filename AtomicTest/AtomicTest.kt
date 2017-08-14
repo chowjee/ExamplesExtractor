@@ -2,9 +2,9 @@
 display results and to introduce & promote
 unit testing early in the learning curve.
 To use in your code snippet, include:
-import com.atomickotlin.test.*
+import atomicTest.*
 */
-package com.atomickotlin.test
+package atomicTest
 
 import java.util.*
 

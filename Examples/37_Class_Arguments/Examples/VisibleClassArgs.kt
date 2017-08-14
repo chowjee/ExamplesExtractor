@@ -1,6 +1,6 @@
 package classArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class ClassArg2(var a: Int)
 class ClassArg3(val a: Int)

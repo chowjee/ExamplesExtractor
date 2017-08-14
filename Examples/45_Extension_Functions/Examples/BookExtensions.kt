@@ -1,6 +1,6 @@
 package extensionFunctions
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class Book(val title: String)
 

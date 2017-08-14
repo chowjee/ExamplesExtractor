@@ -1,6 +1,6 @@
 package parameterizedTypes
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 // Return type is inferred:
 fun inferred(c1: Char, c2: Char, c3: Char) =

@@ -1,6 +1,6 @@
 package colorblendmap
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 import paintcolors.Color
 import paintcolors.Color.*
 

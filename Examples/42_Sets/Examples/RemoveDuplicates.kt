@@ -1,6 +1,6 @@
 package sets
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val list = listOf(3, 3, 2, 1, 2)

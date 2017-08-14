@@ -1,6 +1,6 @@
 package testing
 
-import com.atomickotlin.test.*
+import atomicTest.*
 
 fun main(args: Array<String>) {
   val v1 = 11

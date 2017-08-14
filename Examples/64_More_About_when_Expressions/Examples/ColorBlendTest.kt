@@ -1,6 +1,6 @@
 package colorblend
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 import paintcolors.Color.*
 
 fun main(args: Array<String>) {

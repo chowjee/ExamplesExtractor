@@ -1,6 +1,6 @@
 package maps
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class Contact(val name: String, val number: String)
 

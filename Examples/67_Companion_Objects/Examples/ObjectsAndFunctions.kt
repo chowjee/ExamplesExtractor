@@ -1,6 +1,6 @@
 package companionobjects
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class X(val n: Int) {
   fun f() = n * 10

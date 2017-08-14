@@ -1,6 +1,6 @@
 package nullableTypes
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val s1: String = "abc"

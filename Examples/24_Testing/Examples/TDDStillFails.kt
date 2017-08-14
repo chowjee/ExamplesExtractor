@@ -1,6 +1,6 @@
 package testing2
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   // Everything fails:

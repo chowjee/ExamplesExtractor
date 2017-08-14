@@ -1,5 +1,5 @@
 package abstractClasses
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 abstract class Animal {
   fun templateFunction() = "The ${animal()} goes ${sound()}"

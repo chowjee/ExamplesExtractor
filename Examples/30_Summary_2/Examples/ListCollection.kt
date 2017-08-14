@@ -1,6 +1,6 @@
 package summary2
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val l1 = listOf(19.2, 88.3, 22.1)

@@ -1,6 +1,6 @@
 package referencesAndMutability
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class X(var n: Int)
 

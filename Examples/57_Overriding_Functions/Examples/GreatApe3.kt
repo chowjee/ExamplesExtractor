@@ -1,6 +1,6 @@
 package overridingFunctions
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 open class GreatApe {
 

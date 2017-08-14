@@ -1,6 +1,6 @@
 package destructuringDeclarations
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class ComputationResult(val data: Int, val info: String)
 

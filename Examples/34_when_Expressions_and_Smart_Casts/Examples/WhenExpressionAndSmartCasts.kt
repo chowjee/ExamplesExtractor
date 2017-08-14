@@ -1,5 +1,5 @@
 package whenexpressionscasts
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun acceptAnything(x: Any): String =
     when (x) {

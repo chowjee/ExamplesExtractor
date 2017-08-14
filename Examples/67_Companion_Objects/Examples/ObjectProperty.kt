@@ -1,6 +1,6 @@
 package companionobjects4
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class X {
   fun increment(): Int {

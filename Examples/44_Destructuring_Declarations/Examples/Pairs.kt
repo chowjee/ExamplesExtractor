@@ -1,6 +1,6 @@
 package destructuringDeclarations
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun compute1(input: Int) =
     if (input > 5)

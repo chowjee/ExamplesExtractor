@@ -1,5 +1,5 @@
 package quoting
-import com.atomickotlin.test.eq
+import atomicTest.eq
 import quoting.doubleQuote
 import quoting.singleQuote
 

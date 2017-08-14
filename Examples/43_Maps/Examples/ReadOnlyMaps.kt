@@ -1,6 +1,6 @@
 package maps
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val m = mapOf(5 to "five", 6 to "six")

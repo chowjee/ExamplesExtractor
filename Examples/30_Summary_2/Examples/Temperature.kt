@@ -1,6 +1,6 @@
 package summary2
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Temperature {
   var current = 0.0

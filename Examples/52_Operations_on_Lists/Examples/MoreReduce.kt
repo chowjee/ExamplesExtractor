@@ -1,6 +1,6 @@
 package operationsOnLists
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   (1..100).reduce { sum, n -> sum + n } eq

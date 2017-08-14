@@ -1,5 +1,5 @@
 package enumerations
-import com.atomickotlin.test.eq
+import atomicTest.eq
 import enumerations.Level.*    // [1]
 
 fun main(args: Array<String>) {

@@ -1,6 +1,6 @@
 package interfaces
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 interface Framework {
   val part1: Int

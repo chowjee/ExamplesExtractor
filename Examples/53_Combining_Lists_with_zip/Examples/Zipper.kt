@@ -1,6 +1,6 @@
 package combiningListsWithZip
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val left = listOf("a", "b", "c", "d")

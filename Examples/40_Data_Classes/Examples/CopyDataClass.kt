@@ -1,6 +1,6 @@
 package dataClasses
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class DetailedContact(
     val name: String,

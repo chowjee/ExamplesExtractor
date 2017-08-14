@@ -1,6 +1,6 @@
 package maps
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val constants = mapOf("Pi" to 3.141,

@@ -1,6 +1,6 @@
 package testing1
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   calculateBMI(160, 68) eq "Normal weight"

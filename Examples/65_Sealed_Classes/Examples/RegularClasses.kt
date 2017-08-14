@@ -1,6 +1,6 @@
 package regularClasses
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 open class Transport
 

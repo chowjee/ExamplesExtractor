@@ -1,6 +1,6 @@
 package properties
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Cup {
   var percentFull = 0

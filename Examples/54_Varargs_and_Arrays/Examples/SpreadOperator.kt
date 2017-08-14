@@ -1,6 +1,6 @@
 package varargsAndArrays
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val array = intArrayOf(4, 5)

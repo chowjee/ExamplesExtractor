@@ -1,6 +1,6 @@
 package overloading
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Overloading1 {
   fun f(): Int = 88

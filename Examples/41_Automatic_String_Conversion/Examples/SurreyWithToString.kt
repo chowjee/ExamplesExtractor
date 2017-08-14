@@ -1,6 +1,6 @@
 package automaticStringConversion
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Surrey2(val adornment: String) {
   override fun toString() =

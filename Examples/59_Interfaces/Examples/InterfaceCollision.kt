@@ -1,6 +1,6 @@
 package interfaces
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 interface A {
   fun f() = 1.1

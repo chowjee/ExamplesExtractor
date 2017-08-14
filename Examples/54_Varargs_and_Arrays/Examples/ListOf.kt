@@ -1,6 +1,6 @@
 package varargsAndArrays
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   listOf(1) eq "[1]"

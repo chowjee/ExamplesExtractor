@@ -1,6 +1,6 @@
 package safeCallsAndElvisOperator
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Person(val name: String, var bestFriend: Person? = null)
 

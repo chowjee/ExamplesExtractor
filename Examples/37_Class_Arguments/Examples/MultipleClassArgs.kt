@@ -1,6 +1,6 @@
 package classArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Sum(val a1: Int, val a2: Int, val a3: Int) {
   fun result(): Int = a1 + a2 + a3

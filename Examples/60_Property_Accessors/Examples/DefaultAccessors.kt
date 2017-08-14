@@ -1,6 +1,6 @@
 package propertyAccessors
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class DefaultAccessors {
   var property: Int = 0

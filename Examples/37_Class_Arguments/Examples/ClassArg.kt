@@ -1,6 +1,6 @@
 package classArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class ClassArg(a: Int) {
   val f = a * 10

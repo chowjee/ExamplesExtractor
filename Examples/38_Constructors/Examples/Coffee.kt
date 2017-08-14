@@ -1,6 +1,6 @@
 package constructors
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Coffee(
     val shots: Int = 2,

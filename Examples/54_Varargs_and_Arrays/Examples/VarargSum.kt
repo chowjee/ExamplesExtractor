@@ -1,6 +1,6 @@
 package varargsAndArrays
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun sum(vararg numbers: Int): Int {
   var total = 0

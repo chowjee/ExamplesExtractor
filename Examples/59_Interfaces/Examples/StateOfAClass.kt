@@ -1,6 +1,6 @@
 package interfaces
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class MyClass(
     val i: Int

@@ -1,6 +1,6 @@
 package whenExpressions
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun matchColor(color: String) =
     when (color) {           // [1]

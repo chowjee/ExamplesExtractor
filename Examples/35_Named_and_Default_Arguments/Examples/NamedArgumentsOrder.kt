@@ -1,6 +1,6 @@
 package namedAndDefaultArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   getColor(blue = 0, red = 255, green = 255) eq "(255, 255, 0)"

@@ -1,6 +1,6 @@
 package readOnlyAndMutableLists
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val list1 = mutableListOf(1)

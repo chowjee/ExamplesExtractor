@@ -1,6 +1,6 @@
 package sealedClasses
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 sealed class Transport
 

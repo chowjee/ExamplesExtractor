@@ -1,5 +1,5 @@
 package quoting
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun String.singleQuote() = "'$this'"
 fun String.doubleQuote() = "\"$this\""

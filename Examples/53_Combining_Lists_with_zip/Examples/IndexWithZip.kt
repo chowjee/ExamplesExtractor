@@ -1,6 +1,6 @@
 package combiningListsWithZip
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun number(s: String) =
     s.indices.zip(s.toList())

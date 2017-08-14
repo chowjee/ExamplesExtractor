@@ -1,6 +1,6 @@
 package companionobjects2
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 object X {
   val n = 2

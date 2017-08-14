@@ -1,6 +1,6 @@
 package operationsOnLists
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   val l = listOf(1, 2, 3, 4)

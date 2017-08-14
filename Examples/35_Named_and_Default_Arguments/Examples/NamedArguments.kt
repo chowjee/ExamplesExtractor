@@ -1,6 +1,6 @@
 package namedAndDefaultArguments
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun getColor(red: Int, green: Int, blue: Int) =
     "($red, $green, $blue)"

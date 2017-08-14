@@ -1,6 +1,6 @@
 package destructuringDeclarations
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 data class Tuple(
     val i: Int,

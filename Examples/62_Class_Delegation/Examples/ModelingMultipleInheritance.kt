@@ -1,6 +1,6 @@
 package classDelegation
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 interface Foo {
   fun foo(): String

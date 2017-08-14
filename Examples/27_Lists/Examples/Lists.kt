@@ -1,6 +1,6 @@
 package lists
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun main(args: Array<String>) {
   // A List holds other objects:

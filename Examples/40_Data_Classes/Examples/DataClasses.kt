@@ -1,5 +1,5 @@
 package dataclasses
-import com.atomickotlin.test.*
+import atomicTest.*
 
 data class Contact(val name: String, val number: String)
 

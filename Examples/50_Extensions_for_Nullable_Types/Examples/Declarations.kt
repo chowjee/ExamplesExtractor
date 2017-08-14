@@ -1,6 +1,6 @@
 package extensionsForNullableTypes
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 fun String?.isNullOrEmpty(): Boolean =
     this == null || this.isEmpty()

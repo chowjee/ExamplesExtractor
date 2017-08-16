@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
         val examples = atomInfo.examplesMap.values
         val packageName = atomInfo.name.toPackageName()
         for (example in examples) {
-            atomText = replaceSample(atomText, packageName, example)
+            atomText = replaceSample(atomText, packageName, example.file)
         }
         atomInfo.markdownFile.writeText(atomText)
     }

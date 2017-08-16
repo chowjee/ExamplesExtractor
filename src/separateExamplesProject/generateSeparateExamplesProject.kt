@@ -17,8 +17,8 @@ fun main(args: Array<String>) {
         val packageDir = File(examples.path + "/$packageName")
         packageDir.mkdir()
         for (example in atomInfo.examplesMap.values) {
-            val text = example.readText()
-            val newExampleFile = File(packageDir.path + "/${example.name}")
+            val text = example.file.readText()
+            val newExampleFile = File(packageDir.path + "/${example.file.name}")
             newExampleFile.writeText(text)
         }
     }

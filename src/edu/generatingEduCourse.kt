@@ -2,7 +2,6 @@ package edu
 
 import atomInfo.AtomInfo
 import atomInfo.Atoms
-import util.subFile
 import java.io.File
 
 fun main(args: Array<String>) {
@@ -21,24 +20,23 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
         return null
     }
     val taskForExercises = atomInfo.exercisesMap.map {
-        (_, exerciseDir) ->
+        (_, exerciseInfo) ->
 
-        val taskName = "Exercise " + exerciseDir.name.substringAfter("Exercise")
+        val taskName = "Exercise " + exerciseInfo.dir.name.substringAfter("Exercise")
 
-        val taskFiles = mapOf("Task.kt" to generateTaskFile(exerciseDir.subFile("Solution.kt")))
+        val taskFiles = mapOf("Task.kt" to generateTaskFile(exerciseInfo.solutionInfo.file))
 
-        val outputFile = exerciseDir.subFile("output.txt")
-        val testingOutput = outputFile.exists()
-        val testsMap = if (testingOutput) {
-            mapOf("output.txt" to outputFile.readText())
+        val testOrOutputText = exerciseInfo.testOrOutputFile.readText()
+        val testsMap = if (exerciseInfo.testOutput) {
+            mapOf("output.txt" to testOrOutputText)
         }
         else {
-            mapOf("Tests.kt" to exerciseDir.subFile("Test.kt").readText().removePackageDeclarations())
+            mapOf("Tests.kt" to testOrOutputText.removePackageDeclarations())
         }
-        val tasksMap = mapOf("task" to exerciseDir.subFile("task.md").readText())
+        val tasksMap = mapOf("task" to exerciseInfo.taskDescription.readText())
 
         GeneralTask(taskName, 0, taskFiles, testsMap, tasksMap,
-                if (testingOutput) "output" else "pycharm")
+                if (exerciseInfo.testOutput) "output" else "pycharm")
     }
     return Lesson(0, atomInfo.title.removeCodeFormatting(),
             arrayListOf<Task>() + generateTaskForExamples(atomInfo) + taskForExercises)
@@ -54,8 +52,8 @@ fun getLessonWithUtilFunctions(): Lesson {
 
 fun generateTaskForExamples(atomInfo: AtomInfo): Task {
     val taskFiles = atomInfo.examplesMap.map {
-        (exampleName, exampleFile) ->
-        TaskFile(exampleName, exampleFile.readText().trimEnd(), listOf())
+        (exampleName, exampleInfo) ->
+        TaskFile(exampleName, exampleInfo.file.readText().trimEnd(), listOf())
     }.associateBy {
         it.name
     }

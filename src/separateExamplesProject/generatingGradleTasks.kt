@@ -1,7 +1,6 @@
 package separateExamplesProject
 
 import atomInfo.Atoms
-import atomInfo.createExampleInfo
 import util.Settings
 import util.lowerCaseFirstLetter
 import java.io.File
@@ -33,11 +32,9 @@ fun main(args: Array<String>) {
 fun generateGradleTasks() = buildString {
     appendln(header.trim())
 
-    val sourceFiles = Atoms().atomInfoList.flatMap { it.examplesMap.values }
-    for (code in sourceFiles) {
-        if (!code.readText().contains("fun main")) continue
-
-        val exampleInfo = createExampleInfo(code)
+    val exampleInfoList = Atoms().atomInfoList.flatMap { it.examplesMap.values }
+    for (exampleInfo in exampleInfoList) {
+        if (!exampleInfo.file.readText().contains("fun main")) continue
 
         append(generateTask(exampleInfo.name.lowerCaseFirstLetter(), exampleInfo.qualifiedName))
     }

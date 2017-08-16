@@ -1,11 +1,6 @@
 package generatingTests
 
-import atomInfo.Atoms
-import atomInfo.ExampleInfo
-import atomInfo.createExampleInfo
-import util.Settings
-import util.lowerCaseFirstLetter
-import util.subFile
+import atomInfo.*
 import util.upperCaseFirstLetter
 import java.io.File
 
@@ -14,33 +9,27 @@ fun main(args: Array<String>) {
 }
 
 fun generateExampleTests() {
-    val sourceFiles = Atoms().atomInfoList.flatMap { it.examplesMap.values }
-    val auxiliaryFiles = sourceFiles.map { AuxiliaryFiles(it, it, false) } +
-            getAuxiliaryFilesForExercises()
+    val atomInfoList = Atoms().atomInfoList
+    val sourceFiles = atomInfoList.flatMap { it.examplesMap.values }
+    val exercisesWithOutput = atomInfoList.flatMap { it.exercisesMap.values }.filter { it.testOutput }
+    val auxiliaryFiles = sourceFiles + exercisesWithOutput
     val tests = generateTests(auxiliaryFiles)
     File("TestExamples/TestExamples.java").writeText(tests)
 }
 
-data class AuxiliaryFiles(val code: File, val output: File, val isExercise: Boolean)
-
-fun getAuxiliaryFilesForExercises(): List<AuxiliaryFiles> {
-    val allExercises = File(Settings.exercisesDir).listFiles().filter { it.isDirectory }.flatMap {
-        it.listFiles().filter { it.isDirectory }
-    }
-    val outputExercises = allExercises.filter {
-        it.subFile("output.txt").exists()
-    }
-    return outputExercises.map {
-        AuxiliaryFiles(it.subFile("Solution.kt"), it.subFile("output.txt"), true)
-    }
-}
-
-fun generateTests(files: List<AuxiliaryFiles>): String {
+fun generateTests(infoFiles: List<ExampleOrExerciseInfo>): String {
     val namesFrequency = mutableMapOf<String, Int>()
     val tests = mutableListOf<String>()
-    for ((code, output, isExercise) in files) {
+    for (infoFile in infoFiles) {
+        val (code, output, isExercise) = when (infoFile) {
+            is ExampleInfo -> Triple(infoFile.file, infoFile.file, false)
+            is ExerciseInfo -> Triple(infoFile.solutionInfo.file, infoFile.testOrOutputFile, true)
+        }
         if (!code.readText().contains("fun main")) continue
-        val exampleInfo = createExampleInfo(code)
+        val exampleInfo = when (infoFile) {
+            is ExampleInfo -> infoFile
+            is ExerciseInfo -> infoFile.solutionInfo
+        }
 
         val exampleName = if (!isExercise) {
             val classForFileName = exampleInfo.classForFileName

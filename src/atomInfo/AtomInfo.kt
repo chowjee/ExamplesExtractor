@@ -16,8 +16,7 @@ class Atoms {
             associateByName[name.toAtomName().withoutIndex]
 
     fun getAtomsByRanges(ranges: List<IntRange>) =
-            atomInfoList.filter {
-                atom ->
+            atomInfoList.filter { atom ->
                 ranges.any { range ->
                     atom.index in range
                 }
@@ -46,8 +45,8 @@ data class AtomInfo(
         val index: Int,
         val markdownFile: File,
         val exercisesFile: File?,
-        val examplesMap: Map<String, File>,
-        val exercisesMap: Map<String, File>
+        val examplesMap: Map<String, ExampleInfo>,
+        val exercisesMap: Map<String, ExerciseInfo>
 )
 
 fun buildAtomInfoList(): List<AtomInfo> {
@@ -66,11 +65,16 @@ fun buildAtomInfoList(): List<AtomInfo> {
 
         val codeExamples = extractCodeExamples(atomFile)
         val examples = File("Examples").subFile(name).subFile("Examples")
-        val exampleMap = codeExamples?.examples?.associate { it.name to examples.subFile(it.name) } ?: emptyMap()
+        val exampleMap = codeExamples?.examples
+                ?.associate { it.name to ExampleInfo.create(examples.subFile(it.name)) }
+                ?: emptyMap()
 
         val exercises = File("Exercises").subFile(name)
         val exerciseMap = if (exercises.exists() && exercises.isDirectory) {
-            exercises.listFiles().filter { it.isDirectory }.associateBy { it.name }
+            exercises.listFiles()
+                    .filter { it.isDirectory }
+                    .associateBy { it.name }
+                    .mapValues { ExerciseInfo.create(it.value) }
         } else {
             emptyMap()
         }
@@ -79,21 +83,46 @@ fun buildAtomInfoList(): List<AtomInfo> {
     }
 }
 
+sealed class ExampleOrExerciseInfo
+
 data class ExampleInfo(
         val file: File,
         val name: String,
         val packageName: String?,
         val text: String
-) {
+): ExampleOrExerciseInfo() {
     val classForFileName: String
         get() = name + "Kt"
 
     val qualifiedName: String
         get() = if (packageName != null) "$packageName.$classForFileName" else classForFileName
+
+    companion object {
+        fun create(file: File): ExampleInfo {
+            val name = file.nameWithoutExtension
+            val packageName = file.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+            return ExampleInfo(file, name, packageName, file.readText())
+        }
+    }
 }
 
-fun createExampleInfo(file: File): ExampleInfo {
-    val name = file.nameWithoutExtension
-    val packageName = file.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
-    return ExampleInfo(file, name, packageName, file.readText())
+data class ExerciseInfo(
+        val dir: File,
+        val solutionInfo: ExampleInfo,
+        val taskDescription: File,
+        val testOrOutputFile: File,
+        val testOutput: Boolean
+): ExampleOrExerciseInfo() {
+    companion object {
+        fun create(dir: File): ExerciseInfo {
+            val output = dir.subFile("output.txt")
+            val test = dir.subFile("Test.kt")
+            val isOutput = output.exists()
+            if (!isOutput && !test.exists()) {
+                throw AssertionError("'Test.kt' and 'output.txt' not found for ${dir.path}")
+            }
+            return ExerciseInfo(dir, ExampleInfo.create(dir.subFile("Solution.kt")), dir.subFile("task.md"),
+                    if (isOutput) output else test, isOutput)
+        }
+    }
 }

@@ -1,6 +1,8 @@
 package generatingTests
 
 import atomInfo.Atoms
+import atomInfo.ExampleInfo
+import atomInfo.createExampleInfo
 import util.Settings
 import util.lowerCaseFirstLetter
 import util.subFile
@@ -38,14 +40,10 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
     val tests = mutableListOf<String>()
     for ((code, output, isExercise) in files) {
         if (!code.readText().contains("fun main")) continue
-
-        val name = code.nameWithoutExtension
-
-        val classForFileName = name + "Kt"
-
-        val packageName = code.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+        val exampleInfo = createExampleInfo(code)
 
         val exampleName = if (!isExercise) {
+            val classForFileName = exampleInfo.classForFileName
             val index = if (classForFileName in namesFrequency) {
                 val frequency = namesFrequency.getValue(classForFileName)
                 namesFrequency[classForFileName] = frequency + 1
@@ -54,18 +52,18 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
                 namesFrequency[classForFileName] = 1
                 ""
             }
-            """test${name.upperCaseFirstLetter()}$index"""
+            """test${exampleInfo.name.upperCaseFirstLetter()}$index"""
         } else {
-            if (packageName == null) throw AssertionError("No package for exercise: ${code.path}")
-            "testExercise${packageName.substringAfter(".").upperCaseFirstLetter()}"
+            if (exampleInfo.packageName == null) throw AssertionError("No package for exercise: ${code.path}")
+            "testExercise${exampleInfo.packageName.substringAfter(".").upperCaseFirstLetter()}"
         }
 
         val testFunction = if (isExercise) "testExercise" else "testExample"
-        val qualifier = if (packageName != null) "$packageName." else ""
+
         tests += """
             @Test
             public void $exampleName() {
-                $testFunction("${output.path}", $qualifier$classForFileName::main);
+                $testFunction("${output.path}", ${exampleInfo.qualifiedName}::main);
             }""".replaceIndent("    ")
     }
 

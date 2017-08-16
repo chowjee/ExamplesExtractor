@@ -78,3 +78,22 @@ fun buildAtomInfoList(): List<AtomInfo> {
         AtomInfo(name, atomTitle, index, atomFile, exercisesFile, exampleMap, exerciseMap)
     }
 }
+
+data class ExampleInfo(
+        val file: File,
+        val name: String,
+        val packageName: String?,
+        val text: String
+) {
+    val classForFileName: String
+        get() = name + "Kt"
+
+    val qualifiedName: String
+        get() = if (packageName != null) "$packageName.$classForFileName" else classForFileName
+}
+
+fun createExampleInfo(file: File): ExampleInfo {
+    val name = file.nameWithoutExtension
+    val packageName = file.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+    return ExampleInfo(file, name, packageName, file.readText())
+}

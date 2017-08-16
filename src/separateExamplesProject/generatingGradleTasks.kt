@@ -1,6 +1,7 @@
 package separateExamplesProject
 
 import atomInfo.Atoms
+import atomInfo.createExampleInfo
 import util.Settings
 import util.lowerCaseFirstLetter
 import java.io.File
@@ -36,13 +37,8 @@ fun generateGradleTasks() = buildString {
     for (code in sourceFiles) {
         if (!code.readText().contains("fun main")) continue
 
-        //todo extract package name to ExampleInfo
-        val name = code.nameWithoutExtension
+        val exampleInfo = createExampleInfo(code)
 
-        val classForFileName = name + "Kt"
-
-        val packageName = code.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
-                ?: name.lowerCaseFirstLetter()
-        append(generateTask(name.lowerCaseFirstLetter(), "$packageName.$classForFileName"))
+        append(generateTask(exampleInfo.name.lowerCaseFirstLetter(), exampleInfo.qualifiedName))
     }
 }

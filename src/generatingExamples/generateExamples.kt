@@ -10,7 +10,7 @@ import util.subFile
 import java.io.File
 
 fun generateExamples() {
-    val allExamples: List<AtomExamples> = Atoms().atomInfoList.mapNotNull { extractCodeExamples(it.markdownFile) }
+    val allExamples = Atoms().atomInfoList.mapNotNull { extractCodeExamples(it.markdownFile) }
 
     val examplesDir = File(Settings.examplesDir)
     if (examplesDir.exists()) {
@@ -19,7 +19,6 @@ fun generateExamples() {
     examplesDir.mkdir()
 
     for (atomExamples in allExamples) {
-        reportCodeSnippets(atomExamples)
         if (atomExamples.hasOnlySnippets()) continue
 
         val outerDir = examplesDir.subFile(atomExamples.name)
@@ -38,17 +37,6 @@ fun generateExamples() {
     val topLevelManifest = examplesDir.manifest()
     topLevelManifest.writeText(topLevelManifest(
             allExamples.filter { !it.hasOnlySnippets() }.map { it.name }))
-}
-
-private fun reportCodeSnippets(atomExamples: AtomExamples) {
-    if (atomExamples.snippets.isNotEmpty()) {
-        println(atomExamples.name)
-        for (snippet in atomExamples.snippets) {
-            println("---------")
-            println(snippet.text)
-        }
-        println("=========")
-    }
 }
 
 data class AtomExamples(val name: String, val examples: List<Example>, val snippets: List<Example>) {

@@ -8,12 +8,12 @@
       "task_files" : {
         "EmptyProgram.kt" : {
           "name" : "EmptyProgram.kt",
-          "text" : "package helloWorld\n\nfun main(args: Array<String>) {\n  // Program code here ...\n}",
+          "text" : "// helloWorld/EmptyProgram.kt\nfun main(args: Array<String>) {\n  // Program code here ...\n}",
           "placeholders" : [ ]
         },
         "HelloWorld.kt" : {
           "name" : "HelloWorld.kt",
-          "text" : "package helloWorld\n\nfun main(args: Array<String>) {\n  println(\"Hello, world!\")\n}\n/* Output:\nHello, world!\n*/",
+          "text" : "// helloWorld/HelloWorld.kt\nfun main(args: Array<String>) {\n  println(\"Hello, world!\")\n}\n/* Output:\nHello, world!\n*/",
           "placeholders" : [ ]
         }
       },
@@ -89,17 +89,17 @@
       "task_files" : {
         "Vars.kt" : {
           "name" : "Vars.kt",
-          "text" : "package variables\n\nfun main(args: Array<String>) {\n  var whole = 11          // [1]\n  var fractional = 1.4    // [2]\n  var words = \"A value\"   // [3]\n\n  println(whole)\n  println(fractional)\n  println(words)\n}\n/* Output:\n11\n1.4\nA value\n*/",
+          "text" : "// variables/Vars.kt\nfun main(args: Array<String>) {\n  var whole = 11          // [1]\n  var fractional = 1.4    // [2]\n  var words = \"A value\"   // [3]\n\n  println(whole)\n  println(fractional)\n  println(words)\n}\n/* Output:\n11\n1.4\nA value\n*/",
           "placeholders" : [ ]
         },
         "MutableVariable.kt" : {
           "name" : "MutableVariable.kt",
-          "text" : "package variables\n\nfun main(args: Array<String>) {\n  var sum = 1\n  sum = sum + 2\n  sum += 3\n  println(sum)  // 6\n}",
+          "text" : "// variables/MutableVariable.kt\nfun main(args: Array<String>) {\n  var sum = 1\n  sum = sum + 2\n  sum += 3\n  println(sum)  // 6\n}",
           "placeholders" : [ ]
         },
         "Vals.kt" : {
           "name" : "Vals.kt",
-          "text" : "package variables\n\nfun main(args: Array<String>) {\n  val whole = 11\n  val fractional = 1.4\n  val words = \"A value\"\n\n  println(whole)\n  println(fractional)\n  println(words)\n}",
+          "text" : "// variables/Vals.kt\nfun main(args: Array<String>) {\n  val whole = 11\n  val fractional = 1.4\n  val words = \"A value\"\n\n  println(whole)\n  println(fractional)\n  println(words)\n}",
           "placeholders" : [ ]
         }
       },
@@ -175,17 +175,17 @@
       "task_files" : {
         "StringPlusNumber.kt" : {
           "name" : "StringPlusNumber.kt",
-          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  println(\"Sally\" + 5.9)\n}\n/* Output:\nSally5.9\n*/",
+          "text" : "// dataTypes/StringPlusNumber.kt\nfun main(args: Array<String>) {\n  println(\"Sally\" + 5.9)\n}\n/* Output:\nSally5.9\n*/",
           "placeholders" : [ ]
         },
         "Types.kt" : {
           "name" : "Types.kt",
-          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  val whole: Int = 11              // [1]\n  val fractional: Double = 1.4     // [2]\n  // true or false:\n  val trueOrFalse: Boolean = true  // [3]\n  val words: String = \"A value\"    // [4]\n  val lines: String = \"\"\"Triple quotes let\nyou have many lines\ntarget your string\"\"\"              // [5]\n\n  println(whole)\n  println(fractional)\n  println(trueOrFalse)\n  println(words)\n  println(lines)\n}\n/* Output:\n11\n1.4\ntrue\nA value\nTriple quotes let\nyou have many lines\ntarget your string\n*/",
+          "text" : "// dataTypes/Types.kt\nfun main(args: Array<String>) {\n  val whole: Int = 11              // [1]\n  val fractional: Double = 1.4     // [2]\n  // true or false:\n  val trueOrFalse: Boolean = true  // [3]\n  val words: String = \"A value\"    // [4]\n  val lines: String = \"\"\"Triple quotes let\nyou have many lines\ntarget your string\"\"\"              // [5]\n\n  println(whole)\n  println(fractional)\n  println(trueOrFalse)\n  println(words)\n  println(lines)\n}\n/* Output:\n11\n1.4\ntrue\nA value\nTriple quotes let\nyou have many lines\ntarget your string\n*/",
           "placeholders" : [ ]
         },
         "Inference.kt" : {
           "name" : "Inference.kt",
-          "text" : "package dataTypes\n\nfun main(args: Array<String>) {\n  val n = 1 + 1.2\n  println(n)\n}\n/* Output:\n2.2\n*/",
+          "text" : "// dataTypes/Inference.kt\nfun main(args: Array<String>) {\n  val n = 1 + 1.2\n  println(n)\n}\n/* Output:\n2.2\n*/",
           "placeholders" : [ ]
         }
       },
@@ -232,22 +232,22 @@
       "task_files" : {
         "MultiplyByTwo.kt" : {
           "name" : "MultiplyByTwo.kt",
-          "text" : "package functions\n\nfun multiplyByTwo(x: Int): Int {  // [1]\n  println(\"Inside multiplyByTwo\") // [2]\n  return x * 2\n}\n\nfun main(args: Array<String>) {\n  val r = multiplyByTwo(5)        // [3]\n  println(r)\n}\n/* Output:\nInside multiplyByTwo\n10\n*/",
+          "text" : "// functions/MultiplyByTwo.kt\nfun multiplyByTwo(x: Int): Int {  // [1]\n  println(\"Inside multiplyByTwo\") // [2]\n  return x * 2\n}\n\nfun main(args: Array<String>) {\n  val r = multiplyByTwo(5)        // [3]\n  println(r)\n}\n/* Output:\nInside multiplyByTwo\n10\n*/",
           "placeholders" : [ ]
         },
         "SayHello.kt" : {
           "name" : "SayHello.kt",
-          "text" : "package functions\n\nfun sayHello() {\n  println(\"Hallo!\")\n}\n\nfun sayGoodbye(): Unit {\n  println(\"Tschüss!\")\n}\n\nfun main(args: Array<String>) {\n  sayHello()\n  sayGoodbye()\n}\n/* Output:\nHallo!\nTschüss!\n*/",
+          "text" : "// functions/SayHello.kt\nfun sayHello() {\n  println(\"Hallo!\")\n}\n\nfun sayGoodbye(): Unit {\n  println(\"Tschüss!\")\n}\n\nfun main(args: Array<String>) {\n  sayHello()\n  sayGoodbye()\n}\n/* Output:\nHallo!\nTschüss!\n*/",
           "placeholders" : [ ]
         },
         "MultiplyByThree.kt" : {
           "name" : "MultiplyByThree.kt",
-          "text" : "package functions\n\nfun multiplyByThree(x: Int): Int = x * 3\n\nfun main(args: Array<String>) {\n  println(multiplyByThree(5))\n}\n/* Output:\n15\n*/",
+          "text" : "// functions/MultiplyByThree.kt\nfun multiplyByThree(x: Int): Int = x * 3\n\nfun main(args: Array<String>) {\n  println(multiplyByThree(5))\n}\n/* Output:\n15\n*/",
           "placeholders" : [ ]
         },
         "MultiplyByFour.kt" : {
           "name" : "MultiplyByFour.kt",
-          "text" : "package functions\n\nfun multiplyByFour(x: Int) = x * 4\n\nfun main(args: Array<String>) {\n  val result: Int = multiplyByFour(5)\n  println(result)\n}\n/* Output:\n20\n*/",
+          "text" : "// functions/MultiplyByFour.kt\nfun multiplyByFour(x: Int) = x * 4\n\nfun main(args: Array<String>) {\n  val result: Int = multiplyByFour(5)\n  println(result)\n}\n/* Output:\n20\n*/",
           "placeholders" : [ ]
         }
       },
@@ -352,42 +352,42 @@
       "task_files" : {
         "If1.kt" : {
           "name" : "If1.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  if (1 > 0) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
+          "text" : "// ifExpressions/If1.kt\nfun main(args: Array<String>) {\n  if (1 > 0) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
           "placeholders" : [ ]
         },
         "If2.kt" : {
           "name" : "If2.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val x: Boolean = 1 >= 1\n  if (x) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
+          "text" : "// ifExpressions/If2.kt\nfun main(args: Array<String>) {\n  val x: Boolean = 1 >= 1\n  if (x) {\n    println(\"It's true!\")\n  }\n}\n/* Output:\nIt's true!\n*/",
           "placeholders" : [ ]
         },
         "If3.kt" : {
           "name" : "If3.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else {\n    println(\"It's negative or zero\")\n  }\n}\n/* Output:\nIt's negative or zero\n*/",
+          "text" : "// ifExpressions/If3.kt\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else {\n    println(\"It's negative or zero\")\n  }\n}\n/* Output:\nIt's negative or zero\n*/",
           "placeholders" : [ ]
         },
         "If4.kt" : {
           "name" : "If4.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else if (n == 0) {\n    println(\"It's zero\")\n  } else {\n    println(\"It's negative\")\n  }\n}\n/* Output:\nIt's negative\n*/",
+          "text" : "// ifExpressions/If4.kt\nfun main(args: Array<String>) {\n  val n: Int = -11\n  if (n > 0) {\n    println(\"It's positive\")\n  } else if (n == 0) {\n    println(\"It's zero\")\n  } else {\n    println(\"It's negative\")\n  }\n}\n/* Output:\nIt's negative\n*/",
           "placeholders" : [ ]
         },
         "If5.kt" : {
           "name" : "If5.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val y: Boolean = false\n  if (!y) {\n    println(\"!y is true\")\n  }\n}\n/* Output:\n!y is true\n*/",
+          "text" : "// ifExpressions/If5.kt\nfun main(args: Array<String>) {\n  val y: Boolean = false\n  if (!y) {\n    println(\"!y is true\")\n  }\n}\n/* Output:\n!y is true\n*/",
           "placeholders" : [ ]
         },
         "If6.kt" : {
           "name" : "If6.kt",
-          "text" : "package ifExpressions\n\nfun main(args: Array<String>) {\n  val result = if (99 > 100) 4 else 42\n  println(result)\n}\n/* Output:\n42\n*/",
+          "text" : "// ifExpressions/If6.kt\nfun main(args: Array<String>) {\n  val result = if (99 > 100) 4 else 42\n  println(result)\n}\n/* Output:\n42\n*/",
           "placeholders" : [ ]
         },
         "TrueOrFalse.kt" : {
           "name" : "TrueOrFalse.kt",
-          "text" : "package ifExpressions\n\nfun trueOrFalse(exp: Boolean): String {\n  if (exp) {\n    return \"It's true!\" // [1]\n  }\n  return \"It's false\"\n}\n\nfun main(args: Array<String>) {\n  val b = 1\n  println(trueOrFalse(b < 3))\n  println(trueOrFalse(b >= 3))\n}\n/* Output:\nIt's true!\nIt's false\n*/",
+          "text" : "// ifExpressions/TrueOrFalse.kt\nfun trueOrFalse(exp: Boolean): String {\n  if (exp) {\n    return \"It's true!\" // [1]\n  }\n  return \"It's false\"\n}\n\nfun main(args: Array<String>) {\n  val b = 1\n  println(trueOrFalse(b < 3))\n  println(trueOrFalse(b >= 3))\n}\n/* Output:\nIt's true!\nIt's false\n*/",
           "placeholders" : [ ]
         },
         "OneOrTheOther.kt" : {
           "name" : "OneOrTheOther.kt",
-          "text" : "package ifExpressions\n\nfun oneOrTheOther(exp: Boolean): String =\n    if (exp) {\n      \"True!\" // No 'return' necessary\n    } else {\n      \"False\"\n    }\n\nfun main(args: Array<String>) {\n  val x = 1\n  println(oneOrTheOther(x == 1))\n  println(oneOrTheOther(x == 2))\n}\n/* Output:\nTrue!\nFalse\n*/",
+          "text" : "// ifExpressions/OneOrTheOther.kt\nfun oneOrTheOther(exp: Boolean): String =\n    if (exp) {\n      \"True!\" // No 'return' necessary\n    } else {\n      \"False\"\n    }\n\nfun main(args: Array<String>) {\n  val x = 1\n  println(oneOrTheOther(x == 1))\n  println(oneOrTheOther(x == 2))\n}\n/* Output:\nTrue!\nFalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -463,22 +463,22 @@
       "task_files" : {
         "StringTemplates.kt" : {
           "name" : "StringTemplates.kt",
-          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  println(\"printing a $1\")                   // [2]\n}\n/* Output:\nFound 42!\nprinting a $1\n*/",
+          "text" : "// stringTemplates/StringTemplates.kt\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  println(\"printing a $1\")                   // [2]\n}\n/* Output:\nFound 42!\nprinting a $1\n*/",
           "placeholders" : [ ]
         },
         "StringConcatenation.kt" : {
           "name" : "StringConcatenation.kt",
-          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val s = \"hi\\n\"          // [1]\n  val n = 11\n  val d = 3.14\n  println(\"first: \" + s + \"second: \" +\n    n + \", third: \" + d)\n}\n/* Output:\nfirst: hi\nsecond: 11, third: 3.14\n*/",
+          "text" : "// stringTemplates/StringConcatenation.kt\nfun main(args: Array<String>) {\n  val s = \"hi\\n\"          // [1]\n  val n = 11\n  val d = 3.14\n  println(\"first: \" + s + \"second: \" +\n    n + \", third: \" + d)\n}\n/* Output:\nfirst: hi\nsecond: 11, third: 3.14\n*/",
           "placeholders" : [ ]
         },
         "ExpressionInStringTemplate.kt" : {
           "name" : "ExpressionInStringTemplate.kt",
-          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [1]\n\n  val x = 11\n  println(\"$x + 4 = ${x + 4}\")\n}\n/* Output:\na\n11 + 4 = 15\n*/",
+          "text" : "// stringTemplates/ExpressionInStringTemplate.kt\nfun main(args: Array<String>) {\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [1]\n\n  val x = 11\n  println(\"$x + 4 = ${x + 4}\")\n}\n/* Output:\na\n11 + 4 = 15\n*/",
           "placeholders" : [ ]
         },
         "TripleQuotes.kt" : {
           "name" : "TripleQuotes.kt",
-          "text" : "package stringTemplates\n\nfun main(args: Array<String>) {\n  val s = \"value\"\n  println(\"s = \\\"$s\\\".\")\n  println(\"\"\"s = \"$s\".\"\"\")\n}\n/* Output:\ns = \"value\".\ns = \"value\".\n*/",
+          "text" : "// stringTemplates/TripleQuotes.kt\nfun main(args: Array<String>) {\n  val s = \"value\"\n  println(\"s = \\\"$s\\\".\")\n  println(\"\"\"s = \"$s\".\"\"\")\n}\n/* Output:\ns = \"value\".\ns = \"value\".\n*/",
           "placeholders" : [ ]
         }
       },
@@ -578,42 +578,42 @@
       "task_files" : {
         "InferInt.kt" : {
           "name" : "InferInt.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val million = 1_000_000  // Compiler infers Int\n  println(million)\n}\n/* Output:\n1000000\n*/",
+          "text" : "// numberTypes/InferInt.kt\nfun main(args: Array<String>) {\n  val million = 1_000_000  // Compiler infers Int\n  println(million)\n}\n/* Output:\n1000000\n*/",
           "placeholders" : [ ]
         },
         "Modulus.kt" : {
           "name" : "Modulus.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator % denominator)\n}\n/* Output:\n9\n*/",
+          "text" : "// numberTypes/Modulus.kt\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator % denominator)\n}\n/* Output:\n9\n*/",
           "placeholders" : [ ]
         },
         "IntDivisionTruncates.kt" : {
           "name" : "IntDivisionTruncates.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator / denominator)\n}\n/* Output:\n1\n*/",
+          "text" : "// numberTypes/IntDivisionTruncates.kt\nfun main(args: Array<String>) {\n  val numerator: Int = 19\n  val denominator: Int = 10\n  println(numerator / denominator)\n}\n/* Output:\n1\n*/",
           "placeholders" : [ ]
         },
         "BMI.kt" : {
           "name" : "BMI.kt",
-          "text" : "package numberTypes\n\nfun getBmiStatus(kg: Double, heightM: Double): String {\n  val bmi = kg / (heightM * heightM)      // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val kg = 72.57 // 160 lbs\n  val heightM = 1.727 // 68 inches\n  val status = getBmiStatus(kg, heightM)\n  println(status)\n}\n/* Output:\nNormal weight\n*/",
+          "text" : "// numberTypes/BMI.kt\nfun getBmiStatus(kg: Double, heightM: Double): String {\n  val bmi = kg / (heightM * heightM)      // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val kg = 72.57 // 160 lbs\n  val heightM = 1.727 // 68 inches\n  val status = getBmiStatus(kg, heightM)\n  println(status)\n}\n/* Output:\nNormal weight\n*/",
           "placeholders" : [ ]
         },
         "IntegerMath.kt" : {
           "name" : "IntegerMath.kt",
-          "text" : "package numberTypes\n\nfun getBmiStatusInt(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07 // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val lbs = 160\n  val height = 68\n  val status = getBmiStatusInt(lbs, height)\n  println(status)\n}\n/* Output:\nUnderweight\n*/",
+          "text" : "// numberTypes/IntegerMath.kt\nfun getBmiStatusInt(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07 // [1]\n  return if (bmi < 18.5) \"Underweight\"\n    else if (bmi < 25) \"Normal weight\"\n    else \"Overweight\"\n}\n\nfun main(args: Array<String>) {\n  val lbs = 160\n  val height = 68\n  val status = getBmiStatusInt(lbs, height)\n  println(status)\n}\n/* Output:\nUnderweight\n*/",
           "placeholders" : [ ]
         },
         "IntegerOverflow.kt" : {
           "name" : "IntegerOverflow.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val i: Int = Int.MAX_VALUE\n  println(i + i)\n}\n/* Output:\n-2\n*/",
+          "text" : "// numberTypes/IntegerOverflow.kt\nfun main(args: Array<String>) {\n  val i: Int = Int.MAX_VALUE\n  println(i + i)\n}\n/* Output:\n-2\n*/",
           "placeholders" : [ ]
         },
         "UsingLongs.kt" : {
           "name" : "UsingLongs.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  val i = Int.MAX_VALUE\n  println(0L + i + i)              // [1]\n  println(1_000_000 * 1_000_000L)  // [2]\n}\n/* Output:\n4294967294\n1000000000000\n*/",
+          "text" : "// numberTypes/UsingLongs.kt\nfun main(args: Array<String>) {\n  val i = Int.MAX_VALUE\n  println(0L + i + i)              // [1]\n  println(1_000_000 * 1_000_000L)  // [2]\n}\n/* Output:\n4294967294\n1000000000000\n*/",
           "placeholders" : [ ]
         },
         "BiggestLong.kt" : {
           "name" : "BiggestLong.kt",
-          "text" : "package numberTypes\n\nfun main(args: Array<String>) {\n  println(Long.MAX_VALUE)\n}\n/* Output:\n9223372036854775807\n*/",
+          "text" : "// numberTypes/BiggestLong.kt\nfun main(args: Array<String>) {\n  println(Long.MAX_VALUE)\n}\n/* Output:\n9223372036854775807\n*/",
           "placeholders" : [ ]
         }
       },
@@ -795,22 +795,22 @@
       "task_files" : {
         "Booleans1.kt" : {
           "name" : "Booleans1.kt",
-          "text" : "package booleans\n\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen =\n      if (hour >= opens && hour <= closes)   // [1]\n        true\n      else\n        false\n  println(\"Open: $isOpen\")\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\n*/",
+          "text" : "// booleans/Booleans1.kt\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen =\n      if (hour >= opens && hour <= closes)   // [1]\n        true\n      else\n        false\n  println(\"Open: $isOpen\")\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\n*/",
           "placeholders" : [ ]
         },
         "Booleans2.kt" : {
           "name" : "Booleans2.kt",
-          "text" : "package booleans\n\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen = hour >= opens && hour <= closes\n  println(\"Open: $isOpen\")\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\n*/",
+          "text" : "// booleans/Booleans2.kt\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen = hour >= opens && hour <= closes\n  println(\"Open: $isOpen\")\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\n*/",
           "placeholders" : [ ]
         },
         "Booleans3.kt" : {
           "name" : "Booleans3.kt",
-          "text" : "package booleans\n\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isClosed = hour < opens || hour > closes\n  println(\"Closed: $isClosed\")\n}\n/* Output:\nOperating hours: 9 - 20\nClosed: true\n*/",
+          "text" : "// booleans/Booleans3.kt\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isClosed = hour < opens || hour > closes\n  println(\"Closed: $isClosed\")\n}\n/* Output:\nOperating hours: 9 - 20\nClosed: true\n*/",
           "placeholders" : [ ]
         },
         "EvaluationOrder.kt" : {
           "name" : "EvaluationOrder.kt",
-          "text" : "package booleans\n\nfun main(args: Array<String>) {\n  val sunny = true\n  val hoursSleep = 6\n  val exercise = false\n  val temp = 55\n\n  // [1]:\n  val happy1 = sunny && temp > 50 ||\n      exercise && hoursSleep > 7\n  println(happy1)\n\n  // [2]:\n  val sameHappy1 = (sunny && temp > 50) ||\n      (exercise && hoursSleep > 7)\n  println(sameHappy1)\n\n  // [3]:\n  val notSame =\n      (sunny && temp > 50 || exercise) &&\n          hoursSleep > 7\n  println(notSame)\n}\n/* Output:\ntrue\ntrue\nfalse\n*/",
+          "text" : "// booleans/EvaluationOrder.kt\nfun main(args: Array<String>) {\n  val sunny = true\n  val hoursSleep = 6\n  val exercise = false\n  val temp = 55\n\n  // [1]:\n  val happy1 = sunny && temp > 50 ||\n      exercise && hoursSleep > 7\n  println(happy1)\n\n  // [2]:\n  val sameHappy1 = (sunny && temp > 50) ||\n      (exercise && hoursSleep > 7)\n  println(sameHappy1)\n\n  // [3]:\n  val notSame =\n      (sunny && temp > 50 || exercise) &&\n          hoursSleep > 7\n  println(notSame)\n}\n/* Output:\ntrue\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -922,12 +922,12 @@
       "task_files" : {
         "WhileLoop.kt" : {
           "name" : "WhileLoop.kt",
-          "text" : "package repetitionWithWhile\n\nfun condition(i: Int) = i < 10\n\nfun main(args: Array<String>) {\n  var i = 0\n  while (condition(i)) {\n    print(\".\")\n    i++         // [1]\n  }\n}\n/* Output:\n..........\n*/",
+          "text" : "// repetitionWithWhile/WhileLoop.kt\nfun condition(i: Int) = i < 10\n\nfun main(args: Array<String>) {\n  var i = 0\n  while (condition(i)) {\n    print(\".\")\n    i++         // [1]\n  }\n}\n/* Output:\n..........\n*/",
           "placeholders" : [ ]
         },
         "DoWhileLoop.kt" : {
           "name" : "DoWhileLoop.kt",
-          "text" : "package repetitionWithWhile\n\nfun main(args: Array<String>) {\n  var i = 0\n  do {\n    print(\".\")\n    i++\n  } while (condition(i))\n}\n/* Output:\n..........\n*/",
+          "text" : "// repetitionWithWhile/DoWhileLoop.kt\nfun main(args: Array<String>) {\n  var i = 0\n  do {\n    print(\".\")\n    i++\n  } while (condition(i))\n}\n/* Output:\n..........\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1003,47 +1003,47 @@
       "task_files" : {
         "RepeatThreeTimes.kt" : {
           "name" : "RepeatThreeTimes.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (i in 1..3) {\n    println(\"Hey $i!\")\n  }\n}\n/* Output:\nHey 1!\nHey 2!\nHey 3!\n*/",
+          "text" : "// forAndRanges/RepeatThreeTimes.kt\nfun main(args: Array<String>) {\n  for (i in 1..3) {\n    println(\"Hey $i!\")\n  }\n}\n/* Output:\nHey 1!\nHey 2!\nHey 3!\n*/",
           "placeholders" : [ ]
         },
         "DefiningRanges.kt" : {
           "name" : "DefiningRanges.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val range1 = 1..10             // [1]\n  val range2 = 0 until 10        // [2]\n  println(range1)\n  println(range2)\n}\n/* Output:\n1..10\n0..9\n*/",
+          "text" : "// forAndRanges/DefiningRanges.kt\nfun main(args: Array<String>) {\n  val range1 = 1..10             // [1]\n  val range2 = 0 until 10        // [2]\n  println(range1)\n  println(range2)\n}\n/* Output:\n1..10\n0..9\n*/",
           "placeholders" : [ ]
         },
         "SumUsingRange.kt" : {
           "name" : "SumUsingRange.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  var sum = 0\n  for (n in 10..100) {\n    sum += n\n  }\n  println(\"sum = $sum\")\n}\n/* Output:\nsum = 5005\n*/",
+          "text" : "// forAndRanges/SumUsingRange.kt\nfun main(args: Array<String>) {\n  var sum = 0\n  for (n in 10..100) {\n    sum += n\n  }\n  println(\"sum = $sum\")\n}\n/* Output:\nsum = 5005\n*/",
           "placeholders" : [ ]
         },
         "ForWithRanges.kt" : {
           "name" : "ForWithRanges.kt",
-          "text" : "package forAndRanges\n\nfun showRange(r: IntProgression) {\n  for (i in r) {\n    print(\"$i \")\n  }\n  print(\"// $r\")\n  println()\n}\n\nfun main(args: Array<String>) {\n  showRange(1..5)\n  showRange(0 until 5)\n  showRange(5 downTo 1)           // [1]\n  showRange(0..9 step 2)          // [2]\n  showRange(0 until 10 step 3)    // [3]\n  showRange(9 downTo 2 step 3)\n}\n/* Output:\n1 2 3 4 5 // 1..5\n0 1 2 3 4 // 0..4\n5 4 3 2 1 // 5 downTo 1 step 1\n0 2 4 6 8 // 0..8 step 2\n0 3 6 9 // 0..9 step 3\n9 6 3 // 9 downTo 3 step 3\n*/",
+          "text" : "// forAndRanges/ForWithRanges.kt\nfun showRange(r: IntProgression) {\n  for (i in r) {\n    print(\"$i \")\n  }\n  print(\"// $r\")\n  println()\n}\n\nfun main(args: Array<String>) {\n  showRange(1..5)\n  showRange(0 until 5)\n  showRange(5 downTo 1)           // [1]\n  showRange(0..9 step 2)          // [2]\n  showRange(0 until 10 step 3)    // [3]\n  showRange(9 downTo 2 step 3)\n}\n/* Output:\n1 2 3 4 5 // 1..5\n0 1 2 3 4 // 0..4\n5 4 3 2 1 // 5 downTo 1 step 1\n0 2 4 6 8 // 0..8 step 2\n0 3 6 9 // 0..9 step 3\n9 6 3 // 9 downTo 3 step 3\n*/",
           "placeholders" : [ ]
         },
         "ForWithCharRange.kt" : {
           "name" : "ForWithCharRange.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (c in 'a'..'z') {          // [1]\n    print(c)\n  }\n}\n/* Output:\nabcdefghijklmnopqrstuvwxyz\n*/",
+          "text" : "// forAndRanges/ForWithCharRange.kt\nfun main(args: Array<String>) {\n  for (c in 'a'..'z') {          // [1]\n    print(c)\n  }\n}\n/* Output:\nabcdefghijklmnopqrstuvwxyz\n*/",
           "placeholders" : [ ]
         },
         "IndexIntoString.kt" : {
           "name" : "IndexIntoString.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val s = \"abc\"\n  for (i in 0..s.lastIndex) {\n    print(s[i] + 1)\n  }\n}\n/* Output:\nbcd\n*/",
+          "text" : "// forAndRanges/IndexIntoString.kt\nfun main(args: Array<String>) {\n  val s = \"abc\"\n  for (i in 0..s.lastIndex) {\n    print(s[i] + 1)\n  }\n}\n/* Output:\nbcd\n*/",
           "placeholders" : [ ]
         },
         "AddingIntToChar.kt" : {
           "name" : "AddingIntToChar.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  val ch: Char = 'a'\n  println(ch + 25)\n  println(ch < 'z')\n}\n/* Output:\nz\ntrue\n*/",
+          "text" : "// forAndRanges/AddingIntToChar.kt\nfun main(args: Array<String>) {\n  val ch: Char = 'a'\n  println(ch + 25)\n  println(ch < 'z')\n}\n/* Output:\nz\ntrue\n*/",
           "placeholders" : [ ]
         },
         "IterateOverString.kt" : {
           "name" : "IterateOverString.kt",
-          "text" : "package forAndRanges\n\nfun main(args: Array<String>) {\n  for (ch in \"Jnskhm \") {\n    print(ch + 1)\n  }\n}\n/* Output:\nKotlin!\n*/",
+          "text" : "// forAndRanges/IterateOverString.kt\nfun main(args: Array<String>) {\n  for (ch in \"Jnskhm \") {\n    print(ch + 1)\n  }\n}\n/* Output:\nKotlin!\n*/",
           "placeholders" : [ ]
         },
         "ContainsChar.kt" : {
           "name" : "ContainsChar.kt",
-          "text" : "package forAndRanges\n\nfun containsChar(s: String, ch: Char): Boolean {\n  for (c in s) {\n    if (c == ch)\n      return true\n  }\n  return false\n}\n\nfun main(args: Array<String>) {\n  println(containsChar(\"kotlin\", 't'))\n  println(containsChar(\"kotlin\", 'a'))\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "// forAndRanges/ContainsChar.kt\nfun containsChar(s: String, ch: Char): Boolean {\n  for (c in s) {\n    if (c == ch)\n      return true\n  }\n  return false\n}\n\nfun main(args: Array<String>) {\n  println(containsChar(\"kotlin\", 't'))\n  println(containsChar(\"kotlin\", 'a'))\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1189,37 +1189,37 @@
       "task_files" : {
         "MembershipInRange.kt" : {
           "name" : "MembershipInRange.kt",
-          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(percentage in 1..100)\n}\n/* Output:\ntrue\n*/",
+          "text" : "// moreAboutRanges/MembershipInRange.kt\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(percentage in 1..100)\n}\n/* Output:\ntrue\n*/",
           "placeholders" : [ ]
         },
         "MembershipUsingBounds.kt" : {
           "name" : "MembershipUsingBounds.kt",
-          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(0 <= percentage &&\n    percentage <= 100)\n}\n/* Output:\ntrue\n*/",
+          "text" : "// moreAboutRanges/MembershipUsingBounds.kt\nfun main(args: Array<String>) {\n  val percentage = 35\n  println(0 <= percentage &&\n    percentage <= 100)\n}\n/* Output:\ntrue\n*/",
           "placeholders" : [ ]
         },
         "IterationVsMembership.kt" : {
           "name" : "IterationVsMembership.kt",
-          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  val values = 1..3\n  for (v in values) {\n    println(\"iteration $v\")\n  }\n  val v = 2\n  if (v in values) {\n    println(\"$v is a member of $values\")\n  }\n}\n/* Output:\niteration 1\niteration 2\niteration 3\n2 is a member of 1..3\n*/",
+          "text" : "// moreAboutRanges/IterationVsMembership.kt\nfun main(args: Array<String>) {\n  val values = 1..3\n  for (v in values) {\n    println(\"iteration $v\")\n  }\n  val v = 2\n  if (v in values) {\n    println(\"$v is a member of $values\")\n  }\n}\n/* Output:\niteration 1\niteration 2\niteration 3\n2 is a member of 1..3\n*/",
           "placeholders" : [ ]
         },
         "InString.kt" : {
           "name" : "InString.kt",
-          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  println('t' in \"kotlin\")\n  println('a' in \"kotlin\")\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "// moreAboutRanges/InString.kt\nfun main(args: Array<String>) {\n  println('t' in \"kotlin\")\n  println('a' in \"kotlin\")\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         },
         "CharRange.kt" : {
           "name" : "CharRange.kt",
-          "text" : "package moreAboutRanges\n\nfun isDigit(ch: Char) = ch in '0'..'9'\n\nfun isNotDigit(ch: Char) = ch !in '0'..'9'  // [1]\n\nfun main(args: Array<String>) {\n  println(isDigit('a'))\n  println(isDigit('5'))\n  println(isNotDigit('z'))\n}\n/* Output:\nfalse\ntrue\ntrue\n*/",
+          "text" : "// moreAboutRanges/CharRange.kt\nfun isDigit(ch: Char) = ch in '0'..'9'\n\nfun isNotDigit(ch: Char) = ch !in '0'..'9'  // [1]\n\nfun main(args: Array<String>) {\n  println(isDigit('a'))\n  println(isDigit('5'))\n  println(isNotDigit('z'))\n}\n/* Output:\nfalse\ntrue\ntrue\n*/",
           "placeholders" : [ ]
         },
         "FloatingPointRange.kt" : {
           "name" : "FloatingPointRange.kt",
-          "text" : "package moreAboutRanges\n\nfun inFloatRange(n: Double) {\n  val r = 1.0..10.0\n  println(\"$n in $r? ${n in r}\")\n}\n\nfun main(args: Array<String>) {\n  inFloatRange(0.999999)\n  inFloatRange(5.0)\n  inFloatRange(10.0)\n  inFloatRange(10.0000001)\n}\n/* Output:\n0.999999 in 1.0..10.0? false\n5.0 in 1.0..10.0? true\n10.0 in 1.0..10.0? true\n10.0000001 in 1.0..10.0? false\n*/",
+          "text" : "// moreAboutRanges/FloatingPointRange.kt\nfun inFloatRange(n: Double) {\n  val r = 1.0..10.0\n  println(\"$n in $r? ${n in r}\")\n}\n\nfun main(args: Array<String>) {\n  inFloatRange(0.999999)\n  inFloatRange(5.0)\n  inFloatRange(10.0)\n  inFloatRange(10.0000001)\n}\n/* Output:\n0.999999 in 1.0..10.0? false\n5.0 in 1.0..10.0? true\n10.0 in 1.0..10.0? true\n10.0000001 in 1.0..10.0? false\n*/",
           "placeholders" : [ ]
         },
         "StringRange.kt" : {
           "name" : "StringRange.kt",
-          "text" : "package moreAboutRanges\n\nfun main(args: Array<String>) {\n  println(\"ab\" in \"aa\"..\"az\")\n  println(\"ba\" in \"aa\"..\"az\")\n}\n/* Output:\ntrue\nfalse\n*/",
+          "text" : "// moreAboutRanges/StringRange.kt\nfun main(args: Array<String>) {\n  println(\"ab\" in \"aa\"..\"az\")\n  println(\"ba\" in \"aa\"..\"az\")\n}\n/* Output:\ntrue\nfalse\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1365,17 +1365,17 @@
       "task_files" : {
         "ForLoopIsAStatement.kt" : {
           "name" : "ForLoopIsAStatement.kt",
-          "text" : "package expressionsAndStatements\n\nfun main(args: Array<String>) {\n  // Can't do this:\n  // val f = for (i in 1..10) {}\n  // Compiler error message:\n  // for is not an expression, and\n  // only expressions are allowed here\n}",
+          "text" : "// expressionsAndStatements/ForLoopIsAStatement.kt\nfun main(args: Array<String>) {\n  // Can't do this:\n  // val f = for (i in 1..10) {}\n  // Compiler error message:\n  // for is not an expression, and\n  // only expressions are allowed here\n}",
           "placeholders" : [ ]
         },
         "UnitReturnType.kt" : {
           "name" : "UnitReturnType.kt",
-          "text" : "package expressionsAndStatements\n\nfun g() = Unit\n\nfun main(args: Array<String>) {\n  println(g())\n  val u: Unit = println(42)\n  println(u)\n}\n/* Output:\nkotlin.Unit\n42\nkotlin.Unit\n*/",
+          "text" : "// expressionsAndStatements/UnitReturnType.kt\nfun g() = Unit\n\nfun main(args: Array<String>) {\n  println(g())\n  val u: Unit = println(42)\n  println(u)\n}\n/* Output:\nkotlin.Unit\n42\nkotlin.Unit\n*/",
           "placeholders" : [ ]
         },
         "AssigningAnIf.kt" : {
           "name" : "AssigningAnIf.kt",
-          "text" : "package expressionsAndStatements\n\nfun main(args: Array<String>) {\n  val result1 = if (11 > 42) 9 else 5\n\n  val result2 = if (1 < 2) {\n    val a = 11\n    a + 42\n  } else 42\n\n  val result3 = if ('x' < 'y') {\n    println(\"x < y\")\n  } else {\n    println(\"x > y\")\n  }\n\n  println(result1)\n  println(result2)\n  println(result3)\n}\n/* Output:\nx < y\n5\n53\nkotlin.Unit\n*/",
+          "text" : "// expressionsAndStatements/AssigningAnIf.kt\nfun main(args: Array<String>) {\n  val result1 = if (11 > 42) 9 else 5\n\n  val result2 = if (1 < 2) {\n    val a = 11\n    a + 42\n  } else 42\n\n  val result3 = if ('x' < 'y') {\n    println(\"x < y\")\n  } else {\n    println(\"x > y\")\n  }\n\n  println(result1)\n  println(result2)\n  println(result3)\n}\n/* Output:\nx < y\n5\n53\nkotlin.Unit\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1422,62 +1422,62 @@
       "task_files" : {
         "BasicFunctions.kt" : {
           "name" : "BasicFunctions.kt",
-          "text" : "package summary1\n\nfun cube(x: Int): Int {\n  return x * x * x\n}\n\nfun bang(s: String) = s + \"!\"\n\nfun main(args: Array<String>) {\n  println(cube(3))\n  println(bang(\"pop\"))\n}\n/* Output:\n27\npop!\n*/",
+          "text" : "// summary1/BasicFunctions.kt\nfun cube(x: Int): Int {\n  return x * x * x\n}\n\nfun bang(s: String) = s + \"!\"\n\nfun main(args: Array<String>) {\n  println(cube(3))\n  println(bang(\"pop\"))\n}\n/* Output:\n27\npop!\n*/",
           "placeholders" : [ ]
         },
         "Booleans.kt" : {
           "name" : "Booleans.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen = hour >= opens && hour <= closes\n  println(\"Open: \" + isOpen)\n  println(\"Not open: \" + !isOpen)\n  val isClosed = hour < opens || hour > closes\n  println(\"Closed: \" + isClosed)\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\nNot open: true\nClosed: true\n*/",
+          "text" : "// summary1/Booleans.kt\nfun main(args: Array<String>) {\n  val hour = 6\n  val opens = 9\n  val closes = 20\n  println(\"Operating hours: $opens - $closes\")\n  val isOpen = hour >= opens && hour <= closes\n  println(\"Open: \" + isOpen)\n  println(\"Not open: \" + !isOpen)\n  val isClosed = hour < opens || hour > closes\n  println(\"Closed: \" + isClosed)\n}\n/* Output:\nOperating hours: 9 - 20\nOpen: false\nNot open: true\nClosed: true\n*/",
           "placeholders" : [ ]
         },
         "IfResult.kt" : {
           "name" : "IfResult.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val result = if (99 < 100) 4 else 42\n  println(result)\n}\n/* Output:\n4\n*/",
+          "text" : "// summary1/IfResult.kt\nfun main(args: Array<String>) {\n  val result = if (99 < 100) 4 else 42\n  println(result)\n}\n/* Output:\n4\n*/",
           "placeholders" : [ ]
         },
         "IfExpression.kt" : {
           "name" : "IfExpression.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val activity = \"swimming\"\n  val hour = 10\n\n  val isOpen = if (activity == \"swimming\" ||\n      activity == \"ice skating\") {\n    val opens = 9\n    val closes = 20\n    println(\"Operating hours: \" +\n        opens + \" - \" + closes)\n    hour >= opens && hour <= closes\n  } else {\n    false\n  }\n  println(isOpen)\n}\n/* Output:\nOperating hours: 9 - 20\ntrue\n*/",
+          "text" : "// summary1/IfExpression.kt\nfun main(args: Array<String>) {\n  val activity = \"swimming\"\n  val hour = 10\n\n  val isOpen = if (activity == \"swimming\" ||\n      activity == \"ice skating\") {\n    val opens = 9\n    val closes = 20\n    println(\"Operating hours: \" +\n        opens + \" - \" + closes)\n    hour >= opens && hour <= closes\n  } else {\n    false\n  }\n  println(isOpen)\n}\n/* Output:\nOperating hours: 9 - 20\ntrue\n*/",
           "placeholders" : [ ]
         },
         "StrTemplates.kt" : {
           "name" : "StrTemplates.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [2]\n  println(\"printing a $1\")                   // [3]\n}\n/* Output:\nFound 42!\na\nprinting a $1\n*/",
+          "text" : "// summary1/StrTemplates.kt\nfun main(args: Array<String>) {\n  val answer = 42\n  println(\"Found $answer!\")                  // [1]\n  val condition = true\n  println(\"${if (condition) 'a' else 'b'}\")  // [2]\n  println(\"printing a $1\")                   // [3]\n}\n/* Output:\nFound 42!\na\nprinting a $1\n*/",
           "placeholders" : [ ]
         },
         "ThreeQuotes.kt" : {
           "name" : "ThreeQuotes.kt",
-          "text" : "package summary1\n\nfun json(q: String, a: Int) = \"\"\"{\n    \"question\" : \"$q\",\n    \"answer\" : $a\n}\"\"\"\n\nfun main(args: Array<String>) {\n  println(json(\"The Ultimate\", 42))\n}\n/* Output:\n{\n    \"question\" : \"The Ultimate\",\n    \"answer\" : 42\n}\n*/",
+          "text" : "// summary1/ThreeQuotes.kt\nfun json(q: String, a: Int) = \"\"\"{\n    \"question\" : \"$q\",\n    \"answer\" : $a\n}\"\"\"\n\nfun main(args: Array<String>) {\n  println(json(\"The Ultimate\", 42))\n}\n/* Output:\n{\n    \"question\" : \"The Ultimate\",\n    \"answer\" : 42\n}\n*/",
           "placeholders" : [ ]
         },
         "NumberTypes.kt" : {
           "name" : "NumberTypes.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val n = 1000    // Int\n  val l = 1000L   // Long\n  val d = 1000.0  // Double\n  println(\"$n $l $d\")\n}\n/* Output:\n1000 1000 1000.0\n*/",
+          "text" : "// summary1/NumberTypes.kt\nfun main(args: Array<String>) {\n  val n = 1000    // Int\n  val l = 1000L   // Long\n  val d = 1000.0  // Double\n  println(\"$n $l $d\")\n}\n/* Output:\n1000 1000 1000.0\n*/",
           "placeholders" : [ ]
         },
         "Overflow.kt" : {
           "name" : "Overflow.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  println(Int.MAX_VALUE + 1)\n  println(Int.MAX_VALUE + 1L)\n}\n/* Output:\n-2147483648\n2147483648\n*/",
+          "text" : "// summary1/Overflow.kt\nfun main(args: Array<String>) {\n  println(Int.MAX_VALUE + 1)\n  println(Int.MAX_VALUE + 1L)\n}\n/* Output:\n-2147483648\n2147483648\n*/",
           "placeholders" : [ ]
         },
         "Truncation.kt" : {
           "name" : "Truncation.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  val d1: Double = 3.0 + 2 / 5\n  println(d1)\n  val d2: Double = 3 + 2.0 / 5\n  println(d2)\n}\n/* Output:\n3.0\n3.4\n*/",
+          "text" : "// summary1/Truncation.kt\nfun main(args: Array<String>) {\n  val d1: Double = 3.0 + 2 / 5\n  println(d1)\n  val d2: Double = 3 + 2.0 / 5\n  println(d2)\n}\n/* Output:\n3.0\n3.4\n*/",
           "placeholders" : [ ]
         },
         "IterateThroughString.kt" : {
           "name" : "IterateThroughString.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  for (c in \"Kotlin\") {\n    print(\"$c \")\n    // c += 1 // error:\n    // val cannot be reassigned\n  }\n}\n/* Output:\nK o t l i n\n*/",
+          "text" : "// summary1/IterateThroughString.kt\nfun main(args: Array<String>) {\n  for (c in \"Kotlin\") {\n    print(\"$c \")\n    // c += 1 // error:\n    // val cannot be reassigned\n  }\n}\n/* Output:\nK o t l i n\n*/",
           "placeholders" : [ ]
         },
         "IntRange.kt" : {
           "name" : "IntRange.kt",
-          "text" : "package summary1\n\nfun main(args: Array<String>) {\n  for (i in 1..10)\n    print(\"$i \")\n}\n/* Output:\n1 2 3 4 5 6 7 8 9 10\n*/",
+          "text" : "// summary1/IntRange.kt\nfun main(args: Array<String>) {\n  for (i in 1..10)\n    print(\"$i \")\n}\n/* Output:\n1 2 3 4 5 6 7 8 9 10\n*/",
           "placeholders" : [ ]
         },
         "RangeMembership.kt" : {
           "name" : "RangeMembership.kt",
-          "text" : "package summary1\n\nfun inNumRange(n: Int) = n in 50..100\n\nfun notLowerCase(ch: Char) = ch !in 'a'..'z'\n\nfun main(args: Array<String>) {\n  val i1 = 11\n  val i2 = 100\n  val c1 = 'K'\n  val c2 = 'k'\n  println(\"$i1 ${inNumRange(i1)}\")\n  println(\"$i2 ${inNumRange(i2)}\")\n  println(\"$c1 ${notLowerCase(c1)}\")\n  println(\"$c2 ${notLowerCase(c2)}\")\n}\n/* Output:\n11 false\n100 true\nK true\nk false\n*/",
+          "text" : "// summary1/RangeMembership.kt\nfun inNumRange(n: Int) = n in 50..100\n\nfun notLowerCase(ch: Char) = ch !in 'a'..'z'\n\nfun main(args: Array<String>) {\n  val i1 = 11\n  val i2 = 100\n  val c1 = 'K'\n  val c2 = 'k'\n  println(\"$i1 ${inNumRange(i1)}\")\n  println(\"$i2 ${inNumRange(i2)}\")\n  println(\"$c1 ${notLowerCase(c1)}\")\n  println(\"$c2 ${notLowerCase(c2)}\")\n}\n/* Output:\n11 false\n100 true\nK true\nk false\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1495,12 +1495,12 @@
       "task_files" : {
         "IntRanges.kt" : {
           "name" : "IntRanges.kt",
-          "text" : "package classesAndObjects\n\nfun main(args: Array<String>) {\n  val r1 = IntRange(0, 10)\n  val r2 = IntRange(5, 7)\n  println(r1)\n  println(r2)\n}\n/* Output:\n0..10\n5..7\n*/",
+          "text" : "// classesAndObjects/IntRanges.kt\n\nfun main(args: Array<String>) {\n  val r1 = IntRange(0, 10)\n  val r2 = IntRange(5, 7)\n  println(r1)\n  println(r2)\n}\n/* Output:\n0..10\n5..7\n*/",
           "placeholders" : [ ]
         },
         "RangeSum.kt" : {
           "name" : "RangeSum.kt",
-          "text" : "package classesAndObjects\n\nfun main(args: Array<String>) {\n  val r = IntRange(0, 10)\n  println(r.sum())\n}\n/* Output:\n55\n*/",
+          "text" : "// classesAndObjects/RangeSum.kt\nfun main(args: Array<String>) {\n  val r = IntRange(0, 10)\n  println(r.sum())\n}\n/* Output:\n55\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1699,7 +1699,7 @@
       "task_files" : {
         "Animals.kt" : {
           "name" : "Animals.kt",
-          "text" : "package creatingClasses\n\n// Create some classes:\nclass Giraffe\nclass Bear\nclass Hippo\n\nfun main(args: Array<String>) {\n  // Create some objects:\n  val g1 = Giraffe()\n  val g2 = Giraffe()\n  val b = Bear()\n  val h = Hippo()\n\n  // Each object() is unique:\n  println(g1)\n  println(g2)\n  println(h)\n  println(b)\n}\n/* Sample output:\ncreatingclasses.Giraffe@279f2327\ncreatingclasses.Giraffe@2ff4acd0\ncreatingclasses.Hippo@54bedef2\ncreatingclasses.Bear@5caf905d\n*/",
+          "text" : "// creatingClasses/Animals.kt\n\n// Create some classes:\nclass Giraffe\nclass Bear\nclass Hippo\n\nfun main(args: Array<String>) {\n  // Create some objects:\n  val g1 = Giraffe()\n  val g2 = Giraffe()\n  val b = Bear()\n  val h = Hippo()\n\n  // Each object() is unique:\n  println(g1)\n  println(g2)\n  println(h)\n  println(b)\n}\n/* Sample output:\ncreatingclasses.Giraffe@279f2327\ncreatingclasses.Giraffe@2ff4acd0\ncreatingclasses.Hippo@54bedef2\ncreatingclasses.Bear@5caf905d\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1717,17 +1717,17 @@
       "task_files" : {
         "Dog.kt" : {
           "name" : "Dog.kt",
-          "text" : "package memberFunctions\n\nclass Dog {\n  fun bark() = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  val dog = Dog()\n}",
+          "text" : "// memberFunctions/Dog.kt\n\nclass Dog {\n  fun bark() = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  val dog = Dog()\n}",
           "placeholders" : [ ]
         },
         "Cat.kt" : {
           "name" : "Cat.kt",
-          "text" : "package memberFunctions\n\nclass Cat {\n  fun meow() = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow() // Call 'meow()' for 'cat'\n  println(m1)\n}\n/* Output:\nmew!\n*/",
+          "text" : "// memberFunctions/Cat.kt\n\nclass Cat {\n  fun meow() = \"mew!\"\n}\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  val m1 = cat.meow() // Call 'meow()' for 'cat'\n  println(m1)\n}\n/* Output:\nmew!\n*/",
           "placeholders" : [ ]
         },
         "Hamster.kt" : {
           "name" : "Hamster.kt",
-          "text" : "package memberFunctions\n\nclass Hamster {\n  fun speak() = \"squeak! \"\n  fun exercise() =\n    this.speak() + // Qualified with 'this'\n    speak() +      // Without 'this'\n    \"Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! squeak! Running on wheel\n*/",
+          "text" : "// memberFunctions/Hamster.kt\n\nclass Hamster {\n  fun speak() = \"squeak! \"\n  fun exercise() =\n    this.speak() + // Qualified with 'this'\n    speak() +      // Without 'this'\n    \"Running on wheel\"\n}\n\nfun main(args: Array<String>) {\n  val hamster = Hamster()\n  println(hamster.exercise())\n}\n/* Output:\nsqueak! squeak! Running on wheel\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1745,37 +1745,37 @@
       "task_files" : {
         "ImportClass.kt" : {
           "name" : "ImportClass.kt",
-          "text" : "package importsAndPackages\n\nimport java.util.Random\n\nfun main(args: Array<String>) {\n  val r = Random(47)\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n}\n/* Output:\n8\n5\n3\n*/",
+          "text" : "// importsAndPackages/ImportClass.kt\nimport java.util.Random\n\nfun main(args: Array<String>) {\n  val r = Random(47)\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n  println(r.nextInt(10))\n}\n/* Output:\n8\n5\n3\n*/",
           "placeholders" : [ ]
         },
         "ImportMultiple.kt" : {
           "name" : "ImportMultiple.kt",
-          "text" : "package importsAndPackages\n\nimport java.util.Random\nimport java.util.Properties\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
+          "text" : "// importsAndPackages/ImportMultiple.kt\nimport java.util.Random\nimport java.util.Properties\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
           "placeholders" : [ ]
         },
         "ImportNameChange.kt" : {
           "name" : "ImportNameChange.kt",
-          "text" : "package importsAndPackages\n\nimport java.util.Random as Bob\nimport java.util.Properties as Jill\n\nfun main(args: Array<String>) {\n  val r = Bob()\n  val p = Jill()\n}",
+          "text" : "// importsAndPackages/ImportNameChange.kt\nimport java.util.Random as Bob\nimport java.util.Properties as Jill\n\nfun main(args: Array<String>) {\n  val r = Bob()\n  val p = Jill()\n}",
           "placeholders" : [ ]
         },
         "ImportEverything.kt" : {
           "name" : "ImportEverything.kt",
-          "text" : "package importsAndPackages\n\nimport java.util.*\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
+          "text" : "// importsAndPackages/ImportEverything.kt\nimport java.util.*\n\nfun main(args: Array<String>) {\n  val r = Random()\n  val p = Properties()\n}",
           "placeholders" : [ ]
         },
         "FullyQualify.kt" : {
           "name" : "FullyQualify.kt",
-          "text" : "package importsAndPackages\n\nfun main(args: Array<String>) {\n  val r = java.util.Random()\n  val p = java.util.Properties()\n}",
+          "text" : "// importsAndPackages/FullyQualify.kt\n\nfun main(args: Array<String>) {\n  val r = java.util.Random()\n  val p = java.util.Properties()\n}",
           "placeholders" : [ ]
         },
         "PythagoreanTheorem.kt" : {
           "name" : "PythagoreanTheorem.kt",
-          "text" : "package pythagorean\n\nclass RightTriangle {\n  fun hypotenuse(a: Double, b: Double) =\n    Math.sqrt(a * a + b * b)\n  fun area(a: Double, b: Double) =\n    a * b / 2\n}",
+          "text" : "// importsAndPackages/PythagoreanTheorem.kt\npackage pythagorean\n\nclass RightTriangle {\n  fun hypotenuse(a: Double, b: Double) =\n    Math.sqrt(a * a + b * b)\n  fun area(a: Double, b: Double) =\n    a * b / 2\n}",
           "placeholders" : [ ]
         },
         "ImportPythagorean.kt" : {
           "name" : "ImportPythagorean.kt",
-          "text" : "package importsAndPackages\n\nimport pythagorean.RightTriangle\n\nfun main(args: Array<String>) {\n  val rt = RightTriangle()\n  println(rt.hypotenuse(3.0, 4.0))\n  println(rt.area(3.0, 4.0))\n}\n/* Output:\n5.0\n6.0\n*/",
+          "text" : "// importsAndPackages/ImportPythagorean.kt\nimport pythagorean.RightTriangle\n\nfun main(args: Array<String>) {\n  val rt = RightTriangle()\n  println(rt.hypotenuse(3.0, 4.0))\n  println(rt.area(3.0, 4.0))\n}\n/* Output:\n5.0\n6.0\n*/",
           "placeholders" : [ ]
         }
       },
@@ -1793,22 +1793,22 @@
       "task_files" : {
         "TestingExample.kt" : {
           "name" : "TestingExample.kt",
-          "text" : "package testing\n\nimport atomicTest.*\n\nfun main(args: Array<String>) {\n  val v1 = 11\n  val v2 = \"Ontology\"\n\n  // Test expressions using 'eq' (\"equals\"):\n  v1 eq 11\n  v2 eq \"Ontology\"\n\n  // 'neq' means \"not equal\"\n  v2 neq \"Epistimology\"\n\n  // Error: Epistimology != Ontology\n  // v2 eq \"Epistimology\"\n}\n/* Output:\n11\nOntology\nOntology\n*/",
+          "text" : "// testing/TestingExample.kt\nimport atomicTest.*\n\nfun main(args: Array<String>) {\n  val v1 = 11\n  val v2 = \"Ontology\"\n\n  // Test expressions using 'eq' (\"equals\"):\n  v1 eq 11\n  v2 eq \"Ontology\"\n\n  // 'neq' means \"not equal\"\n  v2 neq \"Epistimology\"\n\n  // Error: Epistimology != Ontology\n  // v2 eq \"Epistimology\"\n}\n/* Output:\n11\nOntology\nOntology\n*/",
           "placeholders" : [ ]
         },
         "TDDFail.kt" : {
           "name" : "TDDFail.kt",
-          "text" : "package testing1\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160, 68) eq \"Normal weight\"\n//  calculateBMI(100, 68) eq \"Underweight\"\n//  calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String = \"Normal weight\"",
+          "text" : "// testing/TDDFail.kt\npackage testing1\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160, 68) eq \"Normal weight\"\n//  calculateBMI(100, 68) eq \"Underweight\"\n//  calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String = \"Normal weight\"",
           "placeholders" : [ ]
         },
         "TDDStillFails.kt" : {
           "name" : "TDDStillFails.kt",
-          "text" : "package testing2\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // Everything fails:\n  // calculateBMI(160, 68) eq \"Normal weight\"\n  // calculateBMI(100, 68) eq \"Underweight\"\n  // calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07\n  return if (bmi < 18.5) \"Underweight\"\n  else if (bmi < 25) \"Normal weight\"\n  else \"Overweight\"\n}",
+          "text" : "// testing/TDDStillFails.kt\npackage testing2\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // Everything fails:\n  // calculateBMI(160, 68) eq \"Normal weight\"\n  // calculateBMI(100, 68) eq \"Underweight\"\n  // calculateBMI(200, 68) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Int, height: Int): String {\n  val bmi = lbs / (height * height) * 703.07\n  return if (bmi < 18.5) \"Underweight\"\n  else if (bmi < 25) \"Normal weight\"\n  else \"Overweight\"\n}",
           "placeholders" : [ ]
         },
         "TDDWorks.kt" : {
           "name" : "TDDWorks.kt",
-          "text" : "package testing3\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160.0, 68.0) eq \"Normal weight\"\n  calculateBMI(100.0, 68.0) eq \"Underweight\"\n  calculateBMI(200.0, 68.0) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Double, height: Double): String {\n  val bmi = lbs / (height * height) * 703.07\n  return if (bmi < 18.5) \"Underweight\"\n  else if (bmi < 25) \"Normal weight\"\n  else \"Overweight\"\n}",
+          "text" : "// testing/TDDWorks.kt\npackage testing3\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  calculateBMI(160.0, 68.0) eq \"Normal weight\"\n  calculateBMI(100.0, 68.0) eq \"Underweight\"\n  calculateBMI(200.0, 68.0) eq \"Overweight\"\n}\n\nfun calculateBMI(lbs: Double, height: Double): String {\n  val bmi = lbs / (height * height) * 703.07\n  return if (bmi < 18.5) \"Underweight\"\n  else if (bmi < 25) \"Normal weight\"\n  else \"Overweight\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1826,12 +1826,12 @@
       "task_files" : {
         "Cup.kt" : {
           "name" : "Cup.kt",
-          "text" : "package properties\n\nimport atomicTest.eq\n\nclass Cup {\n  var percentFull = 0\n}\n\nfun main(args: Array<String>) {\n  val c1 = Cup()\n  c1.percentFull = 50\n  val c2 = Cup()\n  c2.percentFull = 100\n  c1.percentFull eq 50\n  c2.percentFull eq 100\n}",
+          "text" : "// properties/Cup.kt\nimport atomicTest.eq\n\nclass Cup {\n  var percentFull = 0\n}\n\nfun main(args: Array<String>) {\n  val c1 = Cup()\n  c1.percentFull = 50\n  val c2 = Cup()\n  c2.percentFull = 100\n  c1.percentFull eq 50\n  c2.percentFull eq 100\n}",
           "placeholders" : [ ]
         },
         "Cup2.kt" : {
           "name" : "Cup2.kt",
-          "text" : "package properties\n\nimport atomicTest.eq\n\nclass Cup2 {\n  var percentFull = 0\n  val max = 100\n  fun add(increase: Int): Int {\n    percentFull += increase\n    if (percentFull > max) {\n      percentFull = max\n    }\n    return percentFull\n  }\n}\n\nfun main(args: Array<String>) {\n  val cup = Cup2()\n  cup.add(50) eq 50\n  cup.add(70) eq 100\n}",
+          "text" : "// properties/Cup2.kt\nimport atomicTest.eq\n\nclass Cup2 {\n  var percentFull = 0\n  val max = 100\n  fun add(increase: Int): Int {\n    percentFull += increase\n    if (percentFull > max) {\n      percentFull = max\n    }\n    return percentFull\n  }\n}\n\nfun main(args: Array<String>) {\n  val cup = Cup2()\n  cup.add(50) eq 50\n  cup.add(70) eq 100\n}",
           "placeholders" : [ ]
         }
       },
@@ -1849,17 +1849,17 @@
       "task_files" : {
         "ChangingAVal.kt" : {
           "name" : "ChangingAVal.kt",
-          "text" : "package referencesAndMutability\n\nimport atomicTest.eq\n\nclass X(var n: Int)\n\nfun main(args: Array<String>) {\n  val x = X(11)\n  x.n eq 11\n  x.n = 22\n  x.n eq 22\n//  x = X(22) // Not allowed\n}",
+          "text" : "// referencesAndMutability/ChangingAVal.kt\nimport atomicTest.eq\n\nclass X(var n: Int)\n\nfun main(args: Array<String>) {\n  val x = X(11)\n  x.n eq 11\n  x.n = 22\n  x.n eq 22\n//  x = X(22) // Not allowed\n}",
           "placeholders" : [ ]
         },
         "AnUnchangingVar.kt" : {
           "name" : "AnUnchangingVar.kt",
-          "text" : "package referencesAndMutability\n\nimport atomicTest.eq\n\nclass Y(val n: Int)\n\nfun main(args: Array<String>) {\n  var y = Y(11)\n  y.n eq 11\n//  y.n = 22 // Not allowed\n  y = Y(22)\n}",
+          "text" : "// referencesAndMutability/AnUnchangingVar.kt\nimport atomicTest.eq\n\nclass Y(val n: Int)\n\nfun main(args: Array<String>) {\n  var y = Y(11)\n  y.n eq 11\n//  y.n = 22 // Not allowed\n  y = Y(22)\n}",
           "placeholders" : [ ]
         },
         "References.kt" : {
           "name" : "References.kt",
-          "text" : "package referencesAndMutability\n\nimport atomicTest.eq\n\nclass Z(var n: Int)\n\nfun main(args: Array<String>) {\n  val z1 = Z(13)\n  val z2 = z1\n  z2.n eq 13\n  z1.n = 97\n  z2.n eq 97\n}",
+          "text" : "// referencesAndMutability/References.kt\nimport atomicTest.eq\n\nclass Z(var n: Int)\n\nfun main(args: Array<String>) {\n  val z1 = Z(13)\n  val z2 = z1\n  z2.n eq 13\n  z1.n = 97\n  z2.n eq 97\n}",
           "placeholders" : [ ]
         }
       },
@@ -1877,7 +1877,7 @@
       "task_files" : {
         "Lists.kt" : {
           "name" : "Lists.kt",
-          "text" : "package lists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // A List holds other objects:\n  val l1 = listOf(1, 3, 5, 7, 11, 13)\n  l1 eq \"[1, 3, 5, 7, 11, 13]\"           // [1]\n\n  l1[4] eq 11 // \"Indexing\" into a List  // [2]\n\n  // Take each element of the List:\n  var result = \"\"\n  for (i in l1) {                        // [3]\n    result += \"$i \"\n  }\n  result eq \"1 3 5 7 11 13 \"\n\n  val l3 = listOf(1.1, 2.2, 3.3, 4.4)    // [4]\n  l3.min() eq 1.1\n  l3.max() eq 4.4\n\n  val l4 = listOf(\"Twa\", \"Brillig\", \"And\",\n      \"Slithy\", \"Tove\")\n  l4 eq listOf(\"Twa\", \"Brillig\", \"And\",\n      \"Slithy\", \"Tove\")\n  l4.sorted() eq listOf(\"And\", \"Brillig\",\n      \"Slithy\", \"Tove\", \"Twa\")\n  l4.reversed() eq listOf(\"Tove\", \"Slithy\",\n      \"And\", \"Brillig\", \"Twa\")\n  l4.first() eq \"Twa\"\n  l4.takeLast(2) eq listOf(\"Slithy\", \"Tove\")\n}",
+          "text" : "// lists/Lists.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // A List holds other objects:\n  val l1 = listOf(1, 3, 5, 7, 11, 13)\n  l1 eq \"[1, 3, 5, 7, 11, 13]\"           // [1]\n\n  l1[4] eq 11 // \"Indexing\" into a List  // [2]\n\n  // Take each element of the List:\n  var result = \"\"\n  for (i in l1) {                        // [3]\n    result += \"$i \"\n  }\n  result eq \"1 3 5 7 11 13 \"\n\n  val l3 = listOf(1.1, 2.2, 3.3, 4.4)    // [4]\n  l3.min() eq 1.1\n  l3.max() eq 4.4\n\n  val l4 = listOf(\"Twa\", \"Brillig\", \"And\",\n      \"Slithy\", \"Tove\")\n  l4 eq listOf(\"Twa\", \"Brillig\", \"And\",\n      \"Slithy\", \"Tove\")\n  l4.sorted() eq listOf(\"And\", \"Brillig\",\n      \"Slithy\", \"Tove\", \"Twa\")\n  l4.reversed() eq listOf(\"Tove\", \"Slithy\",\n      \"And\", \"Brillig\", \"Twa\")\n  l4.first() eq \"Twa\"\n  l4.takeLast(2) eq listOf(\"Slithy\", \"Tove\")\n}",
           "placeholders" : [ ]
         }
       },
@@ -1895,12 +1895,12 @@
       "task_files" : {
         "ParameterizedTypes.kt" : {
           "name" : "ParameterizedTypes.kt",
-          "text" : "package parameterizedTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // Type is inferred:\n  val l1 = listOf(1, 2, 3)\n  val l2 = listOf(\"one\", \"two\", \"three\")\n  // Exactly the same, but explicitly typed:\n  val p1: List<Int> = listOf(1, 2, 3)\n  val p2: List<String> =\n      listOf(\"one\", \"two\", \"three\")\n\n  l1 eq p1\n  l2 eq p2\n}",
+          "text" : "// parameterizedTypes/ParameterizedTypes.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  // Type is inferred:\n  val l1 = listOf(1, 2, 3)\n  val l2 = listOf(\"one\", \"two\", \"three\")\n  // Exactly the same, but explicitly typed:\n  val p1: List<Int> = listOf(1, 2, 3)\n  val p2: List<String> =\n      listOf(\"one\", \"two\", \"three\")\n\n  l1 eq p1\n  l2 eq p2\n}",
           "placeholders" : [ ]
         },
         "ParameterizedReturnTypes.kt" : {
           "name" : "ParameterizedReturnTypes.kt",
-          "text" : "package parameterizedTypes\n\nimport atomicTest.eq\n\n// Return type is inferred:\nfun inferred(c1: Char, c2: Char, c3: Char) =\n    listOf(c1, c2, c3)\n\n// Explicit return type:\nfun explicit(c1: Char, c2: Char, c3: Char): List<Char> =\n    listOf(c1, c2, c3)\n\nfun main(args: Array<String>) {\n  inferred('a', 'b', 'c') eq\n      \"[a, b, c]\"\n  explicit('a', 'b', 'c') eq\n      \"[a, b, c]\"\n}",
+          "text" : "// parameterizedTypes/ParameterizedReturnTypes.kt\nimport atomicTest.eq\n\n// Return type is inferred:\nfun inferred(c1: Char, c2: Char, c3: Char) =\n    listOf(c1, c2, c3)\n\n// Explicit return type:\nfun explicit(c1: Char, c2: Char, c3: Char): List<Char> =\n    listOf(c1, c2, c3)\n\nfun main(args: Array<String>) {\n  inferred('a', 'b', 'c') eq\n      \"[a, b, c]\"\n  explicit('a', 'b', 'c') eq\n      \"[a, b, c]\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1918,17 +1918,17 @@
       "task_files" : {
         "MutableList.kt" : {
           "name" : "MutableList.kt",
-          "text" : "package readOnlyAndMutableLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n\n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
+          "text" : "// readOnlyAndMutableLists/MutableList.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list: MutableList<Int> = mutableListOf(1, 2)\n\n  list.add(3)\n  list.addAll(listOf(4, 5))\n\n  list += 6\n  list += listOf(7, 8)\n\n  list eq listOf(1, 2, 3, 4, 5, 6, 7, 8)\n}",
           "placeholders" : [ ]
         },
         "MutableListIsList.kt" : {
           "name" : "MutableListIsList.kt",
-          "text" : "package readOnlyAndMutableLists\n\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // Can't change a List:\n  val list = getList()\n//  list += 3\n}",
+          "text" : "// readOnlyAndMutableLists/MutableListIsList.kt\nfun getList(): List<Int> {\n  return mutableListOf(1, 2, 3)\n}\n\nfun main(args: Array<String>) {\n  // Can't change a List:\n  val list = getList()\n//  list += 3\n}",
           "placeholders" : [ ]
         },
         "DifferentReferencesToList.kt" : {
           "name" : "DifferentReferencesToList.kt",
-          "text" : "package readOnlyAndMutableLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n\n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
+          "text" : "// readOnlyAndMutableLists/DifferentReferencesToList.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list1 = mutableListOf(1)\n  val list2: List<Int> = list1\n  list2 eq listOf(1)\n\n  list1 += 2\n  // list2 is changed as well\n  list2 eq listOf(1, 2)\n}",
           "placeholders" : [ ]
         }
       },
@@ -1946,37 +1946,37 @@
       "task_files" : {
         "ALibrary.kt" : {
           "name" : "ALibrary.kt",
-          "text" : "package com.yoururl.libraryname\n\n// Components to reuse ...\nclass X",
+          "text" : "// summary2/ALibrary.kt\npackage com.yoururl.libraryname\n\n// Components to reuse ...\nclass X",
           "placeholders" : [ ]
         },
         "UseALibrary.kt" : {
           "name" : "UseALibrary.kt",
-          "text" : "package summary2\n\nimport com.yoururl.libraryname.*\n\nfun main(args: Array<String>) {\n  val x = X()\n}",
+          "text" : "// summary2/UseALibrary.kt\nimport com.yoururl.libraryname.*\n\nfun main(args: Array<String>) {\n  val x = X()\n}",
           "placeholders" : [ ]
         },
         "UsingAtomicTest.kt" : {
           "name" : "UsingAtomicTest.kt",
-          "text" : "package summary2\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val pi = 3.14\n  val pie = \"A round dessert\"\n\n  pi eq 3.14\n  pie eq \"A round dessert\"\n//  pie eq \"Square\" // Produces error\n}",
+          "text" : "// summary2/UsingAtomicTest.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val pi = 3.14\n  val pie = \"A round dessert\"\n\n  pi eq 3.14\n  pie eq \"A round dessert\"\n//  pie eq \"Square\" // Produces error\n}",
           "placeholders" : [ ]
         },
         "ListCollection.kt" : {
           "name" : "ListCollection.kt",
-          "text" : "package summary2\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l1 = listOf(19.2, 88.3, 22.1)\n  l1 eq listOf(19.2, 88.3, 22.1)\n  l1[1] eq 88.3 // Indexing\n  l1.reversed() eq listOf(22.1, 88.3, 19.2)\n  l1.sorted() eq listOf(19.2, 22.1, 88.3)\n  l1.max() eq 88.3\n  l1.min() eq 19.2\n}",
+          "text" : "// summary2/ListCollection.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l1 = listOf(19.2, 88.3, 22.1)\n  l1 eq listOf(19.2, 88.3, 22.1)\n  l1[1] eq 88.3 // Indexing\n  l1.reversed() eq listOf(22.1, 88.3, 19.2)\n  l1.sorted() eq listOf(19.2, 22.1, 88.3)\n  l1.max() eq 88.3\n  l1.min() eq 19.2\n}",
           "placeholders" : [ ]
         },
         "ClassBodies.kt" : {
           "name" : "ClassBodies.kt",
-          "text" : "package summary2\n\nclass NoBody\n\nclass SomeBody {\n  val name = \"Janet Doe\"\n}\n\nclass EveryBody {\n  val all = listOf(SomeBody(),\n      SomeBody(), SomeBody())\n}\n\nfun main(args: Array<String>) {\n  val nb = NoBody()\n  val sb = SomeBody()\n  val eb = EveryBody()\n}",
+          "text" : "// summary2/ClassBodies.kt\nclass NoBody\n\nclass SomeBody {\n  val name = \"Janet Doe\"\n}\n\nclass EveryBody {\n  val all = listOf(SomeBody(),\n      SomeBody(), SomeBody())\n}\n\nfun main(args: Array<String>) {\n  val nb = NoBody()\n  val sb = SomeBody()\n  val eb = EveryBody()\n}",
           "placeholders" : [ ]
         },
         "Temperature.kt" : {
           "name" : "Temperature.kt",
-          "text" : "package summary2\n\nimport atomicTest.eq\n\nclass Temperature {\n  var current = 0.0\n  var scale = \"f\"\n\n  fun setFahrenheit(now: Double) {\n    current = now\n    scale = \"f\"\n  }\n\n  fun setCelsius(now: Double) {\n    current = now\n    scale = \"c\"\n  }\n\n  fun getFahrenheit(): Double =\n      if (scale == \"f\")\n        current\n      else\n        current * 9.0 / 5.0 + 32.0\n\n  fun getCelsius(): Double =\n      if (scale == \"c\")\n        current\n      else\n        (current - 32.0) * 5.0 / 9.0\n}\n\nfun main(args: Array<String>) {\n  val temp = Temperature()     // [1]\n  temp.setFahrenheit(98.6)\n  temp.getFahrenheit() eq 98.6\n  temp.getCelsius() eq 37.0\n  temp.setCelsius(100.0)\n  temp.getFahrenheit() eq 212.0\n}",
+          "text" : "// summary2/Temperature.kt\nimport atomicTest.eq\n\nclass Temperature {\n  var current = 0.0\n  var scale = \"f\"\n\n  fun setFahrenheit(now: Double) {\n    current = now\n    scale = \"f\"\n  }\n\n  fun setCelsius(now: Double) {\n    current = now\n    scale = \"c\"\n  }\n\n  fun getFahrenheit(): Double =\n      if (scale == \"f\")\n        current\n      else\n        current * 9.0 / 5.0 + 32.0\n\n  fun getCelsius(): Double =\n      if (scale == \"c\")\n        current\n      else\n        (current - 32.0) * 5.0 / 9.0\n}\n\nfun main(args: Array<String>) {\n  val temp = Temperature()     // [1]\n  temp.setFahrenheit(98.6)\n  temp.getFahrenheit() eq 98.6\n  temp.getCelsius() eq 37.0\n  temp.setCelsius(100.0)\n  temp.getFahrenheit() eq 212.0\n}",
           "placeholders" : [ ]
         },
         "TicTacToe.kt" : {
           "name" : "TicTacToe.kt",
-          "text" : "package summary2\n\nimport atomicTest.eq\n\nclass Cell {\n  var entry = ' '                 // [1]\n  fun set(e: Char): String =      // [2]\n      if (entry == ' ' && (e == 'X' || e == 'O')) {\n        entry = e\n        \"successful move\"\n      } else\n        \"invalid move\"\n}\n\nclass Grid {\n  val cells = listOf(\n      listOf(Cell(), Cell(), Cell()),\n      listOf(Cell(), Cell(), Cell()),\n      listOf(Cell(), Cell(), Cell())\n  )\n\n  fun play(e: Char, x: Int, y: Int): String =\n      if (x < 0 || x > 2 || y < 0 || y > 2)\n        \"invalid move\"\n      else\n        cells[x][y].set(e)        // [3]\n}\n\nfun main(args: Array<String>) {\n  val grid = Grid()\n  grid.play('X', 1, 1) eq \"successful move\"\n  grid.play('X', 1, 1) eq \"invalid move\"\n  grid.play('O', 1, 3) eq \"invalid move\"\n}",
+          "text" : "// summary2/TicTacToe.kt\nimport atomicTest.eq\n\nclass Cell {\n  var entry = ' '                 // [1]\n  fun set(e: Char): String =      // [2]\n      if (entry == ' ' && (e == 'X' || e == 'O')) {\n        entry = e\n        \"successful move\"\n      } else\n        \"invalid move\"\n}\n\nclass Grid {\n  val cells = listOf(\n      listOf(Cell(), Cell(), Cell()),\n      listOf(Cell(), Cell(), Cell()),\n      listOf(Cell(), Cell(), Cell())\n  )\n\n  fun play(e: Char, x: Int, y: Int): String =\n      if (x < 0 || x > 2 || y < 0 || y > 2)\n        \"invalid move\"\n      else\n        cells[x][y].set(e)        // [3]\n}\n\nfun main(args: Array<String>) {\n  val grid = Grid()\n  grid.play('X', 1, 1) eq \"successful move\"\n  grid.play('X', 1, 1) eq \"invalid move\"\n  grid.play('O', 1, 3) eq \"invalid move\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -1994,17 +1994,17 @@
       "task_files" : {
         "RecordAnimals.kt" : {
           "name" : "RecordAnimals.kt",
-          "text" : "package visibilityModifiers\n\nprivate var counter = 0                          // [1]\n\nprivate fun recordAnimal(animal: Animal) {       // [2]\n  println(\"Animal #${counter++}: ${animal.name}\")\n}\n\nprivate class Animal(val name: String)           // [3]\n\nfun recordAnimals() {\n  recordAnimal(Animal(\"Tiger\"))\n  recordAnimal(Animal(\"Antelope\"))\n}\n\nfun recordAnimalsCount() {\n  println(\"$counter animals are here!\")\n}",
+          "text" : "// visibilityModifiers/RecordAnimals.kt\nprivate var counter = 0                          // [1]\n\nprivate fun recordAnimal(animal: Animal) {       // [2]\n  println(\"Animal #${counter++}: ${animal.name}\")\n}\n\nprivate class Animal(val name: String)           // [3]\n\nfun recordAnimals() {\n  recordAnimal(Animal(\"Tiger\"))\n  recordAnimal(Animal(\"Antelope\"))\n}\n\nfun recordAnimalsCount() {\n  println(\"$counter animals are here!\")\n}",
           "placeholders" : [ ]
         },
         "ObserveAnimals.kt" : {
           "name" : "ObserveAnimals.kt",
-          "text" : "package visibilityModifiers\n\nfun main(args: Array<String>) {\n  // Can't access private members declared in another file:\n  // val rabbit = Animal(\"Rabbit\") // Class is private\n  // recordAnimal(rabbit) // Function is private\n  // counter++  // Property is private\n\n  recordAnimals()\n  recordAnimalsCount()\n}\n/* Output:\nAnimal #0: Tiger\nAnimal #1: Antelope\n2 animals are here!\n*/",
+          "text" : "// visibilityModifiers/ObserveAnimals.kt\nfun main(args: Array<String>) {\n  // Can't access private members declared in another file:\n  // val rabbit = Animal(\"Rabbit\") // Class is private\n  // recordAnimal(rabbit) // Function is private\n  // counter++  // Property is private\n\n  recordAnimals()\n  recordAnimalsCount()\n}\n/* Output:\nAnimal #0: Tiger\nAnimal #1: Antelope\n2 animals are here!\n*/",
           "placeholders" : [ ]
         },
         "Cookie.kt" : {
           "name" : "Cookie.kt",
-          "text" : "package visibilityModifiers\n\nclass Cookie {\n  private fun crumble() {  // [1]\n    println(\"crumble\")\n  }\n\n  public fun bite() {      // [2]\n    println(\"bite\")\n  }\n\n  fun eatUp() {            // [3]\n    crumble()              // [4]\n    bite()\n  }\n}\n\nfun main(args: Array<String>) {\n  val x = Cookie()\n  x.bite()\n  // Can't access private members:\n  // x.crumble()\n  x.eatUp()\n}\n/* Output:\nbite\ncrumble\nbite\n*/",
+          "text" : "// visibilityModifiers/Cookie.kt\nclass Cookie {\n  private fun crumble() {  // [1]\n    println(\"crumble\")\n  }\n\n  public fun bite() {      // [2]\n    println(\"bite\")\n  }\n\n  fun eatUp() {            // [3]\n    crumble()              // [4]\n    bite()\n  }\n}\n\nfun main(args: Array<String>) {\n  val x = Cookie()\n  x.bite()\n  // Can't access private members:\n  // x.crumble()\n  x.eatUp()\n}\n/* Output:\nbite\ncrumble\nbite\n*/",
           "placeholders" : [ ]
         }
       },
@@ -2022,12 +2022,12 @@
       "task_files" : {
         "WhenExpressions.kt" : {
           "name" : "WhenExpressions.kt",
-          "text" : "package whenExpressions\n\nimport atomicTest.eq\n\nfun matchColor(color: String) =\n    when (color) {           // [1]\n      \"red\" -> \"RED\"         // [2]\n      \"blue\" -> \"BLUE\"\n      \"green\" -> \"GREEN\"\n      else -> \"UNKNOWN COLOR: \" + color\n    }\n\nfun main(args: Array<String>) {\n  matchColor(\"white\") eq\n      \"UNKNOWN COLOR: white\"\n  matchColor(\"blue\") eq \"BLUE\"\n}",
+          "text" : "// whenExpressions/WhenExpressions.kt\nimport atomicTest.eq\n\nfun matchColor(color: String) =\n    when (color) {           // [1]\n      \"red\" -> \"RED\"         // [2]\n      \"blue\" -> \"BLUE\"\n      \"green\" -> \"GREEN\"\n      else -> \"UNKNOWN COLOR: \" + color\n    }\n\nfun main(args: Array<String>) {\n  matchColor(\"white\") eq\n      \"UNKNOWN COLOR: white\"\n  matchColor(\"blue\") eq \"BLUE\"\n}",
           "placeholders" : [ ]
         },
         "WhenAsStatement.kt" : {
           "name" : "WhenAsStatement.kt",
-          "text" : "package whenExpressions\n\nfun checkColor(color: String) {\n  when (color) {\n    \"red\" -> println(\"RED\")\n    \"blue\" -> println(\"BLUE\")\n    \"green\" -> println(\"GREEN\")\n  }\n}",
+          "text" : "// whenExpressions/WhenAsStatement.kt\nfun checkColor(color: String) {\n  when (color) {\n    \"red\" -> println(\"RED\")\n    \"blue\" -> println(\"BLUE\")\n    \"green\" -> println(\"GREEN\")\n  }\n}",
           "placeholders" : [ ]
         }
       },
@@ -2045,7 +2045,7 @@
       "task_files" : {
         "WhenExpressionAndSmartCasts.kt" : {
           "name" : "WhenExpressionAndSmartCasts.kt",
-          "text" : "package whenexpressionscasts\nimport atomicTest.eq\n\nfun acceptAnything(x: Any): String =\n    when (x) {\n      is String -> \"A String: $x of length ${x.length}\"\n      is Int ->\n        if (x < 20) \"An Int Less than 20: $x\"\n        else \"Some Other Int: $x\"\n      is Dog -> \"A dog: ${x.bark()}\"\n      else -> \"I don't know what that is!\"\n    }\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  acceptAnything(5) eq\n      \"An Int Less than 20: 5\"\n  acceptAnything(25) eq \"Some Other Int: 25\"\n  acceptAnything(\"Some text\") eq\n      \"A String: Some text of length 9\"\n\n  acceptAnything(Dog()) eq \"A dog: yip!\"\n  acceptAnything(listOf(1, 2, 5)) eq\n      \"I don't know what that is!\"\n}",
+          "text" : "// whenExpressionsAndSmartCasts/WhenExpressionAndSmartCasts.kt\npackage whenexpressionscasts\nimport atomicTest.eq\n\nfun acceptAnything(x: Any): String =\n    when (x) {\n      is String -> \"A String: $x of length ${x.length}\"\n      is Int ->\n        if (x < 20) \"An Int Less than 20: $x\"\n        else \"Some Other Int: $x\"\n      is Dog -> \"A dog: ${x.bark()}\"\n      else -> \"I don't know what that is!\"\n    }\n\nclass Dog {\n  fun bark(): String = \"yip!\"\n}\n\nfun main(args: Array<String>) {\n  acceptAnything(5) eq\n      \"An Int Less than 20: 5\"\n  acceptAnything(25) eq \"Some Other Int: 25\"\n  acceptAnything(\"Some text\") eq\n      \"A String: Some text of length 9\"\n\n  acceptAnything(Dog()) eq \"A dog: yip!\"\n  acceptAnything(listOf(1, 2, 5)) eq\n      \"I don't know what that is!\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2063,17 +2063,17 @@
       "task_files" : {
         "NamedArguments.kt" : {
           "name" : "NamedArguments.kt",
-          "text" : "package namedAndDefaultArguments\n\nimport atomicTest.eq\n\nfun getColor(red: Int, green: Int, blue: Int) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val yellow = \"(255, 255, 0)\"\n  getColor(red = 255, green = 255, blue = 0) eq yellow\n  getColor(255, 255, blue = 0) eq yellow\n}",
+          "text" : "// namedAndDefaultArguments/NamedArguments.kt\nimport atomicTest.eq\n\nfun getColor(red: Int, green: Int, blue: Int) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val yellow = \"(255, 255, 0)\"\n  getColor(red = 255, green = 255, blue = 0) eq yellow\n  getColor(255, 255, blue = 0) eq yellow\n}",
           "placeholders" : [ ]
         },
         "NamedArgumentsOrder.kt" : {
           "name" : "NamedArgumentsOrder.kt",
-          "text" : "package namedAndDefaultArguments\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // Can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
+          "text" : "// namedAndDefaultArguments/NamedArgumentsOrder.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  getColor(blue = 0, red = 255, green = 255) eq \"(255, 255, 0)\"\n\n  // Can't put regular argument after named one:\n  // getColor(red = 255, 255, 0)\n}",
           "placeholders" : [ ]
         },
         "NamedAndDefaultArgs.kt" : {
           "name" : "NamedAndDefaultArgs.kt",
-          "text" : "package namedAndDefaultArguments\n\nimport atomicTest.eq\n\nfun getColor1(\n    red: Int = 0,\n    green: Int = 0,\n    blue: Int = 0\n) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val darkRed = \"(139, 0, 0)\"\n  val darkBlue = \"(0, 0, 139)\"\n  val orange = \"(255, 165, 0)\"\n  val purple = \"(128, 0, 128)\"\n\n  getColor1(139) eq darkRed\n  getColor1(blue = 139) eq darkBlue\n  getColor1(255, 165) eq orange\n  getColor1(red = 128, blue = 128) eq purple\n}",
+          "text" : "// namedAndDefaultArguments/NamedAndDefaultArgs.kt\nimport atomicTest.eq\n\nfun getColor1(\n    red: Int = 0,\n    green: Int = 0,\n    blue: Int = 0\n) =\n    \"($red, $green, $blue)\"\n\nfun main(args: Array<String>) {\n  val darkRed = \"(139, 0, 0)\"\n  val darkBlue = \"(0, 0, 139)\"\n  val orange = \"(255, 165, 0)\"\n  val purple = \"(128, 0, 128)\"\n\n  getColor1(139) eq darkRed\n  getColor1(blue = 139) eq darkBlue\n  getColor1(255, 165) eq orange\n  getColor1(red = 128, blue = 128) eq purple\n}",
           "placeholders" : [ ]
         }
       },
@@ -2091,22 +2091,22 @@
       "task_files" : {
         "Overloading.kt" : {
           "name" : "Overloading.kt",
-          "text" : "package overloading\n\nimport atomicTest.eq\n\nclass Overloading1 {\n  fun f(): Int = 88\n  fun f(n: Int): Int = n + 2\n}\n\nclass Overloading2 {\n  fun f(): Int = 99\n  fun f(n: Int): Int = n + 3\n}\n\nfun main(args: Array<String>) {\n  val mo1 = Overloading1()\n  val mo2 = Overloading2()\n  mo1.f() eq 88\n  mo1.f(11) eq 13\n  mo2.f() eq 99\n  mo2.f(11) eq 14\n}",
+          "text" : "// overloading/Overloading.kt\nimport atomicTest.eq\n\nclass Overloading1 {\n  fun f(): Int = 88\n  fun f(n: Int): Int = n + 2\n}\n\nclass Overloading2 {\n  fun f(): Int = 99\n  fun f(n: Int): Int = n + 3\n}\n\nfun main(args: Array<String>) {\n  val mo1 = Overloading1()\n  val mo2 = Overloading2()\n  mo1.f() eq 88\n  mo1.f(11) eq 13\n  mo2.f() eq 99\n  mo2.f(11) eq 14\n}",
           "placeholders" : [ ]
         },
         "OverloadingAdd.kt" : {
           "name" : "OverloadingAdd.kt",
-          "text" : "package overloading\n\nimport atomicTest.eq\n\nfun addInt(i: Int, j: Int): Int = i + j\nfun addDouble(i: Double, j: Double): Double = i + j\n\nfun add(i: Int, j: Int): Int = i + j\nfun add(i: Double, j: Double): Double = i + j\n\nfun main(args: Array<String>) {\n  addInt(5, 6) eq add(5, 6)\n  addDouble(56.23, 44.77) eq\n      add(56.23, 44.77)\n}",
+          "text" : "// overloading/OverloadingAdd.kt\nimport atomicTest.eq\n\nfun addInt(i: Int, j: Int): Int = i + j\nfun addDouble(i: Double, j: Double): Double = i + j\n\nfun add(i: Int, j: Int): Int = i + j\nfun add(i: Double, j: Double): Double = i + j\n\nfun main(args: Array<String>) {\n  addInt(5, 6) eq add(5, 6)\n  addDouble(56.23, 44.77) eq\n      add(56.23, 44.77)\n}",
           "placeholders" : [ ]
         },
         "WithoutDefaultArguments.kt" : {
           "name" : "WithoutDefaultArguments.kt",
-          "text" : "package overloading\n\nfun f(n: Int): Int = n + 373\nfun f(): Int = f(0)\n\nfun main(args: Array<String>) {\n  println(f())\n}",
+          "text" : "// overloading/WithoutDefaultArguments.kt\nfun f(n: Int): Int = n + 373\nfun f(): Int = f(0)\n\nfun main(args: Array<String>) {\n  println(f())\n}",
           "placeholders" : [ ]
         },
         "WithDefaultArguments.kt" : {
           "name" : "WithDefaultArguments.kt",
-          "text" : "package overloading\n\nfun g(n: Int = 0) = n + 373\n\nfun main(args: Array<String>) {\n  println(g())\n}",
+          "text" : "// overloading/WithDefaultArguments.kt\nfun g(n: Int = 0) = n + 373\n\nfun main(args: Array<String>) {\n  println(g())\n}",
           "placeholders" : [ ]
         }
       },
@@ -2124,17 +2124,17 @@
       "task_files" : {
         "ClassArg.kt" : {
           "name" : "ClassArg.kt",
-          "text" : "package classArguments\n\nimport atomicTest.eq\n\nclass ClassArg(a: Int) {\n  val f = a * 10\n}\n\nfun main(args: Array<String>) {\n  val ca = ClassArg(19)\n  ca.f eq 190\n//  ca.a // error\n}",
+          "text" : "// classArguments/ClassArg.kt\nimport atomicTest.eq\n\nclass ClassArg(a: Int) {\n  val f = a * 10\n}\n\nfun main(args: Array<String>) {\n  val ca = ClassArg(19)\n  ca.f eq 190\n//  ca.a // error\n}",
           "placeholders" : [ ]
         },
         "VisibleClassArgs.kt" : {
           "name" : "VisibleClassArgs.kt",
-          "text" : "package classArguments\n\nimport atomicTest.eq\n\nclass ClassArg2(var a: Int)\nclass ClassArg3(val a: Int)\n\nfun main(args: Array<String>) {\n  val ca2 = ClassArg2(20)\n  val ca3 = ClassArg3(21)\n\n  ca2.a eq 20\n  ca3.a eq 21\n  ca2.a = 24\n  ca2.a eq 24\n  // Can't do this:\n  // ca3.a = 35\n}",
+          "text" : "// classArguments/VisibleClassArgs.kt\nimport atomicTest.eq\n\nclass ClassArg2(var a: Int)\nclass ClassArg3(val a: Int)\n\nfun main(args: Array<String>) {\n  val ca2 = ClassArg2(20)\n  val ca3 = ClassArg3(21)\n\n  ca2.a eq 20\n  ca3.a eq 21\n  ca2.a = 24\n  ca2.a eq 24\n  // Can't do this:\n  // ca3.a = 35\n}",
           "placeholders" : [ ]
         },
         "MultipleClassArgs.kt" : {
           "name" : "MultipleClassArgs.kt",
-          "text" : "package classArguments\n\nimport atomicTest.eq\n\nclass Sum(val a1: Int, val a2: Int, val a3: Int) {\n  fun result(): Int = a1 + a2 + a3\n}\n\nfun main(args: Array<String>) {\n  Sum(13, 27, 44).result() eq 84\n}",
+          "text" : "// classArguments/MultipleClassArgs.kt\nimport atomicTest.eq\n\nclass Sum(val a1: Int, val a2: Int, val a3: Int) {\n  fun result(): Int = a1 + a2 + a3\n}\n\nfun main(args: Array<String>) {\n  Sum(13, 27, 44).result() eq 84\n}",
           "placeholders" : [ ]
         }
       },
@@ -2152,12 +2152,12 @@
       "task_files" : {
         "InitSection.kt" : {
           "name" : "InitSection.kt",
-          "text" : "package constructors\n\nclass X(i: Int) {\n  init {\n    println(\"Initializing X(i=$i)\")\n  }\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n}\n/* Output:\nInitializing X(i=1)\nInitializing X(i=2)\n*/",
+          "text" : "// constructors/InitSection.kt\npackage constructors\n\nclass X(i: Int) {\n  init {\n    println(\"Initializing X(i=$i)\")\n  }\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n}\n/* Output:\nInitializing X(i=1)\nInitializing X(i=2)\n*/",
           "placeholders" : [ ]
         },
         "Coffee.kt" : {
           "name" : "Coffee.kt",
-          "text" : "package constructors\n\nimport atomicTest.eq\n\nclass Coffee(\n    val shots: Int = 2,\n    val decaf: Boolean = false,\n    val milk: Boolean = false,\n    val toGo: Boolean = false,\n    val syrup: String = \"\") {\n  var result = \"\"\n  init {\n    println(listOf(shots, decaf, milk, toGo, syrup))\n    getCup()\n    pourShots()\n    addMilk()\n    addSyrup()\n  }\n\n  fun getCup() {\n    result += if (toGo) \"ToGoCup \" else \"HereCup \"\n  }\n\n  fun pourShots() {\n    for (s in 1..shots)\n      result += if (decaf) \"decaf shot \" else \"shot \"\n  }\n\n  fun addMilk() {\n    if (milk) {\n      result += \"milk \"\n    }\n  }\n\n  fun addSyrup() {\n    result += syrup\n  }\n}\n\nfun main(args: Array<String>) {\n  val usual = Coffee()\n  usual.result eq \"HereCup shot shot \"\n  val mocha = Coffee(decaf = true,\n      toGo = true, syrup = \"Chocolate\")\n  mocha.result eq\n      \"ToGoCup decaf shot decaf shot Chocolate\"\n}",
+          "text" : "// constructors/Coffee.kt\nimport atomicTest.eq\n\nclass Coffee(\n    val shots: Int = 2,\n    val decaf: Boolean = false,\n    val milk: Boolean = false,\n    val toGo: Boolean = false,\n    val syrup: String = \"\") {\n  var result = \"\"\n  init {\n    println(listOf(shots, decaf, milk, toGo, syrup))\n    getCup()\n    pourShots()\n    addMilk()\n    addSyrup()\n  }\n\n  fun getCup() {\n    result += if (toGo) \"ToGoCup \" else \"HereCup \"\n  }\n\n  fun pourShots() {\n    for (s in 1..shots)\n      result += if (decaf) \"decaf shot \" else \"shot \"\n  }\n\n  fun addMilk() {\n    if (milk) {\n      result += \"milk \"\n    }\n  }\n\n  fun addSyrup() {\n    result += syrup\n  }\n}\n\nfun main(args: Array<String>) {\n  val usual = Coffee()\n  usual.result eq \"HereCup shot shot \"\n  val mocha = Coffee(decaf = true,\n      toGo = true, syrup = \"Chocolate\")\n  mocha.result eq\n      \"ToGoCup decaf shot decaf shot Chocolate\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2175,7 +2175,7 @@
       "task_files" : {
         "GardenGnome.kt" : {
           "name" : "GardenGnome.kt",
-          "text" : "package secondaryConstructors\n\nimport atomicTest.eq\n\nclass GardenGnome(\n    val height: Double,\n    val weight: Double,\n    val happy: Boolean\n) {\n  init {\n    println(\"Inside primary constructor\")\n  }\n\n  var painted = true\n  fun magic(level: Int): String = \"Poof! \" + level\n\n  constructor(height: Double)                // [1]\n      : this(height, 100.0, true)\n\n  constructor(name: String) : this(15.0) {   // [2]\n    painted eq true\n  }\n\n  fun show(): String = \"$height $weight $happy $painted\"\n}\n\nfun main(args: Array<String>) {\n  GardenGnome(20.0, 110.0, false).\n      show() eq \"20.0 110.0 false true\"\n  GardenGnome(\"Bob\").show() eq\n      \"15.0 100.0 true true\"\n}",
+          "text" : "// secondaryConstructors/GardenGnome.kt\nimport atomicTest.eq\n\nclass GardenGnome(\n    val height: Double,\n    val weight: Double,\n    val happy: Boolean\n) {\n  init {\n    println(\"Inside primary constructor\")\n  }\n\n  var painted = true\n  fun magic(level: Int): String = \"Poof! \" + level\n\n  constructor(height: Double)                // [1]\n      : this(height, 100.0, true)\n\n  constructor(name: String) : this(15.0) {   // [2]\n    painted eq true\n  }\n\n  fun show(): String = \"$height $weight $happy $painted\"\n}\n\nfun main(args: Array<String>) {\n  GardenGnome(20.0, 110.0, false).\n      show() eq \"20.0 110.0 false true\"\n  GardenGnome(\"Bob\").show() eq\n      \"15.0 100.0 true true\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2193,12 +2193,12 @@
       "task_files" : {
         "DataClasses.kt" : {
           "name" : "DataClasses.kt",
-          "text" : "package dataclasses\nimport atomicTest.*\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n    Contact(\"Miffy\", \"1-234-567890\")\n\n  // These seem the same, but they're not:\n  Person(\"Cleo\") neq Person(\"Cleo\")\n}\n/* Sample output:\nContact(name=Miffy, number=1-234-567890)\ndataclasses.Person@54bedef2\n*/",
+          "text" : "// dataClasses/DataClasses.kt\npackage dataclasses\nimport atomicTest.*\n\ndata class Contact(val name: String, val number: String)\n\nclass Person(val name: String)\n\nfun main(args: Array<String>) {\n  Contact(\"Miffy\", \"1-234-567890\") eq\n    Contact(\"Miffy\", \"1-234-567890\")\n\n  // These seem the same, but they're not:\n  Person(\"Cleo\") neq Person(\"Cleo\")\n}\n/* Sample output:\nContact(name=Miffy, number=1-234-567890)\ndataclasses.Person@54bedef2\n*/",
           "placeholders" : [ ]
         },
         "CopyDataClass.kt" : {
           "name" : "CopyDataClass.kt",
-          "text" : "package dataClasses\n\nimport atomicTest.eq\n\ndata class DetailedContact(\n    val name: String,\n    val surname: String,\n    val number: String,\n    val address: String\n)\n\nfun main(args: Array<String>) {\n  val contact = DetailedContact(\n      \"Miffy\",\n      \"Miller\",\n      \"1-234-567890\",\n      \"1600 Amphitheatre Parkway\")\n  val newContact = contact.copy(\n      number = \"098-765-4321\",\n      address = \"Brandschenkestrasse 110\")\n  newContact eq DetailedContact(\n    \"Miffy\",\n    \"Miller\",\n    \"098-765-4321\",\n    \"Brandschenkestrasse 110\")\n}",
+          "text" : "// dataClasses/CopyDataClass.kt\nimport atomicTest.eq\n\ndata class DetailedContact(\n    val name: String,\n    val surname: String,\n    val number: String,\n    val address: String\n)\n\nfun main(args: Array<String>) {\n  val contact = DetailedContact(\n      \"Miffy\",\n      \"Miller\",\n      \"1-234-567890\",\n      \"1600 Amphitheatre Parkway\")\n  val newContact = contact.copy(\n      number = \"098-765-4321\",\n      address = \"Brandschenkestrasse 110\")\n  newContact eq DetailedContact(\n    \"Miffy\",\n    \"Miller\",\n    \"098-765-4321\",\n    \"Brandschenkestrasse 110\")\n}",
           "placeholders" : [ ]
         }
       },
@@ -2216,17 +2216,17 @@
       "task_files" : {
         "Bicycle.kt" : {
           "name" : "Bicycle.kt",
-          "text" : "package automaticStringConversion\n\nimport atomicTest.eq\n\ndata class Bicycle(val riders: Int)\n\nfun main(args: Array<String>) {\n  val forTwo = Bicycle(2)\n  forTwo eq \"Bicycle(riders=2)\" // Nice\n}",
+          "text" : "// automaticStringConversion/Bicycle.kt\nimport atomicTest.eq\n\ndata class Bicycle(val riders: Int)\n\nfun main(args: Array<String>) {\n  val forTwo = Bicycle(2)\n  forTwo eq \"Bicycle(riders=2)\" // Nice\n}",
           "placeholders" : [ ]
         },
         "Surrey.kt" : {
           "name" : "Surrey.kt",
-          "text" : "package automaticStringConversion\n\nclass Surrey(val adornment: String)\n\nfun main(args: Array<String>) {\n  val fancy = Surrey(\"fringe on top\")\n  println(fancy) // Ugly\n}",
+          "text" : "// automaticStringConversion/Surrey.kt\nclass Surrey(val adornment: String)\n\nfun main(args: Array<String>) {\n  val fancy = Surrey(\"fringe on top\")\n  println(fancy) // Ugly\n}",
           "placeholders" : [ ]
         },
         "SurreyWithToString.kt" : {
           "name" : "SurreyWithToString.kt",
-          "text" : "package automaticStringConversion\n\nimport atomicTest.eq\n\nclass Surrey2(val adornment: String) {\n  override fun toString() =\n      \"Surrey, the $adornment\"\n}\n\nfun main(args: Array<String>) {\n  val fancy2 = Surrey2(\"fringe on top\")\n  fancy2 eq \"Surrey, the fringe on top\"\n}",
+          "text" : "// automaticStringConversion/SurreyWithToString.kt\nimport atomicTest.eq\n\nclass Surrey2(val adornment: String) {\n  override fun toString() =\n      \"Surrey, the $adornment\"\n}\n\nfun main(args: Array<String>) {\n  val fancy2 = Surrey2(\"fringe on top\")\n  fancy2 eq \"Surrey, the fringe on top\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2244,17 +2244,17 @@
       "task_files" : {
         "Sets.kt" : {
           "name" : "Sets.kt",
-          "text" : "package sets\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val set = setOf(1, 1, 2, 3, 9, 9, 4)\n  // No duplicates:\n  set eq setOf(1, 9, 2, 3, 4)\n\n  // Order of elements is not important:\n  setOf(1, 2) eq setOf(2, 1)\n\n  // Set membership:\n  (9 in set) eq true\n  (99 in set) eq false\n\n  set.contains(9) eq true\n  set.contains(99) eq false\n\n  // Is this set contains another one?\n  set.containsAll(setOf(1, 9, 2)) eq true\n\n  // Set union:\n  set.union(setOf(3, 4, 5, 6)) eq\n      setOf(1, 2, 3, 4, 5, 6, 9)\n\n  // Set intersection:\n  set intersect setOf(0, 1, 2, 7, 8) eq\n      setOf(1, 2)\n\n  // Set difference:\n  set - setOf(0, 1, 9, 10) eq\n      setOf(2, 3, 4)\n  set.minus(setOf(0, 1, 9, 10)) eq\n      setOf(2, 3, 4)\n}",
+          "text" : "// sets/Sets.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val set = setOf(1, 1, 2, 3, 9, 9, 4)\n  // No duplicates:\n  set eq setOf(1, 9, 2, 3, 4)\n\n  // Order of elements is not important:\n  setOf(1, 2) eq setOf(2, 1)\n\n  // Set membership:\n  (9 in set) eq true\n  (99 in set) eq false\n\n  set.contains(9) eq true\n  set.contains(99) eq false\n\n  // Is this set contains another one?\n  set.containsAll(setOf(1, 9, 2)) eq true\n\n  // Set union:\n  set.union(setOf(3, 4, 5, 6)) eq\n      setOf(1, 2, 3, 4, 5, 6, 9)\n\n  // Set intersection:\n  set intersect setOf(0, 1, 2, 7, 8) eq\n      setOf(1, 2)\n\n  // Set difference:\n  set - setOf(0, 1, 9, 10) eq\n      setOf(2, 3, 4)\n  set.minus(setOf(0, 1, 9, 10)) eq\n      setOf(2, 3, 4)\n}",
           "placeholders" : [ ]
         },
         "RemoveDuplicates.kt" : {
           "name" : "RemoveDuplicates.kt",
-          "text" : "package sets\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list = listOf(3, 3, 2, 1, 2)\n  list.toSet() eq setOf(1, 2, 3)\n\n  \"abbcc\".toSet() eq setOf('a', 'b', 'c')\n}",
+          "text" : "// sets/RemoveDuplicates.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val list = listOf(3, 3, 2, 1, 2)\n  list.toSet() eq setOf(1, 2, 3)\n\n  \"abbcc\".toSet() eq setOf('a', 'b', 'c')\n}",
           "placeholders" : [ ]
         },
         "MutableSet.kt" : {
           "name" : "MutableSet.kt",
-          "text" : "package sets\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val set = mutableSetOf<Int>()\n  set += 42\n  set += 42\n  set eq setOf(42)\n}",
+          "text" : "// sets/MutableSet.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val set = mutableSetOf<Int>()\n  set += 42\n  set += 42\n  set eq setOf(42)\n}",
           "placeholders" : [ ]
         }
       },
@@ -2272,22 +2272,22 @@
       "task_files" : {
         "Maps.kt" : {
           "name" : "Maps.kt",
-          "text" : "package maps\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val constants = mapOf(\"Pi\" to 3.141,\n      \"e\" to 2.718, \"phi\" to 1.618)\n\n  constants eq \"{Pi=3.141, e=2.718, phi=1.618}\"\n\n  // Look up a value from a key:\n  constants[\"e\"] eq 2.718\n\n  constants.keys eq setOf(\"Pi\", \"e\", \"phi\")\n\n  constants.values eq \"[3.141, 2.718, 1.618]\"\n\n  var s = \"\"\n  // Iterate through key-value pairs:\n  for (entry in constants) {\n    s += \"${entry.key}=${entry.value}, \"\n  }\n  s eq \"Pi=3.141, e=2.718, phi=1.618, \"\n\n  s = \"\"\n  // Unpack during iteration:\n  for ((key, value) in constants) {\n    s += \"$key=$value, \"\n  }\n  s eq \"Pi=3.141, e=2.718, phi=1.618, \"\n}",
+          "text" : "// maps/Maps.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val constants = mapOf(\"Pi\" to 3.141,\n      \"e\" to 2.718, \"phi\" to 1.618)\n\n  constants eq \"{Pi=3.141, e=2.718, phi=1.618}\"\n\n  // Look up a value from a key:\n  constants[\"e\"] eq 2.718\n\n  constants.keys eq setOf(\"Pi\", \"e\", \"phi\")\n\n  constants.values eq \"[3.141, 2.718, 1.618]\"\n\n  var s = \"\"\n  // Iterate through key-value pairs:\n  for (entry in constants) {\n    s += \"${entry.key}=${entry.value}, \"\n  }\n  s eq \"Pi=3.141, e=2.718, phi=1.618, \"\n\n  s = \"\"\n  // Unpack during iteration:\n  for ((key, value) in constants) {\n    s += \"$key=$value, \"\n  }\n  s eq \"Pi=3.141, e=2.718, phi=1.618, \"\n}",
           "placeholders" : [ ]
         },
         "MutableMaps.kt" : {
           "name" : "MutableMaps.kt",
-          "text" : "package maps\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val m = mutableMapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n  m[5] = \"5ive\"\n  m[5] eq \"5ive\"\n  m += 4 to \"four\"\n  m eq mapOf(5 to \"5ive\", 4 to \"four\", 6 to \"six\")\n}",
+          "text" : "// maps/MutableMaps.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val m = mutableMapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n  m[5] = \"5ive\"\n  m[5] eq \"5ive\"\n  m += 4 to \"four\"\n  m eq mapOf(5 to \"5ive\", 4 to \"four\", 6 to \"six\")\n}",
           "placeholders" : [ ]
         },
         "ReadOnlyMaps.kt" : {
           "name" : "ReadOnlyMaps.kt",
-          "text" : "package maps\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val m = mapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n//  m[5] = \"5ive\" // Fails\n  m + (4 to \"four\") // Doesn't change m\n  m eq mapOf(5 to \"five\", 6 to \"six\")\n  val m2 = m + (4 to \"four\")\n  m2 eq mapOf(5 to \"five\", 6 to \"six\", 4 to \"four\")\n}",
+          "text" : "// maps/ReadOnlyMaps.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val m = mapOf(5 to \"five\", 6 to \"six\")\n  m[5] eq \"five\"\n//  m[5] = \"5ive\" // Fails\n  m + (4 to \"four\") // Doesn't change m\n  m eq mapOf(5 to \"five\", 6 to \"six\")\n  val m2 = m + (4 to \"four\")\n  m2 eq mapOf(5 to \"five\", 6 to \"six\", 4 to \"four\")\n}",
           "placeholders" : [ ]
         },
         "ContactMap.kt" : {
           "name" : "ContactMap.kt",
-          "text" : "package maps\n\nimport atomicTest.eq\n\ndata class Contact(val name: String, val number: String)\n\nfun main(args: Array<String>) {\n  val miffy = Contact(\"Miffy\", \"1-234-567890\")\n  val cleo = Contact(\"Cleo\", \"098-765-4321\")\n  val contacts = mapOf(\n      miffy.number to miffy,\n      cleo.number to cleo)\n\n  contacts[\"1-234-567890\"] eq miffy\n  contacts[\"1-111-111111\"] eq null\n}",
+          "text" : "// maps/ContactMap.kt\nimport atomicTest.eq\n\ndata class Contact(val name: String, val number: String)\n\nfun main(args: Array<String>) {\n  val miffy = Contact(\"Miffy\", \"1-234-567890\")\n  val cleo = Contact(\"Cleo\", \"098-765-4321\")\n  val contacts = mapOf(\n      miffy.number to miffy,\n      cleo.number to cleo)\n\n  contacts[\"1-234-567890\"] eq miffy\n  contacts[\"1-111-111111\"] eq null\n}",
           "placeholders" : [ ]
         }
       },
@@ -2305,27 +2305,27 @@
       "task_files" : {
         "Pairs.kt" : {
           "name" : "Pairs.kt",
-          "text" : "package destructuringDeclarations\n\nimport atomicTest.eq\n\nfun compute1(input: Int) =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  compute1(7) eq Pair(14, \"High\")\n  compute1(4) eq Pair(8, \"Low\")\n\n  val result = compute1(5)\n  result.first eq 10\n  result.second eq \"Low\"\n}",
+          "text" : "// destructuringDeclarations/Pairs.kt\nimport atomicTest.eq\n\nfun compute1(input: Int) =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  compute1(7) eq Pair(14, \"High\")\n  compute1(4) eq Pair(8, \"Low\")\n\n  val result = compute1(5)\n  result.first eq 10\n  result.second eq \"Low\"\n}",
           "placeholders" : [ ]
         },
         "PairsAndDesctructuring.kt" : {
           "name" : "PairsAndDesctructuring.kt",
-          "text" : "package destructuringDeclarations\n\nimport atomicTest.eq\n\nfun compute2(input: Int): Pair<Int, String> =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute2(7)\n  value eq 14\n  description eq \"High\"\n}",
+          "text" : "// destructuringDeclarations/PairsAndDesctructuring.kt\nimport atomicTest.eq\n\nfun compute2(input: Int): Pair<Int, String> =\n    if (input > 5)\n      Pair(input * 2, \"High\")\n    else\n      Pair(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute2(7)\n  value eq 14\n  description eq \"High\"\n}",
           "placeholders" : [ ]
         },
         "ComputationResult.kt" : {
           "name" : "ComputationResult.kt",
-          "text" : "package destructuringDeclarations\n\nimport atomicTest.eq\n\ndata class ComputationResult(val data: Int, val info: String)\n\nfun compute3(input: Int) =\n    if (input > 5)\n      ComputationResult(input * 2, \"High\")\n    else\n      ComputationResult(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute3(7)\n  value eq 14\n  description eq \"High\"\n}",
+          "text" : "// destructuringDeclarations/ComputationResult.kt\nimport atomicTest.eq\n\ndata class ComputationResult(val data: Int, val info: String)\n\nfun compute3(input: Int) =\n    if (input > 5)\n      ComputationResult(input * 2, \"High\")\n    else\n      ComputationResult(input * 2, \"Low\")\n\nfun main(args: Array<String>) {\n  val (value, description) = compute3(7)\n  value eq 14\n  description eq \"High\"\n}",
           "placeholders" : [ ]
         },
         "Tuple.kt" : {
           "name" : "Tuple.kt",
-          "text" : "package destructuringDeclarations\n\nimport atomicTest.eq\n\ndata class Tuple(\n    val i: Int,\n    val d: Double,\n    val s: String,\n    val b: Boolean,\n    val l: List<Int>\n)\n\nfun main(args: Array<String>) {\n  val tuple = Tuple(1, 3.14, \"Mouse\", false, listOf())\n  val (i, d, s, b, l) = tuple\n  i eq 1\n  d eq 3.14\n  s eq \"Mouse\"\n  b eq false\n  l eq listOf()\n\n  val (_, _, animal) = tuple\n  animal eq \"Mouse\"\n}",
+          "text" : "// destructuringDeclarations/Tuple.kt\nimport atomicTest.eq\n\ndata class Tuple(\n    val i: Int,\n    val d: Double,\n    val s: String,\n    val b: Boolean,\n    val l: List<Int>\n)\n\nfun main(args: Array<String>) {\n  val tuple = Tuple(1, 3.14, \"Mouse\", false, listOf())\n  val (i, d, s, b, l) = tuple\n  i eq 1\n  d eq 3.14\n  s eq \"Mouse\"\n  b eq false\n  l eq listOf()\n\n  val (_, _, animal) = tuple\n  animal eq \"Mouse\"\n}",
           "placeholders" : [ ]
         },
         "DestructuringAndForLoop.kt" : {
           "name" : "DestructuringAndForLoop.kt",
-          "text" : "package destructuringDeclarations\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\", 2 to \"two\")\n  for ((key, value) in map) {\n    print(\"$key = $value, \")\n  }\n  println()\n\n  val listOfPairs =\n      listOf(Pair(1, \"one\"), Pair(2, \"two\"))\n  for ((i, s) in listOfPairs) {\n    print(\"($i, $s), \")\n  }\n}\n/* Output:\n1 = one, 2 = two,\n(1, one), (2, two),\n*/",
+          "text" : "// destructuringDeclarations/DestructuringAndForLoop.kt\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\", 2 to \"two\")\n  for ((key, value) in map) {\n    print(\"$key = $value, \")\n  }\n  println()\n\n  val listOfPairs =\n      listOf(Pair(1, \"one\"), Pair(2, \"two\"))\n  for ((i, s) in listOfPairs) {\n    print(\"($i, $s), \")\n  }\n}\n/* Output:\n1 = one, 2 = two,\n(1, one), (2, two),\n*/",
           "placeholders" : [ ]
         }
       },
@@ -2343,27 +2343,27 @@
       "task_files" : {
         "Quoting.kt" : {
           "name" : "Quoting.kt",
-          "text" : "package quoting\nimport atomicTest.eq\n\nfun String.singleQuote() = \"'$this'\"\nfun String.doubleQuote() = \"\\\"$this\\\"\"\n\nfun main(args: Array<String>) {\n  \"Hi\".singleQuote() eq \"'Hi'\"\n  \"Hi\".doubleQuote() eq \"\\\"Hi\\\"\"\n}",
+          "text" : "// extensionFunctions/Quoting.kt\npackage quoting\nimport atomicTest.eq\n\nfun String.singleQuote() = \"'$this'\"\nfun String.doubleQuote() = \"\\\"$this\\\"\"\n\nfun main(args: Array<String>) {\n  \"Hi\".singleQuote() eq \"'Hi'\"\n  \"Hi\".doubleQuote() eq \"\\\"Hi\\\"\"\n}",
           "placeholders" : [ ]
         },
         "Quote.kt" : {
           "name" : "Quote.kt",
-          "text" : "package quoting\nimport atomicTest.eq\nimport quoting.doubleQuote\nimport quoting.singleQuote\n\nfun main(args: Array<String>) {\n  \"Single\".singleQuote() eq \"'Single'\"\n  \"Double\".doubleQuote() eq \"\\\"Double\\\"\"\n}",
+          "text" : "// extensionFunctions/Quote.kt\npackage quoting\nimport atomicTest.eq\nimport quoting.doubleQuote\nimport quoting.singleQuote\n\nfun main(args: Array<String>) {\n  \"Single\".singleQuote() eq \"'Single'\"\n  \"Double\".doubleQuote() eq \"\\\"Double\\\"\"\n}",
           "placeholders" : [ ]
         },
         "StrangeQuote.kt" : {
           "name" : "StrangeQuote.kt",
-          "text" : "package extensionFunctions\n\nimport atomicTest.eq\nimport quoting.singleQuote\n\nfun String.strangeQuote() =\n    singleQuote().singleQuote()   // [1]\n\nfun main(args: Array<String>) {\n  \"Hi\".strangeQuote() eq \"''Hi''\" // Two single quotes\n}",
+          "text" : "// extensionFunctions/StrangeQuote.kt\nimport atomicTest.eq\nimport quoting.singleQuote\n\nfun String.strangeQuote() =\n    singleQuote().singleQuote()   // [1]\n\nfun main(args: Array<String>) {\n  \"Hi\".strangeQuote() eq \"''Hi''\" // Two single quotes\n}",
           "placeholders" : [ ]
         },
         "MemberVsExtension.kt" : {
           "name" : "MemberVsExtension.kt",
-          "text" : "package extensionFunctions\n\nimport atomicTest.eq\n\nclass My {\n  fun foo() = 1\n}\n\nfun My.foo() = 2\n\nfun main(args: Array<String>) {\n  My().foo() eq 1\n}",
+          "text" : "// extensionFunctions/MemberVsExtension.kt\nimport atomicTest.eq\n\nclass My {\n  fun foo() = 1\n}\n\nfun My.foo() = 2\n\nfun main(args: Array<String>) {\n  My().foo() eq 1\n}",
           "placeholders" : [ ]
         },
         "BookExtensions.kt" : {
           "name" : "BookExtensions.kt",
-          "text" : "package extensionFunctions\n\nimport atomicTest.eq\n\ndata class Book(val title: String)\n\nfun Book.categorize(category: String) =\n    \"\"\"title: \"$title\", category: $category\"\"\"\n\nfun main(args: Array<String>) {\n  Book(\"Dracula\").categorize(\"Vampire\") eq\n      \"\"\"title: \"Dracula\", category: Vampire\"\"\"\n}",
+          "text" : "// extensionFunctions/BookExtensions.kt\nimport atomicTest.eq\n\ndata class Book(val title: String)\n\nfun Book.categorize(category: String) =\n    \"\"\"title: \"$title\", category: $category\"\"\"\n\nfun main(args: Array<String>) {\n  Book(\"Dracula\").categorize(\"Vampire\") eq\n      \"\"\"title: \"Dracula\", category: Vampire\"\"\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2381,12 +2381,12 @@
       "task_files" : {
         "LocalFunctions.kt" : {
           "name" : "LocalFunctions.kt",
-          "text" : "package localFunctions\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val sb = StringBuilder()\n\n  fun log(message: String) {\n    sb.appendln(message)\n  }\n\n  log(\"Starting computation\")\n  // Imitating computation\n  val x = 42\n  log(\"Computation result: $x\")\n\n  sb.toString().trim() eq \"\"\"\n    Starting computation\n    Computation result: 42\"\"\".trimIndent()\n}",
+          "text" : "// localFunctions/LocalFunctions.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val sb = StringBuilder()\n\n  fun log(message: String) {\n    sb.appendln(message)\n  }\n\n  log(\"Starting computation\")\n  // Imitating computation\n  val x = 42\n  log(\"Computation result: $x\")\n\n  sb.toString().trim() eq \"\"\"\n    Starting computation\n    Computation result: 42\"\"\".trimIndent()\n}",
           "placeholders" : [ ]
         },
         "LocalExtensions.kt" : {
           "name" : "LocalExtensions.kt",
-          "text" : "package localFunctions\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n\n  fun String.exclaim() = \"$this!\"\n\n  \"Hello\".exclaim() eq \"Hello!\"\n  \"Hallo\".exclaim() eq \"Hallo!\"\n  \"Bonjour\".exclaim() eq \"Bonjour!\"\n  \"Ciao\".exclaim() eq \"Ciao!\"\n}",
+          "text" : "// localFunctions/LocalExtensions.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n\n  fun String.exclaim() = \"$this!\"\n\n  \"Hello\".exclaim() eq \"Hello!\"\n  \"Hallo\".exclaim() eq \"Hallo!\"\n  \"Bonjour\".exclaim() eq \"Bonjour!\"\n  \"Ciao\".exclaim() eq \"Ciao!\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2404,22 +2404,22 @@
       "task_files" : {
         "NullInMaps.kt" : {
           "name" : "NullInMaps.kt",
-          "text" : "package nullableTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(0 to \"yes\", 1 to \"no\")\n  map[2] eq null\n}",
+          "text" : "// nullableTypes/NullInMaps.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(0 to \"yes\", 1 to \"no\")\n  map[2] eq null\n}",
           "placeholders" : [ ]
         },
         "NullableAndNonnullTypes.kt" : {
           "name" : "NullableAndNonnullTypes.kt",
-          "text" : "package nullableTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"    // [1]\n\n  // Doesn't compile:\n  // val s2: String = null  // [2]\n\n  val s3: String? = null    // [3]\n  val s4: String? = s1      // [4]\n\n  // Doesn't compile:\n  // val s5: String = s4    // [5]\n\n  s1 eq \"abc\"\n  s3 eq null\n  s4 eq \"abc\"\n}",
+          "text" : "// nullableTypes/NullableAndNonnullTypes.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"    // [1]\n\n  // Doesn't compile:\n  // val s2: String = null  // [2]\n\n  val s3: String? = null    // [3]\n  val s4: String? = s1      // [4]\n\n  // Doesn't compile:\n  // val s5: String = s4    // [5]\n\n  s1 eq \"abc\"\n  s3 eq null\n  s4 eq \"abc\"\n}",
           "placeholders" : [ ]
         },
         "Dereference.kt" : {
           "name" : "Dereference.kt",
-          "text" : "package nullableTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"\n  val s2: String? = s1\n\n  s1.length eq 3          // [1]\n  // Doesn't compile\n  // s2.length            // [2]\n}",
+          "text" : "// nullableTypes/Dereference.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String = \"abc\"\n  val s2: String? = s1\n\n  s1.length eq 3          // [1]\n  // Doesn't compile\n  // s2.length            // [2]\n}",
           "placeholders" : [ ]
         },
         "ExplicitCheck.kt" : {
           "name" : "ExplicitCheck.kt",
-          "text" : "package nullableTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  if (s != null) {\n    s.length eq 3\n  }\n}",
+          "text" : "// nullableTypes/ExplicitCheck.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  if (s != null) {\n    s.length eq 3\n  }\n}",
           "placeholders" : [ ]
         }
       },
@@ -2437,22 +2437,22 @@
       "task_files" : {
         "DereferenceNull.kt" : {
           "name" : "DereferenceNull.kt",
-          "text" : "package safeCallsAndElvisOperator\n\nfun main(args: Array<String>) {\n  val s: String? = null\n  // Doesn't compile:\n  // s.length\n}",
+          "text" : "// safeCallsAndElvisOperator/DereferenceNull.kt\nfun main(args: Array<String>) {\n  val s: String? = null\n  // Doesn't compile:\n  // s.length\n}",
           "placeholders" : [ ]
         },
         "SafeCall.kt" : {
           "name" : "SafeCall.kt",
-          "text" : "package safeCallsAndElvisOperator\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else null\n  val length2 = s1?.length\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else null\n  val length4 = s2?.length\n  length3 eq null\n  length4 eq null\n}",
+          "text" : "// safeCallsAndElvisOperator/SafeCall.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else null\n  val length2 = s1?.length\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else null\n  val length4 = s2?.length\n  length3 eq null\n  length4 eq null\n}",
           "placeholders" : [ ]
         },
         "ChainedSafeCalls.kt" : {
           "name" : "ChainedSafeCalls.kt",
-          "text" : "package safeCallsAndElvisOperator\n\nimport atomicTest.eq\n\nclass Person(val name: String, var bestFriend: Person? = null)\n\nfun main(args: Array<String>) {\n  val alice = Person(\"Alice\")\n  val bob = Person(\"Bob\", alice)\n\n  alice.bestFriend?.bestFriend?.name eq null     // [1]\n\n  alice.bestFriend = bob\n\n  alice.bestFriend?.bestFriend?.name eq \"Alice\"  // [2]\n}",
+          "text" : "// safeCallsAndElvisOperator/ChainedSafeCalls.kt\nimport atomicTest.eq\n\nclass Person(val name: String, var bestFriend: Person? = null)\n\nfun main(args: Array<String>) {\n  val alice = Person(\"Alice\")\n  val bob = Person(\"Bob\", alice)\n\n  alice.bestFriend?.bestFriend?.name eq null     // [1]\n\n  alice.bestFriend = bob\n\n  alice.bestFriend?.bestFriend?.name eq \"Alice\"  // [2]\n}",
           "placeholders" : [ ]
         },
         "ElvisOperator.kt" : {
           "name" : "ElvisOperator.kt",
-          "text" : "package safeCallsAndElvisOperator\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else 0\n  val length2 = s1?.length ?: 0\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else 0\n  val length4 = s2?.length ?: 0\n  length3 eq 0\n  length4 eq 0\n}",
+          "text" : "// safeCallsAndElvisOperator/ElvisOperator.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  val length1 = if (s1 != null) s1.length else 0\n  val length2 = s1?.length ?: 0\n  length1 eq 3\n  length2 eq 3\n\n  val s2: String? = null\n  val length3 = if (s2 != null) s2.length else 0\n  val length4 = s2?.length ?: 0\n  length3 eq 0\n  length4 eq 0\n}",
           "placeholders" : [ ]
         }
       },
@@ -2470,17 +2470,17 @@
       "task_files" : {
         "NonNullAssertedCalls.kt" : {
           "name" : "NonNullAssertedCalls.kt",
-          "text" : "package nonNullAssertedCalls\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  s1!!.length eq 3\n\n  val s2: String? = null\n  // Throws KotlinNullPointerException:\n  // s2!!.length\n}",
+          "text" : "// nonNullAssertedCalls/NonNullAssertedCalls.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = \"abc\"\n  s1!!.length eq 3\n\n  val s2: String? = null\n  // Throws KotlinNullPointerException:\n  // s2!!.length\n}",
           "placeholders" : [ ]
         },
         "NonNullAssertion.kt" : {
           "name" : "NonNullAssertion.kt",
-          "text" : "package nonNullAssertedCalls\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  s!! eq \"abc\"\n\n  // Throws KotlinNullPointerException:\n  // null!!\n}",
+          "text" : "// nonNullAssertedCalls/NonNullAssertion.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s: String? = \"abc\"\n  s!! eq \"abc\"\n\n  // Throws KotlinNullPointerException:\n  // null!!\n}",
           "placeholders" : [ ]
         },
         "GettingValueFromMap.kt" : {
           "name" : "GettingValueFromMap.kt",
-          "text" : "package nonNullAssertedCalls\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\")\n  map[1]!!.toUpperCase() eq \"ONE\"\n  map.getValue(1).toUpperCase() eq \"ONE\"\n\n  // Throws KotlinNullPointerException:\n  map[1]!!.toUpperCase()           // [1]\n  // Throws NoSuchElementException:\n  map.getValue(1).toUpperCase()    // [2]\n}",
+          "text" : "// nonNullAssertedCalls/GettingValueFromMap.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val map = mapOf(1 to \"one\")\n  map[1]!!.toUpperCase() eq \"ONE\"\n  map.getValue(1).toUpperCase() eq \"ONE\"\n\n  // Throws KotlinNullPointerException:\n  map[1]!!.toUpperCase()           // [1]\n  // Throws NoSuchElementException:\n  map.getValue(1).toUpperCase()    // [2]\n}",
           "placeholders" : [ ]
         }
       },
@@ -2498,12 +2498,12 @@
       "task_files" : {
         "ExtensionsOnNullableString.kt" : {
           "name" : "ExtensionsOnNullableString.kt",
-          "text" : "package extensionsForNullableTypes\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = null\n  s1.isNullOrEmpty() eq true\n\n  val s2: String? = \"abc\"\n  s2.isNullOrBlank() eq false\n\n  val s3: String = \"    \"\n  s3.isNullOrBlank() eq true\n}",
+          "text" : "// extensionsForNullableTypes/ExtensionsOnNullableString.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val s1: String? = null\n  s1.isNullOrEmpty() eq true\n\n  val s2: String? = \"abc\"\n  s2.isNullOrBlank() eq false\n\n  val s3: String = \"    \"\n  s3.isNullOrBlank() eq true\n}",
           "placeholders" : [ ]
         },
         "Declarations.kt" : {
           "name" : "Declarations.kt",
-          "text" : "package extensionsForNullableTypes\n\nimport atomicTest.eq\n\nfun String?.isNullOrEmpty(): Boolean =\n    this == null || this.isEmpty()\n\nfun main(args: Array<String>) {\n  \"\".isNullOrEmpty() eq true\n}",
+          "text" : "// extensionsForNullableTypes/Declarations.kt\nimport atomicTest.eq\n\nfun String?.isNullOrEmpty(): Boolean =\n    this == null || this.isEmpty()\n\nfun main(args: Array<String>) {\n  \"\".isNullOrEmpty() eq true\n}",
           "placeholders" : [ ]
         }
       },
@@ -2521,37 +2521,37 @@
       "task_files" : {
         "DisplayList.kt" : {
           "name" : "DisplayList.kt",
-          "text" : "package lambdas\n\nfun show(n: Int) {\n  println(\"> \" + n)\n}\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.forEach(::show)\n}",
+          "text" : "// lambdas/DisplayList.kt\nfun show(n: Int) {\n  println(\"> \" + n)\n}\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.forEach(::show)\n}",
           "placeholders" : [ ]
         },
         "DisplayListWithLambda.kt" : {
           "name" : "DisplayListWithLambda.kt",
-          "text" : "package lambdas\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.forEach { println(\"> \" + it) }\n}",
+          "text" : "// lambdas/DisplayListWithLambda.kt\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.forEach { println(\"> \" + it) }\n}",
           "placeholders" : [ ]
         },
         "DisplayDuck.kt" : {
           "name" : "DisplayDuck.kt",
-          "text" : "package lambdas\n\nfun main(args: Array<String>) {\n  val duck = \"Duck\".toList()\n  duck.forEach { n -> println(\"> \" + n) }\n}",
+          "text" : "// lambdas/DisplayDuck.kt\nfun main(args: Array<String>) {\n  val duck = \"Duck\".toList()\n  duck.forEach { n -> println(\"> \" + n) }\n}",
           "placeholders" : [ ]
         },
         "DisplayDuckTestable.kt" : {
           "name" : "DisplayDuckTestable.kt",
-          "text" : "package lambdas\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  var s = \"\"\n  val duck = \"Duck\"\n  duck.forEach { n -> s = s + n + \":\" }\n  s eq \"D:u:c:k:\"\n}",
+          "text" : "// lambdas/DisplayDuckTestable.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  var s = \"\"\n  val duck = \"Duck\"\n  duck.forEach { n -> s = s + n + \":\" }\n  s eq \"D:u:c:k:\"\n}",
           "placeholders" : [ ]
         },
         "TwoArgAnonymous.kt" : {
           "name" : "TwoArgAnonymous.kt",
-          "text" : "package lambdas\n\nfun main(args: Array<String>) {\n  val l = \"abc\"\n  l.forEachIndexed { index, ch -> println(\"$index: $ch\") }\n  /* prints:\n  0: a\n  1: b\n  2: c\n  */\n}",
+          "text" : "// lambdas/TwoArgAnonymous.kt\nfun main(args: Array<String>) {\n  val l = \"abc\"\n  l.forEachIndexed { index, ch -> println(\"$index: $ch\") }\n  /* prints:\n  0: a\n  1: b\n  2: c\n  */\n}",
           "placeholders" : [ ]
         },
         "CallLater.kt" : {
           "name" : "CallLater.kt",
-          "text" : "package lambdas\n\nclass Later(val f: () -> Unit) {\n  fun call(): Unit = f()\n}\n\nfun main(args: Array<String>) {\n  val cl = Later { println(\"now\") }\n  cl.call()\n}",
+          "text" : "// lambdas/CallLater.kt\nclass Later(val f: () -> Unit) {\n  fun call(): Unit = f()\n}\n\nfun main(args: Array<String>) {\n  val cl = Later { println(\"now\") }\n  cl.call()\n}",
           "placeholders" : [ ]
         },
         "AssignAnonymous.kt" : {
           "name" : "AssignAnonymous.kt",
-          "text" : "package lambdas\n\nfun main(args: Array<String>) {\n  val later1 = { -> println(\"now\") }\n  var later2 = { println(\"now\") }\n\n  later1()\n  later2()\n}",
+          "text" : "// lambdas/AssignAnonymous.kt\nfun main(args: Array<String>) {\n  val later1 = { -> println(\"now\") }\n  var later2 = { println(\"now\") }\n\n  later1()\n  later2()\n}",
           "placeholders" : [ ]
         }
       },
@@ -2569,22 +2569,22 @@
       "task_files" : {
         "SimpleMap.kt" : {
           "name" : "SimpleMap.kt",
-          "text" : "package operationsOnLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.map { it + 1 } eq listOf(2, 3, 4, 5)\n}",
+          "text" : "// operationsOnLists/SimpleMap.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 2, 3, 4)\n  l.map { it + 1 } eq listOf(2, 3, 4, 5)\n}",
           "placeholders" : [ ]
         },
         "Sum.kt" : {
           "name" : "Sum.kt",
-          "text" : "package operationsOnLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  var sum = 0\n  l.forEach { x -> sum += x }\n  sum eq 1111\n}",
+          "text" : "// operationsOnLists/Sum.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  var sum = 0\n  l.forEach { x -> sum += x }\n  sum eq 1111\n}",
           "placeholders" : [ ]
         },
         "Reduce.kt" : {
           "name" : "Reduce.kt",
-          "text" : "package operationsOnLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  l.reduce { sum, n -> sum + n } eq 1111\n}",
+          "text" : "// operationsOnLists/Reduce.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val l = listOf(1, 10, 100, 1000)\n  l.reduce { sum, n -> sum + n } eq 1111\n}",
           "placeholders" : [ ]
         },
         "MoreReduce.kt" : {
           "name" : "MoreReduce.kt",
-          "text" : "package operationsOnLists\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  (1..100).reduce { sum, n -> sum + n } eq\n      5050\n  val l2 = listOf(\"D\", \"u\", \"c\", \"k\")\n  l2.reduce { sum, n -> sum + n } eq \"Duck\"\n}",
+          "text" : "// operationsOnLists/MoreReduce.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  (1..100).reduce { sum, n -> sum + n } eq\n      5050\n  val l2 = listOf(\"D\", \"u\", \"c\", \"k\")\n  l2.reduce { sum, n -> sum + n } eq \"Duck\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2602,17 +2602,17 @@
       "task_files" : {
         "Zipper.kt" : {
           "name" : "Zipper.kt",
-          "text" : "package combiningListsWithZip\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val left = listOf(\"a\", \"b\", \"c\", \"d\")\n  val right = listOf(\"q\", \"r\", \"s\", \"t\")\n\n  left.zip(right) eq\n      \"[(a, q), (b, r), (c, s), (d, t)]\"\n\n  left.zip(0..4) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n\n  left.zip(left.indices) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n}",
+          "text" : "// combiningListsWithZip/Zipper.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val left = listOf(\"a\", \"b\", \"c\", \"d\")\n  val right = listOf(\"q\", \"r\", \"s\", \"t\")\n\n  left.zip(right) eq\n      \"[(a, q), (b, r), (c, s), (d, t)]\"\n\n  left.zip(0..4) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n\n  left.zip(left.indices) eq\n      \"[(a, 0), (b, 1), (c, 2), (d, 3)]\"\n}",
           "placeholders" : [ ]
         },
         "IndexWithZip.kt" : {
           "name" : "IndexWithZip.kt",
-          "text" : "package combiningListsWithZip\n\nimport atomicTest.eq\n\nfun number(s: String) =\n    s.indices.zip(s.toList())\n\nfun main(args: Array<String>) {\n  number(\"Howdy\") eq\n      listOf(0 to 'H', 1 to 'o', 2 to 'w', 3 to 'd', 4 to 'y')\n}",
+          "text" : "// combiningListsWithZip/IndexWithZip.kt\nimport atomicTest.eq\n\nfun number(s: String) =\n    s.indices.zip(s.toList())\n\nfun main(args: Array<String>) {\n  number(\"Howdy\") eq\n      listOf(0 to 'H', 1 to 'o', 2 to 'w', 3 to 'd', 4 to 'y')\n}",
           "placeholders" : [ ]
         },
         "ZipMap.kt" : {
           "name" : "ZipMap.kt",
-          "text" : "package combininglistswithzip\nimport atomicTest.eq\n\ndata class Person(val name: String, val ID: Int)\n\nfun main(args: Array<String>) {\n  val names = listOf(\"Bob\", \"Jill\", \"Jim\")\n  val IDs = listOf(1731, 9274, 8378)\n  names.zip(IDs).map {\n    (n, id) ->\n    Person(n, id)\n  } eq \"[Person(name=Bob, ID=1731), \" +\n      \"Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]\"\n}",
+          "text" : "// combiningListsWithZip/ZipMap.kt\npackage combininglistswithzip\nimport atomicTest.eq\n\ndata class Person(val name: String, val ID: Int)\n\nfun main(args: Array<String>) {\n  val names = listOf(\"Bob\", \"Jill\", \"Jim\")\n  val IDs = listOf(1731, 9274, 8378)\n  names.zip(IDs).map {\n    (n, id) ->\n    Person(n, id)\n  } eq \"[Person(name=Bob, ID=1731), \" +\n      \"Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2630,27 +2630,27 @@
       "task_files" : {
         "ListOf.kt" : {
           "name" : "ListOf.kt",
-          "text" : "package varargsAndArrays\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  listOf(1) eq \"[1]\"\n  listOf(\"a\", \"b\") eq \"[a, b]\"\n}",
+          "text" : "// varargsAndArrays/ListOf.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  listOf(1) eq \"[1]\"\n  listOf(\"a\", \"b\") eq \"[a, b]\"\n}",
           "placeholders" : [ ]
         },
         "VariableArgLists.kt" : {
           "name" : "VariableArgLists.kt",
-          "text" : "package varargsAndArrays\n\nfun foo(s: String, d: Double, vararg ints: Int) {}\n\nfun main(args: Array<String>) {\n  foo(\"abc\", 1.0, 1, 2, 3, 4)\n}",
+          "text" : "// varargsAndArrays/VariableArgLists.kt\nfun foo(s: String, d: Double, vararg ints: Int) {}\n\nfun main(args: Array<String>) {\n  foo(\"abc\", 1.0, 1, 2, 3, 4)\n}",
           "placeholders" : [ ]
         },
         "VarargSum.kt" : {
           "name" : "VarargSum.kt",
-          "text" : "package varargsAndArrays\n\nimport atomicTest.eq\n\nfun sum(vararg numbers: Int): Int {\n  var total = 0\n  for (n in numbers) {\n    total += n\n  }\n  return total\n}\n\nfun main(args: Array<String>) {\n  sum(13, 27, 44) eq 84\n  sum(1, 3, 5, 7, 9, 11) eq 36\n  sum() eq 0\n}",
+          "text" : "// varargsAndArrays/VarargSum.kt\nimport atomicTest.eq\n\nfun sum(vararg numbers: Int): Int {\n  var total = 0\n  for (n in numbers) {\n    total += n\n  }\n  return total\n}\n\nfun main(args: Array<String>) {\n  sum(13, 27, 44) eq 84\n  sum(1, 3, 5, 7, 9, 11) eq 36\n  sum() eq 0\n}",
           "placeholders" : [ ]
         },
         "SpreadOperator.kt" : {
           "name" : "SpreadOperator.kt",
-          "text" : "package varargsAndArrays\n\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // Doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
+          "text" : "// varargsAndArrays/SpreadOperator.kt\nimport atomicTest.eq\n\nfun main(args: Array<String>) {\n  val array = intArrayOf(4, 5)\n  sum(1, 2, 3, *array, 6) eq 21\n\n  // Doesn't compile:\n  // sum(1, 2, 3, array, 6)\n}",
           "placeholders" : [ ]
         },
         "TwoFunctionsWithVarargs.kt" : {
           "name" : "TwoFunctionsWithVarargs.kt",
-          "text" : "package varargsAndArrays\n\nfun firstVarargFun(vararg numbers: Int) {\n  println(\"varargs:\")\n  for (n in numbers) {\n    print(\"$n \")\n  }\n}\n\nfun secondVarargFun(vararg numbers: Int) {\n  firstVarargFun(*numbers)\n}\n\nfun main(args: Array<String>) {\n  secondVarargFun(1, 2, 3)\n}\n/* Output:\nvarargs:\n1 2 3\n*/",
+          "text" : "// varargsAndArrays/TwoFunctionsWithVarargs.kt\nfun firstVarargFun(vararg numbers: Int) {\n  println(\"varargs:\")\n  for (n in numbers) {\n    print(\"$n \")\n  }\n}\n\nfun secondVarargFun(vararg numbers: Int) {\n  firstVarargFun(*numbers)\n}\n\nfun main(args: Array<String>) {\n  secondVarargFun(1, 2, 3)\n}\n/* Output:\nvarargs:\n1 2 3\n*/",
           "placeholders" : [ ]
         }
       },
@@ -2668,17 +2668,17 @@
       "task_files" : {
         "BasicInheritance.kt" : {
           "name" : "BasicInheritance.kt",
-          "text" : "package inheritance\n\nopen class Base\nclass Derived : Base()",
+          "text" : "// inheritance/BasicInheritance.kt\nopen class Base\nclass Derived : Base()",
           "placeholders" : [ ]
         },
         "OpenAndFinalClasses.kt" : {
           "name" : "OpenAndFinalClasses.kt",
-          "text" : "package inheritance\n\n// This class can be inherited from:\nopen class Parent\n\nclass Child : Parent()\n\n// This class can't be inherited from:\nfinal class Single\n\n// The same as using 'final':\nclass AnotherSingle",
+          "text" : "// inheritance/OpenAndFinalClasses.kt\n// This class can be inherited from:\nopen class Parent\n\nclass Child : Parent()\n\n// This class can't be inherited from:\nfinal class Single\n\n// The same as using 'final':\nclass AnotherSingle",
           "placeholders" : [ ]
         },
         "GreatApe.kt" : {
           "name" : "GreatApe.kt",
-          "text" : "package inheritance\nimport atomicTest.eq\n\nopen class GreatApe {\n  val weight = 100.0\n  val age = 12\n}\n\nopen class Bonobo : GreatApe()\nclass Chimpanzee : GreatApe()\nclass BonoboB : Bonobo()\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe()) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo()) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee()) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB()) eq\n      \"weight: 100.0 age: 12\"\n}",
+          "text" : "// inheritance/GreatApe.kt\npackage inheritance\nimport atomicTest.eq\n\nopen class GreatApe {\n  val weight = 100.0\n  val age = 12\n}\n\nopen class Bonobo : GreatApe()\nclass Chimpanzee : GreatApe()\nclass BonoboB : Bonobo()\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe()) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo()) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee()) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB()) eq\n      \"weight: 100.0 age: 12\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2696,22 +2696,22 @@
       "task_files" : {
         "GreatApe2.kt" : {
           "name" : "GreatApe2.kt",
-          "text" : "package baseclassinit\nimport atomicTest.eq\n\nopen class GreatApe(\n    val weight: Double,\n    val age: Int\n)\n\nopen class Bonobo(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass Chimpanzee(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass BonoboB(\n    weight: Double,\n    age: Int\n) : Bonobo(weight, age)\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n}",
+          "text" : "// baseClassInitialization/GreatApe2.kt\npackage baseclassinit\nimport atomicTest.eq\n\nopen class GreatApe(\n    val weight: Double,\n    val age: Int\n)\n\nopen class Bonobo(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass Chimpanzee(\n    weight: Double,\n    age: Int\n) : GreatApe(weight, age)\n\nclass BonoboB(\n    weight: Double,\n    age: Int\n) : Bonobo(weight, age)\n\nfun display(ape: GreatApe) =\n    \"weight: ${ape.weight} age: ${ape.age}\"\n\nfun main(args: Array<String>) {\n  display(GreatApe(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Bonobo(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(Chimpanzee(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n  display(BonoboB(100.0, 12)) eq\n      \"weight: 100.0 age: 12\"\n}",
           "placeholders" : [ ]
         },
         "AuxiliaryInitialization.kt" : {
           "name" : "AuxiliaryInitialization.kt",
-          "text" : "package baseClassInitialization\n\nimport atomicTest.eq\n\nopen class House(\n    val address: String,\n    val state: String,\n    val zip: String\n) {\n  constructor(state: String, zip: String) : this(\"address?\", state, zip)\n  constructor(zip: String) : this(\"address?\", \"state?\", zip)\n}\n\nclass Home(\n    address: String,\n    state: String,\n    zip: String,\n    val name: String\n) : House(address, state, zip) {\n\n  override fun toString() =\n      \"$name: $address, $state $zip\"\n}\n\nclass VacationHouse(\n    state: String,\n    zip: String,\n    val startMonth: Int,\n    val endMonth: Int\n) : House(state, zip)\n\nclass TreeHouse(\n    val name: String, zip: String\n) : House(zip)\n\nfun main(args: Array<String>) {\n  val h = Home(\"888 N. Matarget St.\", \"KS\",\n      \"66632\", \"Metropolis\")\n  h.address eq \"888 N. Matarget St.\"\n  h.state eq \"KS\"\n  h.name eq \"Metropolis\"\n  h eq \"Metropolis: 888 N. Matarget St., KS 66632\"\n\n  val v = VacationHouse(\"KS\", \"66632\", 6, 8)\n  v.state eq \"KS\"\n  v.startMonth eq 6\n  v.endMonth eq 8\n\n  val tree = TreeHouse(\"Oak\", \"48104\")\n  tree.name eq \"Oak\"\n  tree.zip eq \"48104\"\n}",
+          "text" : "// baseClassInitialization/AuxiliaryInitialization.kt\nimport atomicTest.eq\n\nopen class House(\n    val address: String,\n    val state: String,\n    val zip: String\n) {\n  constructor(state: String, zip: String) : this(\"address?\", state, zip)\n  constructor(zip: String) : this(\"address?\", \"state?\", zip)\n}\n\nclass Home(\n    address: String,\n    state: String,\n    zip: String,\n    val name: String\n) : House(address, state, zip) {\n\n  override fun toString() =\n      \"$name: $address, $state $zip\"\n}\n\nclass VacationHouse(\n    state: String,\n    zip: String,\n    val startMonth: Int,\n    val endMonth: Int\n) : House(state, zip)\n\nclass TreeHouse(\n    val name: String, zip: String\n) : House(zip)\n\nfun main(args: Array<String>) {\n  val h = Home(\"888 N. Matarget St.\", \"KS\",\n      \"66632\", \"Metropolis\")\n  h.address eq \"888 N. Matarget St.\"\n  h.state eq \"KS\"\n  h.name eq \"Metropolis\"\n  h eq \"Metropolis: 888 N. Matarget St., KS 66632\"\n\n  val v = VacationHouse(\"KS\", \"66632\", 6, 8)\n  v.state eq \"KS\"\n  v.startMonth eq 6\n  v.endMonth eq 8\n\n  val tree = TreeHouse(\"Oak\", \"48104\")\n  tree.name eq \"Oak\"\n  tree.zip eq \"48104\"\n}",
           "placeholders" : [ ]
         },
         "CallingOtherConstructors.kt" : {
           "name" : "CallingOtherConstructors.kt",
-          "text" : "package baseclassinit\nimport atomicTest.eq\n\nopen class Base(val i: Int)\n\nclass Derived : Base {\n  constructor(i: Int) : super(i)\n  constructor() : this(0)\n}\n\nfun main(args: Array<String>) {\n  val d1 = Derived(1)\n  d1.i eq 1\n\n  val d2 = Derived()\n  d2.i eq 0\n}",
+          "text" : "// baseClassInitialization/CallingOtherConstructors.kt\npackage baseclassinit\nimport atomicTest.eq\n\nopen class Base(val i: Int)\n\nclass Derived : Base {\n  constructor(i: Int) : super(i)\n  constructor() : this(0)\n}\n\nfun main(args: Array<String>) {\n  val d1 = Derived(1)\n  d1.i eq 1\n\n  val d2 = Derived()\n  d2.i eq 0\n}",
           "placeholders" : [ ]
         },
         "CallingNoArgConstructor.kt" : {
           "name" : "CallingNoArgConstructor.kt",
-          "text" : "package baseClassInitialization\n\nopen class Superclass1(val i: Int)\nclass Subclass1(i: Int) : Superclass1(i)\n\nopen class Superclass2\nclass Subclass2 : Superclass2()",
+          "text" : "// baseClassInitialization/CallingNoArgConstructor.kt\nopen class Superclass1(val i: Int)\nclass Subclass1(i: Int) : Superclass1(i)\n\nopen class Superclass2\nclass Subclass2 : Superclass2()",
           "placeholders" : [ ]
         }
       },
@@ -2729,7 +2729,7 @@
       "task_files" : {
         "GreatApe3.kt" : {
           "name" : "GreatApe3.kt",
-          "text" : "package overridingFunctions\n\nimport atomicTest.eq\n\nopen class GreatApe {\n\n  protected var energy = 0\n\n  open fun call() = \"Hoo!\"\n\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n\n  override fun call() = \"Eep!\"\n\n  override fun eat(): Int {\n    // Modify the base-class var:\n    energy += 10\n    // Call the base-class version:\n    return super.eat()\n  }\n\n  // Add a function():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  val additionalEnergy = 20 // New property\n\n  override fun call() = \"Yawp!\"\n\n  override fun eat(): Int {\n    energy += additionalEnergy\n    return super.eat()\n  }\n\n  fun jump() = \"Chimp jump\"\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape function\n  // ape.jump // Nor this\n  ape.climb(10)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!0\"\n  talk(Bonobo()) eq \"Eep!10\"\n  talk(Chimpanzee()) eq \"Yawp!20\"\n}",
+          "text" : "// overridingFunctions/GreatApe3.kt\nimport atomicTest.eq\n\nopen class GreatApe {\n\n  protected var energy = 0\n\n  open fun call() = \"Hoo!\"\n\n  open fun eat(): Int {\n    energy += 10\n    return energy\n  }\n\n  fun climb(x: Int) {\n    energy -= x\n  }\n}\n\nclass Bonobo : GreatApe() {\n\n  override fun call() = \"Eep!\"\n\n  override fun eat(): Int {\n    // Modify the base-class var:\n    energy += 10\n    // Call the base-class version:\n    return super.eat()\n  }\n\n  // Add a function():\n  fun run() = \"Bonobo run\"\n}\n\nclass Chimpanzee : GreatApe() {\n  val additionalEnergy = 20 // New property\n\n  override fun call() = \"Yawp!\"\n\n  override fun eat(): Int {\n    energy += additionalEnergy\n    return super.eat()\n  }\n\n  fun jump() = \"Chimp jump\"\n}\n\nfun talk(ape: GreatApe): String {\n  // ape.run()  // Not an ape function\n  // ape.jump // Nor this\n  ape.climb(10)\n  return ape.call() + ape.eat()\n}\n\nfun main(args: Array<String>) {\n  talk(GreatApe()) eq \"Hoo!0\"\n  talk(Bonobo()) eq \"Eep!10\"\n  talk(Chimpanzee()) eq \"Yawp!20\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2747,17 +2747,17 @@
       "task_files" : {
         "AbstractKeyword.kt" : {
           "name" : "AbstractKeyword.kt",
-          "text" : "package abstractClasses\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithFunction {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
+          "text" : "// abstractClasses/AbstractKeyword.kt\n\nabstract class WithValVar {\n  abstract val x: Int\n  abstract var y: Int\n}\n\nabstract class WithFunction {\n  abstract fun f(): Int\n  abstract fun g(n: Double)\n}",
           "placeholders" : [ ]
         },
         "AbstractClasses.kt" : {
           "name" : "AbstractClasses.kt",
-          "text" : "package abstractClasses\nimport atomicTest.eq\n\nabstract class Animal {\n  fun templateFunction() = \"The ${animal()} goes ${sound()}\"\n  // Abstract functions (no function body):\n  abstract fun animal(): String\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n  // val a = Animal()\n\n  Duck().templateFunction() eq\n      \"The Duck goes Quack\"\n  Cow().templateFunction() eq\n      \"The Cow goes Moo\"\n}",
+          "text" : "// abstractClasses/AbstractClasses.kt\npackage abstractClasses\nimport atomicTest.eq\n\nabstract class Animal {\n  fun templateFunction() = \"The ${animal()} goes ${sound()}\"\n  // Abstract functions (no function body):\n  abstract fun animal(): String\n  abstract fun sound(): String\n}\n\nclass Duck : Animal() {\n  override fun animal() = \"Duck\"\n  // \"override\" eq optional here():\n  override fun sound() = \"Quack\"\n}\n\nclass Cow : Animal() {\n  override fun animal() = \"Cow\"\n  override fun sound() = \"Moo\"\n}\n\nfun main(args: Array<String>) {\n  // Error -- Cannot create\n  // an instance of an abstract class:\n  // val a = Animal()\n\n  Duck().templateFunction() eq\n      \"The Duck goes Quack\"\n  Cow().templateFunction() eq\n      \"The Cow goes Moo\"\n}",
           "placeholders" : [ ]
         },
         "AbstractAdder.kt" : {
           "name" : "AbstractAdder.kt",
-          "text" : "package abstractClasses\n\nabstract class Adder(x: Int) {\n  abstract fun add(y: Int): Int\n}",
+          "text" : "// abstractClasses/AbstractAdder.kt\nabstract class Adder(x: Int) {\n  abstract fun add(y: Int): Int\n}",
           "placeholders" : [ ]
         }
       },
@@ -2775,37 +2775,37 @@
       "task_files" : {
         "StateOfAClass.kt" : {
           "name" : "StateOfAClass.kt",
-          "text" : "package interfaces\n\nimport atomicTest.eq\n\nclass MyClass(\n    val i: Int\n) {\n  val list = mutableListOf(i)\n}\n\nfun main(args: Array<String>) {\n  val my = MyClass(0)\n  my.i eq 0\n  my.list += 1\n  my.list eq listOf(0, 1)\n}",
+          "text" : "// interfaces/StateOfAClass.kt\nimport atomicTest.eq\n\nclass MyClass(\n    val i: Int\n) {\n  val list = mutableListOf(i)\n}\n\nfun main(args: Array<String>) {\n  val my = MyClass(0)\n  my.i eq 0\n  my.list += 1\n  my.list eq listOf(0, 1)\n}",
           "placeholders" : [ ]
         },
         "NoMultipleInheritance.kt" : {
           "name" : "NoMultipleInheritance.kt",
-          "text" : "package classes\n\nopen class Animal\nopen class Mammal : Animal()\nopen class AquaticAnimal : Animal()\n\n// Doesn't compile:\n// class Dolphin : Mammal(), AquaticAnimal()",
+          "text" : "// interfaces/NoMultipleInheritance.kt\npackage classes\n\nopen class Animal\nopen class Mammal : Animal()\nopen class AquaticAnimal : Animal()\n\n// Doesn't compile:\n// class Dolphin : Mammal(), AquaticAnimal()",
           "placeholders" : [ ]
         },
         "MultipleInterfaceInheritance.kt" : {
           "name" : "MultipleInterfaceInheritance.kt",
-          "text" : "package interfaces1\n\ninterface Animal\ninterface Mammal : Animal\ninterface AquaticAnimal : Animal\n\n// Now compiles!\nclass Dolphin : Mammal, AquaticAnimal",
+          "text" : "// interfaces/MultipleInterfaceInheritance.kt\npackage interfaces1\n\ninterface Animal\ninterface Mammal : Animal\ninterface AquaticAnimal : Animal\n\n// Now compiles!\nclass Dolphin : Mammal, AquaticAnimal",
           "placeholders" : [ ]
         },
         "NoStateInInterfaces.kt" : {
           "name" : "NoStateInInterfaces.kt",
-          "text" : "package interfaces2\n\ninterface Animal {\n  val sound: String\n  fun talk(): String\n\n  // Doesn't compile:\n  // val age = 1\n}",
+          "text" : "// interfaces/NoStateInInterfaces.kt\npackage interfaces2\n\ninterface Animal {\n  val sound: String\n  fun talk(): String\n\n  // Doesn't compile:\n  // val age = 1\n}",
           "placeholders" : [ ]
         },
         "InterfaceMemberImplementations.kt" : {
           "name" : "InterfaceMemberImplementations.kt",
-          "text" : "package interfaces3\nimport atomicTest.eq\n\ninterface Animal {\n  val sound: String\n\n  fun talk() = \"$sound!\"\n}\n\nclass Cat : Animal {\n  override val sound = \"meow\"\n}\n\nclass Dog(\n    override val sound: String\n) : Animal\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  cat.talk() eq \"meow!\"\n  val dog = Dog(\"woof\")\n  dog.talk() eq \"woof!\"\n}",
+          "text" : "// interfaces/InterfaceMemberImplementations.kt\npackage interfaces3\nimport atomicTest.eq\n\ninterface Animal {\n  val sound: String\n\n  fun talk() = \"$sound!\"\n}\n\nclass Cat : Animal {\n  override val sound = \"meow\"\n}\n\nclass Dog(\n    override val sound: String\n) : Animal\n\nfun main(args: Array<String>) {\n  val cat = Cat()\n  cat.talk() eq \"meow!\"\n  val dog = Dog(\"woof\")\n  dog.talk() eq \"woof!\"\n}",
           "placeholders" : [ ]
         },
         "Framework.kt" : {
           "name" : "Framework.kt",
-          "text" : "package interfaces\n\nimport atomicTest.eq\n\ninterface Framework {\n  val part1: Int\n  fun part2(): Double\n  // Even without definitions:\n  fun templateMethod() = part1 + part2()\n}\n\nfun operation(impl: Framework) =\n    impl.templateMethod()\n\nclass Implementation : Framework {\n  override val part1 = 42\n  override fun part2() = 2.71828\n}\n\nfun main(args: Array<String>) {\n  operation(Implementation()) eq 44.71828\n}",
+          "text" : "// interfaces/Framework.kt\nimport atomicTest.eq\n\ninterface Framework {\n  val part1: Int\n  fun part2(): Double\n  // Even without definitions:\n  fun templateMethod() = part1 + part2()\n}\n\nfun operation(impl: Framework) =\n    impl.templateMethod()\n\nclass Implementation : Framework {\n  override val part1 = 42\n  override fun part2() = 2.71828\n}\n\nfun main(args: Array<String>) {\n  operation(Implementation()) eq 44.71828\n}",
           "placeholders" : [ ]
         },
         "InterfaceCollision.kt" : {
           "name" : "InterfaceCollision.kt",
-          "text" : "package interfaces\n\nimport atomicTest.eq\n\ninterface A {\n  fun f() = 1.1\n  fun g() = \"A.g\"\n  val n: Int\n    get() = 7\n}\n\ninterface B {\n  fun f() = 7.7\n  fun g() = \"B.g\"\n  val n: Int\n    get() = 17\n}\n\nclass C : A, B {\n  override fun f() = 9.9\n  override fun g() = super<A>.g()\n  override val n: Int\n    get() = super<A>.n + super<B>.n\n}\n\nfun main(args: Array<String>) {\n  val c = C()\n  c.f() eq 9.9\n  c.g() eq \"A.g\"\n  c.n eq 24\n}",
+          "text" : "// interfaces/InterfaceCollision.kt\nimport atomicTest.eq\n\ninterface A {\n  fun f() = 1.1\n  fun g() = \"A.g\"\n  val n: Int\n    get() = 7\n}\n\ninterface B {\n  fun f() = 7.7\n  fun g() = \"B.g\"\n  val n: Int\n    get() = 17\n}\n\nclass C : A, B {\n  override fun f() = 9.9\n  override fun g() = super<A>.g()\n  override val n: Int\n    get() = super<A>.n + super<B>.n\n}\n\nfun main(args: Array<String>) {\n  val c = C()\n  c.f() eq 9.9\n  c.g() eq \"A.g\"\n  c.n eq 24\n}",
           "placeholders" : [ ]
         }
       },
@@ -2823,27 +2823,27 @@
       "task_files" : {
         "MyClass.kt" : {
           "name" : "MyClass.kt",
-          "text" : "package propertyaccessors\nimport atomicTest.eq\n\nclass MyClass(var property: Int)\n\nfun main(args: Array<String>) {\n  val myClass = MyClass(10)\n  myClass.property = 20\n  myClass.property eq 20\n}",
+          "text" : "// propertyAccessors/MyClass.kt\npackage propertyaccessors\nimport atomicTest.eq\n\nclass MyClass(var property: Int)\n\nfun main(args: Array<String>) {\n  val myClass = MyClass(10)\n  myClass.property = 20\n  myClass.property eq 20\n}",
           "placeholders" : [ ]
         },
         "DefaultAccessors.kt" : {
           "name" : "DefaultAccessors.kt",
-          "text" : "package propertyAccessors\n\nimport atomicTest.eq\n\nclass DefaultAccessors {\n  var property: Int = 0\n    get() = field                    // [1]\n    set(value) {\n      field = value                  // [2]\n    }\n}\n\nfun main(args: Array<String>) {\n  val defaultAccessors = DefaultAccessors()\n  defaultAccessors.property = 2      // [3]\n  defaultAccessors.property eq 2     // [4]\n}",
+          "text" : "// propertyAccessors/DefaultAccessors.kt\nimport atomicTest.eq\n\nclass DefaultAccessors {\n  var property: Int = 0\n    get() = field                    // [1]\n    set(value) {\n      field = value                  // [2]\n    }\n}\n\nfun main(args: Array<String>) {\n  val defaultAccessors = DefaultAccessors()\n  defaultAccessors.property = 2      // [3]\n  defaultAccessors.property eq 2     // [4]\n}",
           "placeholders" : [ ]
         },
         "LoggingChange.kt" : {
           "name" : "LoggingChange.kt",
-          "text" : "package propertyAccessors\n\nclass LoggingChange {\n  var property: Int = 0\n    set(value) {\n      println(\"Value has changed from $field to $value\")\n      field = value\n    }\n}\n\nfun main(args: Array<String>) {\n  LoggingChange().property = 2\n}\n/* Output:\nValue has changed from 0 to 2\n*/",
+          "text" : "// propertyAccessors/LoggingChange.kt\nclass LoggingChange {\n  var property: Int = 0\n    set(value) {\n      println(\"Value has changed from $field to $value\")\n      field = value\n    }\n}\n\nfun main(args: Array<String>) {\n  LoggingChange().property = 2\n}\n/* Output:\nValue has changed from 0 to 2\n*/",
           "placeholders" : [ ]
         },
         "Hamsters.kt" : {
           "name" : "Hamsters.kt",
-          "text" : "package propertyaccessors\nimport atomicTest.eq\nimport java.util.*\n\nclass Hamster(val name: String)\n\nclass Cage(private val maxCapacity: Int) {\n  private val hamsters = mutableListOf<Hamster>()\n\n  val capacity: Int\n    get() = maxCapacity - hamsters.size\n\n  fun isFull(): Boolean =\n    hamsters.size == maxCapacity\n\n  fun putHamster(hamster: Hamster): Boolean =\n    if (!isFull()) {\n      hamsters += hamster\n      true\n    } else {\n      false\n    }\n\n  fun takeHamster(): Hamster =\n      hamsters.removeAt(Random().nextInt(hamsters.size))\n}\n\nfun main(args: Array<String>) {\n  val cage = Cage(maxCapacity = 2)\n  cage.isFull() eq false\n  cage.capacity eq 2\n  cage.putHamster(Hamster(\"Alice\")) eq true\n  cage.putHamster(Hamster(\"Bob\")) eq true\n  cage.isFull() eq true\n  cage.capacity eq 0\n  cage.putHamster(Hamster(\"Charlie\")) eq false\n  cage.takeHamster()\n  cage.capacity eq 1\n}",
+          "text" : "// propertyAccessors/Hamsters.kt\npackage propertyaccessors\nimport atomicTest.eq\nimport java.util.*\n\nclass Hamster(val name: String)\n\nclass Cage(private val maxCapacity: Int) {\n  private val hamsters = mutableListOf<Hamster>()\n\n  val capacity: Int\n    get() = maxCapacity - hamsters.size\n\n  fun isFull(): Boolean =\n    hamsters.size == maxCapacity\n\n  fun putHamster(hamster: Hamster): Boolean =\n    if (!isFull()) {\n      hamsters += hamster\n      true\n    } else {\n      false\n    }\n\n  fun takeHamster(): Hamster =\n      hamsters.removeAt(Random().nextInt(hamsters.size))\n}\n\nfun main(args: Array<String>) {\n  val cage = Cage(maxCapacity = 2)\n  cage.isFull() eq false\n  cage.capacity eq 2\n  cage.putHamster(Hamster(\"Alice\")) eq true\n  cage.putHamster(Hamster(\"Bob\")) eq true\n  cage.isFull() eq true\n  cage.capacity eq 0\n  cage.putHamster(Hamster(\"Charlie\")) eq false\n  cage.takeHamster()\n  cage.capacity eq 1\n}",
           "placeholders" : [ ]
         },
         "PropertyInInterface.kt" : {
           "name" : "PropertyInInterface.kt",
-          "text" : "package propertyaccessors\nimport atomicTest.eq\n\ninterface MyInterface {\n  val number: Int                                 // [1]\n\n  val isPositive: Boolean\n    get() = number > 0                            // [2]\n}\n\nclass C(override val number: Int) : MyInterface   // [3]\n\nclass D : MyInterface {\n  override val number: Int                        // [4]\n    get() = 5\n}\n\nfun main(args: Array<String>) {\n  val list: List<MyInterface> = listOf(C(10), C(-10), D())\n\n  var sum = 0\n  for (i in list) {                 // [5]\n    if (i.isPositive) {\n        sum += i.number                          // [5]\n    }\n  }\n  sum eq 15\n}",
+          "text" : "// propertyAccessors/PropertyInInterface.kt\npackage propertyaccessors\nimport atomicTest.eq\n\ninterface MyInterface {\n  val number: Int                                 // [1]\n\n  val isPositive: Boolean\n    get() = number > 0                            // [2]\n}\n\nclass C(override val number: Int) : MyInterface   // [3]\n\nclass D : MyInterface {\n  override val number: Int                        // [4]\n    get() = 5\n}\n\nfun main(args: Array<String>) {\n  val list: List<MyInterface> = listOf(C(10), C(-10), D())\n\n  var sum = 0\n  for (i in list) {                 // [5]\n    if (i.isPositive) {\n        sum += i.number                          // [5]\n    }\n  }\n  sum eq 15\n}",
           "placeholders" : [ ]
         }
       },
@@ -2861,27 +2861,27 @@
       "task_files" : {
         "House1.kt" : {
           "name" : "House1.kt",
-          "text" : "package composition1\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchen: Kitchen\n}",
+          "text" : "// composition/House1.kt\npackage composition1\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchen: Kitchen\n}",
           "placeholders" : [ ]
         },
         "House2.kt" : {
           "name" : "House2.kt",
-          "text" : "package composition2\n\ninterface Building\ninterface Kitchen\ninterface House : Building {\n  val kitchen1: Kitchen\n  val kitchen2: Kitchen\n}",
+          "text" : "// composition/House2.kt\npackage composition2\n\ninterface Building\ninterface Kitchen\ninterface House : Building {\n  val kitchen1: Kitchen\n  val kitchen2: Kitchen\n}",
           "placeholders" : [ ]
         },
         "House3.kt" : {
           "name" : "House3.kt",
-          "text" : "package composition3\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "text" : "// composition/House3.kt\npackage composition3\n\ninterface Building\ninterface Kitchen\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
           "placeholders" : [ ]
         },
         "House4.kt" : {
           "name" : "House4.kt",
-          "text" : "package composition4\n\ninterface Building\ninterface Food\ninterface Utensil\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Kitchen : Store<Food>, Cook<Food>, Clean<Utensil>\n  // Oops. Can't do this:\n  // , Store<Utensil>, Clean<Food>\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "text" : "// composition/House4.kt\npackage composition4\n\ninterface Building\ninterface Food\ninterface Utensil\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Kitchen : Store<Food>, Cook<Food>, Clean<Utensil>\n  // Oops. Can't do this:\n  // , Store<Utensil>, Clean<Food>\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
           "placeholders" : [ ]
         },
         "House5.kt" : {
           "name" : "House5.kt",
-          "text" : "package composition5\n\ninterface Building\ninterface Room\ninterface Storage\ninterface Sink\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Food : Store<Food>,\n    Clean<Food>, Cook<Food>\n\ninterface Utensil : Store<Utensil>,\n    Clean<Utensil>, Cook<Utensil>\n\ninterface Kitchen : Room {\n  val storage: Storage\n  val sinks: List<Sink>\n  val food: Food\n  val utensils: List<Utensil>\n}\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
+          "text" : "// composition/House5.kt\npackage composition5\n\ninterface Building\ninterface Room\ninterface Storage\ninterface Sink\ninterface Store<T>\ninterface Cook<T>\ninterface Clean<T>\ninterface Food : Store<Food>,\n    Clean<Food>, Cook<Food>\n\ninterface Utensil : Store<Utensil>,\n    Clean<Utensil>, Cook<Utensil>\n\ninterface Kitchen : Room {\n  val storage: Storage\n  val sinks: List<Sink>\n  val food: Food\n  val utensils: List<Utensil>\n}\n\ninterface House : Building {\n  val kitchens: List<Kitchen>\n}",
           "placeholders" : [ ]
         }
       },
@@ -2899,22 +2899,22 @@
       "task_files" : {
         "SpaceShipControls.kt" : {
           "name" : "SpaceShipControls.kt",
-          "text" : "package classDelegation\n\ninterface SpaceShipControls {\n  fun up(velocity: Int): String\n  fun down(velocity: Int): String\n  fun left(velocity: Int): String\n  fun right(velocity: Int): String\n  fun forward(velocity: Int): String\n  fun back(velocity: Int): String\n  fun turboBoost(): String\n}\n\nclass SpaceShipControlsImpl: SpaceShipControls {\n  override fun up(velocity: Int) = \"up $velocity\"\n  override fun down(velocity: Int) = \"down $velocity\"\n  override fun left(velocity: Int) = \"left $velocity\"\n  override fun right(velocity: Int) = \"right $velocity\"\n  override fun forward(velocity: Int) = \"forward $velocity\"\n  override fun back(velocity: Int) = \"back $velocity\"\n  override fun turboBoost() = \"turbo boost\"\n}",
+          "text" : "// classDelegation/SpaceShipControls.kt\ninterface SpaceShipControls {\n  fun up(velocity: Int): String\n  fun down(velocity: Int): String\n  fun left(velocity: Int): String\n  fun right(velocity: Int): String\n  fun forward(velocity: Int): String\n  fun back(velocity: Int): String\n  fun turboBoost(): String\n}\n\nclass SpaceShipControlsImpl: SpaceShipControls {\n  override fun up(velocity: Int) = \"up $velocity\"\n  override fun down(velocity: Int) = \"down $velocity\"\n  override fun left(velocity: Int) = \"left $velocity\"\n  override fun right(velocity: Int) = \"right $velocity\"\n  override fun forward(velocity: Int) = \"forward $velocity\"\n  override fun back(velocity: Int) = \"back $velocity\"\n  override fun turboBoost() = \"turbo boost\"\n}",
           "placeholders" : [ ]
         },
         "ExplicitDelegation.kt" : {
           "name" : "ExplicitDelegation.kt",
-          "text" : "package classDelegation\n\nimport atomicTest.eq\n\nclass AdjustedControlsExplicit : SpaceShipControls {\n\n  private val controls = SpaceShipControlsImpl()\n\n  // Delegated members:\n\n  override fun up(velocity: Int) =\n      controls.up(velocity)\n\n  override fun back(velocity: Int) =\n      controls.back(velocity)\n\n  override fun down(velocity: Int) =\n      controls.down(velocity)\n\n  override fun forward(velocity: Int) =\n      controls.forward(velocity)\n\n  override fun left(velocity: Int) =\n      controls.left(velocity)\n\n  override fun right(velocity: Int) =\n      controls.right(velocity)\n      \n  // Modified implementations:    \n\n  override fun turboBoost(): String =\n      controls.turboBoost() + \"... boooooost!\"\n}\n\nfun main(args: Array<String>) {\n  val controls = AdjustedControlsExplicit()\n  controls.forward(100) eq \"forward 100\"\n  controls.turboBoost() eq \"turbo boost... boooooost!\"\n}",
+          "text" : "// classDelegation/ExplicitDelegation.kt\nimport atomicTest.eq\n\nclass AdjustedControlsExplicit : SpaceShipControls {\n\n  private val controls = SpaceShipControlsImpl()\n\n  // Delegated members:\n\n  override fun up(velocity: Int) =\n      controls.up(velocity)\n\n  override fun back(velocity: Int) =\n      controls.back(velocity)\n\n  override fun down(velocity: Int) =\n      controls.down(velocity)\n\n  override fun forward(velocity: Int) =\n      controls.forward(velocity)\n\n  override fun left(velocity: Int) =\n      controls.left(velocity)\n\n  override fun right(velocity: Int) =\n      controls.right(velocity)\n      \n  // Modified implementations:    \n\n  override fun turboBoost(): String =\n      controls.turboBoost() + \"... boooooost!\"\n}\n\nfun main(args: Array<String>) {\n  val controls = AdjustedControlsExplicit()\n  controls.forward(100) eq \"forward 100\"\n  controls.turboBoost() eq \"turbo boost... boooooost!\"\n}",
           "placeholders" : [ ]
         },
         "AdjustedControls.kt" : {
           "name" : "AdjustedControls.kt",
-          "text" : "package classDelegation\n\nimport atomicTest.eq\n\nclass AdjustedControls(\n    private val controls: SpaceShipControls = SpaceShipControlsImpl()\n) : SpaceShipControls by controls {\n\n  override fun turboBoost(): String =\n      controls.turboBoost() + \"... boooooost!\"\n}\n\nfun main(args: Array<String>) {\n  val controls = AdjustedControls()\n  controls.forward(100) eq \"forward 100\"\n  controls.turboBoost() eq \"turbo boost... boooooost!\"\n}",
+          "text" : "// classDelegation/AdjustedControls.kt\nimport atomicTest.eq\n\nclass AdjustedControls(\n    private val controls: SpaceShipControls = SpaceShipControlsImpl()\n) : SpaceShipControls by controls {\n\n  override fun turboBoost(): String =\n      controls.turboBoost() + \"... boooooost!\"\n}\n\nfun main(args: Array<String>) {\n  val controls = AdjustedControls()\n  controls.forward(100) eq \"forward 100\"\n  controls.turboBoost() eq \"turbo boost... boooooost!\"\n}",
           "placeholders" : [ ]
         },
         "ModelingMultipleInheritance.kt" : {
           "name" : "ModelingMultipleInheritance.kt",
-          "text" : "package classDelegation\n\nimport atomicTest.eq\n\ninterface Foo {\n  fun foo(): String\n}\n\nclass FooImpl : Foo {\n  override fun foo() = \"foo\"\n}\n\ninterface Bar {\n  fun bar(): String\n}\n\nclass BarImpl : Bar {\n  override fun bar() = \"bar\"\n}\n\n// Even if we make the classes open, we'll get an error:\n// Only one class may appear in a supertype list\n//class B : FooImpl(), BarImpl()\n\nclass FooBar(val foo: Foo, val bar: Bar) : Foo by foo, Bar by bar\n\nfun main(args: Array<String>) {\n  val fooBar = FooBar(FooImpl(), BarImpl())\n  fooBar.foo() eq \"foo\"\n  fooBar.bar() eq \"bar\"\n}",
+          "text" : "// classDelegation/ModelingMultipleInheritance.kt\nimport atomicTest.eq\n\ninterface Foo {\n  fun foo(): String\n}\n\nclass FooImpl : Foo {\n  override fun foo() = \"foo\"\n}\n\ninterface Bar {\n  fun bar(): String\n}\n\nclass BarImpl : Bar {\n  override fun bar() = \"bar\"\n}\n\n// Even if we make the classes open, we'll get an error:\n// Only one class may appear in a supertype list\n//class B : FooImpl(), BarImpl()\n\nclass FooBar(val foo: Foo, val bar: Bar) : Foo by foo, Bar by bar\n\nfun main(args: Array<String>) {\n  val fooBar = FooBar(FooImpl(), BarImpl())\n  fooBar.foo() eq \"foo\"\n  fooBar.bar() eq \"bar\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -2932,12 +2932,12 @@
       "task_files" : {
         "Level.kt" : {
           "name" : "Level.kt",
-          "text" : "package enumerations\nimport atomicTest.eq\n\nenum class Level {\n  Overflow, High, Medium, Low, Empty\n}\n\nfun main(args: Array<String>) {\n  Level.Medium eq \"Medium\"\n}",
+          "text" : "// enumerations/Level.kt\npackage enumerations\nimport atomicTest.eq\n\nenum class Level {\n  Overflow, High, Medium, Low, Empty\n}\n\nfun main(args: Array<String>) {\n  Level.Medium eq \"Medium\"\n}",
           "placeholders" : [ ]
         },
         "ImportLevel.kt" : {
           "name" : "ImportLevel.kt",
-          "text" : "package enumerations\nimport atomicTest.eq\nimport enumerations.Level.*    // [1]\n\nfun main(args: Array<String>) {\n  Medium eq \"Medium\"           // [2]\n\n  Level.values().toList() eq   // [3]\n      listOf(Overflow, High,\n          Medium, Low, Empty)\n\n  fun checkLevel(level: Level) = when (level) {\n    Overflow -> \">>> Overflow!\"\n    Empty -> \"Alert: Empty\"\n    else -> \"Level $level OK\"\n  }\n\n  checkLevel(Low) eq \"Level Low OK\"\n  checkLevel(Empty) eq \"Alert: Empty\"\n  checkLevel(Overflow) eq \">>> Overflow!\"\n\n  Level.values().map { \"${it.ordinal} - $it\" } eq\n    listOf(\"0 - Overflow\",\n           \"1 - High\",\n           \"2 - Medium\",\n           \"3 - Low\",\n           \"4 - Empty\")\n}",
+          "text" : "// enumerations/ImportLevel.kt\npackage enumerations\nimport atomicTest.eq\nimport enumerations.Level.*    // [1]\n\nfun main(args: Array<String>) {\n  Medium eq \"Medium\"           // [2]\n\n  Level.values().toList() eq   // [3]\n      listOf(Overflow, High,\n          Medium, Low, Empty)\n\n  fun checkLevel(level: Level) = when (level) {\n    Overflow -> \">>> Overflow!\"\n    Empty -> \"Alert: Empty\"\n    else -> \"Level $level OK\"\n  }\n\n  checkLevel(Low) eq \"Level Low OK\"\n  checkLevel(Empty) eq \"Alert: Empty\"\n  checkLevel(Overflow) eq \">>> Overflow!\"\n\n  Level.values().map { \"${it.ordinal} - $it\" } eq\n    listOf(\"0 - Overflow\",\n           \"1 - High\",\n           \"2 - Medium\",\n           \"3 - Low\",\n           \"4 - Empty\")\n}",
           "placeholders" : [ ]
         }
       },
@@ -2955,22 +2955,22 @@
       "task_files" : {
         "PaintColors.kt" : {
           "name" : "PaintColors.kt",
-          "text" : "package paintcolors\n\nenum class Color {\n  red, blue, yellow, purple, green, orange, brown\n}",
+          "text" : "// moreAboutWhenExpressions/PaintColors.kt\npackage paintcolors\n\nenum class Color {\n  red, blue, yellow, purple, green, orange, brown\n}",
           "placeholders" : [ ]
         },
         "ColorBlend.kt" : {
           "name" : "ColorBlend.kt",
-          "text" : "package colorblend\n\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nfun blend(a: Color, b: Color) = when {\n  a == b -> a\n  a == brown || b == brown -> brown\n  else -> blendRest(a, b)\n}\n\nprivate fun blendRest(a: Color, b: Color) = when (a to b) {\n  red to blue, blue to red -> purple\n  red to yellow, yellow to red -> orange\n  blue to yellow, yellow to blue -> green\n  else -> {\n    // Interesting, not accurate:\n    val values = values()\n    values[(a.ordinal + b.ordinal) % values.size]\n  }\n}",
+          "text" : "// moreAboutWhenExpressions/ColorBlend.kt\npackage colorblend\n\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nfun blend(a: Color, b: Color) = when {\n  a == b -> a\n  a == brown || b == brown -> brown\n  else -> blendRest(a, b)\n}\n\nprivate fun blendRest(a: Color, b: Color) = when (a to b) {\n  red to blue, blue to red -> purple\n  red to yellow, yellow to red -> orange\n  blue to yellow, yellow to blue -> green\n  else -> {\n    // Interesting, not accurate:\n    val values = values()\n    values[(a.ordinal + b.ordinal) % values.size]\n  }\n}",
           "placeholders" : [ ]
         },
         "ColorBlendTest.kt" : {
           "name" : "ColorBlendTest.kt",
-          "text" : "package colorblend\n\nimport atomicTest.eq\nimport paintcolors.Color.*\n\nfun main(args: Array<String>) {\n  blend(red, red) eq red\n  blend(purple, brown) eq brown\n  blend(red, yellow) eq orange\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n}",
+          "text" : "// moreAboutWhenExpressions/ColorBlendTest.kt\npackage colorblend\n\nimport atomicTest.eq\nimport paintcolors.Color.*\n\nfun main(args: Array<String>) {\n  blend(red, red) eq red\n  blend(purple, brown) eq brown\n  blend(red, yellow) eq orange\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n}",
           "placeholders" : [ ]
         },
         "ColorBlendMap.kt" : {
           "name" : "ColorBlendMap.kt",
-          "text" : "package colorblendmap\n\nimport atomicTest.eq\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nval blender = createBlendMap()\n\nprivate fun createBlendMap(): Map<Pair<Color, Color>, Color> {\n  val result = mutableMapOf<Pair<Color, Color>, Color>()\n  for (a in Color.values()) {\n    for (b in Color.values()) {\n      result[a to b] = colorblend.blend(a, b)\n    }\n  }\n  return result\n}\n\nfun blend(a: Color, b: Color) = blender[a to b]\n\nfun main(args: Array<String>) {\n  blend(red, yellow) eq orange\n  blend(red, red) eq red\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n  blend(purple, brown) eq brown\n}",
+          "text" : "// moreAboutWhenExpressions/ColorBlendMap.kt\npackage colorblendmap\n\nimport atomicTest.eq\nimport paintcolors.Color\nimport paintcolors.Color.*\n\nval blender = createBlendMap()\n\nprivate fun createBlendMap(): Map<Pair<Color, Color>, Color> {\n  val result = mutableMapOf<Pair<Color, Color>, Color>()\n  for (a in Color.values()) {\n    for (b in Color.values()) {\n      result[a to b] = colorblend.blend(a, b)\n    }\n  }\n  return result\n}\n\nfun blend(a: Color, b: Color) = blender[a to b]\n\nfun main(args: Array<String>) {\n  blend(red, yellow) eq orange\n  blend(red, red) eq red\n  blend(yellow, blue) eq green\n  blend(purple, orange) eq blue\n  blend(purple, brown) eq brown\n}",
           "placeholders" : [ ]
         }
       },
@@ -2988,12 +2988,12 @@
       "task_files" : {
         "RegularClasses.kt" : {
           "name" : "RegularClasses.kt",
-          "text" : "package regularClasses\n\nimport atomicTest.eq\n\nopen class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n      else -> \"$transport is in limbo!\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
+          "text" : "// sealedClasses/RegularClasses.kt\npackage regularClasses\n\nimport atomicTest.eq\n\nopen class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n      else -> \"$transport is in limbo!\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
           "placeholders" : [ ]
         },
         "SealedClasses.kt" : {
           "name" : "SealedClasses.kt",
-          "text" : "package sealedClasses\n\nimport atomicTest.eq\n\nsealed class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
+          "text" : "// sealedClasses/SealedClasses.kt\nimport atomicTest.eq\n\nsealed class Transport\n\ndata class Train(\n    val line: String\n) : Transport()\n\ndata class Bus(\n    val number: String,\n    val capacity: Int\n) : Transport()\n\nfun travel(transport: Transport): String =\n    when (transport) {\n      is Train ->\n        \"Train line ${transport.line}\"\n      is Bus ->\n        \"Bus number ${transport.number}, size ${transport.capacity}\"\n    }\n\nfun main(args: Array<String>) {\n  val trip = listOf(Train(\"S1\"), Bus(\"11\", 90))\n  travel(trip[0]) eq \"Train line S1\"\n  travel(trip[1]) eq \"Bus number 11, size 90\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -3011,37 +3011,37 @@
       "task_files" : {
         "ObjectsAndFunctions.kt" : {
           "name" : "ObjectsAndFunctions.kt",
-          "text" : "package companionobjects\n\nimport atomicTest.eq\n\nclass X(val n: Int) {\n  fun f() = n * 10\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n  x1.f() eq 10\n  x2.f() eq 20\n}",
+          "text" : "// companionObjects/ObjectsAndFunctions.kt\npackage companionobjects\n\nimport atomicTest.eq\n\nclass X(val n: Int) {\n  fun f() = n * 10\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n  x1.f() eq 10\n  x2.f() eq 20\n}",
           "placeholders" : [ ]
         },
         "ThisKeyword.kt" : {
           "name" : "ThisKeyword.kt",
-          "text" : "package companionobjects1\n\nimport atomicTest.eq\n\nclass X(val n: Int) {\n  fun f() = this.n * 10\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n  x1.f() eq 10\n  x2.f() eq 20\n}",
+          "text" : "// companionObjects/ThisKeyword.kt\npackage companionobjects1\n\nimport atomicTest.eq\n\nclass X(val n: Int) {\n  fun f() = this.n * 10\n}\n\nfun main(args: Array<String>) {\n  val x1 = X(1)\n  val x2 = X(2)\n  x1.f() eq 10\n  x2.f() eq 20\n}",
           "placeholders" : [ ]
         },
         "ObjectKeyword.kt" : {
           "name" : "ObjectKeyword.kt",
-          "text" : "package companionobjects2\n\nimport atomicTest.eq\n\nobject X {\n  val n = 2\n  fun f() = n * 10\n  fun g() = this.n * 20\n}\n\nfun main(args: Array<String>) {\n  X.n eq 2\n  X.f() eq 20\n  X.g() eq 40\n}",
+          "text" : "// companionObjects/ObjectKeyword.kt\npackage companionobjects2\n\nimport atomicTest.eq\n\nobject X {\n  val n = 2\n  fun f() = n * 10\n  fun g() = this.n * 20\n}\n\nfun main(args: Array<String>) {\n  X.n eq 2\n  X.f() eq 20\n  X.g() eq 40\n}",
           "placeholders" : [ ]
         },
         "CompanionObject.kt" : {
           "name" : "CompanionObject.kt",
-          "text" : "package companionobjects3\n\nclass X {\n  companion object\n}",
+          "text" : "// companionObjects/CompanionObject.kt\npackage companionobjects3\n\nclass X {\n  companion object\n}",
           "placeholders" : [ ]
         },
         "ObjectProperty.kt" : {
           "name" : "ObjectProperty.kt",
-          "text" : "package companionobjects4\n\nimport atomicTest.eq\n\nclass X {\n  fun increment(): Int {\n    X.n += 1\n    return X.n\n  }\n\n  companion object {\n    var n: Int = 0 // Only one of these\n  }\n}\n\n\nfun main(args: Array<String>) {\n  val a = X()\n  val b = X()\n  a.increment() eq 1\n  b.increment() eq 2\n  a.increment() eq 3\n}",
+          "text" : "// companionObjects/ObjectProperty.kt\npackage companionobjects4\n\nimport atomicTest.eq\n\nclass X {\n  fun increment(): Int {\n    X.n += 1\n    return X.n\n  }\n\n  companion object {\n    var n: Int = 0 // Only one of these\n  }\n}\n\n\nfun main(args: Array<String>) {\n  val a = X()\n  val b = X()\n  a.increment() eq 1\n  b.increment() eq 2\n  a.increment() eq 3\n}",
           "placeholders" : [ ]
         },
         "ObjectFunctions.kt" : {
           "name" : "ObjectFunctions.kt",
-          "text" : "package companionobjects5\n\nimport atomicTest.eq\n\nclass X {\n  companion object {\n    var n: Int = 0\n    fun increment(): Int {\n      n += 1\n      return n\n    }\n    fun count() = increment()\n  }\n}\n\nfun main(args: Array<String>) {\n  X.increment() eq 1\n  X.increment() eq 2\n  X.count() eq 3\n}",
+          "text" : "// companionObjects/ObjectFunctions.kt\npackage companionobjects5\n\nimport atomicTest.eq\n\nclass X {\n  companion object {\n    var n: Int = 0\n    fun increment(): Int {\n      n += 1\n      return n\n    }\n    fun count() = increment()\n  }\n}\n\nfun main(args: Array<String>) {\n  X.increment() eq 1\n  X.increment() eq 2\n  X.count() eq 3\n}",
           "placeholders" : [ ]
         },
         "ObjCounter.kt" : {
           "name" : "ObjCounter.kt",
-          "text" : "package companionobjects\n\nimport atomicTest.eq\n\nclass Count {\n  val id = Count.id()\n  override fun toString() = \"Count$id\"\n\n  companion object {\n    var n = -1\n    fun id(): Int {\n      n += 1\n      return n\n    }\n  }\n}\n\nfun main(args: Array<String>) {\n  listOf(Count(), Count(), Count(),\n    Count(), Count()) eq\n    \"[Count0, Count1, Count2, Count3, Count4]\"\n}",
+          "text" : "// companionObjects/ObjCounter.kt\npackage companionobjects\n\nimport atomicTest.eq\n\nclass Count {\n  val id = Count.id()\n  override fun toString() = \"Count$id\"\n\n  companion object {\n    var n = -1\n    fun id(): Int {\n      n += 1\n      return n\n    }\n  }\n}\n\nfun main(args: Array<String>) {\n  listOf(Count(), Count(), Count(),\n    Count(), Count()) eq\n    \"[Count0, Count1, Count2, Count3, Count4]\"\n}",
           "placeholders" : [ ]
         }
       },
@@ -3059,12 +3059,12 @@
       "task_files" : {
         "DataClassesWithVars.kt" : {
           "name" : "DataClassesWithVars.kt",
-          "text" : "package dataclasses3\n\nimport atomicTest.eq\n\ndata class Contact(\n  var name: String,\n  var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  val favLanguage = hashMapOf(contact to \"Kotlin\")\n  favLanguage[contact] eq \"Kotlin\"             // [1]\n\n  contact.name = \"Melissa\"\n  // Information stored by this contact is lost:\n  favLanguage[contact] eq null                 // [2]\n}",
+          "text" : "// dataClassesAndImmutability/DataClassesWithVars.kt\npackage dataclasses3\n\nimport atomicTest.eq\n\ndata class Contact(\n  var name: String,\n  var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  val favLanguage = hashMapOf(contact to \"Kotlin\")\n  favLanguage[contact] eq \"Kotlin\"             // [1]\n\n  contact.name = \"Melissa\"\n  // Information stored by this contact is lost:\n  favLanguage[contact] eq null                 // [2]\n}",
           "placeholders" : [ ]
         },
         "DataClassAndHashCode.kt" : {
           "name" : "DataClassAndHashCode.kt",
-          "text" : "package dataclasses4\n\nimport atomicTest.eq\n\ndata class Contact(\n  var name: String,\n  var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  contact.hashCode() eq 843329298\n\n  val theSame = Contact(\"Miffy\", \"1-234-567890\")\n  theSame.hashCode() eq 843329298\n\n  contact.name = \"Melissa\"\n  contact.hashCode() eq -2067767101\n}",
+          "text" : "// dataClassesAndImmutability/DataClassAndHashCode.kt\npackage dataclasses4\n\nimport atomicTest.eq\n\ndata class Contact(\n  var name: String,\n  var number: String\n)\n\nfun main(args: Array<String>) {\n  val contact = Contact(\"Miffy\", \"1-234-567890\")\n  contact.hashCode() eq 843329298\n\n  val theSame = Contact(\"Miffy\", \"1-234-567890\")\n  theSame.hashCode() eq 843329298\n\n  contact.name = \"Melissa\"\n  contact.hashCode() eq -2067767101\n}",
           "placeholders" : [ ]
         }
       },
@@ -3082,7 +3082,7 @@
       "task_files" : {
         "AtomicTest.kt" : {
           "name" : "AtomicTest.kt",
-          "text" : "/* A tiny little testing framework, to\ndisplay results and to introduce & promote\nunit testing early in the learning curve.\nTo use in your code snippet, include:\nimport atomicTest.*\n*/\npackage atomicTest\n\nimport java.util.*\n\nprivate fun err(msg: String) {\n  println(\"Error: $msg\")\n}\n\nprivate fun <L, R> equals(actual: L, expected: R) {\n  if (actual != expected)\n    err(\"$actual != $expected\")\n}\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  equals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  equals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  val diff = this - value\n  if (Math.abs(diff) > 0.0000001)\n    err(\"$this not equal to $value\")\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  equals(Arrays.equals(this, value), true)\n}\n\ninfix fun <T> T.neq(value: T) {\n  println(this)\n  if (this == value)\n    err(\"$this == $value\")\n}",
+          "text" : "// atomicTest/AtomicTest.kt\n/* A tiny little testing framework, to\ndisplay results and to introduce & promote\nunit testing early in the learning curve.\nTo use in your code snippet, include:\nimport atomicTest.*\n*/\npackage atomicTest\n\nimport java.util.*\n\nprivate fun err(msg: String) {\n  println(\"Error: $msg\")\n}\n\nprivate fun <L, R> equals(actual: L, expected: R) {\n  if (actual != expected)\n    err(\"$actual != $expected\")\n}\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  equals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  equals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  val diff = this - value\n  if (Math.abs(diff) > 0.0000001)\n    err(\"$this not equal to $value\")\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  equals(Arrays.equals(this, value), true)\n}\n\ninfix fun <T> T.neq(value: T) {\n  println(this)\n  if (this == value)\n    err(\"$this == $value\")\n}",
           "placeholders" : [ ]
         }
       },
@@ -3099,7 +3099,7 @@
       "stepic_id" : 0,
       "task_files" : { },
       "test_files" : {
-        "util/src/AtomicKotlin.kt" : "/* A tiny little testing framework, to\ndisplay results and to introduce & promote\nunit testing early in the learning curve.\nTo use in your code snippet, include:\nimport atomicTest.*\n*/\npackage atomicTest\n\nimport java.util.*\n\nprivate fun err(msg: String) {\n  println(\"Error: $msg\")\n}\n\nprivate fun <L, R> equals(actual: L, expected: R) {\n  if (actual != expected)\n    err(\"$actual != $expected\")\n}\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  equals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  equals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  val diff = this - value\n  if (Math.abs(diff) > 0.0000001)\n    err(\"$this not equal to $value\")\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  equals(Arrays.equals(this, value), true)\n}\n\ninfix fun <T> T.neq(value: T) {\n  println(this)\n  if (this == value)\n    err(\"$this == $value\")\n}\n"
+        "util/src/AtomicKotlin.kt" : "// atomicTest/AtomicTest.kt\n/* A tiny little testing framework, to\ndisplay results and to introduce & promote\nunit testing early in the learning curve.\nTo use in your code snippet, include:\nimport atomicTest.*\n*/\npackage atomicTest\n\nimport java.util.*\n\nprivate fun err(msg: String) {\n  println(\"Error: $msg\")\n}\n\nprivate fun <L, R> equals(actual: L, expected: R) {\n  if (actual != expected)\n    err(\"$actual != $expected\")\n}\n\ninfix fun <T : Any> T.eq(value: String) {\n  println(this)\n  equals(value, this.toString())\n}\n\ninfix fun <T> T.eq(value: T) {\n  println(this)\n  equals(value, this)\n}\n\ninfix fun Double.eq(value: Double) {\n  println(this)\n  val diff = this - value\n  if (Math.abs(diff) > 0.0000001)\n    err(\"$this not equal to $value\")\n}\n\ninfix fun <T> Array<T>.eq(value: Array<T>) {\n  println(this)\n  equals(Arrays.equals(this, value), true)\n}\n\ninfix fun <T> T.neq(value: T) {\n  println(this)\n  if (this == value)\n    err(\"$this == $value\")\n}\n"
       },
       "task_texts" : { },
       "task_type" : "pycharm"

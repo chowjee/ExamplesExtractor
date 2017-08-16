@@ -1,7 +1,7 @@
 package reordering
 
 import atomInfo.AtomName
-import util.Settings
+import settings.Settings
 import java.io.File
 import atomInfo.withoutIndex
 

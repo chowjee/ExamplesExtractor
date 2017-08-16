@@ -3,7 +3,7 @@ package generatingExamples
 import atomInfo.AtomInfo
 import atomInfo.Atoms
 import atomInfo.toPackageName
-import util.Settings
+import settings.Settings
 import util.manifest
 import util.subDir
 import util.subFile

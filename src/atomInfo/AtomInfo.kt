@@ -2,7 +2,7 @@ package atomInfo
 
 import generatingExamples.extractCodeExamples
 import generatingExamples.getPathAndFileNames
-import util.Settings
+import settings.Settings
 import util.lowerCaseFirstLetter
 import util.subFile
 import util.upperCaseFirstLetter

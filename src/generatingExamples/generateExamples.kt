@@ -2,7 +2,7 @@ package generatingExamples
 
 import atomInfo.Atoms
 import generatingExamples.ExampleBuilder.Status.*
-import util.Settings
+import settings.Settings
 import util.addBlankLine
 import util.manifest
 import util.subDir

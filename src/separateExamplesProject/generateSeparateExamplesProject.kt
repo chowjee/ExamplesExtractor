@@ -1,7 +1,7 @@
 package separateExamplesProject
 
 import atomInfo.buildAtomInfoList
-import util.Settings
+import settings.Settings
 import java.io.File
 
 fun main(args: Array<String>) {

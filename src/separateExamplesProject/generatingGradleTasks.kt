@@ -1,7 +1,7 @@
 package separateExamplesProject
 
 import atomInfo.Atoms
-import util.Settings
+import settings.Settings
 import util.lowerCaseFirstLetter
 import java.io.File
 

@@ -1,4 +1,4 @@
-package util
+package settings
 
 import java.io.FileInputStream
 import java.util.*

@@ -529,7 +529,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testWhenExpressionAndSmartCasts() {
-        testExample("Examples/34_when_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenexpressionscasts.WhenExpressionAndSmartCastsKt::main);
+        testExample("Examples/34_when_Expressions_and_Smart_Casts/Examples/WhenExpressionAndSmartCasts.kt", whenExpressionsCasts.WhenExpressionAndSmartCastsKt::main);
     }
 
     @Test
@@ -599,7 +599,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testDataClasses() {
-        testExample("Examples/40_Data_Classes/Examples/DataClasses.kt", dataclasses.DataClassesKt::main);
+        testExample("Examples/40_Data_Classes/Examples/DataClasses.kt", dataClasses.DataClassesKt::main);
     }
 
     @Test
@@ -849,7 +849,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testZipMap() {
-        testExample("Examples/53_Combining_Lists_with_zip/Examples/ZipMap.kt", combininglistswithzip.ZipMapKt::main);
+        testExample("Examples/53_Combining_Lists_with_zip/Examples/ZipMap.kt", combiningListsWithZip.ZipMapKt::main);
     }
 
     @Test
@@ -884,7 +884,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testGreatApe2() {
-        testExample("Examples/56_Base_Class_Initialization/Examples/GreatApe2.kt", baseclassinit.GreatApe2Kt::main);
+        testExample("Examples/56_Base_Class_Initialization/Examples/GreatApe2.kt", baseClassInit.GreatApe2Kt::main);
     }
 
     @Test
@@ -894,7 +894,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testCallingOtherConstructors() {
-        testExample("Examples/56_Base_Class_Initialization/Examples/CallingOtherConstructors.kt", baseclassinit.CallingOtherConstructorsKt::main);
+        testExample("Examples/56_Base_Class_Initialization/Examples/CallingOtherConstructors.kt", baseClassInit.CallingOtherConstructorsKt::main);
     }
 
     @Test
@@ -929,7 +929,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testMyClass() {
-        testExample("Examples/60_Property_Accessors/Examples/MyClass.kt", propertyaccessors.MyClassKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/MyClass.kt", propertyAccessors.MyClassKt::main);
     }
 
     @Test
@@ -944,12 +944,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testHamsters() {
-        testExample("Examples/60_Property_Accessors/Examples/Hamsters.kt", propertyaccessors.HamstersKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/Hamsters.kt", propertyAccessors.HamstersKt::main);
     }
 
     @Test
     public void testPropertyInInterface() {
-        testExample("Examples/60_Property_Accessors/Examples/PropertyInInterface.kt", propertyaccessors.PropertyInInterfaceKt::main);
+        testExample("Examples/60_Property_Accessors/Examples/PropertyInInterface.kt", propertyAccessors.PropertyInInterfaceKt::main);
     }
 
     @Test
@@ -979,12 +979,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testColorBlendTest() {
-        testExample("Examples/64_More_About_when_Expressions/Examples/ColorBlendTest.kt", colorblend.ColorBlendTestKt::main);
+        testExample("Examples/64_More_About_when_Expressions/Examples/ColorBlendTest.kt", colorBlend.ColorBlendTestKt::main);
     }
 
     @Test
     public void testColorBlendMap() {
-        testExample("Examples/64_More_About_when_Expressions/Examples/ColorBlendMap.kt", colorblendmap.ColorBlendMapKt::main);
+        testExample("Examples/64_More_About_when_Expressions/Examples/ColorBlendMap.kt", colorBlendMap.ColorBlendMapKt::main);
     }
 
     @Test
@@ -999,42 +999,42 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testObjectsAndFunctions() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectsAndFunctions.kt", companionobjects.ObjectsAndFunctionsKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectsAndFunctions.kt", companionObjects.ObjectsAndFunctionsKt::main);
     }
 
     @Test
     public void testThisKeyword() {
-        testExample("Examples/67_Companion_Objects/Examples/ThisKeyword.kt", companionobjects1.ThisKeywordKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ThisKeyword.kt", companionObjects1.ThisKeywordKt::main);
     }
 
     @Test
     public void testObjectKeyword() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectKeyword.kt", companionobjects2.ObjectKeywordKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectKeyword.kt", companionObjects2.ObjectKeywordKt::main);
     }
 
     @Test
     public void testObjectProperty() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectProperty.kt", companionobjects4.ObjectPropertyKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectProperty.kt", companionObjects4.ObjectPropertyKt::main);
     }
 
     @Test
     public void testObjectFunctions() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectFunctions.kt", companionobjects5.ObjectFunctionsKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectFunctions.kt", companionObjects5.ObjectFunctionsKt::main);
     }
 
     @Test
     public void testObjCounter() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjCounter.kt", companionobjects.ObjCounterKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjCounter.kt", companionObjects.ObjCounterKt::main);
     }
 
     @Test
     public void testDataClassesWithVars() {
-        testExample("Examples/79_Data_Classes_and_Immutability/Examples/DataClassesWithVars.kt", dataclasses3.DataClassesWithVarsKt::main);
+        testExample("Examples/79_Data_Classes_and_Immutability/Examples/DataClassesWithVars.kt", dataClasses3.DataClassesWithVarsKt::main);
     }
 
     @Test
     public void testDataClassAndHashCode() {
-        testExample("Examples/79_Data_Classes_and_Immutability/Examples/DataClassAndHashCode.kt", dataclasses4.DataClassAndHashCodeKt::main);
+        testExample("Examples/79_Data_Classes_and_Immutability/Examples/DataClassAndHashCode.kt", dataClasses4.DataClassAndHashCodeKt::main);
     }
 
     @Test

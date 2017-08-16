@@ -5,6 +5,11 @@ import util.Settings
 import java.io.File
 
 fun main(args: Array<String>) {
+    generateSeparateExamplesProject()
+    generateGradleTasks()
+}
+
+private fun generateSeparateExamplesProject() {
     val atomInfoList = buildAtomInfoList()
     val examples = File(Settings.examplesAsSeparateProject)
     examples.deleteRecursively()

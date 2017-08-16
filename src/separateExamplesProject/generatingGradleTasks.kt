@@ -24,12 +24,12 @@ task $taskName(type: JavaExec) {
 }
 """
 
-fun main(args: Array<String>) {
+fun generateGradleTasks() {
     val tasksGradle = File(Settings.gradleScript)
-    tasksGradle.writeText(generateGradleTasks())
+    tasksGradle.writeText(generateGradleTasksScript())
 }
 
-fun generateGradleTasks() = buildString {
+private fun generateGradleTasksScript() = buildString {
     appendln(header.trim())
 
     val exampleInfoList = Atoms().atomInfoList.flatMap { it.examplesMap.values }

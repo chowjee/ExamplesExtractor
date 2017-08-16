@@ -1,6 +1,7 @@
 package atomInfo
 
 import generatingExamples.extractCodeExamples
+import generatingExamples.getPathAndFileNames
 import util.Settings
 import util.lowerCaseFirstLetter
 import util.subFile
@@ -47,7 +48,10 @@ data class AtomInfo(
         val exercisesFile: File?,
         val examplesMap: Map<String, ExampleInfo>,
         val exercisesMap: Map<String, ExerciseInfo>
-)
+) {
+    val path: String?
+        get() = examplesMap.values.firstOrNull()?.path
+}
 
 fun buildAtomInfoList(): List<AtomInfo> {
     val atomsDir = File(Settings.atomsPath)
@@ -89,7 +93,8 @@ data class ExampleInfo(
         val file: File,
         val name: String,
         val packageName: String?,
-        val text: String
+        val text: String,
+        val path: String?
 ): ExampleOrExerciseInfo() {
     val classForFileName: String
         get() = name + "Kt"
@@ -100,8 +105,13 @@ data class ExampleInfo(
     companion object {
         fun create(file: File): ExampleInfo {
             val name = file.nameWithoutExtension
-            val packageName = file.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
-            return ExampleInfo(file, name, packageName, file.readText())
+            val lines = file.readLines()
+            val packageName = lines.find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+            val path = lines.find { it.startsWith("// ") }?.let {
+                lineWithComment ->
+                getPathAndFileNames(lineWithComment).first
+            }
+            return ExampleInfo(file, name, packageName, file.readText(), path)
         }
     }
 }

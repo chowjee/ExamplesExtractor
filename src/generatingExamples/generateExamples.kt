@@ -87,9 +87,9 @@ class ExampleBuilder {
         when (status) {
             NAME -> {
                 if (line.startsWith("// ")) {
-                    val path = line.removePrefix("// ")
-                    packageName = path.substringBeforeLast("/").replace("/", ".")
-                    name = path.substringAfterLast("/")
+                    val (path, fileName) = getPathAndFileNames(line)
+                    packageName = path.replace("/", ".")
+                    name = fileName
                     status = EXAMPLE
                 } else {
                     status = SNIPPET
@@ -103,6 +103,16 @@ class ExampleBuilder {
             }
         }
     }
+}
+
+fun getPathAndFileNames(comment: String): Pair<String, String> {
+    if (!comment.startsWith("// ")) {
+        throw IllegalArgumentException("Expected file name comment: $comment")
+    }
+    val path = comment.removePrefix("// ")
+    return Pair(
+            path.substringBeforeLast("/"),
+            path.substringAfterLast("/"))
 }
 
 fun extractCodeExamples(atom: File): AtomExamples? {

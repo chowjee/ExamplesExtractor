@@ -27,7 +27,7 @@ task generateExamples(type: JavaExec) {
     classpath kotlinClassPath
     main = 'separateExamplesProject.GenerateSeparateExamplesProjectKt'
     group = AtomicKotlin
-    description = "Generates Examples project"
+    description = "Updates examples in the Examples project"
 }
 
 task reportCodeSnippets(type: JavaExec) {

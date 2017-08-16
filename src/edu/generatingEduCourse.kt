@@ -5,9 +5,13 @@ import atomInfo.Atoms
 import java.io.File
 
 fun main(args: Array<String>) {
+    generateEduCourse()
+}
+
+private fun generateEduCourse() {
     val atoms = Atoms()
     val lessons = atoms.atomInfoList.map(::generateLesson)
-    val course = Course(lessons.filterNotNull() + getLessonWithUtilFunctions(),
+    val course = Course(lessons.filterNotNull() + getLessonWithUtilFunctions(atoms),
             "The examples and exercises accompanying the AtomicKotlin book",
             "AtomicKotlin",
             "kotlin")
@@ -42,8 +46,16 @@ fun generateLesson(atomInfo: AtomInfo): Lesson? {
             arrayListOf<Task>() + generateTaskForExamples(atomInfo) + taskForExercises)
 }
 
-fun getLessonWithUtilFunctions(): Lesson {
-    val atomicTest = File("AtomicTest/AtomicTest.kt").readText()
+fun getAtomicTest(atoms: Atoms): String {
+    val atomInfo = atoms.getAtomByName("Appendix_A_AtomicTest") ?:
+            throw AssertionError("Atom Appendix_A_AtomicTest wasn't found")
+    val atomicTest = atomInfo.examplesMap["AtomicTest.kt"] ?:
+            throw AssertionError("AtomicTest.kt is not found in Appendix_A_AtomicTest")
+    return atomicTest.file.readText()
+}
+
+fun getLessonWithUtilFunctions(atoms: Atoms): Lesson {
+    val atomicTest = getAtomicTest(atoms)
     val testFiles = mapOf("util/src/AtomicKotlin.kt" to atomicTest)
     val task = GeneralTask("PyCharm additional materials", 0,
             emptyMap(), testFiles, emptyMap())

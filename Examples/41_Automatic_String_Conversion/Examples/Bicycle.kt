@@ -1,5 +1,4 @@
-package automaticStringConversion
-
+// automaticStringConversion/Bicycle.kt
 import atomicTest.eq
 
 data class Bicycle(val riders: Int)

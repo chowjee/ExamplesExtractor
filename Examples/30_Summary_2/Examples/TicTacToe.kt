@@ -1,5 +1,4 @@
-package summary2
-
+// summary2/TicTacToe.kt
 import atomicTest.eq
 
 class Cell {

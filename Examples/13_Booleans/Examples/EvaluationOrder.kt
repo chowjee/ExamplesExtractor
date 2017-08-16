@@ -1,5 +1,4 @@
-package booleans
-
+// booleans/EvaluationOrder.kt
 fun main(args: Array<String>) {
   val sunny = true
   val hoursSleep = 6

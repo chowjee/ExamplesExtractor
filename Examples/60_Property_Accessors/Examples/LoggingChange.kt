@@ -1,5 +1,4 @@
-package propertyAccessors
-
+// propertyAccessors/LoggingChange.kt
 class LoggingChange {
   var property: Int = 0
     set(value) {

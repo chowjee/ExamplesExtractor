@@ -1,3 +1,4 @@
+// composition/House5.kt
 package composition5
 
 interface Building

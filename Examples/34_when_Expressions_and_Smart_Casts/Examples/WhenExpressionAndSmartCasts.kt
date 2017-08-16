@@ -1,3 +1,4 @@
+// whenExpressionsAndSmartCasts/WhenExpressionAndSmartCasts.kt
 package whenexpressionscasts
 import atomicTest.eq
 

@@ -1,5 +1,4 @@
-package lambdas
-
+// lambdas/CallLater.kt
 class Later(val f: () -> Unit) {
   fun call(): Unit = f()
 }

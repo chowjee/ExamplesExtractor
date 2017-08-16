@@ -1,3 +1,4 @@
+// inheritance/GreatApe.kt
 package inheritance
 import atomicTest.eq
 

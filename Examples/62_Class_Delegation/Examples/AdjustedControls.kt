@@ -1,5 +1,4 @@
-package classDelegation
-
+// classDelegation/AdjustedControls.kt
 import atomicTest.eq
 
 class AdjustedControls(

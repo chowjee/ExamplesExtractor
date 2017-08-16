@@ -1,5 +1,4 @@
-package readOnlyAndMutableLists
-
+// readOnlyAndMutableLists/MutableList.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

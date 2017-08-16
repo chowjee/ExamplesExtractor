@@ -1,5 +1,4 @@
-package extensionsForNullableTypes
-
+// extensionsForNullableTypes/ExtensionsOnNullableString.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

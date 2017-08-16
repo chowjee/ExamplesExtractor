@@ -1,5 +1,4 @@
-package propertyAccessors
-
+// propertyAccessors/DefaultAccessors.kt
 import atomicTest.eq
 
 class DefaultAccessors {

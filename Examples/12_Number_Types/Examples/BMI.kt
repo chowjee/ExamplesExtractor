@@ -1,5 +1,4 @@
-package numberTypes
-
+// numberTypes/BMI.kt
 fun getBmiStatus(kg: Double, heightM: Double): String {
   val bmi = kg / (heightM * heightM)      // [1]
   return if (bmi < 18.5) "Underweight"

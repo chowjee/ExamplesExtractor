@@ -1,5 +1,4 @@
-package destructuringDeclarations
-
+// destructuringDeclarations/Tuple.kt
 import atomicTest.eq
 
 data class Tuple(

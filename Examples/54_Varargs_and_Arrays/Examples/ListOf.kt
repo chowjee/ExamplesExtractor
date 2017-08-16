@@ -1,5 +1,4 @@
-package varargsAndArrays
-
+// varargsAndArrays/ListOf.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

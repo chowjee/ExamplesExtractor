@@ -1,5 +1,4 @@
-package visibilityModifiers
-
+// visibilityModifiers/Cookie.kt
 class Cookie {
   private fun crumble() {  // [1]
     println("crumble")

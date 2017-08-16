@@ -1,5 +1,4 @@
-package visibilityModifiers
-
+// visibilityModifiers/ObserveAnimals.kt
 fun main(args: Array<String>) {
   // Can't access private members declared in another file:
   // val rabbit = Animal("Rabbit") // Class is private

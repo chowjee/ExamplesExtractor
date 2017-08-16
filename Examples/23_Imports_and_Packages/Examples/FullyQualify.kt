@@ -1,4 +1,4 @@
-package importsAndPackages
+// importsAndPackages/FullyQualify.kt
 
 fun main(args: Array<String>) {
   val r = java.util.Random()

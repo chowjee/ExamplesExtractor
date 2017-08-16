@@ -1,5 +1,4 @@
-package ifExpressions
-
+// ifExpressions/TrueOrFalse.kt
 fun trueOrFalse(exp: Boolean): String {
   if (exp) {
     return "It's true!" // [1]

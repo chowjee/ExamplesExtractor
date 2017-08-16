@@ -1,5 +1,4 @@
-package parameterizedTypes
-
+// parameterizedTypes/ParameterizedReturnTypes.kt
 import atomicTest.eq
 
 // Return type is inferred:

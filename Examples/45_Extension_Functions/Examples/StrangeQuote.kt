@@ -1,5 +1,4 @@
-package extensionFunctions
-
+// extensionFunctions/StrangeQuote.kt
 import atomicTest.eq
 import quoting.singleQuote
 

@@ -1,4 +1,4 @@
-package classesAndObjects
+// classesAndObjects/IntRanges.kt
 
 fun main(args: Array<String>) {
   val r1 = IntRange(0, 10)

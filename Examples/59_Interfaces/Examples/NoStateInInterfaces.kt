@@ -1,3 +1,4 @@
+// interfaces/NoStateInInterfaces.kt
 package interfaces2
 
 interface Animal {

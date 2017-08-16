@@ -1,3 +1,4 @@
+// importsAndPackages/PythagoreanTheorem.kt
 package pythagorean
 
 class RightTriangle {

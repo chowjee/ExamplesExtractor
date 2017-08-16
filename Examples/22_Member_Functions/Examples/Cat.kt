@@ -1,4 +1,4 @@
-package memberFunctions
+// memberFunctions/Cat.kt
 
 class Cat {
   fun meow() = "mew!"

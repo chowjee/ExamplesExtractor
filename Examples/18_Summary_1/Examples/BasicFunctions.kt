@@ -1,5 +1,4 @@
-package summary1
-
+// summary1/BasicFunctions.kt
 fun cube(x: Int): Int {
   return x * x * x
 }

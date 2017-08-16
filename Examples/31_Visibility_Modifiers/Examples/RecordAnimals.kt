@@ -1,5 +1,4 @@
-package visibilityModifiers
-
+// visibilityModifiers/RecordAnimals.kt
 private var counter = 0                          // [1]
 
 private fun recordAnimal(animal: Animal) {       // [2]

@@ -1,3 +1,4 @@
+// sealedClasses/RegularClasses.kt
 package regularClasses
 
 import atomicTest.eq

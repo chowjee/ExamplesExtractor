@@ -1,5 +1,4 @@
-package baseClassInitialization
-
+// baseClassInitialization/AuxiliaryInitialization.kt
 import atomicTest.eq
 
 open class House(

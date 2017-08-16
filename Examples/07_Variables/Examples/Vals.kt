@@ -1,5 +1,4 @@
-package variables
-
+// variables/Vals.kt
 fun main(args: Array<String>) {
   val whole = 11
   val fractional = 1.4

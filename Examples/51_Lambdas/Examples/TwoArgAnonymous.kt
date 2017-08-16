@@ -1,5 +1,4 @@
-package lambdas
-
+// lambdas/TwoArgAnonymous.kt
 fun main(args: Array<String>) {
   val l = "abc"
   l.forEachIndexed { index, ch -> println("$index: $ch") }

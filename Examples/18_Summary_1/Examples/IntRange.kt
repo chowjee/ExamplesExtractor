@@ -1,5 +1,4 @@
-package summary1
-
+// summary1/IntRange.kt
 fun main(args: Array<String>) {
   for (i in 1..10)
     print("$i ")

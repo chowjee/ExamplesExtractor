@@ -1,5 +1,4 @@
-package varargsAndArrays
-
+// varargsAndArrays/VariableArgLists.kt
 fun foo(s: String, d: Double, vararg ints: Int) {}
 
 fun main(args: Array<String>) {

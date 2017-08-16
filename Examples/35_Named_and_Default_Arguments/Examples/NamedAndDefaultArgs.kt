@@ -1,5 +1,4 @@
-package namedAndDefaultArguments
-
+// namedAndDefaultArguments/NamedAndDefaultArgs.kt
 import atomicTest.eq
 
 fun getColor1(

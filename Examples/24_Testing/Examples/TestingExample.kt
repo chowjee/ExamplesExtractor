@@ -1,5 +1,4 @@
-package testing
-
+// testing/TestingExample.kt
 import atomicTest.*
 
 fun main(args: Array<String>) {

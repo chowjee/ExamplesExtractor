@@ -1,5 +1,4 @@
-package referencesAndMutability
-
+// referencesAndMutability/ChangingAVal.kt
 import atomicTest.eq
 
 class X(var n: Int)

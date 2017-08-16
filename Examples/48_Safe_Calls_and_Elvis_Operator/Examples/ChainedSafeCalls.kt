@@ -1,5 +1,4 @@
-package safeCallsAndElvisOperator
-
+// safeCallsAndElvisOperator/ChainedSafeCalls.kt
 import atomicTest.eq
 
 class Person(val name: String, var bestFriend: Person? = null)

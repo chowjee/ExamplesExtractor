@@ -1,5 +1,4 @@
-package classDelegation
-
+// classDelegation/ModelingMultipleInheritance.kt
 import atomicTest.eq
 
 interface Foo {

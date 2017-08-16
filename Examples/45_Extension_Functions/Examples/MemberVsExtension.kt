@@ -1,5 +1,4 @@
-package extensionFunctions
-
+// extensionFunctions/MemberVsExtension.kt
 import atomicTest.eq
 
 class My {

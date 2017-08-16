@@ -1,3 +1,4 @@
+// moreAboutWhenExpressions/PaintColors.kt
 package paintcolors
 
 enum class Color {

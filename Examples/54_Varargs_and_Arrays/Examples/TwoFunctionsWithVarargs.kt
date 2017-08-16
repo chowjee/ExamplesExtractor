@@ -1,5 +1,4 @@
-package varargsAndArrays
-
+// varargsAndArrays/TwoFunctionsWithVarargs.kt
 fun firstVarargFun(vararg numbers: Int) {
   println("varargs:")
   for (n in numbers) {

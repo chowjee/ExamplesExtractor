@@ -1,5 +1,4 @@
-package summary2
-
+// summary2/UsingAtomicTest.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

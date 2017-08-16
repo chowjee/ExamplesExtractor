@@ -1,5 +1,4 @@
-package functions
-
+// functions/SayHello.kt
 fun sayHello() {
   println("Hallo!")
 }

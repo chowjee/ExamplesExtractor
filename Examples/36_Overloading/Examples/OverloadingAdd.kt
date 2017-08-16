@@ -1,5 +1,4 @@
-package overloading
-
+// overloading/OverloadingAdd.kt
 import atomicTest.eq
 
 fun addInt(i: Int, j: Int): Int = i + j

@@ -1,5 +1,4 @@
-package properties
-
+// properties/Cup.kt
 import atomicTest.eq
 
 class Cup {

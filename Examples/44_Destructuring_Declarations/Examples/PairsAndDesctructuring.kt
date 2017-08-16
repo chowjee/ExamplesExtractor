@@ -1,5 +1,4 @@
-package destructuringDeclarations
-
+// destructuringDeclarations/PairsAndDesctructuring.kt
 import atomicTest.eq
 
 fun compute2(input: Int): Pair<Int, String> =

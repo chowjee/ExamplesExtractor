@@ -56,15 +56,7 @@ data class AtomExamples(val name: String, val examples: List<Example>, val snipp
 }
 
 data class Example(val name: String, val text: String, val packageName: String) {
-    fun getFullText(): String {
-        return if (text.contains("package "))
-            text.addBlankLine()
-        else buildString {
-            appendln("package $packageName")
-            appendln()
-            append(text)
-        }.addBlankLine()
-    }
+    fun getFullText(): String = text.addBlankLine()
 }
 
 class ExampleBuilder {
@@ -101,8 +93,8 @@ class ExampleBuilder {
                     status = EXAMPLE
                 } else {
                     status = SNIPPET
-                    text.appendln(line)
                 }
+                text.appendln(line)
             }
             EXAMPLE, SNIPPET -> {
                 text.appendln(line)

@@ -1,5 +1,4 @@
-package nonNullAssertedCalls
-
+// nonNullAssertedCalls/GettingValueFromMap.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

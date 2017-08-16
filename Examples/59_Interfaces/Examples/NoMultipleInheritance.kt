@@ -1,3 +1,4 @@
+// interfaces/NoMultipleInheritance.kt
 package classes
 
 open class Animal

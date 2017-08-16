@@ -1,5 +1,4 @@
-package secondaryConstructors
-
+// secondaryConstructors/GardenGnome.kt
 import atomicTest.eq
 
 class GardenGnome(

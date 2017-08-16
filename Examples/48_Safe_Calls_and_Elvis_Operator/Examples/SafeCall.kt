@@ -1,5 +1,4 @@
-package safeCallsAndElvisOperator
-
+// safeCallsAndElvisOperator/SafeCall.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

@@ -1,5 +1,4 @@
-package whenExpressions
-
+// whenExpressions/WhenExpressions.kt
 import atomicTest.eq
 
 fun matchColor(color: String) =

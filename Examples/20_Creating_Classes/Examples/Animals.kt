@@ -1,4 +1,4 @@
-package creatingClasses
+// creatingClasses/Animals.kt
 
 // Create some classes:
 class Giraffe

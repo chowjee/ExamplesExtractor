@@ -1,5 +1,4 @@
-package baseClassInitialization
-
+// baseClassInitialization/CallingNoArgConstructor.kt
 open class Superclass1(val i: Int)
 class Subclass1(i: Int) : Superclass1(i)
 

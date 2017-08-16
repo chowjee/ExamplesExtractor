@@ -1,5 +1,4 @@
-package destructuringDeclarations
-
+// destructuringDeclarations/ComputationResult.kt
 import atomicTest.eq
 
 data class ComputationResult(val data: Int, val info: String)

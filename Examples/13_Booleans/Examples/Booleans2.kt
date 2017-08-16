@@ -1,5 +1,4 @@
-package booleans
-
+// booleans/Booleans2.kt
 fun main(args: Array<String>) {
   val hour = 6
   val opens = 9

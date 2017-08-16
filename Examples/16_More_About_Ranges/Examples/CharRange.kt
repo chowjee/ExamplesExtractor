@@ -1,5 +1,4 @@
-package moreAboutRanges
-
+// moreAboutRanges/CharRange.kt
 fun isDigit(ch: Char) = ch in '0'..'9'
 
 fun isNotDigit(ch: Char) = ch !in '0'..'9'  // [1]

@@ -1,3 +1,4 @@
+// companionObjects/ObjectFunctions.kt
 package companionobjects5
 
 import atomicTest.eq

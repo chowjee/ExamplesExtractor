@@ -1,5 +1,4 @@
-package expressionsAndStatements
-
+// expressionsAndStatements/UnitReturnType.kt
 fun g() = Unit
 
 fun main(args: Array<String>) {

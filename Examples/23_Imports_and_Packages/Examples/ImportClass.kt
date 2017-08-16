@@ -1,5 +1,4 @@
-package importsAndPackages
-
+// importsAndPackages/ImportClass.kt
 import java.util.Random
 
 fun main(args: Array<String>) {

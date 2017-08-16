@@ -1,5 +1,4 @@
-package nullableTypes
-
+// nullableTypes/ExplicitCheck.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

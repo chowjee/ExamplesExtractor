@@ -1,3 +1,4 @@
+// propertyAccessors/Hamsters.kt
 package propertyaccessors
 import atomicTest.eq
 import java.util.*

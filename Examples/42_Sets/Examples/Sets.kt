@@ -1,5 +1,4 @@
-package sets
-
+// sets/Sets.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

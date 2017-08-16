@@ -1,5 +1,4 @@
-package interfaces
-
+// interfaces/StateOfAClass.kt
 import atomicTest.eq
 
 class MyClass(

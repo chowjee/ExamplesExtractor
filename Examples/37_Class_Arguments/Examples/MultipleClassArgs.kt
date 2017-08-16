@@ -1,5 +1,4 @@
-package classArguments
-
+// classArguments/MultipleClassArgs.kt
 import atomicTest.eq
 
 class Sum(val a1: Int, val a2: Int, val a3: Int) {

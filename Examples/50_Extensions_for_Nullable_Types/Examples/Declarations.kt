@@ -1,5 +1,4 @@
-package extensionsForNullableTypes
-
+// extensionsForNullableTypes/Declarations.kt
 import atomicTest.eq
 
 fun String?.isNullOrEmpty(): Boolean =

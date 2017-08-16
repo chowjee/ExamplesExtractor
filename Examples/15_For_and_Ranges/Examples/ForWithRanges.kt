@@ -1,5 +1,4 @@
-package forAndRanges
-
+// forAndRanges/ForWithRanges.kt
 fun showRange(r: IntProgression) {
   for (i in r) {
     print("$i ")

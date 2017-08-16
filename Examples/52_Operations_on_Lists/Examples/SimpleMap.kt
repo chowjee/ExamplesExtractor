@@ -1,5 +1,4 @@
-package operationsOnLists
-
+// operationsOnLists/SimpleMap.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

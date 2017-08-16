@@ -1,3 +1,4 @@
+// companionObjects/CompanionObject.kt
 package companionobjects3
 
 class X {

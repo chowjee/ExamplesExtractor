@@ -1,3 +1,4 @@
+// composition/House4.kt
 package composition4
 
 interface Building

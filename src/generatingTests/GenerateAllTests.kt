@@ -44,7 +44,6 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
         val classForFileName = name + "Kt"
 
         val packageName = code.readLines().find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
-                ?: name.lowerCaseFirstLetter()
 
         val exampleName = if (!isExercise) {
             val index = if (classForFileName in namesFrequency) {
@@ -57,14 +56,16 @@ fun generateTests(files: List<AuxiliaryFiles>): String {
             }
             """test${name.upperCaseFirstLetter()}$index"""
         } else {
+            if (packageName == null) throw AssertionError("No package for exercise: ${code.path}")
             "testExercise${packageName.substringAfter(".").upperCaseFirstLetter()}"
         }
 
         val testFunction = if (isExercise) "testExercise" else "testExample"
+        val qualifier = if (packageName != null) "$packageName." else ""
         tests += """
             @Test
             public void $exampleName() {
-                $testFunction("${output.path}", $packageName.$classForFileName::main);
+                $testFunction("${output.path}", $qualifier$classForFileName::main);
             }""".replaceIndent("    ")
     }
 

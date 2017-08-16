@@ -1,5 +1,4 @@
-package classArguments
-
+// classArguments/VisibleClassArgs.kt
 import atomicTest.eq
 
 class ClassArg2(var a: Int)

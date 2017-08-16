@@ -1,5 +1,4 @@
-package localFunctions
-
+// localFunctions/LocalFunctions.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

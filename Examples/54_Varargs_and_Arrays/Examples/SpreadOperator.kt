@@ -1,5 +1,4 @@
-package varargsAndArrays
-
+// varargsAndArrays/SpreadOperator.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

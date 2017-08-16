@@ -1,5 +1,4 @@
-package automaticStringConversion
-
+// automaticStringConversion/SurreyWithToString.kt
 import atomicTest.eq
 
 class Surrey2(val adornment: String) {

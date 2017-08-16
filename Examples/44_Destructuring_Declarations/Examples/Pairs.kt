@@ -1,5 +1,4 @@
-package destructuringDeclarations
-
+// destructuringDeclarations/Pairs.kt
 import atomicTest.eq
 
 fun compute1(input: Int) =

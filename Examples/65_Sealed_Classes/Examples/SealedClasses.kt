@@ -1,5 +1,4 @@
-package sealedClasses
-
+// sealedClasses/SealedClasses.kt
 import atomicTest.eq
 
 sealed class Transport

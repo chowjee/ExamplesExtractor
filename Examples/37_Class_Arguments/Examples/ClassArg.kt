@@ -1,5 +1,4 @@
-package classArguments
-
+// classArguments/ClassArg.kt
 import atomicTest.eq
 
 class ClassArg(a: Int) {

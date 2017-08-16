@@ -1,5 +1,4 @@
-package readOnlyAndMutableLists
-
+// readOnlyAndMutableLists/MutableListIsList.kt
 fun getList(): List<Int> {
   return mutableListOf(1, 2, 3)
 }

@@ -1,5 +1,4 @@
-package combiningListsWithZip
-
+// combiningListsWithZip/IndexWithZip.kt
 import atomicTest.eq
 
 fun number(s: String) =

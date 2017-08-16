@@ -1,5 +1,4 @@
-package combiningListsWithZip
-
+// combiningListsWithZip/Zipper.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

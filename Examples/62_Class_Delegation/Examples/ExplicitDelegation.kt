@@ -1,5 +1,4 @@
-package classDelegation
-
+// classDelegation/ExplicitDelegation.kt
 import atomicTest.eq
 
 class AdjustedControlsExplicit : SpaceShipControls {

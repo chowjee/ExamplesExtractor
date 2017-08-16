@@ -1,5 +1,4 @@
-package lists
-
+// lists/Lists.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

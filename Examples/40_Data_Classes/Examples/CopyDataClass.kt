@@ -1,5 +1,4 @@
-package dataClasses
-
+// dataClasses/CopyDataClass.kt
 import atomicTest.eq
 
 data class DetailedContact(

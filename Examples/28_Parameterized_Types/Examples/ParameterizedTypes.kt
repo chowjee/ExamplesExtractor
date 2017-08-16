@@ -1,5 +1,4 @@
-package parameterizedTypes
-
+// parameterizedTypes/ParameterizedTypes.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

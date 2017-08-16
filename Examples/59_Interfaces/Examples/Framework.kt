@@ -1,5 +1,4 @@
-package interfaces
-
+// interfaces/Framework.kt
 import atomicTest.eq
 
 interface Framework {

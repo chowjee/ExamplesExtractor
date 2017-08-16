@@ -1,5 +1,4 @@
-package inheritance
-
+// inheritance/OpenAndFinalClasses.kt
 // This class can be inherited from:
 open class Parent
 

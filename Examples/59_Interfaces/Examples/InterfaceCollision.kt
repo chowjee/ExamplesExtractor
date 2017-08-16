@@ -1,5 +1,4 @@
-package interfaces
-
+// interfaces/InterfaceCollision.kt
 import atomicTest.eq
 
 interface A {

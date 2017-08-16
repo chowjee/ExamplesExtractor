@@ -1,5 +1,4 @@
-package referencesAndMutability
-
+// referencesAndMutability/References.kt
 import atomicTest.eq
 
 class Z(var n: Int)

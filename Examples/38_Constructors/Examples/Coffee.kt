@@ -1,5 +1,4 @@
-package constructors
-
+// constructors/Coffee.kt
 import atomicTest.eq
 
 class Coffee(

@@ -1,4 +1,4 @@
-package memberFunctions
+// memberFunctions/Hamster.kt
 
 class Hamster {
   fun speak() = "squeak! "

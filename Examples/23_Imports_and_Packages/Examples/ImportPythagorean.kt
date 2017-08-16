@@ -1,5 +1,4 @@
-package importsAndPackages
-
+// importsAndPackages/ImportPythagorean.kt
 import pythagorean.RightTriangle
 
 fun main(args: Array<String>) {

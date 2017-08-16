@@ -1,5 +1,4 @@
-package classDelegation
-
+// classDelegation/SpaceShipControls.kt
 interface SpaceShipControls {
   fun up(velocity: Int): String
   fun down(velocity: Int): String

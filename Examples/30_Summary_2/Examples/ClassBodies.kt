@@ -1,5 +1,4 @@
-package summary2
-
+// summary2/ClassBodies.kt
 class NoBody
 
 class SomeBody {

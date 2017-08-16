@@ -37,12 +37,6 @@ task reportCodeSnippets(type: JavaExec) {
     description = "Reports code snippets used in text"
 }
 
-task testExamples(type: Test, dependsOn: testClasses) {
-    include 'TestExamples*'
-    group = AtomicKotlin
-    description = "Runs tests checking 'eq' in examples"
-}
-
 task updateEdu(type: JavaExec) {
     classpath kotlinClassPath
     main = 'edu.GeneratingEduCourseKt'

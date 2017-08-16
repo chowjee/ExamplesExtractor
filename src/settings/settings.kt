@@ -14,7 +14,7 @@ object Settings {
         }
     }
 
-    private val atomicKotlinPath = properties.getProperty("atomicKotlinPath")
+    val atomicKotlinPath = properties.getProperty("atomicKotlinPath")
 
     val atomsPath = atomicKotlinPath + "/Markdown"
     val exercisesPath = atomicKotlinPath + "/Exercises"
@@ -23,8 +23,8 @@ object Settings {
     val examplesDir = "Examples"
     val exercisesDir = "Exercises"
 
-    private val examplesPath = properties.getProperty("examplesPath")
+    val examplesProject = properties.getProperty("examplesPath")
 
-    val examplesAsSeparateProject = examplesPath + "/examples"
-    val gradleScript = examplesPath + "/gradle/tasks.gradle"
+    val examplesAsSeparateProject = examplesProject + "/examples"
+    val gradleScript = examplesProject + "/gradle/tasks.gradle"
 }

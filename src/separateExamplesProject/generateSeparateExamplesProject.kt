@@ -2,9 +2,11 @@ package separateExamplesProject
 
 import atomInfo.buildAtomInfoList
 import settings.Settings
+import settings.checkExamplesPathPropertyIsSet
 import java.io.File
 
 fun main(args: Array<String>) {
+    checkExamplesPathPropertyIsSet()
     generateSeparateExamplesProject()
     generateGradleTasks()
 }

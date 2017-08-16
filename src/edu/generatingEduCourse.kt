@@ -2,11 +2,13 @@ package edu
 
 import atomInfo.AtomInfo
 import atomInfo.Atoms
+import settings.checkAtomicKotlinPropertyIsSet
 import java.io.File
 
 private val eduCourse = "edu/course.json"
 
 fun main(args: Array<String>) {
+    checkAtomicKotlinPropertyIsSet()
     generateEduCourse()
     println("$eduCourse updated")
 }

@@ -1,8 +1,10 @@
 package generatingExamples
 
 import generatingTests.generateExampleTests
+import settings.checkAtomicKotlinPropertyIsSet
 
 fun main(args: Array<String>) {
+    checkAtomicKotlinPropertyIsSet()
     println("Update started")
     generateExamples()
     println("Examples updated")

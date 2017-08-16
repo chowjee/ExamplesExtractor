@@ -19,6 +19,12 @@ object Settings {
     val atomsPath = atomicKotlinPath + "/Markdown"
     val exercisesPath = atomicKotlinPath + "/Exercises"
     val statusPath = atomicKotlinPath + "/STATUS.md"
+
     val examplesDir = "Examples"
     val exercisesDir = "Exercises"
+
+    private val examplesPath = properties.getProperty("examplesPath")
+
+    val examplesAsSeparateProject = examplesPath + "/examples"
+    val gradleScript = examplesPath + "/gradle/tasks.gradle"
 }

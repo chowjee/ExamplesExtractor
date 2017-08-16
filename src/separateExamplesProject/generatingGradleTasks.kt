@@ -1,6 +1,7 @@
 package separateExamplesProject
 
 import atomInfo.Atoms
+import util.Settings
 import util.lowerCaseFirstLetter
 import java.io.File
 
@@ -24,7 +25,7 @@ task $taskName(type: JavaExec) {
 """
 
 fun main(args: Array<String>) {
-    val tasksGradle = File("/Users/svtk/AtomicKotlin/Examples/gradle/tasks.gradle")
+    val tasksGradle = File(Settings.gradleScript)
     tasksGradle.writeText(generateGradleTasks())
 }
 

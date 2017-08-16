@@ -2,11 +2,12 @@ package separateExamplesProject
 
 import atomInfo.buildAtomInfoList
 import atomInfo.toPackageName
+import util.Settings
 import java.io.File
 
 fun main(args: Array<String>) {
     val atomInfoList = buildAtomInfoList()
-    val examples = File("/Users/svtk/AtomicKotlin/Examples/examples")
+    val examples = File(Settings.examplesAsSeparateProject)
     examples.deleteRecursively()
     examples.mkdir()
     for (atomInfo in atomInfoList) {

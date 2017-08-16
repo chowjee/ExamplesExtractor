@@ -4,8 +4,11 @@ import atomInfo.AtomInfo
 import atomInfo.Atoms
 import java.io.File
 
+private val eduCourse = "edu/course.json"
+
 fun main(args: Array<String>) {
     generateEduCourse()
+    println("$eduCourse updated")
 }
 
 private fun generateEduCourse() {
@@ -16,7 +19,7 @@ private fun generateEduCourse() {
             "AtomicKotlin",
             "kotlin")
     File("edu").mkdir()
-    writeJson(course, File("edu/course.json"))
+    writeJson(course, File(eduCourse))
 }
 
 fun generateLesson(atomInfo: AtomInfo): Lesson? {

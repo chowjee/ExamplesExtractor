@@ -1,0 +1,51 @@
+configurations {
+    kotlinRuntime
+}
+
+dependencies {
+    kotlinRuntime "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
+}
+
+def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
+
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat "full"
+    }
+}
+
+def AtomicKotlin = 'Atomic Kotlin'
+
+task update(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generatingExamples.MainKt'
+    group = AtomicKotlin
+    description = "Updates the examples from markdown files of AtomicKotlin project"
+}
+
+task generateExamples(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'separateExamplesProject.GenerateSeparateExamplesProjectKt'
+    group = AtomicKotlin
+    description = "Generates Examples project"
+}
+
+task reportCodeSnippets(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generatingExamples.ReportCodeSnippetsKt'
+    group = AtomicKotlin
+    description = "Reports code snippets used in text"
+}
+
+task testExamples(type: Test, dependsOn: testClasses) {
+    include 'TestExamples*'
+    group = AtomicKotlin
+    description = "Runs tests checking 'eq' in examples"
+}
+
+task updateEdu(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'edu.GeneratingEduCourseKt'
+    group = AtomicKotlin
+    description = "Updates Edu course"
+}

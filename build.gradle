@@ -33,3 +33,5 @@ sourceSets {
     test.kotlin.srcDirs += 'TestExamples'
     test.java.srcDirs += 'TestExamples'
 }
+
+apply from: 'gradle/actions.gradle'

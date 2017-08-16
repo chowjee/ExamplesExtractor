@@ -237,7 +237,7 @@
         },
         "SayHello.kt" : {
           "name" : "SayHello.kt",
-          "text" : "// functions/SayHello.kt\nfun sayHello() {\n  println(\"Hallo!\")\n}\n\nfun sayGoodbye(): Unit {\n  println(\"Tschüss!\")\n}\n\nfun main(args: Array<String>) {\n  sayHello()\n  sayGoodbye()\n}\n/* Output:\nHallo!\nTschüss!\n*/",
+          "text" : "// functions/SayHello.kt\nfun sayHello() {\n  println(\"Hallo!\")\n}\n\nfun sayGoodbye(): Unit {\n  println(\"Auf Wiedersehen!\")\n}\n\nfun main(args: Array<String>) {\n  sayHello()\n  sayGoodbye()\n}\n/* Output:\nHallo!\nAuf Wiedersehen!\n*/",
           "placeholders" : [ ]
         },
         "MultiplyByThree.kt" : {

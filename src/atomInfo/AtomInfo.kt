@@ -45,10 +45,26 @@ data class AtomInfo(
         val title: String,
         val index: Int,
         val markdownFile: File,
-        val exercisesFile: File?,
-        val examplesMap: Map<String, ExampleInfo>,
-        val exercisesMap: Map<String, ExerciseInfo>
+        val exercisesFile: File?
 ) {
+    val examplesMap: Map<String, ExampleInfo> by lazy {
+      val codeExamples = extractCodeExamples(markdownFile)
+      val examples = File("Examples").subFile(name).subFile("Examples")
+      codeExamples?.examples
+          ?.associate { it.name to ExampleInfo.create(examples.subFile(it.name)) }
+          ?: emptyMap()
+    }
+    val exercisesMap: Map<String, ExerciseInfo> by lazy {
+      val exercises = File("Exercises").subFile(name)
+      if (exercises.exists() && exercises.isDirectory) {
+        exercises.listFiles()
+            .filter { it.isDirectory }
+            .associateBy { it.name }
+            .mapValues { ExerciseInfo.create(it.value) }
+      } else {
+        emptyMap()
+      }
+    }
     val path: String?
         get() = examplesMap.values.firstOrNull()?.path
 }
@@ -67,23 +83,7 @@ fun buildAtomInfoList(): List<AtomInfo> {
         val atomFile = atomsByFileName.getValue(name)
         val exercisesFile = exercisesByFileName[name]
 
-        val codeExamples = extractCodeExamples(atomFile)
-        val examples = File("Examples").subFile(name).subFile("Examples")
-        val exampleMap = codeExamples?.examples
-                ?.associate { it.name to ExampleInfo.create(examples.subFile(it.name)) }
-                ?: emptyMap()
-
-        val exercises = File("Exercises").subFile(name)
-        val exerciseMap = if (exercises.exists() && exercises.isDirectory) {
-            exercises.listFiles()
-                    .filter { it.isDirectory }
-                    .associateBy { it.name }
-                    .mapValues { ExerciseInfo.create(it.value) }
-        } else {
-            emptyMap()
-        }
-
-        AtomInfo(name, atomTitle, index, atomFile, exercisesFile, exampleMap, exerciseMap)
+        AtomInfo(name, atomTitle, index, atomFile, exercisesFile)
     }
 }
 

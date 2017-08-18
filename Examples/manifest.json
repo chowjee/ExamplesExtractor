@@ -58,8 +58,8 @@
     "63_Enumerations",
     "64_More_About_when_Expressions",
     "65_Sealed_Classes",
-    "67_Companion_Objects",
-    "79_Data_Classes_and_Immutability",
-    "83_Appendix_A_AtomicTest"
+    "66_Objects_and_Companion_Objects",
+    "78_Data_Classes_and_Immutability",
+    "82_Appendix_A_AtomicTest"
   ]
 }

@@ -66,6 +66,6 @@ fun readStatus(statusFile: File): List<AtomStatus> {
                 extractPropertyValue(lines[1]),
                 extractPropertyValue(lines[2]),
                 extractPropertyValue(lines[3]),
-                lines[4].substringAfter("+ Notes:"))
+                lines.joinToString("\n").substringAfter("+ Notes:").trimEnd())
     }
 }

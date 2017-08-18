@@ -969,12 +969,12 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testLevel() {
-        testExample("Examples/63_Enumerations/Examples/Level.kt", enumerations.LevelKt::main);
+        testExample("Examples/63_Enumerations/Examples/Level.kt", enumerations1.LevelKt::main);
     }
 
     @Test
     public void testImportLevel() {
-        testExample("Examples/63_Enumerations/Examples/ImportLevel.kt", enumerations.ImportLevelKt::main);
+        testExample("Examples/63_Enumerations/Examples/ImportLevel.kt", enumerations2.ImportLevelKt::main);
     }
 
     @Test
@@ -998,33 +998,33 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testObjectsAndFunctions() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectsAndFunctions.kt", companionObjects.ObjectsAndFunctionsKt::main);
-    }
-
-    @Test
-    public void testThisKeyword() {
-        testExample("Examples/67_Companion_Objects/Examples/ThisKeyword.kt", companionObjects1.ThisKeywordKt::main);
-    }
-
-    @Test
     public void testObjectKeyword() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectKeyword.kt", companionObjects2.ObjectKeywordKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectKeyword.kt", objects.ObjectKeywordKt::main);
+    }
+
+    @Test
+    public void testCompanionObject() {
+        testExample("Examples/67_Companion_Objects/Examples/CompanionObject.kt", companionObjects1.CompanionObjectKt::main);
     }
 
     @Test
     public void testObjectProperty() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectProperty.kt", companionObjects4.ObjectPropertyKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectProperty.kt", companionObjects2.ObjectPropertyKt::main);
     }
 
     @Test
     public void testObjectFunctions() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjectFunctions.kt", companionObjects5.ObjectFunctionsKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjectFunctions.kt", companionObjects3.ObjectFunctionsKt::main);
     }
 
     @Test
     public void testObjCounter() {
-        testExample("Examples/67_Companion_Objects/Examples/ObjCounter.kt", companionObjects.ObjCounterKt::main);
+        testExample("Examples/67_Companion_Objects/Examples/ObjCounter.kt", companionObjects4.ObjCounterKt::main);
+    }
+
+    @Test
+    public void testCreateInCompanionObject() {
+        testExample("Examples/67_Companion_Objects/Examples/CreateInCompanionObject.kt", companionObjects5.CreateInCompanionObjectKt::main);
     }
 
     @Test

@@ -42,14 +42,12 @@ infix fun <T> T.neq(value: T) {
 }
 
 // Capture an exception and produce its name:
-fun except(f: () -> Unit) =
+fun except(f: () -> Unit): String =
   try {
     f()
     "Error: Expected an exception"
   } catch(e: Exception) {
-    e.toString().split(".", ":")
-      .filter { "Exception" in it }
-      .first()
+    e.javaClass.simpleName
   }
 
 /* Usage:

@@ -1,0 +1,20 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "NonNullAssert.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "NonNullAssertCall.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ValueFromMap.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

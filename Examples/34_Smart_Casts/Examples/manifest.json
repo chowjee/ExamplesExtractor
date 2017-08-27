@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "SmartCasts.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "WhenAndSmartCasts.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

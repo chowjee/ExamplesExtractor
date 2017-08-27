@@ -2,6 +2,10 @@
   "name": "Examples",
   "files": [
     {
+      "filename": "Simple.kt",
+      "modifiable": "true"
+    },
+    {
       "filename": "DataClasses.kt",
       "modifiable": "true"
     },

@@ -1,0 +1,24 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "DereferenceNull.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "SafeCall.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "SafeOperation.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ChainedCalls.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}

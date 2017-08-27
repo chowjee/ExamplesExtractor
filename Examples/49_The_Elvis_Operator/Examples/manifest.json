@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "files": [
+    {
+      "filename": "ElvisOperator.kt",
+      "modifiable": "true"
+    },
+    {
+      "filename": "ElvisCall.kt",
+      "modifiable": "true"
+    }
+  ],
+  "args": "",
+  "searchForMain": false,
+  "confType": "java"
+}
